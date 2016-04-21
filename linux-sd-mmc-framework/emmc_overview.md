@@ -5,6 +5,8 @@
 ## EMMC 内部构造
 ### CPU Interfaces
 ### Nand Flash
+ECC
+Bad Block Management
 ### Nand Flash Controller
 
 
