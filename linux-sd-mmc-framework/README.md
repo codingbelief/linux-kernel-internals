@@ -1,2 +1,0 @@
-# Linux SD/MMC Framework
-
