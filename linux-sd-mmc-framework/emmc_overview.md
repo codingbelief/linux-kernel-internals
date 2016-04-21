@@ -7,6 +7,8 @@
 ### Nand Flash
 ECC
 Bad Block Management
+Wear-Leveling
+
 ### Nand Flash Controller
 
 
