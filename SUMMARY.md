@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [Linux SD/MMC Framework](chapter1.md)
+* [Linux SD/MMC Framework](linux-sd-mmc-framework.md)
 
