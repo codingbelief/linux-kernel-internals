@@ -6,6 +6,6 @@
 
 ## EMMC 内部构造
 ### Nand Flash
-### Firmware
+### Nand Flash Controller
 
 ## EMMC 读写操作
