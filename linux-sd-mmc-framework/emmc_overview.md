@@ -4,4 +4,6 @@
 
 ## EMMC 与 CPU 间的接口
 
+## EMMC 内部构造
+
 ## EMMC 读写操作
