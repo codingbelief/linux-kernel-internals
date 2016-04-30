@@ -49,5 +49,5 @@ Nand Flash 特性
 
 [NOR NAND Flash Guide: Selecting a Flash Storage Solution](https://www.micron.com/~/media/documents/products/product-flyer/flyer_nor_nand_flash_guide.pdf)
 
-[MICRON NOR Flash](https://www.micron.com/products/nor-flash)
-[MICRON NAND Flash](https://www.micron.com/products/nand-flash)
+[MICRON NOR Flash Technology](https://www.micron.com/products/nor-flash)
+[MICRON NAND Flash Technology](https://www.micron.com/products/nand-flash)
