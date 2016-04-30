@@ -21,9 +21,9 @@ Flash Memory 在读取时，可以随机按字节进行读取，但是在写入�
 * NOR Flash 支持片上执行，可以在上面直接运行代码；
 * NOR Flash 软件驱动比 NAND Flash 简单；
 * 大容量下 NAND Flash 比 NOR Flash 成本要低很多，体积也更小；
-* NAND Flash 最大擦出次数比 NOR Flash 多 10 倍以上；
+* NAND Flash 最大擦出次数比 NOR Flash 多；
 
-（注：擦除 NOR Flash 时是以 64～128KB 的块进行的，执行一个写入 / 擦除操作的时间为 5s，擦除 NAND Flash 是以 8～32KB 的块进行的，执行相同的操作最多只需要 4ms。NOR Flash 通常的最大可擦出次数为十万次，而 NAND Flash 则可以达到一百万次）
+（注：擦除 NOR Flash 时是以 64～128KB 的块进行的，执行一个写入 / 擦除操作的时间为 5s，擦除 NAND Flash 是以 8～32KB 的块进行的，执行相同的操作最多只需要 4ms。NOR Flash 通常的最大可擦出次数为十万次，而 NAND Flash 则可以达到一百万次。）
 
 ### NOR Flash
 
