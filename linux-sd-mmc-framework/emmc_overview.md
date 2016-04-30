@@ -47,3 +47,4 @@ Nand Flash 特性
 
 ### CPU Interfaces
 
+[NOR NAND Flash Guide: Selecting a Flash Storage Solution](https://www.micron.com/~/media/documents/products/product-flyer/flyer_nor_nand_flash_guide.pdf)
