@@ -17,7 +17,6 @@ Flash Memory 在读取时，可以随机按字节进行读取，但是在写入�
 * NAND Flash 读取速度与 NOR Flash 相近，根据接口的不同有所差异；
 * NAND Flash 的写入速度比 NOR Flash 快很多；
 * NAND Flash 的擦出速度比 NOR Flash 快很多；
-* NAND Flash 的擦除单元更小，相应的擦除电路更加简单；
 * NAND Flash 最大擦出次数比 NOR Flash 多；
 * NOR Flash 支持片上执行，可以在上面直接运行代码；
 * NOR Flash 软件驱动比 NAND Flash 简单；
