@@ -14,7 +14,7 @@ Flash Memory 在读取时，可以随机按字节进行读取，但是在写入�
 
 根据硬件物理实现上的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类，主要的差异如下所示：
 
-* NOR Flash 的读取速度比 NAND Flash 稍块；
+* NOR Flash 的读取速度比 NAND Flash 稍快；
 * NAND Flash 的写入速度比 NOR Flash 快很多；
 * NAND Flash 的擦出速度比 NOR Flash 快很多；
 * NAND Flash 的擦除单元更小，相应的擦除电路更加简单；
