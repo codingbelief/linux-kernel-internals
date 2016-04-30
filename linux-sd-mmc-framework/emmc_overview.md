@@ -13,7 +13,6 @@ cpu 接口
 内部架构
 cpu 接口
 特性
-## eMMC 的主要应用
 
 ## eMMC 内部构造
 ### CPU Interfaces
