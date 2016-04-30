@@ -24,7 +24,4 @@ Nand Flash 特性
 ### Nand Flash
 
 
-### Nand Flash Controller
-
-
 ## eMMC 读写操作
