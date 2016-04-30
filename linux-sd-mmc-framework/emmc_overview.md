@@ -36,6 +36,7 @@ Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，支持片
 ### NAND Flash
 
 
+
 内部架构
 cpu 接口
 Nand Flash 特性
