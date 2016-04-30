@@ -14,6 +14,7 @@ Flash Memory 在读取时，可以随机按字节进行读取，但是在写入�
 
 根据硬件物理实现上的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类，主要的差异如下所示：
 
+* 
 
 ### NOR Flash
 
