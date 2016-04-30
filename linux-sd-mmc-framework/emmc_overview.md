@@ -20,7 +20,7 @@ Flash Memory 在读取时，可以随机按字节进行读取，但是在写入�
 * NAND Flash 的擦除单元更小，相应的擦除电路更加简单；
 * NOR Flash 支持片上执行，可以在上面直接运行代码；
 * 大容量下 NAND Flash 比 NOR Flash 成本要低很多，体积也比较小；
-* 
+
 （注：擦除 NOR Flash 时是以 64～128KB 的块进行的，执行一个写入 / 擦除操作的时间为 5s，擦除 NAND Flash 是以 8～32KB 的块进行的，执行相同的操作最多只需要 4ms。）
 
 ### NOR Flash
