@@ -3,6 +3,9 @@
 eMMC 是 embedded MultiMediaCard 的简称。MultiMediaCard，即 MMC， 是一种闪存卡（Flash Memory Card）标准，它定义了 MMC 的架构以及访问　Flash Memory 的接口和协议。而 eMMC 则是对 MMC 的一个拓展，以满足更高标准的性能、成本、体积等的需求。
 
 eMMC 的整体架构如图片 1 所示：
+
+
+
 ## Flash Memory
 
 
@@ -23,9 +26,7 @@ Nand Flash 特性
   Bad Block Management
   Wear-Leveling
 
-## eMMC 内部构造
 ### CPU Interfaces
-### Nand Flash
 
 
 ## eMMC 读写操作
