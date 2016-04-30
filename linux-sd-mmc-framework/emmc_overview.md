@@ -26,12 +26,8 @@ Flash Memory 在读取时，可以随机按字节进行读取，但是在写入�
 
 ### NOR Flash
 
-
 NOR Flash 根据与 CPU 端接口的不同，可以分为 Parallel NOR Flash 和 Serial NOR Flash 两类。
 
-内部架构
-cpu 接口
-特性
 
 ### NAND Flash
 内部架构
