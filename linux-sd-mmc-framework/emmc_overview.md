@@ -26,7 +26,10 @@ Nand Flash 特性
   Bad Block Management
   Wear-Leveling
 
+### Flash Controller
+
 ### CPU Interfaces
+
 
 
 ## eMMC 读写操作
