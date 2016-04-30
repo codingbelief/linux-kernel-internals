@@ -12,17 +12,17 @@ cpu 接口
 ### NAND Flash
 内部架构
 cpu 接口
-特性
-
-## eMMC 内部构造
-### CPU Interfaces
-### Nand Flash
 Nand Flash 特性
   读写方式
   读写速度
   ECC
   Bad Block Management
   Wear-Leveling
+
+## eMMC 内部构造
+### CPU Interfaces
+### Nand Flash
+
 
 ### Nand Flash Controller
 
