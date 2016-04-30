@@ -5,6 +5,7 @@
 ## EMMC 内部构造
 ### CPU Interfaces
 ### Nand Flash
+Nand Flash 的读写方式
 ECC
 Bad Block Management
 Wear-Leveling
