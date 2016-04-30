@@ -3,6 +3,8 @@
 eMMC 是 embedded MultiMediaCard 的简称。MultiMediaCard 是内存卡标准，
 
 ## Flash Memory
+### NOR Flash
+### NAND Flash
 ## eMMC 的主要应用
 
 ## eMMC 内部构造
