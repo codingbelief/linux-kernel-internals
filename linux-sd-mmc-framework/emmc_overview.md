@@ -18,7 +18,7 @@ Flash Memory 在读取时，可以随机按字节进行读取，但是在写入�
 * NAND Flash 的读取速度比 NOR Flash 快很多；
 * NAND Flash 的擦出速度比 NOR Flash 快很多；
 * 
-（注：擦除 NOR Flash 时是以 64～128KB 的块进行的，执行一个写入/擦除操作的时间为 5s，擦除 NAND Flash 是以 8～32KB 的块进行的，执行相同的操作最多只需要 4ms。）
+（注：擦除 NOR Flash 时是以 64～128KB 的块进行的，执行一个写入 / 擦除操作的时间为 5s，擦除 NAND Flash 是以 8～32KB 的块进行的，执行相同的操作最多只需要 4ms。）
 
 ### NOR Flash
 
