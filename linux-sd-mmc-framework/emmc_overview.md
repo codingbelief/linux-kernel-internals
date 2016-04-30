@@ -27,7 +27,7 @@ Flash Memory 在读取时，可以随机按字节进行读取，但是在写入�
 ### NOR Flash
 
 NOR Flash 根据与 CPU 端接口的不同，可以分为 Parallel NOR Flash 和 Serial NOR Flash 两类。
-Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，支持片上执行。而 Serial NOR Flash 则通过 SPI 接口与 Host 连接，
+Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，支持片上执行。Serial NOR Flash 的成本比 Parallel NOR Flash 低，主要通过 SPI 接口与 Host 连接。
 
 ### NAND Flash
 内部架构
