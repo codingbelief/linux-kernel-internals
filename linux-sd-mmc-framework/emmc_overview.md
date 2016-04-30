@@ -1,6 +1,6 @@
 # eMMC 简介
 
-eMMC 是 embedded MultiMediaCard 的简称。MultiMediaCard 是一种闪存卡（Flash Memory Card）标准，
+eMMC 是 embedded MultiMediaCard 的简称。MultiMediaCard，即 MMC， 是一种闪存卡（Flash Memory Card）标准，它定义了 MMC 
 
 ## Flash Memory
 ### NOR Flash
