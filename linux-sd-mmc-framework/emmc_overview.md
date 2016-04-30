@@ -47,9 +47,11 @@ Nand Flash 特性
 
 ### CPU Interfaces
 
+
 ## 附录
 ### 相关链接
 [NOR NAND Flash Guide: Selecting a Flash Storage Solution](https://www.micron.com/~/media/documents/products/product-flyer/flyer_nor_nand_flash_guide.pdf)
+[Common Flash Memory Interface](https://en.wikipedia.org/wiki/Common_Flash_Memory_Interface)
 [MICRON NOR Flash Technology](https://www.micron.com/products/nor-flash)
 [MICRON NAND Flash Technology](https://www.micron.com/products/nand-flash)
 [Wiki：闪存](https://zh.wikipedia.org/wiki/%E9%97%AA%E5%AD%98)
