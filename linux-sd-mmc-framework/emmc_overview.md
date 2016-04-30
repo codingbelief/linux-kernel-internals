@@ -16,6 +16,7 @@ Flash Memory 在读取时，可以随机按字节进行读取，但是在写入�
 
 ### NOR Flash
 
+
 内部架构
 cpu 接口
 特性
