@@ -18,6 +18,7 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 * NAND Flash 最大擦出次数比 NOR Flash 多；
 * NOR Flash 支持片上执行，可以在上面直接运行代码；
 * NOR Flash 软件驱动比 NAND Flash 简单；
+* NOR Flash 可以随机按字节读取数据，NAND Flash 需要按块进行读取。
 * 大容量下 NAND Flash 比 NOR Flash 成本要低很多，体积也更小；
 
 （注：擦除 NOR Flash 时是以 64～128KB 的块进行的，执行一个写入 / 擦除操作的时间为 5s，擦除 NAND Flash 是以 8～32KB 的块进行的，执行相同的操作最多只需要 4ms。）
