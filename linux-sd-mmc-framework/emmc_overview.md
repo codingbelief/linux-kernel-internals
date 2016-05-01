@@ -52,7 +52,7 @@ Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，支持片
 
 NAND Flash 根据每个存储单元内存储比特个数的不同，可以分为 SLC（Single-Level Cell）、MLC（Multi-Level Cell） 和 TLC（Triple-Level Cell） 三类。其中，在一个存储单元中，SLC 可以存储 1 个比特，MLC 可以存储 2 个比特，TLC 则可以存储 3 个比特。
 
-NAND Flash 的一个存储单元内部是通过不同的电压等级来表示其所存储的不同的比特的，
+NAND Flash 的一个存储单元内部是通过不同的电压等级来表示其所存储的不同的状态的，
 
 
 ### Flash Controller
