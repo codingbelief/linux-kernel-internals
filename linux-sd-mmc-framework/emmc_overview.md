@@ -30,6 +30,7 @@ Flash Memory 写入数据时有一定的限制。它只能将当前为 1 的比�
 
 2. 块擦除寿命有限
 
+
 ### NOR Flash
 
 NOR Flash 根据与 CPU 端接口的不同，可以分为 Parallel NOR Flash 和 Serial NOR Flash 两类。
