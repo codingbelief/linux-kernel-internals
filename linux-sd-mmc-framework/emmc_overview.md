@@ -68,7 +68,7 @@ Table 1
 
 ### Flash Controller
 
-
+由于 NAND Flash 存在的多种局限，eMMC 在其内部集成了 Flash Controller，用于完成擦写均衡、坏块管理、ECC校验等功能。
 
 ### CPU Interfaces
 
