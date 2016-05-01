@@ -10,7 +10,6 @@ eMMC 内部主要可以分为 Flash Memory、Flash Controller 以及 CPU Interfa
 ## Flash Memory
 
 Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用于存放系统、应用和数据等，类似与 PC 系统中的硬盘。
-
 根据硬件物理实现上的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类，主要的差异如下所示：
 
 * NAND Flash 读取速度与 NOR Flash 相近，根据接口的不同有所差异；
