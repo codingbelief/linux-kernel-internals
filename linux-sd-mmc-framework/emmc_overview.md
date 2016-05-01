@@ -28,6 +28,8 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 1. 需要先擦除再写入
 Flash Memory 写入数据时有一定的限制。它只能将当前为 1 的比特改写为 0，而无法将已经为 0 的比特改写为 1，只有在按块擦除的操作中，才能把整块的比特改写为 1。
 
+2. 块擦除寿命有限
+
 ### NOR Flash
 
 NOR Flash 根据与 CPU 端接口的不同，可以分为 Parallel NOR Flash 和 Serial NOR Flash 两类。
