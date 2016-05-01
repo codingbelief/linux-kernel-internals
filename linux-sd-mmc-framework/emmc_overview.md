@@ -62,7 +62,7 @@ Table 1
 | -- | -- | -- | -- |
 | 制造成本 | 30-35美元/32GB | 17美元/32GB | 9-12美元/32GB |
 | 擦写次数 | 10万次或更高 | 1万次或更高 | 5000次甚至更高 |
-| 存储单元 | 1bit/cel | 2bit/cel | 3bit/cel |
+| 存储单元 | 1bit/cell | 2bit/cell | 3bit/cell |
 
 ### Flash Controller
 
