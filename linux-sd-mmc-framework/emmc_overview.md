@@ -33,6 +33,8 @@ Flash Memory 的每个数据块都有擦除次数的限制（十万到百万次�
 
 为了最大化的延长 Flash Memory 的寿命，在软件上需要做块擦除均衡（wear leveling），通过分散写入、动态映射等手段均衡使用各个数据块。同时，软件还需要进行坏块管理（Bad Block Management，BBM），识别和标识坏块，不让坏块参与数据存储。
 
+3. 
+
 ### NOR Flash
 
 NOR Flash 根据与 CPU 端接口的不同，可以分为 Parallel NOR Flash 和 Serial NOR Flash 两类。
