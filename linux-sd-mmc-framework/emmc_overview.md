@@ -52,6 +52,8 @@ Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，支持片
 
 NAND Flash 根据每个存储单元内存储比特位个数的不同，可以分为 SLC、MLC 和 TLC 三类。
 
+
+
 ### Flash Controller
 
 ### CPU Interfaces
