@@ -66,4 +66,4 @@ Nand Flash 特性
 [MICRON NOR Flash Technology](https://www.micron.com/products/nor-flash)
 [MICRON NAND Flash Technology](https://www.micron.com/products/nand-flash)
 [Wiki：闪存](https://zh.wikipedia.org/wiki/%E9%97%AA%E5%AD%98)
-[Wiki: Flash File System](https://en.wikipedia.org/wiki/Flash_file_system)
+[Wiki：Flash File System](https://en.wikipedia.org/wiki/Flash_file_system)
