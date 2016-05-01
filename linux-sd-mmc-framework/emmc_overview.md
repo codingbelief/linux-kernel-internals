@@ -23,6 +23,7 @@ Flash Memory 的每个数据块都有擦除次数的限制（十万到百万次�
 
 3. 读取干扰
 
+
 根据硬件物理实现上的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类，主要的差异如下所示：
 
 * NAND Flash 读取速度与 NOR Flash 相近，根据接口的不同有所差异；
