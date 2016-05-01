@@ -64,7 +64,7 @@ Table 1
 | 擦写次数 | 10万次或更高 | 1万次或更高 | 5000次甚至更高 |
 | 存储单元 | 1bit / cell | 2bit / cell | 3bit / cell |
 
-相比于 NOR Flash，NAND Flash 写入性能好，大容量下成本低。目前，绝大部分手机和平板等移动设备中所使用的 Flash Memory 都属于 NAND Flash。PC 中的固态硬盘中也是使用了 NAND Flash。
+相比于 NOR Flash，NAND Flash 写入性能好，大容量下成本低。目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash。PC 中的固态硬盘中也是使用 NAND Flash。
 
 ### Flash Controller
 
