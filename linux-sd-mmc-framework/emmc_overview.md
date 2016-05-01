@@ -24,6 +24,11 @@ Flash Memory 的每个数据块都有擦除次数的限制（十万到百万次�
 3. 读写干扰
 由于硬件实现上的物理特性，Flash Memory 在进行读写操作时，有可能会导致邻近的其他比特发生位翻转，导致数据异常。这种异常可以通过重新擦除来恢复。软件上，通常使用 ECC 等算法进行检测和修正。
 
+5. 电荷泄漏
+存储在NAND FLASH存储单元的电荷，如果长期不使用，会发生电荷泄漏。不过这个时间比较长，一般十年左右。同样是非永久性损伤，擦除后Block还能使用。
+
+Copyright: www.ssdfans.com 闪存基础 版权所有，转载请注明来自 http://www.ssdfans.com/?p=45
+
 根据硬件物理实现上的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类，主要的差异如下所示：
 
 * NAND Flash 读取速度与 NOR Flash 相近，根据接口的不同有所差异；
