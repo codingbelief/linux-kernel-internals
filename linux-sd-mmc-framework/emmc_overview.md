@@ -68,3 +68,4 @@ Nand Flash 特性
 [Wiki：闪存](https://zh.wikipedia.org/wiki/%E9%97%AA%E5%AD%98)
 [Wiki：Flash File System](https://en.wikipedia.org/wiki/Flash_file_system)
 [Wear Leveling in Micron® NAND Flash Memory](https://www.micron.com/~/media/documents/products/technical-note/nand-flash/tn2961_wear_leveling_in_nand.pdf)
+[Understanding Flash: The Flash Translation Layer](https://flashdba.com/2014/09/17/understanding-flash-the-flash-translation-layer/)
