@@ -95,3 +95,4 @@ TODO： 添加 Host 直连和 eMMC 连接的对比图
 [Understanding Flash: The Flash Translation Layer](https://flashdba.com/2014/09/17/understanding-flash-the-flash-translation-layer/)
 [谈NAND Flash的底层结构和解析](http://blog.sina.com.cn/s/blog_4b4b54da01016rx3.html)
 [闪存基础](http://www.ssdfans.com/?p=45)
+[Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)
