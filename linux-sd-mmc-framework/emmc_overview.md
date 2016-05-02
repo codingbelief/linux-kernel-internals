@@ -80,7 +80,7 @@ TODO： 添加 Host 直连和 eMMC 连接的对比图
 
 ### Host Interface
 
-
+TODO： 添加 Host 与 eMMC 硬件连接图
 
 ## 附录
 ### 相关链接
