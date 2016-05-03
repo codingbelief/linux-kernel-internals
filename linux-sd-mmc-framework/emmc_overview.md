@@ -131,8 +131,8 @@ Multiple Block Write
 [NOR NAND Flash Guide: Selecting a Flash Storage Solution](https://www.micron.com/~/media/documents/products/product-flyer/flyer_nor_nand_flash_guide.pdf) [PDF]
 [Wiki: Common Flash Memory Interface](https://en.wikipedia.org/wiki/Common_Flash_Memory_Interface) [Web]
 [Quick Guide to Common Flash Interface](https://www.spansion.com/Support/Application%20Notes/Quick_Guide_to_CFI_AN.pdf) [PDF]
-[MICRON NOR Flash Technology](https://www.micron.com/products/nor-flash)
-[MICRON NAND Flash Technology](https://www.micron.com/products/nand-flash)
+[MICRON NOR Flash Technology](https://www.micron.com/products/nor-flash) [Web]
+[MICRON NAND Flash Technology](https://www.micron.com/products/nand-flash) [Web]
 [Wiki：闪存](https://zh.wikipedia.org/wiki/%E9%97%AA%E5%AD%98)
 [Wiki：Flash File System](https://en.wikipedia.org/wiki/Flash_file_system)
 [Wear Leveling in Micron® NAND Flash Memory](https://www.micron.com/~/media/documents/products/technical-note/nand-flash/tn2961_wear_leveling_in_nand.pdf)
