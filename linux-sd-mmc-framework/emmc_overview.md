@@ -97,6 +97,7 @@ TODO： 添加 Host 与 eMMC 硬件连接图
 用于传输数据的 8 bit 总线。
 
 
+
 ## 附录
 ### 相关链接
 [NOR NAND Flash Guide: Selecting a Flash Storage Solution](https://www.micron.com/~/media/documents/products/product-flyer/flyer_nor_nand_flash_guide.pdf)
