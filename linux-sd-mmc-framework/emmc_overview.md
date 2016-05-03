@@ -93,7 +93,8 @@ TODO： 添加 Host 与 eMMC 硬件连接图
 **CMD**  
 此信号用于发送 Host 的 command 和 Device 的 response。
 
-
+**DAT0-DAT7**  
+用于传输数据的 8 bit 总线。
 
 
 ## 附录
