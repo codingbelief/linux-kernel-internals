@@ -102,7 +102,7 @@ Host 与 eMMC 之间的通信都是 Host 以一个 Command 开始发起的。针
 Multiple Block Read
 
 ![Mulitple Block Write](multiple-block-write.png)
-Multiple Block Read
+Multiple Block Write
 
 
 ## 附录
