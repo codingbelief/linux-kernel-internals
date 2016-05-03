@@ -82,6 +82,8 @@ TODO： 添加 Host 直连和 eMMC 连接的对比图
 
 TODO： 添加 Host 与 eMMC 硬件连接图
 
+
+
 ## 附录
 ### 相关链接
 [NOR NAND Flash Guide: Selecting a Flash Storage Solution](https://www.micron.com/~/media/documents/products/product-flyer/flyer_nor_nand_flash_guide.pdf)
