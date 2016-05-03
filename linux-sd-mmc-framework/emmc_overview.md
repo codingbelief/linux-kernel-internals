@@ -76,6 +76,8 @@ Table 1
 
 ### eMMC 内部 Flash Memory 的分区
 
+eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
+
 
 
 ## Flash Controller
