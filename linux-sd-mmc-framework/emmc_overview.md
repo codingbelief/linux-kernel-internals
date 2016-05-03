@@ -79,7 +79,7 @@ Table 1
 eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
 
 1. BOOT Area Partition 1 & 2  
-  此分区主要是为了支持从 eMMC 启动系统而设计的。该分区的数据，在 eMMC 上电后，可以在不对 eMMC 做任何配置和初始化的情况下，通过很简单的协议就可以读取出来。
+  此分区主要是为了支持从 eMMC 启动系统而设计的。该分区的数据，在 eMMC 上电后，可以通过很简单的协议就可以读取出来。
   
 3. RPMB
 4. User Data Area
