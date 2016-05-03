@@ -13,6 +13,7 @@ eMMC 内部主要可以分为 Flash Memory、Flash Controller 以及 Host Interf
 Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用于存放系统、应用和数据等，类似与 PC 系统中的硬盘。
 
 ### Flash Memory 的主要特性
+
 与传统的硬盘相比，Flash Memory 具有质量轻、能耗低、体积小、抗震能力强等的优点，但也有不少局限性，如下所示：
 
 1. 需要先擦除再写入  
@@ -28,6 +29,8 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 
 5. 电荷泄漏  
   存储在 Flash Memory 存储单元的电荷，如果长期没有使用，会发生电荷泄漏，导致数据错误。不过这个时间比较长，一般十年左右。此种异常是非永久性的，重新擦除可以恢复。
+
+### Flash Memory 的主要特性
 
 根据硬件物理实现上的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类，主要的差异如下所示：
 
