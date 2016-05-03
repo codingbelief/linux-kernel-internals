@@ -87,6 +87,7 @@ TODO： 添加 Host 与 eMMC 硬件连接图
 **CLK**  
 用于同步的时钟信号
 
+**Data Strobe**  
 
 
 
