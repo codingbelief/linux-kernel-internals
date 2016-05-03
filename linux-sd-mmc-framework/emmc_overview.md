@@ -82,6 +82,7 @@ TODO： 添加 Host 直连和 eMMC 连接的对比图
 
 TODO： 添加 Host 与 eMMC 硬件连接图
 
+各个信号的用途如下表所示：
 
 
 ## 附录
