@@ -128,9 +128,9 @@ Multiple Block Write
 
 ## 附录
 ### 相关链接
-[NOR NAND Flash Guide: Selecting a Flash Storage Solution](https://www.micron.com/~/media/documents/products/product-flyer/flyer_nor_nand_flash_guide.pdf)
-[Common Flash Memory Interface](https://en.wikipedia.org/wiki/Common_Flash_Memory_Interface)
-[Quick Guide to Common Flash Interface](https://www.spansion.com/Support/Application%20Notes/Quick_Guide_to_CFI_AN.pdf)
+[NOR NAND Flash Guide: Selecting a Flash Storage Solution](https://www.micron.com/~/media/documents/products/product-flyer/flyer_nor_nand_flash_guide.pdf) [PDF]
+[Wiki: Common Flash Memory Interface](https://en.wikipedia.org/wiki/Common_Flash_Memory_Interface) [Web]
+[Quick Guide to Common Flash Interface](https://www.spansion.com/Support/Application%20Notes/Quick_Guide_to_CFI_AN.pdf) [PDF]
 [MICRON NOR Flash Technology](https://www.micron.com/products/nor-flash)
 [MICRON NAND Flash Technology](https://www.micron.com/products/nand-flash)
 [Wiki：闪存](https://zh.wikipedia.org/wiki/%E9%97%AA%E5%AD%98)
