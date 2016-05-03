@@ -90,6 +90,11 @@ TODO： 添加 Host 与 eMMC 硬件连接图
 **Data Strobe**  
 此信号是从 Device 端输出的时钟信号，频率和 CLK 信号相同，用于同步从 Device 端输出的数据。
 
+**CMD**  
+此信号用于发送 Host 的 command 和 Device 的 response。
+
+
+
 
 ## 附录
 ### 相关链接
