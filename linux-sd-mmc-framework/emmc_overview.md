@@ -4,7 +4,7 @@ eMMC 是 embedded MultiMediaCard 的简称。MultiMediaCard，即 MMC， 是一�
 
 eMMC 的整体架构如图片 1 所示：
 
-![](emmc_architecture.png)
+![](emmc_architecture.png)  
 图片 1： eMMC 整体架构
 
 eMMC 内部主要可以分为 Flash Memory、Flash Controller 以及 Host Interface 三大部分，后续的章节将会对这三个部分进行详细介绍。
