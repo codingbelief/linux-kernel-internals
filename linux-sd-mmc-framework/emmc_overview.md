@@ -101,6 +101,8 @@ Host 与 eMMC 之间的通信都是 Host 以一个 Command 开始发起的。针
 
 
 
+
+
 ## 附录
 ### 相关链接
 [NOR NAND Flash Guide: Selecting a Flash Storage Solution](https://www.micron.com/~/media/documents/products/product-flyer/flyer_nor_nand_flash_guide.pdf)
