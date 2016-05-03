@@ -74,7 +74,7 @@ Table 1
 
 相比于 NOR Flash，NAND Flash 写入性能好，大容量下成本低。目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash。PC 中的固态硬盘中也是使用 NAND Flash。
 
-### eMMC 内部 Flash Memory 的分区
+### eMMC 内部 Flash Memory 的分区 
 
 eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
 
