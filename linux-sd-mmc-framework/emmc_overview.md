@@ -85,6 +85,7 @@ TODO： 添加 eMMC 分区图
   
 3. RPMB Partition
   RPMB 是 Replay Protected Memory Block 的简称，它通过 RSA 和 Write Counter 来保证保存在 RPMB 内部的数据不被非法篡改。
+  
 
 4. User Data Area
 
