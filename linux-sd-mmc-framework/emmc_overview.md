@@ -89,6 +89,7 @@ TODO： 添加 eMMC 分区图
   在实际应用中，RPMB 分区通常用来保存安全相关的数据，例如指纹数据、安全支付相关的密钥等。
 
 3. User Data Area
+  此分区则主要用于存储系统和用户数据。
   
 ## Flash Controller
 
