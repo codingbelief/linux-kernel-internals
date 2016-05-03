@@ -79,6 +79,7 @@ Table 1
 eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
 
 1. BOOT Area Partition 1  
+  
 
 2. BOOT Area Partition 2
 3. RPMB
