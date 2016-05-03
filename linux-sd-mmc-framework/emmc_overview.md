@@ -88,7 +88,7 @@ TODO： 添加 eMMC 分区图
   RPMB 是 Replay Protected Memory Block 的简称，它通过 RSA 和 Write Counter 来保证保存在 RPMB 内部的数据不被非法篡改。  
   在实际应用中，RPMB 分区通常用来保存安全相关的数据，例如指纹数据、安全支付相关的密钥等。
 
-3. User Data Area
+3. User Data Area  
   此分区则主要用于存储系统和用户数据。
   
 ## Flash Controller
