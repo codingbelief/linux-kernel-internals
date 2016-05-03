@@ -4,7 +4,7 @@ eMMC 是 embedded MultiMediaCard 的简称。MultiMediaCard，即 MMC， 是一�
 
 eMMC 的整体架构如图片 1 所示：
 
-  
+![](emmc_architecture.png)  
 图片 1： eMMC 整体架构
 
 eMMC 内部主要可以分为 Flash Memory、Flash Controller 以及 Host Interface 三大部分，后续的章节将会对这三个部分进行详细介绍。
@@ -78,7 +78,6 @@ Table 1
 ### 1.3 eMMC 内部 Flash Memory 的分区 
 
 eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
-
 TODO： 添加 eMMC 分区图
 
 1. BOOT Area Partition 1 & 2  
@@ -96,7 +95,8 @@ TODO： 添加 eMMC 分区图
 
 由于 NAND Flash 存在的多种局限，eMMC 在其内部集成了 Flash Controller，用于完成擦写均衡、坏块管理、ECC校验等功能。相比于直接将 NAND Flash 接入到 Host 端，可以减少 Host 端软件的复杂度，让 Host 端专注于上层业务，省去对 NAND Flash 进行特殊的处理。
 
-TODO： 添加 Host 直连和 eMMC 连接的对比图
+
+
 
 在某些 eMMC 中，Flash Controller 还会完成一些特殊的工作。例如，一个 16GB 的 TLC eMMC，在出厂后， 先让内部的 NAND Flash 处于 SLC 状态，这样可以在初期获得较好的性能。当达到一定条件后（eg. 使用了总存储容量的 1/3 时），Flash Controller 将 NAND Flash 切换到 TLC 状态，以确保能够达到标称的数据存储容量。这种 NAND Flash 状态的切换，由 Flash Controller 进行，对于 Host 来说，是完全透明的。
 
