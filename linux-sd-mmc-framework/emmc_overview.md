@@ -104,7 +104,9 @@ eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
 
 ## 3. Host Interface
 
-TODO： 添加 Host 与 eMMC 硬件连接图
+eMMC 与 Host 之间的连接如下图所示：
+
+![](emmc_host_interfaces.png)
 
 各个信号的用途如下所示：
 
