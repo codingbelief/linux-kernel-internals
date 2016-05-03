@@ -78,7 +78,8 @@ Table 1
 ### 1.3 eMMC 内部 Flash Memory 的分区 
 
 eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
-TODO： 添加 eMMC 分区图
+
+![](emmc_partitions.png)
 
 1. BOOT Area Partition 1 & 2  
   此分区主要是为了支持从 eMMC 启动系统而设计的。  
