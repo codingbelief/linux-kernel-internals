@@ -8,11 +8,11 @@ TODO： eMMC 的整体架构图
 
 eMMC 内部主要可以分为 Flash Memory、Flash Controller 以及 Host Interface 三大部分，后续的章节将会对这三个部分进行详细介绍。
 
-## Flash Memory
+## 1. Flash Memory
 
 Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用于存放系统、应用和数据等，类似与 PC 系统中的硬盘。
 
-### Flash Memory 的主要特性
+### 1.1 Flash Memory 的主要特性
 
 与传统的硬盘相比，Flash Memory 具有质量轻、能耗低、体积小、抗震能力强等的优点，但也有不少局限性，如下所示：
 
@@ -30,7 +30,7 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 5. 电荷泄漏  
   存储在 Flash Memory 存储单元的电荷，如果长期没有使用，会发生电荷泄漏，导致数据错误。不过这个时间比较长，一般十年左右。此种异常是非永久性的，重新擦除可以恢复。
 
-### Flash Memory 类型
+### 1.2 Flash Memory 类型
 
 根据硬件物理实现上的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类，主要的差异如下所示：
 
@@ -46,7 +46,7 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 （注：擦除 NOR Flash 时是以 64～128KB 的块进行的，执行一个写入 / 擦除操作的时间为 5s，擦除 NAND Flash 是以 8～32KB 的块进行的，执行相同的操作最多只需要 4ms。）
 
 
-#### NOR Flash
+#### 1.2.1 NOR Flash
 
 NOR Flash 根据与 CPU 端接口的不同，可以分为 Parallel NOR Flash 和 Serial NOR Flash 两类。
 Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，支持片上执行。Serial NOR Flash 的成本比 Parallel NOR Flash 低，主要通过 SPI 接口与 Host 连接。
@@ -55,7 +55,7 @@ TODO： Parallel 和 Serial NOR Flash 的对比图
 
 鉴于 NOR Flash 擦写速度慢，成本高等特性，NOR Flash 主要应用于小容量、内容更新少的场景，例如 PC 主板 BIOS、路由器系统存储等。
 
-#### NAND Flash
+#### 1.2.2 NAND Flash
 
 NAND Flash 根据每个存储单元内存储比特个数的不同，可以分为 SLC（Single-Level Cell）、MLC（Multi-Level Cell） 和 TLC（Triple-Level Cell） 三类。其中，在一个存储单元中，SLC 可以存储 1 个比特，MLC 可以存储 2 个比特，TLC 则可以存储 3 个比特。
 
@@ -74,7 +74,7 @@ Table 1
 
 相比于 NOR Flash，NAND Flash 写入性能好，大容量下成本低。目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash。PC 中的固态硬盘中也是使用 NAND Flash。
 
-### eMMC 内部 Flash Memory 的分区 
+### 2. eMMC 内部 Flash Memory 的分区 
 
 eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
 
@@ -91,7 +91,7 @@ TODO： 添加 eMMC 分区图
 3. User Data Area Partition  
   此分区则主要用于存储系统和用户数据。
   
-## Flash Controller
+## 3. Flash Controller
 
 由于 NAND Flash 存在的多种局限，eMMC 在其内部集成了 Flash Controller，用于完成擦写均衡、坏块管理、ECC校验等功能。相比于直接将 NAND Flash 接入到 Host 端，可以减少 Host 端软件的复杂度，让 Host 端专注于上层业务，省去对 NAND Flash 进行特殊的处理。
 
@@ -99,7 +99,7 @@ TODO： 添加 Host 直连和 eMMC 连接的对比图
 
 在某些 eMMC 中，Flash Controller 还会完成一些特殊的工作。例如，一个 16GB 的 TLC eMMC，在出厂后， 先让内部的 NAND Flash 处于 SLC 状态，这样可以在初期获得较好的性能。当达到一定条件后（eg. 使用了总存储容量的 1/3 时），Flash Controller 将 NAND Flash 切换到 TLC 状态，以确保能够达到标称的数据存储容量。这种 NAND Flash 状态的切换，由 Flash Controller 进行，对于 Host 来说，是完全透明的。
 
-## Host Interface
+## 4. Host Interface
 
 TODO： 添加 Host 与 eMMC 硬件连接图
 
