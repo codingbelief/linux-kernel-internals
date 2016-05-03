@@ -96,7 +96,10 @@ TODO： 添加 Host 与 eMMC 硬件连接图
 **DAT0-DAT7**  
 用于传输数据的 8 bit 总线。
 
-Host 与 eMMC 之间的通信都是 Host 以一个 Command 开始发起的。针对不同的 Command，Device 会做出不同的响应。
+Host 与 eMMC 之间的通信都是 Host 以一个 Command 开始发起的。针对不同的 Command，Device 会做出不同的响应。下面图片是 Host 进行 Multiple-block read/write 的时序图
+
+
+
 
 ## 附录
 ### 相关链接
