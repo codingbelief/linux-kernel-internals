@@ -106,7 +106,7 @@ eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
 
 eMMC 与 Host 之间的连接如下图所示：
 
-![](emmc_host_interfaces.png)
+![](emmc_host_interfaces.png)  
 **图片 3：eMMC Interface**
 
 各个信号的用途如下所示：
