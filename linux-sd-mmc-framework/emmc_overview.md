@@ -120,7 +120,7 @@ eMMC 与 Host 之间的连接如下图所示：
 **CMD**  
 此信号用于发送 Host 的 command 和 Device 的 response。
 
-**DAT0-DAT7**  
+**DAT0-7**  
 用于传输数据的 8 bit 总线。
 
 Host 与 eMMC 之间的通信都是 Host 以一个 Command 开始发起的。针对不同的 Command，Device 会做出不同的响应。下面图片是 Host 进行 Multiple-block read/write 的时序图。更多详细的协议细节请参考 eMMC 5.1 协议标准[12]。
