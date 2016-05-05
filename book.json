@@ -1,8 +1,11 @@
 {
-    "plugins": ["disqus","-splitter",,"ga","sitemap"],
+    "plugins": ["disqus","-splitter","ga","sitemap"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "codingbelief-gitbook"
+        },
+        "ga": {
+            "token": "UA-73815411-1"
         },
         "sitemap": {
             "hostname": "http://linux.codingbelief.com/"
