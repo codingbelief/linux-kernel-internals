@@ -1,8 +1,11 @@
 {
-    "plugins": ["disqus","-splitter"],
+    "plugins": ["disqus","-splitter"，"sitemap"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "codingbelief-gitbook"
+        }，
+                "sitemap": {
+            "hostname": "http://armv8-ref.codingbelief.com/"
         }
     }
 }
