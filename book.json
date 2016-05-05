@@ -3,8 +3,8 @@
     "pluginsConfig": {
         "disqus": {
             "shortName": "codingbelief-gitbook"
-        }，
-                "sitemap": {
+        },
+        "sitemap": {
             "hostname": "http://armv8-ref.codingbelief.com/"
         }
     }
