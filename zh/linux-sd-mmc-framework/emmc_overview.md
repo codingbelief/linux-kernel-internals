@@ -74,7 +74,7 @@ Table 1
 | -- | -- | -- | -- |
 | 制造成本 | 30-35 美元 / 32GB | 17 美元 / 32GB | 9-12 美元 / 32GB |
 | 擦写次数 | 10万次或更高 | 1万次或更高 | 5000次甚至更高 |
-| 存储单元 | 1bit / cell | 2bit / cell | 3bit / cell |
+| 存储单元 | 1 bit / cell | 2 bits / cell | 3 bits / cell |
 （注：以上数据来源于互联网，仅供参考）
 
 相比于 NOR Flash，NAND Flash 写入性能好，大容量下成本低。目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash。PC 中的固态硬盘中也是使用 NAND Flash。
