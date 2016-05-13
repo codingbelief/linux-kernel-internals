@@ -127,10 +127,10 @@ eMMC 与 Host 之间的连接如下图所示：
 Host 与 eMMC 之间的通信都是 Host 以一个 Command 开始发起的。针对不同的 Command，Device 会做出不同的响应。下面图片是 Host 进行 Multiple-block read/write 的时序图。更多详细的协议细节请参考 eMMC 5.1 协议标准[12]。
 
 ![Multiple Block Read](multiple-block-read.png)
-Multiple Block Read
+**Multiple Block Read**
 
 ![Mulitple Block Write](multiple-block-write.png)
-Multiple Block Write
+**Multiple Block Write**
 
 
 ## 4. 参考资料
