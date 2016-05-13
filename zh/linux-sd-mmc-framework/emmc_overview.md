@@ -63,6 +63,9 @@ NAND Flash 根据每个存储单元内存储比特个数的不同，可以分为
 
 NAND Flash 的一个存储单元内部，是通过不同的电压等级，来表示其所存储的信息的。在 SLC 中，存储单元的电压被分为两个等级，分别表示 0 和 1 两个状态，即 1 个比特。在 MLC 中，存储单元的电压则被分为 4 个等级，分别表示 00 01 10 11 四个状态，即 2 个比特位。同理，在 TLC 中，存储单元的电压被分为 8 个等级，存储 3 个比特信息。
 
+![](slc_mlc_tlc.png)  
+**图片 3： SLC、MLC 与 TLC**
+
 NAND Flash 的单个存储单元存储的比特位越多，读写性能会越差，寿命也越短，但是成本会更低。Table 1 中，给出了特定工艺和技术水平下的成本和寿命数据。
 
 Table 1  
@@ -81,7 +84,7 @@ Table 1
 eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
 
 ![](emmc_partitions.png)  
-**图片 3：eMMC 内部分区**
+**图片 4：eMMC 内部分区**
 
 1. BOOT Area Partition 1 & 2  
   此分区主要是为了支持从 eMMC 启动系统而设计的。  
@@ -99,7 +102,7 @@ eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
 由于 NAND Flash 存在的多种局限，eMMC 在其内部集成了 Flash Controller，用于完成擦写均衡、坏块管理、ECC校验等功能。相比于直接将 NAND Flash 接入到 Host 端，可以减少 Host 端软件的复杂度，让 Host 端专注于上层业务，省去对 NAND Flash 进行特殊的处理。
 
 ![](emmc_vs_nand_flash.png)  
-**图片 4：NAND Flash 与 eMMC**
+**图片 5：NAND Flash 与 eMMC**
 
 在某些 eMMC 中，Flash Controller 还会完成一些特殊的工作。例如，一个 16GB 的 TLC eMMC，在出厂后， 先让内部的 NAND Flash 处于 SLC 状态，这样可以在初期获得较好的性能。当达到一定条件后（eg. 使用了总存储容量的 1/3 时），Flash Controller 将 NAND Flash 切换到 TLC 状态，以确保能够达到标称的数据存储容量。这种 NAND Flash 状态的切换，由 Flash Controller 进行，对于 Host 来说，是完全透明的。
 
@@ -108,7 +111,7 @@ eMMC 在内部对 Flash Memory 划分了几个区域，如下图所示：
 eMMC 与 Host 之间的连接如下图所示：
 
 ![](emmc_host_interfaces.png)  
-**图片 5：eMMC Interface**
+**图片 6：eMMC Interface**
 
 各个信号的用途如下所示：
 
