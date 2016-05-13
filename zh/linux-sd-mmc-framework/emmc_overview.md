@@ -44,7 +44,7 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 * NOR Flash 可以随机按字节读取数据，NAND Flash 需要按块进行读取。
 * 大容量下 NAND Flash 比 NOR Flash 成本要低很多，体积也更小；
 
-（注：NOR Flash 和 NAND Flash 的擦除都是按块块进行的，执行一个写入 / 擦除操作，NOR Flash 大约需要 5s，而 NAND Flash 最多只需要 4ms。）
+（注：NOR Flash 和 NAND Flash 的擦除都是按块块进行的，执行一个写入 / 擦除操作，NOR Flash 大约需要 5s，而 NAND Flash 通常不超过 4ms。）
 
 
 #### 1.2.1 NOR Flash
