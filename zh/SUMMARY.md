@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Storage](storage/overview.md)
+* [Storage](storage/index.md)
    * [Flash Memory](storage/flash_memory/overview.md)
        * Raw Flash
        * [eMMC](storage/flash_memory/emmc/overview.md)
