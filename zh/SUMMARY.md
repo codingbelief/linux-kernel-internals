@@ -5,7 +5,7 @@
    * [Flash Memory](storage/flash_memory/overview.md)
        * NOR Flash
        * NAND Flash
-       * eMMC
+       * [eMMC](storage/flash_memory/emmc/overview.md)
        * UFS
        * SD Card
 * [Linux SD/MMC Framework](linux-sd-mmc-framework/introduction.md)
