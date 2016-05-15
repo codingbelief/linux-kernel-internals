@@ -4,7 +4,7 @@
 * [Storage](storage/index.md)
    * [Flash Memory](storage/flash_memory/index.md)
        * Raw Flash
-       * [eMMC](storage/flash_memory/emmc/overview.md)
+       * [eMMC](storage/flash_memory/emmc/index.md)
        * UFS
        * SD Card
 * [Linux SD/MMC Framework](linux-sd-mmc-framework/introduction.md)
