@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Storage](storage/index.md)
-   * [Flash Memory](storage/flash_memory/overview.md)
+   * [Flash Memory](storage/flash_memory/index.md)
        * Raw Flash
        * [eMMC](storage/flash_memory/emmc/overview.md)
        * UFS
