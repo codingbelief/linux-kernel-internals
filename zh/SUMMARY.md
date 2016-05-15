@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Storage](storage.md)
+* [Storage](storage/overview.md)
    * Flash Memory
 * [Linux SD/MMC Framework](linux-sd-mmc-framework/introduction.md)
    * [eMMC 简介](linux-sd-mmc-framework/emmc_overview.md)
