@@ -7,7 +7,7 @@ NOR Flash 根据与 CPU 端接口的不同，可以分为 Parallel NOR Flash 和
 Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，支持片上执行。Serial NOR Flash 的成本比 Parallel NOR Flash 低，主要通过 SPI 接口与 Host 连接。
 
 ![](parallel_vs_serial.png)  
-**图片 2： Parallel NOR Flash 与 Serial NOR Flash**
+**图片： Parallel NOR Flash 与 Serial NOR Flash**
 
 鉴于 NOR Flash 擦写速度慢，成本高等特性，NOR Flash 主要应用于小容量、内容更新少的场景，例如 PC 主板 BIOS、路由器系统存储等。
 
@@ -18,7 +18,7 @@ NAND Flash 根据每个存储单元内存储比特个数的不同，可以分为
 NAND Flash 的一个存储单元内部，是通过不同的电压等级，来表示其所存储的信息的。在 SLC 中，存储单元的电压被分为两个等级，分别表示 0 和 1 两个状态，即 1 个比特。在 MLC 中，存储单元的电压则被分为 4 个等级，分别表示 00 01 10 11 四个状态，即 2 个比特位。同理，在 TLC 中，存储单元的电压被分为 8 个等级，存储 3 个比特信息。
 
 ![](slc_mlc_tlc.png)  
-**图片 3： SLC、MLC 与 TLC**
+**图片： SLC、MLC 与 TLC**
 
 NAND Flash 的单个存储单元存储的比特位越多，读写性能会越差，寿命也越短，但是成本会更低。Table 1 中，给出了特定工艺和技术水平下的成本和寿命数据。
 
