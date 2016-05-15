@@ -1,2 +1,2 @@
-# Raw Flash
+# Raw Flash - NOR and NAND
 
