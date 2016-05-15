@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 * [Storage](storage/overview.md)
    * [Flash Memory](storage/flash_memory/overview.md)
-       * NOR Flash
        * NAND Flash
        * [eMMC](storage/flash_memory/emmc/overview.md)
        * UFS
