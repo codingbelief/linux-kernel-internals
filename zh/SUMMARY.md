@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Storage](storage/index.md)
    * [Flash Memory](storage/flash_memory/index.md)
-       * [Raw Flash](storage/flash_memory/raw_flash/index.md)
+       * [Raw Flash - NOR and NAND](storage/flash_memory/raw_flash/index.md)
        * [eMMC](storage/flash_memory/emmc/index.md)
        * UFS
        * SD Card
