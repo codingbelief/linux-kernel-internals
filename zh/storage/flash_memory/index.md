@@ -22,6 +22,18 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 ## Flash Memory 类型
 
 根据硬件上存储原理的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类。 
+主要的差异如下所示：
+
+* NAND Flash 读取速度与 NOR Flash 相近，根据接口的不同有所差异；
+* NAND Flash 的写入速度比 NOR Flash 快很多；
+* NAND Flash 的擦除速度比 NOR Flash 快很多；
+* NAND Flash 最大擦次数比 NOR Flash 多；
+* NOR Flash 支持片上执行，可以在上面直接运行代码；
+* NOR Flash 软件驱动比 NAND Flash 简单；
+* NOR Flash 可以随机按字节读取数据，NAND Flash 需要按块进行读取。
+* 大容量下 NAND Flash 比 NOR Flash 成本要低很多，体积也更小；
+
+（注：NOR Flash 和 NAND Flash 的擦除都是按块块进行的，执行一个擦除或者写入操作时，NOR Flash 大约需要 5s，而 NAND Flash 通常不超过 4ms。）
 
 ### NOR Flash
 
