@@ -21,7 +21,7 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
   
 ## Flash Memory 类型
 
-根据硬件上存储原理实现的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类。 
+根据硬件上存储原理的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类。 
 
 根据对 Host 端提供的接口的差异，Flash Memory 又可以分为 Raw Flash、eMMC、UFS、SD Card 等类型。  
 
