@@ -35,3 +35,5 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 （注：NOR Flash 和 NAND Flash 的擦除都是按块块进行的，执行一个擦除或者写入操作时，NOR Flash 大约需要 5s，而 NAND Flash 通常不超过 4ms。）
 
 更多 NOR Flash 和 NAND Flash 的细节，可以参考 [Raw Flash](./raw_flash/index.html) 章节。
+
+根据对 Host 端提供的接口的差异，Flash Memory 又可以分为 Raw Flash、eMMC、UFS、SD Card 等类型。
