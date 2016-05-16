@@ -73,9 +73,10 @@ NAND Flash 的单个存储单元存储的比特位越多，读写性能会越差
 
 在具体实现中，根据 FTL 所在的位置的不同，可以把 Flash Memory 分为 Raw Flash 和 Managed Flash 两类。
 
-**Raw Flash**
-
 ![](raw_vs_managed_flash.png)
+
+
+**Raw Flash**
 
 
 
