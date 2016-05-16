@@ -1,6 +1,6 @@
 # Flash Memory
 
-Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用于存放系统、应用和数据等，类似与 PC 系统中的硬盘。
+Flash Memory 是一种非易失性的存储器，在嵌入式系统中用于存放系统、应用和数据等，在 PC 系统中，则用在固态硬盘以及主板 BIOS 中。
 
 ## Flash Memory 的主要特性
 
