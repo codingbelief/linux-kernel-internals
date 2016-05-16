@@ -69,7 +69,8 @@ NAND Flash 的单个存储单元存储的比特位越多，读写性能会越差
 
 ## Flash Memory 应用
 
-由于 Flash Memory 存在按块擦写、擦写次数的限制、读写干扰、电荷泄露等的局限，为了最大程度的发挥 Flash Memory 的价值，通常需要有一个特殊的软件层次，实现坏块管理、擦写均衡、ECC、垃圾回收等的功能，这一个软件层次成为 FTL（Flash Translation Layer）。
+由于 Flash Memory 存在按块擦写、擦写次数的限制、读写干扰、电荷泄露等的局限，为了最大程度的发挥 Flash Memory 的价值，通常需要有一个特殊的软件层次，实现坏块管理、擦写均衡、ECC、垃圾回收等的功能，这一个软件层次成为 FTL（Flash Translation Layer）。  
+
 
 ![](raw_vs_managed_flash.png)
 
