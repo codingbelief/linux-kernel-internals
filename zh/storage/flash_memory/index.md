@@ -69,7 +69,9 @@ NAND Flash 的单个存储单元存储的比特位越多，读写性能会越差
 
 ## Flash Memory 应用
 
+由于 Flash Memory 存在擦鞋次数的限制、读写干扰、电荷泄露等的局限，
 
+![](raw_vs_managed_flash.png)
 
 
 
