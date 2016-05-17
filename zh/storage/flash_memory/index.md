@@ -89,3 +89,6 @@ NAND Flash 的单个存储单元存储的比特位越多，读写性能会越差
 **Managed Flash**  
 Managed Flash 在其内部集成了 Flash Controller，用于完成擦写均衡、坏块管理、ECC校验等功能。相比于直接将 Flash 接入到 Host 端，Managed Flash 屏蔽了 Flash 的物理特性，对 Host 提供标准化的接口，可以减少 Host 端软件的复杂度，让 Host 端专注于上层业务，省去对 Flash 进行特殊的处理。  
 eMMC、SDCard、U 盘等产品是属于 Managed Flash 这一类。
+
+## 参考资料
+
