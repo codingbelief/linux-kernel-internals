@@ -50,7 +50,8 @@ Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，所存储
 
 NAND Flash 需要通过专门的 NFI（NAND Flash Interface）与 Host 端进行通信，如下图所示： 
 
-![](nand_flash_interface.png)
+![](nand_flash_interface.png)  
+**图：NAND Flash Interface**  
 
 NAND Flash 根据每个存储单元内存储比特个数的不同，可以分为 SLC（Single-Level Cell）、MLC（Multi-Level Cell） 和 TLC（Triple-Level Cell） 三类。其中，在一个存储单元中，SLC 可以存储 1 个比特，MLC 可以存储 2 个比特，TLC 则可以存储 3 个比特。
 
