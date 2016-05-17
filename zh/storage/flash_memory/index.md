@@ -92,3 +92,4 @@ eMMC、SDCard、U 盘等产品是属于 Managed Flash 这一类。
 
 ## 参考资料
 
+[Open NAND Flash Interface (ONFI)](http://www.onfi.org/)
