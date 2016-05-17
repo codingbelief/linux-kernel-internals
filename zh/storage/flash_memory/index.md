@@ -40,13 +40,17 @@ Flash Memory 是一种非易失性的存储器。在嵌入式系统中通常用�
 NOR Flash 根据与 CPU 端接口的不同，可以分为 Parallel NOR Flash 和 Serial NOR Flash 两类。  
 Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，所存储的内容可以直接映射到 CPU 地址空间，不需要拷贝到 RAM 中即可被 CPU 访问，因而支持片上执行。Serial NOR Flash 的成本比 Parallel NOR Flash 低，主要通过 SPI 接口与 Host 连接。
 
-  
+![](nor_flash_interface.png)  
 **图片： Parallel NOR Flash 与 Serial NOR Flash**
 
 鉴于 NOR Flash 擦写速度慢，成本高等特性，NOR Flash 主要应用于小容量、内容更新少的场景，例如 PC 主板 BIOS、路由器系统存储等。
 的主要特性
 
 ### NAND Flash
+
+NAND Flash 需要通过专门的 NFI（NAND Flash Interface）与 Host 端进行通信。 
+
+![](nand_flash_interface.png)
 
 NAND Flash 根据每个存储单元内存储比特个数的不同，可以分为 SLC（Single-Level Cell）、MLC（Multi-Level Cell） 和 TLC（Triple-Level Cell） 三类。其中，在一个存储单元中，SLC 可以存储 1 个比特，MLC 可以存储 2 个比特，TLC 则可以存储 3 个比特。
 
