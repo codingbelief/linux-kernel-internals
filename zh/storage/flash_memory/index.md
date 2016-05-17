@@ -48,7 +48,7 @@ Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，所存储
 
 ### NAND Flash
 
-NAND Flash 需要通过专门的 NFI（NAND Flash Interface）与 Host 端进行通信。 
+NAND Flash 需要通过专门的 NFI（NAND Flash Interface）与 Host 端进行通信，如下图所示： 
 
 ![](nand_flash_interface.png)
 
