@@ -1,4 +1,4 @@
-# Flash Memory
+# Flash Memory 简介
 
 Flash Memory 是一种非易失性的存储器。在嵌入式系统中通常用于存放系统、应用和数据等。在 PC 系统中，则主要用在固态硬盘以及主板 BIOS 中。另外，绝大部分的 U 盘、SDCard 等移动存储设备也都是使用 Flash Memory 作为存储介质。
 
@@ -19,7 +19,7 @@ Flash Memory 是一种非易失性的存储器。在嵌入式系统中通常用�
 4. 电荷泄漏  
   存储在 Flash Memory 存储单元的电荷，如果长期没有使用，会发生电荷泄漏，导致数据错误。不过这个时间比较长，一般十年左右。此种异常是非永久性的，重新擦除可以恢复。
   
-## Flash Memory 类型
+## NOR Flash 和 NAND Flash
 
 根据硬件上存储原理的不同，Flash Memory 主要可以分为 NOR Flash 和 NAND Flash 两类。 
 主要的差异如下所示：
@@ -67,14 +67,14 @@ NAND Flash 的单个存储单元存储的比特位越多，读写性能会越差
 
 相比于 NOR Flash，NAND Flash 写入性能好，大容量下成本低。目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash。PC 中的固态硬盘中也是使用 NAND Flash。
 
-## Flash Memory 应用
+## Raw Flash 和 Managed Flash
 
 由于 Flash Memory 存在按块擦写、擦写次数的限制、读写干扰、电荷泄露等的局限，为了最大程度的发挥 Flash Memory 的价值，通常需要有一个特殊的软件层次，实现坏块管理、擦写均衡、ECC、垃圾回收等的功能，这一个软件层次称为 FTL（Flash Translation Layer）。  
 
 在具体实现中，根据 FTL 所在的位置的不同，可以把 Flash Memory 分为 Raw Flash 和 Managed Flash 两类。
 
 ![](raw_vs_managed_flash.png)
-
+**图片： Raw Flash 和 Managed Flash**
 
 **Raw Flash**
 在此类应用中，在 Host 端通常有专门的 FTL 或者 Flash 文件系统来实现坏块管理、擦写均衡等的功能。Host 端的软件复杂度较高，但是整体方案的成本较低，常用于价格敏感的嵌入式产品中。  
