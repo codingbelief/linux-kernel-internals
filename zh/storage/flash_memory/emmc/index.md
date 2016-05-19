@@ -15,6 +15,10 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 
 目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash，关于 NAND Flash 的更多细节可以参考 [Flash Memory](../index.html) 章节。
 
+eMMC 在内部对 Flash Memory 划分了几个主要区域，如下图所示：
+
+![](emmc_partitions.png)  
+**图片：eMMC 内部分区**
 
 
 ## Flash Controller
