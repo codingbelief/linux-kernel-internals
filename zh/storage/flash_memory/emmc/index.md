@@ -24,8 +24,6 @@ eMMC 则在其内部集成了 Flash Controller，用于完成擦写均衡、坏�
 ![](emmc_vs_nand_flash.png)  
 **图片 5：NAND Flash 与 eMMC**
 
-在某些 eMMC 中，Flash Controller 还会完成一些特殊的工作。例如，一个 16GB 的 TLC eMMC，在出厂后， 先让内部的 NAND Flash 处于 SLC 状态，这样可以在初期获得较好的性能。当达到一定条件后（eg. 使用了总存储容量的 1/3 时），Flash Controller 将 NAND Flash 切换到 TLC 状态，以确保能够达到标称的数据存储容量。这种 NAND Flash 状态的切换，由 Flash Controller 进行，对于 Host 来说，是完全透明的。
-
 ## 3. Host Interface
 
 eMMC 与 Host 之间的连接如下图所示：
