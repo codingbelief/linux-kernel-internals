@@ -24,7 +24,7 @@ eMMC 则在其内部集成了 Flash Controller，用于完成擦写均衡、坏�
 ![](emmc_vs_nand_flash.png)  
 **图片：NAND Flash 与 eMMC**
 
-## 3. Host Interface
+## Host Interface
 
 eMMC 与 Host 之间的连接如下图所示：
 
