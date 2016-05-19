@@ -11,9 +11,8 @@ eMMC 内部主要可以分为 Flash Memory、Flash Controller 以及 Host Interf
 
 ## Flash Memory
 
-Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用于存放系统、应用和数据等，类似与 PC 系统中的硬盘。
-
-目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash。PC 中的固态硬盘中也是使用 NAND Flash。
+Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用于存放系统、应用和数据等，类似与 PC 系统中的硬盘。  
+目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash。
 
 ### 1.3 eMMC 内部 Flash Memory 的分区 
 
