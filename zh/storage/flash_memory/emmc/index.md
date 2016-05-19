@@ -30,7 +30,7 @@ eMMC 在内部对 Flash Memory 划分了几个主要区域，如下图所示：
 
 3. User Data Area  
   此分区则主要用于存储系统和用户数据。
-  
+
 更多 eMMC 分区相关的细节，请参考 [eMMC 分区管理](#) 章节。
 
 ## Flash Controller
