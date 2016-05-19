@@ -20,6 +20,18 @@ eMMC 在内部对 Flash Memory 划分了几个主要区域，如下图所示：
 ![](emmc_partitions.png)  
 **图片：eMMC 内部分区**
 
+1. BOOT Area Partition 1 & 2  
+  此分区主要是为了支持从 eMMC 启动系统而设计的。  
+  该分区的数据，在 eMMC 上电后，可以通过很简单的协议就可以读取出来。同时，大部分的 SOC 都可以通过 GPIO 或者 FUSE 的配置，让 ROM 代码在上电后，将 eMMC BOOT 分区的内容加载到 SOC 内部的 SRAM 中执行。
+  
+2. RPMB Partition  
+  RPMB 是 Replay Protected Memory Block 的简称，它通过 RSA 和 Write Counter 来保证保存在 RPMB 内部的数据不被非法篡改。  
+  在实际应用中，RPMB 分区通常用来保存安全相关的数据，例如指纹数据、安全支付相关的密钥等。
+
+3. User Data Area  
+  此分区则主要用于存储系统和用户数据。
+  
+更多 eMMC 分区相关的细节，请参考 [eMMC 分区管理](#) 章节。
 
 ## Flash Controller
 
