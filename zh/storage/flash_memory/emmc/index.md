@@ -68,6 +68,6 @@ eMMC 与 Host 之间的连接如下图所示：
 Host 与 eMMC 之间的通信都是 Host 以一个 Command 开始发起的。针对不同的 Command，Device 会做出不同的响应。详细的通信协议相关内容，请参考 [eMMC 总线协议](./emmc_bus_protocol.html) 章节。
 
 
-## 4. 参考资料
+## 参考资料
 
 1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
