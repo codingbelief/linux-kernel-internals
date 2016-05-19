@@ -33,6 +33,7 @@ eMMC 在内部对 Flash Memory 划分了几个主要区域，如下图所示：
 
 更多 eMMC 分区相关的细节，请参考 [eMMC 分区管理](#) 章节。
 
+
 ## Flash Controller
 
 NAND Flash 直接接入 Host 时，Host 端通常需要有 NAND Flash Translation Layer，即 NFTL 或者 NAND Flash 文件系统来做坏块管理、ECC等的功能。  
@@ -42,12 +43,13 @@ eMMC 则在其内部集成了 Flash Controller，用于完成擦写均衡、坏�
 ![](emmc_vs_nand_flash.png)  
 **图片：NAND Flash 与 eMMC**
 
+
 ## Host Interface
 
 eMMC 与 Host 之间的连接如下图所示：
 
 ![](emmc_host_interfaces.png)  
-**图片 6：eMMC Interface**
+**图片：eMMC Interface**
 
 各个信号的用途如下所示：
 
