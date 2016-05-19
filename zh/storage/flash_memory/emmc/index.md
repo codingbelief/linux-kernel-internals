@@ -15,27 +15,8 @@ Flash Memory 是一种非易失性的存储器，通常在嵌入式系统中用�
 目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash。
 关于 NAND Flash 的更多细节可以参考 [Flash Memory](../index.html) 章节。
 
-### 1.3 eMMC 内部 Flash Memory 的分区 
 
-eMMC 在内部对 Flash Memory 划分了几个主要区域，如下图所示：
-
-![](emmc_partitions.png)  
-**图片 4：eMMC 内部分区**
-
-1. BOOT Area Partition 1 & 2  
-  此分区主要是为了支持从 eMMC 启动系统而设计的。  
-  该分区的数据，在 eMMC 上电后，可以通过很简单的协议就可以读取出来。同时，大部分的 SOC 都可以通过 GPIO 或者 FUSE 的配置，让 ROM 代码在上电后，将 eMMC BOOT 分区的内容加载到 SOC 内部的 SRAM 中执行。
-  
-2. RPMB Partition  
-  RPMB 是 Replay Protected Memory Block 的简称，它通过 RSA 和 Write Counter 来保证保存在 RPMB 内部的数据不被非法篡改。  
-  在实际应用中，RPMB 分区通常用来保存安全相关的数据，例如指纹数据、安全支付相关的密钥等。
-
-3. User Data Area Partition  
-  此分区则主要用于存储系统和用户数据。
-  
-注：除了上述的分区，eMMC 还会有一些特殊的分区，具体的细节可以参考 eMMC 5.1 协议标准[12]。
-
-## 2. Flash Controller
+## Flash Controller
 
 NAND Flash 直接接入 Host 时，Host 端通常需要有 NAND Flash Translation Layer，即 NFTL 或者 NAND Flash 文件系统来做坏块管理、ECC等的功能。  
 eMMC 则在其内部集成了 Flash Controller，用于完成擦写均衡、坏块管理、ECC校验等功能。相比于直接将 NAND Flash 接入到 Host 端，eMMC 屏蔽了 NAND Flash 的物理特性，可以减少 Host 端软件的复杂度，让 Host 端专注于上层业务，省去对 NAND Flash 进行特殊的处理。
