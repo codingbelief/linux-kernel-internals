@@ -26,3 +26,5 @@ enhanced area 是属于 user data area 内部的一个区块，
 
 物理分区、软件分区
 
+
+[](https://en.wikipedia.org/wiki/Disk_partitioning)
