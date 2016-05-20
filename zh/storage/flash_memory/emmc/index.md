@@ -29,7 +29,8 @@ eMMC 在内部对 Flash Memory 划分了几个主要区域，如下图所示：
   在实际应用中，RPMB 分区通常用来保存安全相关的数据，例如指纹数据、安全支付相关的密钥等。
 
 3. User Data Area  
-  此分区则主要用于存储系统和用户数据。
+  此区域则主要用于存储系统和用户数据。  
+  User Data Area 通常会进行再分区，例如 Android 系统中，通常在此区域分出 boot、system、userdata 等分区。
 
 更多 eMMC 分区相关的细节，请参考 [eMMC 分区管理](#) 章节。
 
