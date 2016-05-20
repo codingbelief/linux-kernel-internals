@@ -3,6 +3,14 @@
 分区的概念
   硬件分区、软件分区
 
+eMMC 上的硬件分区
+  boot x2
+  rpmb
+  general purpose partition (enhanced and default)
+  user data area (enhanced and default)
+  
+  
+  
 
 boot 和 rpmb 不会上文件系统，UDA 会再分区
 
