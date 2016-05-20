@@ -9,6 +9,7 @@ eMMC 上的硬件分区
   general purpose partition (enhanced and default)
   user data area (enhanced and default)
   
+分区应用示例
   
   
 
