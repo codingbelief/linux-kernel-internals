@@ -8,7 +8,8 @@ eMMC 上的硬件分区
   rpmb
   general purpose partition (enhanced and default)
   user data area (enhanced and default)
-  
+  分区寻址
+
 分区应用示例
   
   
