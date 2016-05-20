@@ -6,3 +6,4 @@ boot 和 rpmb 不会上文件系统，UDA 会再分区
 
 [](http://tjworld.net/attachment/wiki/Android/HTC/Vision/EmmcPartitioning/partitions.png)
 
+为什么使用 General Purpose Partition，有什么好处
