@@ -8,7 +8,7 @@
            * [eMMC 总线协议](storage/flash_memory/emmc/emmc_bus_protocol.md)
        * [SD Card](storage/flash_memory/sdcard/index.md)
        * UFS
-       * NAND Flash
+       * [NAND Flash](storage/flash_memory/nand_flash/index.md)
        * [NOR Flash](storage/flash_memory/nor_flash/index.md)
 * [Linux SD/MMC Framework](linux-sd-mmc-framework/introduction.md)
    * [eMMC 简介](linux-sd-mmc-framework/emmc_overview.md)
