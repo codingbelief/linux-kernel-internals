@@ -75,6 +75,8 @@ NAND Flash 的单个存储单元存储的比特位越多，读写性能会越差
 
 相比于 NOR Flash，NAND Flash 写入性能好，大容量下成本低。目前，绝大部分手机和平板等移动设备中所使用的 eMMC 内部的 Flash Memory 都属于 NAND Flash。PC 中的固态硬盘中也是使用 NAND Flash。
 
+更多 NAND Flash 的相关细节，请参考 [NAND Flash](./nand_flash/index.html) 章节。
+
 ## Raw Flash 和 Managed Flash
 
 由于 Flash Memory 存在按块擦写、擦写次数的限制、读写干扰、电荷泄露等的局限，为了最大程度的发挥 Flash Memory 的价值，通常需要有一个特殊的软件层次，实现坏块管理、擦写均衡、ECC、垃圾回收等的功能，这一个软件层次称为 FTL（Flash Translation Layer）。  
@@ -90,7 +92,7 @@ NAND Flash 的单个存储单元存储的比特位越多，读写性能会越差
 
 **Managed Flash**  
 Managed Flash 在其内部集成了 Flash Controller，用于完成擦写均衡、坏块管理、ECC校验等功能。相比于直接将 Flash 接入到 Host 端，Managed Flash 屏蔽了 Flash 的物理特性，对 Host 提供标准化的接口，可以减少 Host 端软件的复杂度，让 Host 端专注于上层业务，省去对 Flash 进行特殊的处理。  
-eMMC、SDCard、U 盘等产品是属于 Managed Flash 这一类。
+[eMMC](./emmc/index.html)、[SD Card](./sd_card/index.html)、[UFS](./ufs/index.html)、U 盘等产品是属于 Managed Flash 这一类。
 
 ## 参考资料
 
