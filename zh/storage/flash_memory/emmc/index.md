@@ -32,7 +32,7 @@ eMMC 在内部对 Flash Memory 划分了几个主要区域，如下图所示：
   此区域则主要用于存储系统和用户数据。  
   User Data Area 通常会进行再分区，例如 Android 系统中，通常在此区域分出 boot、system、userdata 等分区。
 
-更多 eMMC 分区相关的细节，请参考 [eMMC 分区管理](#) 章节。
+更多 eMMC 分区相关的细节，请参考 [eMMC 分区管理](./emmc_partitions.html) 章节。
 
 
 ## Flash Controller
