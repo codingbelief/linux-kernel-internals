@@ -9,6 +9,7 @@ RPMB 介绍
 GPP 介绍
   default
   enhance
+  attributes
 UDA 介绍
   default
   enhance
