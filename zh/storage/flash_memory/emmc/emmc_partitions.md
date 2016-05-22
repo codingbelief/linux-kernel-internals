@@ -14,7 +14,7 @@ UDA 介绍
   default
   enhance
 
-eMMC 如何访问不同的分区
+eMMC 如何访问不同的分区，选定分区、分区内寻址
 在 Linux 中，各个分区的呈现方式
 
 
