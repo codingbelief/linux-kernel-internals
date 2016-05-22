@@ -7,6 +7,7 @@ Boot 介绍
 RPMB 介绍
 
 GPP 介绍
+  省去软件分区的解析，降低 Bootloader 的软件复杂度
   default
   enhance
   attributes
