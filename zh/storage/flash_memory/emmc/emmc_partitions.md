@@ -3,7 +3,7 @@
 eMMC 默认将内部的 Flash Memory 划分为 4 类区域，Boot、RPMB、GPP、UDA。
 
 Boot 介绍
-
+  为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
 RPMB 介绍
 
 GPP 介绍
