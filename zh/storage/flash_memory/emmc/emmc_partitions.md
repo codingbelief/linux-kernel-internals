@@ -1,5 +1,17 @@
 # eMMC 分区管理
 
+eMMC 默认将内部的 Flash Memory 划分为 4 类区域，Boot、RPMB、GPP、UDA。
+
+Boot 介绍
+
+RPMB 介绍
+
+GPP 介绍
+
+UDA 介绍
+
+eMMC 如何访问不同的分区
+在 Linux 中，各个分区的呈现方式
 
 
 分区的概念
