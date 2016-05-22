@@ -13,6 +13,7 @@ GPP 介绍
 UDA 介绍
   default
   enhance
+  软件分区表
 
 eMMC 如何访问不同的分区，选定分区、分区内寻址
 在 Linux 中，各个分区的呈现方式
