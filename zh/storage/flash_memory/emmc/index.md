@@ -28,7 +28,7 @@ eMMC 在内部对 Flash Memory 划分了几个主要区域，如下图所示：
   RPMB 是 Replay Protected Memory Block 的简称，它通过 RSA 和 Write Counter 来保证保存在 RPMB 内部的数据不被非法篡改。  
   在实际应用中，RPMB 分区通常用来保存安全相关的数据，例如指纹数据、安全支付相关的密钥等。
 
-3. General Purpose Partition 1～4
+3. General Purpose Partition 1～4  
   此区域则主要用于存储系统或者用户数据。 
   General Purpose Partition 在芯片出厂时，通常是不存在的，需要主动进行配置后，才会存在。
 
