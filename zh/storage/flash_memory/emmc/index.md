@@ -30,7 +30,7 @@ eMMC 在内部对 Flash Memory 划分了几个主要区域，如下图所示：
 
 3. General Purpose Partition 1～4
   此区域则主要用于存储系统或者用户数据。 
-  General Purpose Partition 在默认情况下，是不存在的，需要主动进行配置后，才会存在。
+  General Purpose Partition 在芯片出厂时，通常是不存在的，需要主动进行配置后，才会存在。
 
 4. User Data Area  
   此区域则主要用于存储系统和用户数据。  
