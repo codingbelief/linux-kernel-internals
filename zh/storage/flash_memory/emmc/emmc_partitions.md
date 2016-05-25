@@ -7,6 +7,7 @@ eMMC 标准中，将内部的 Flash Memory 划分为 4 类区域，最多可以�
 
 ![](emmc_partitions.png)
 
+每一个硬件分区的存储都是独立编址的，即访问地址为 0 - partition size。eMMC 在 Extended CSD register 的 PARTITION_CONFIG Field 中 的 Bit[2:0]: PARTITION_ACCESS 
 eMMC 的各个分区有其自身的功能特性，多分区的设计，为不同的应用场景提供了便利。
 
 ### Boot Area Partitions
