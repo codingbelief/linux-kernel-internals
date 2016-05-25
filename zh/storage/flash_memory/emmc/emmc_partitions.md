@@ -16,6 +16,7 @@ eMMC 的各个硬件分区有其自身的功能特性，多分区的设计，为
 ### Boot Area Partitions
 
 
+
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
 RPMB 介绍
