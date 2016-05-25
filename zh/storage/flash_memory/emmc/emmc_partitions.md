@@ -7,6 +7,8 @@ eMMC 标准中，将内部的 Flash Memory 划分为 4 类区域，最多可以�
 
 ![](emmc_partitions.png)
 
+一般情况下，Boot Area Partitions 和 RPMB Partition 的容量大小是由芯片厂家定义的，用户不可修改，通常都为 4MB。 
+
 eMMC 的每一个硬件分区的存储都是独立编址的，即访问地址为 0 - partition size。具体的读写操作实际访问哪一个硬件分区，是由 eMMC 的 Extended CSD register 的 PARTITION_CONFIG Field 中 的 Bit[2:0]: PARTITION_ACCESS 决定的，用户可以通过配置 PARTITION_ACCESS 来切换硬件分区的访问。
 
 eMMC 的各个分区有其自身的功能特性，多分区的设计，为不同的应用场景提供了便利。
