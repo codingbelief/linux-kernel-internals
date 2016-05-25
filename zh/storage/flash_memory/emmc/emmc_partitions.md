@@ -7,7 +7,6 @@ eMMC 标准中，将内部的 Flash Memory 划分为 4 类区域，如下图所�
 
 ![](emmc_partitions.png)
 
-
 eMMC 的各个分区有其自身的功能特性，多分区的设计，为不同的应用场景提供了便利。
 
 ### Boot Area Partitions
