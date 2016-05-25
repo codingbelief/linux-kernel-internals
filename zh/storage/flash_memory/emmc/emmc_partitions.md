@@ -2,7 +2,7 @@
 
 eMMC 默认将内部的 Flash Memory 划分为 4 类区域，如下图所示：
 
-![](emmc_partition_type.png)
+![](emmc_partitions.png)
 
 
 
