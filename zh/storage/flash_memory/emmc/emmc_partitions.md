@@ -13,7 +13,7 @@ eMMC 的每一个硬件分区的存储都是独立编址的，即访问地址为
 
 eMMC 的各个硬件分区有其自身的功能特性，多分区的设计，为不同的应用场景提供了便利。
 
-### Boot Area Partitions
+## Boot Area Partitions
 
 
 
