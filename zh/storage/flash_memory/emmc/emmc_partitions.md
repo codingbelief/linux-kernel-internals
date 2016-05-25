@@ -3,7 +3,7 @@
 
 ## eMMC 硬件分区
 
-eMMC 标准中，将内部的 Flash Memory 划分为 4 类区域，如下图所示：
+eMMC 标准中，将内部的 Flash Memory 划分为 4 类区域，最多可以支持 8 个硬件分区，如下图所示：
 
 ![](emmc_partitions.png)
 
