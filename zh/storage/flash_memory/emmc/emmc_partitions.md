@@ -6,7 +6,7 @@ eMMC 标准中，将内部的 Flash Memory 划分为 4 类区域，如下图所�
 
 ## 分区应用场景
 
-eMMC 的多分区设计，提供了
+eMMC 的多分区设计，为不同的应用场景提供了便利。
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
