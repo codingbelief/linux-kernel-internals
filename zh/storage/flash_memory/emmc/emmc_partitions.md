@@ -1,4 +1,4 @@
-# eMMC Partitions
+# eMMC 分区管理
 
 
 ## eMMC Partitions Overview
