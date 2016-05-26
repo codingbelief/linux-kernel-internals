@@ -20,6 +20,8 @@ Boot Area 包含两个 Boot Area Partitions，主要用于存储 Bootloader，�
 两个 Boot Area Partitions 的大小是完全一致的，由 Extended CSD register 的 BOOT_SIZE_MULT Field 决定，大小的计算公式如下：  
   **Boot Area Partition size = 128Kbytes x BOOT_SIZE_MULT**  
 
+
+
 boot area size 的确定
 从哪一个 partition boot 的配置
 触发 boot 的方法
