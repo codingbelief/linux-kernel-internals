@@ -5,7 +5,7 @@
    * [Flash Memory](storage/flash_memory/index.md)
        * [eMMC](storage/flash_memory/emmc/index.md)
            * [eMMC 分区管理](storage/flash_memory/emmc/emmc_partitions.md)
-           * eMMC RPMB
+           * [eMMC RPMB](storage/flash_memory/emmc/emmc_rpmb.md)
            * [eMMC 总线协议](storage/flash_memory/emmc/emmc_bus_protocol.md)
            * [eMMC 设备寄存器](storage/flash_memory/emmc/emmc_device_registers.md)
        * [SD Card](storage/flash_memory/sdcard/index.md)
