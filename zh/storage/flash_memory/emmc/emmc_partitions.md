@@ -16,10 +16,14 @@ eMMC 的各个硬件分区有其自身的功能特性，多分区的设计，为
 ## Boot Area Partitions
 
 Boot Area 包含两个 Boot Area Partitions，主要用于存储 Bootloader，支持 SOC 从 eMMC 启动系统。
+
+
+
 boot area size 的确定
 从哪一个 partition boot 的配置
 触发 boot 的方法
 写保护
+
 
 
 Boot 介绍
