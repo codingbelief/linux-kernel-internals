@@ -4,6 +4,7 @@
 * [Storage](storage/index.md)
    * [Flash Memory](storage/flash_memory/index.md)
        * [eMMC](storage/flash_memory/emmc/index.md)
+           * eMMC RPMB
            * [eMMC 设备寄存器](storage/flash_memory/emmc/emmc_device_registers.md)
                * eMMC RPMB
            * [eMMC 分区管理](storage/flash_memory/emmc/emmc_partitions.md)
