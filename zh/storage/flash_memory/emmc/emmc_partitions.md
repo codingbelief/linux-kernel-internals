@@ -17,7 +17,7 @@ eMMC 的各个硬件分区有其自身的功能特性，多分区的设计，为
 
 Boot Area 包含两个 Boot Area Partitions，主要用于存储 Bootloader，支持 SOC 从 eMMC 启动系统。
 
-两个 Boot Area Partitions 的大小是完全一致的，由 Extended CSD register 的 BOOT_SIZE_MULT Field 决定，大小的计算公式如下：
+两个 Boot Area Partitions 的大小是完全一致的，由 Extended CSD register 的 BOOT_SIZE_MULT Field 决定，大小的计算公式如下：  
   **Boot Area Partition size = 128Kbytes x BOOT_SIZE_MULT**  
 
 boot area size 的确定
