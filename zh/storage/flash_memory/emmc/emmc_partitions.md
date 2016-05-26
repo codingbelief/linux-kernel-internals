@@ -35,7 +35,7 @@ Boot Data 根据 Extended CSD register 的 PARTITION_CONFIG Field 的 Bit[5:3]:B
 Boot Data 存储在 Boot Area 比在 User Data Area 中要更加的安全，可以减少意外修改导致系统无法启动，同时无法更新系统的情况出现。  
 （更多 Boot State 的细节，请参考 [eMMC 总线协议](./emmc_bus_prolocol) 的相关章节）
 
-
+### 写保护
 
 写保护
 
