@@ -38,8 +38,8 @@ Boot Data 存储在 Boot Area 比在 User Data Area 中要更加的安全，可�
 两个 Boot Area Partition 可以独立配置写保护功能,以防止数据被意外改写或者擦出。
 eMMC 中定义了两种 Boot Area 的写保护模式：
 
-1. Power-on write protection，需要每次 Power on 后进行配置，eMMC 掉电后，写保护功能失效 
-2. Permanent write protection 
+1. Power-on write protection，使能后，如果 eMMC 掉电，写保护功能失效，需要每次 Power on 后进行配置
+2. Permanent write protection，使能后，即使掉电也不会失效，主动进行关闭才会失效
 
 
 Boot 介绍
