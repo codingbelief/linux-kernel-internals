@@ -22,6 +22,7 @@ eMMC 中定义了 Boot State，在 Power-up、HW reset 或者 SW reset 后，如
 2. 在 74 个时钟周期后，在 CMD 信号首次拉低或者 Host 发送 CMD1 之前，Host 发送参数为 0xFFFFFFFA 的 COM0，会触发 Alternative boot operation，进入 Boot State。
 
 
+
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
 RPMB 介绍
