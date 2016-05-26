@@ -32,7 +32,7 @@ eMMC 中定义了 Boot State，在 Power-up、HW reset 或者 SW reset 后，如
 Boot Data 根据 Extended CSD register 的 PARTITION_CONFIG Field 的 Bit[5:3]:BOOT_PARTITION_ENABLE 的设定，可以从 Boot Area Partition 1、Boot Area Partition 2 或者 User Data Area 
 读出。  
 Boot Data 存储在 Boot Area 比在 User Data Area 中要更加的安全，可以减少意外修改导致系统无法启动，同时无法更新系统的情况出现。  
-（更多 Boot State 的细节，请参考 [eMMC 总线协议](./emmc_bus_prolocol) 的相关章节）
+（更多 Boot State 的细节，请参考 [eMMC 总线协议](./emmc_bus_prolocol) 的 Boot State章节）
 
 ### 写保护
 通过设定 Extended CSD register 的 BOOT_WP Field，可以为两个 Boot Area Partition 独立配置写保护功能,以防止数据被意外改写或者擦出。
