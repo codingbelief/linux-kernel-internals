@@ -42,7 +42,7 @@ eMMC 中定义了两种 Boot Area 的写保护模式：
 1. Power-on write protection，使能后，如果 eMMC 掉电，写保护功能失效，需要每次 Power on 后进行配置
 2. Permanent write protection，使能后，即使掉电也不会失效，主动进行关闭才会失效
 
-Boot Area Partition 的写保护功能通过 
+## RPMB Partition
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
