@@ -28,8 +28,9 @@ eMMC 中定义了 Boot State，在 Power-up、HW reset 或者 SW reset 后，如
 
 在 Boot State 下，eMMC 会将大小为 128Kbytes x BOOT_SIZE_MULT 的 Boot Data 发送给 Host。  
 Boot Data 根据 Extended CSD register 的 PARTITION_CONFIG Field 的 Bit[5:3]:BOOT_PARTITION_ENABLE 的设定，可以从 Boot Area Partition 1、Boot Area Partition 2 或者 User Data Area 
-读出。 
+读出。   
 （更多 Boot State 的细节，请参考 [eMMC 总线协议](./emmc_bus_prolocol) 的相关章节）
+
 
 
 从哪一个 partition boot 的配置
