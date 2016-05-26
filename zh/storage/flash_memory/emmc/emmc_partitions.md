@@ -17,10 +17,13 @@ eMMC 的各个硬件分区有其自身的功能特性，多分区的设计，为
 
 Boot Area 包含两个 Boot Area Partitions，主要用于存储 Bootloader，支持 SOC 从 eMMC 启动系统。
 
+### 容量大小
+
 两个 Boot Area Partitions 的大小是完全一致的，由 Extended CSD register 的 BOOT_SIZE_MULT Field 决定，大小的计算公式如下：  
   **Size = 128Kbytes x BOOT_SIZE_MULT**  
 一般情况下，Boot Area Partition 的大小都为 4 MB，即 BOOT_SIZE_MULT 为 32，部分芯片厂家会提供改写 BOOT_SIZE_MULT 的功能来改变 Boot Area Partition 的容量大小。
 
+### 从 Boot Area 启动
 eMMC 中定义了 Boot State，在 Power-up、HW reset 或者 SW reset 后，如果满足一定的条件，eMMC 就会进入该 State。进入 Boot State 的条件如下：
 
 1. CMD 信号保持低电平不少于 74 个时钟周期时，会触发 Original boot operation，进入 Boot State。
