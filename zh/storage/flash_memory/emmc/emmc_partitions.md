@@ -35,7 +35,8 @@ Boot Data 存储在 Boot Area 比在 User Data Area 中要更加的安全，可�
 （更多 Boot State 的细节，请参考 [eMMC 总线协议](./emmc_bus_prolocol) 的相关章节）
 
 ### 写保护
-通过设定 Extended CSD register 的 PARTITION_CONFIG Field，可以为两个 Boot Area Partition 独立配置写保护功能,以防止数据被意外改写或者擦出。
+通过设定 Extended CSD register 的 BOOT_WP Field，可以为两个 Boot Area Partition 独立配置写保护功能,以防止数据被意外改写或者擦出。
+
 eMMC 中定义了两种 Boot Area 的写保护模式：
 
 1. Power-on write protection，使能后，如果 eMMC 掉电，写保护功能失效，需要每次 Power on 后进行配置
