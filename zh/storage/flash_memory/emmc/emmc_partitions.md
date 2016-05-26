@@ -22,6 +22,7 @@ Boot Area 包含两个 Boot Area Partitions，主要用于存储 Bootloader，�
 一般情况下，Boot Area Partition 的大小都为 4 MB，即 BOOT_SIZE_MULT 为 32，部分芯片厂家会提供改写 BOOT_SIZE_MULT 的功能来改变 Boot Area Partition 的容量大小。
 
 
+
 从哪一个 partition boot 的配置
 触发 boot 的方法
 写保护
