@@ -19,6 +19,7 @@ Boot Area 包含两个 Boot Area Partitions，主要用于存储 Bootloader，�
 boot area size 的确定
 从哪一个 partition boot 的配置
 触发 boot 的方法
+写保护
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
