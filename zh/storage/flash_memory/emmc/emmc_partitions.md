@@ -18,7 +18,8 @@ eMMC 的各个硬件分区有其自身的功能特性，多分区的设计，为
 Boot Area 包含两个 Boot Area Partitions，主要用于存储 Bootloader，支持 SOC 从 eMMC 启动系统。
 eMMC 中定义了 Boot operation mode，在 Power-up、HW reset 或者 SW reset 后，如果满足一定的条件，eMMC 就会进入该模式。进入 Boot operation mode 的条件如下：
 
-* CMD 信号保持低电平超过 74 个时钟周期，触发 normal boot operation 
+1. CMD 信号保持低电平超过 74 个时钟周期，触发 normal boot operation 
+2. 在 74 个时钟周期后，在 CMD 信号首次拉低或者 Host 发送 CMD1 之前，Host 发送参数为 0xFFFFFFFA 的 COM0，
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
