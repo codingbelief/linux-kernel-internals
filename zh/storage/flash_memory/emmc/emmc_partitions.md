@@ -43,7 +43,8 @@ eMMC 中定义了两种 Boot Area 的写保护模式：
 2. Permanent write protection，使能后，即使掉电也不会失效，主动进行关闭才会失效
 
 ## RPMB Partition
-RPMB（Replay Protected Memory Block）Partition 是 eMMC 中的一个具有安全特性的分区。
+RPMB（Replay Protected Memory Block）Partition 是 eMMC 中的一个具有安全特性的分区。  
+RPMB 在写入数据时，会校验数据的合法性，只有指定的 Host 才能够写入数据，同时在读数据时，也提供了签名机制，保证 Host 读出的数据是 RPMB 内部数据，而不是攻击者伪造的数据。
 
 ### 原理
 
