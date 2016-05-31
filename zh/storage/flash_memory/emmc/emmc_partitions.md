@@ -73,12 +73,20 @@ RPMB 数据读取的流程如下：
 2. eMMC 将请求的数据从 RPMB 中读出，并使用 Secure Key 通过 HMAC SHA-256 算法，计算读取到的数据和接收到的随机数拼接到一起后的签名。然后，eMMC 将读取到的数据、接收到的随机数、计算得到的签名一并发送给 Host。
 3. Host 接收到 RPMB 的数据、随机数以及签名后，首先比较随机数是否与自己发送的一致，如果一致，再用同样的 Secure Key 通过 HMAC SHA-256 算法对数据和随机数组合到一起进行签名，如果签名与 eMMC 发送的签名是一致的，那么就可以确定该数据是从 RPMB 中读取到的正确数据，而不是攻击者伪造的数据。
 
+通过上述的读取流程，可以保证 Host 正确的读取到 RPMB 的数据。
+
 #### RPMB 数据写入
 
 RPMB 数据写入的流程如下：
 
 1. Host 按照上面的读数据流程，读取 RPMB 的 Write Counter。
-2. Host 将需要写入的数据和 Write Counter 拼接到一起并计算签名，然后将数据、Write Counter 以及签名一并发给 eMMC
+2. Host 将需要写入的数据和 Write Counter 拼接到一起并计算签名，然后将数据、Write Counter 以及签名一并发给 eMMC。
+3. eMMC 接收到数据后，先对比 Write Counter 是否与当前的值相同，如果相同那么再对数据和 Write Counter 的组合进行签名，然后和 Host 发送过来的签名进行比较，如果签名相同则鉴权通过，将数据写入到 RPMB 中。
+
+通过上述的写入流程，可以保证 RPMB 不会被非法篡改。
+
+更多 RPMB 相关的细节，可以参考 [eMMC RPMB](./emmc_rpmb.html) 章节。
+
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
