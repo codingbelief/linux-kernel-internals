@@ -88,7 +88,7 @@ RPMB 数据写入的流程如下：
 更多 RPMB 相关的细节，可以参考 [eMMC RPMB](./emmc_rpmb.html) 章节。
 
 
-## General Purpose Partitions
+### General Purpose Partitions
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
