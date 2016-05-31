@@ -59,7 +59,9 @@ RPMB 在实际应用中，通常用于存储一些有防止非法篡改需求的
 
 ### Replay Protect 原理
 
-RPMB 通过 RSA 和 Write Counter 机制来
+RPMB 通过 RSA 和 Write Counter 机制来抵御重放攻击。他包含三个主要部分：
+
+1. 
 
 ### 数据读写
 
