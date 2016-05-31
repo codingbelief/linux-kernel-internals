@@ -59,7 +59,7 @@ RPMB 在实际应用中，通常用于存储一些有防止非法篡改需求的
 
 ### Replay Protect 原理
 
-使用 eMMC 的产品，在产线生产时，会为每一个产品生产一个唯一的 256 bits 的 Secure Key，烧写到 RPMB 的 OTP 区域（只能烧写一次的区域），同时 Host 在安全区域中（例如：TEE）也会保留该 Secure Key。
+使用 eMMC 的产品，在产线生产时，会为每一个产品生产一个唯一的 256 bits 的 Secure Key，烧写到 eMMC 的 OTP 区域（只能烧写一次的区域），同时 Host 在安全区域中（例如：TEE）也会保留该 Secure Key。
 
 在 RPMB 内部，还有一个 Write Counter。RPMB 每进行一次合法的写入操作时，Write Counter 就会自动加一 。
 
@@ -67,8 +67,11 @@ RPMB 在实际应用中，通常用于存储一些有防止非法篡改需求的
 
 #### RPMB 数据读取
 
-1. Host 生成一个 16 bytes 的随机数，发送给 eMMC。
-2. 
+RPMB 数据读取的流程如下：
+
+1. Host 向 eMMC 发起读 RPMB 的请求，同时生成一个 16 bytes 的随机数，发送给 eMMC。
+2. eMMC 将请求的数据从 RPMB 中读出，并使用 Secure Key 通过 HMAC SHA-256 算法，计算读取到的数据和接收到的随机数组合到一起后的签名。然后，eMMC 将读取到的数据、接收到的随机数、计算得到的签名一并发送给 Host。
+3. Host 接收到 RPMB 的数据、随机数以及签名后，首先比较随机数是否与自己发送的一致，如果一致，再用同样的 Secure Key 通过 HMAC SHA-256 算法对数据和随机数组合到一起进行签名，如果签名与 eMMC 发送的签名是一致的，那么就可以确定该数据是从 RPMB 中读取到的正确数据，而不是攻击者伪造的数据。
 
 
 #### RPMB 数据写入
