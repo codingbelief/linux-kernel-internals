@@ -59,7 +59,10 @@ RPMB 在实际应用中，通常用于存储一些有防止非法篡改需求的
 
 ### Replay Protect 原理
 
-使用 eMMC 的产品，在产线生产时，会为每一个产品生产一个 256 bits 的 secure key。
+使用 eMMC 的产品，在产线生产时，会为每一个产品生产一个唯一的 256 bits 的 Secure Key，烧写到 RPMB 的 OTP 区域（只能烧写一次的区域），同时 Host 在安全区域中（例如：TEE）也会保留该 Secure Key。
+
+
+
 
 1. Authentication Key
 
