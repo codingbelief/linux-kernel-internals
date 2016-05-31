@@ -77,7 +77,8 @@ RPMB 数据读取的流程如下：
 
 RPMB 数据写入的流程如下：
 
-1. Host 按照上面的读数据流程，读取 RPMB 的 Write Counter
+1. Host 按照上面的读数据流程，读取 RPMB 的 Write Counter。
+2. 
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
