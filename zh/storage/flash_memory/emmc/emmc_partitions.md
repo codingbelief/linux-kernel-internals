@@ -65,12 +65,9 @@ RPMB 在实际应用中，通常用于存储一些有防止非法篡改需求的
 
 通过 Secure Key 和 Write Counter 的应用，RMPB 可以实现数据读取和写入的 Replay Protect。
 
-1. Authentication Key
+#### RPMB 数据读取
 
-
-
-### 数据读写
-
+#### RPMB 数据写入
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
