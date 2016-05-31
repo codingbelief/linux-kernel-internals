@@ -63,7 +63,7 @@ RPMB 在实际应用中，通常用于存储一些有防止非法篡改需求的
 
 在 RPMB 内部，还有一个 Write Counter。RPMB 每进行一次合法的写入操作时，Write Counter 就会自动加一 。
 
-通过 Secure Key 和 Write Counter 的应用，RMPB 可以实现数据读取和写入的 Replay Protect
+通过 Secure Key 和 Write Counter 的应用，RMPB 可以实现数据读取和写入的 Replay Protect。
 
 1. Authentication Key
 
