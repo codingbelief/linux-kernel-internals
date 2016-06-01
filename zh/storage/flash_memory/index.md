@@ -44,7 +44,6 @@ Parallel NOR Flash 可以接入到 Host 的 SRAM/DRAM Controller 上，所存储
 **图片： Parallel NOR Flash 与 Serial NOR Flash**
 
 鉴于 NOR Flash 擦写速度慢，成本高等特性，NOR Flash 主要应用于小容量、内容更新少的场景，例如 PC 主板 BIOS、路由器系统存储等。
-的主要特性
 
 更多 NOR Flash 的相关细节，请参考 [NOR Flash](./nor_flash/index.html) 章节。
 
