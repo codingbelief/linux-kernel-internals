@@ -90,7 +90,7 @@ RPMB 数据写入的流程如下：
 
 ## General Purpose Partitions
 
-
+eMMC 提供了最多 4 个的 General Purpose Partitions (GPP)，
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
