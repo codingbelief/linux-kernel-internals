@@ -90,7 +90,7 @@ RPMB 数据写入的流程如下：
 
 ## General Purpose Partitions
 
-eMMC 提供了 General Purpose Partitions (GPP)，主要用于存储系统和应用数据。在很多使用 eMMC 的产品中，GPP 都没有被启用，因为它在功能上与 UDA 类似，产品直接使用 UDA 就可以满足需求。
+eMMC 提供了 General Purpose Partitions (GPP)，主要用于存储系统和应用数据。在很多使用 eMMC 的产品中，GPP 都没有被启用，因为它在功能上与 UDA 类似，产品上直接使用 UDA 就可以满足需求。
 
 ### 容量大小
 
