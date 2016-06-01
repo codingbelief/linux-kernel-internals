@@ -94,6 +94,10 @@ eMMC 提供了 General Purpose Partitions (GPP)，主要用于存储系统和应
 
 ### 容量大小
 
+###
+
+### 
+
 
 Boot 介绍
   为 SOC 的 ROM 代码降低复杂度，提供统一的 eMMC Boot 标准。
