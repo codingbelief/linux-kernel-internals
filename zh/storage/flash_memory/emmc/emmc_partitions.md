@@ -32,10 +32,12 @@ CMD 信号保持低电平不少于 74 个时钟周期，会触发 Original boot 
 
 ![](original_boot)
 
+
 **Alternative boot operation**  
 在 74 个时钟周期后，在 CMD 信号首次拉低或者 Host 发送 CMD1 之前，Host 发送参数为 0xFFFFFFFA 的 COM0时，会触发 Alternative boot operation，进入 Boot State。
 
 ![](alternative_boot)
+
 
 在 Boot State 下，eMMC 会将大小为 128Kbytes x BOOT_SIZE_MULT 的 Boot Data 发送给 Host。  
 
