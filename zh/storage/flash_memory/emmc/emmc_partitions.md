@@ -104,6 +104,8 @@ GPPx 的容量计算公式如下：
 Size = (GP_SIZE_MULT_x_2 \* 2^16 + GP_SIZE_MULT_x_1 \* 2^8 + GP_SIZE_MULT_x_0 \* 2^0) \*
        (Write protect group size)
 
+Write protect group size = 
+
 其中，HC_WP_GRP_SIZE 为
 
 ### 拓展属性
