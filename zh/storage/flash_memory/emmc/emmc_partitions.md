@@ -95,9 +95,9 @@ eMMC 提供了 General Purpose Partitions (GPP)，主要用于存储系统和应
 ### 容量大小
 eMMC 最多可以支持 4 个 GPPs，每一个 GPP 的大小可以单独配置。用户可以通过设定 Extended CSD register 的以下三个 Field 来设 GPPx (x=1~4) 的容量大小：
 
-* GP_SIZE_MULT_X_2
-* GP_SIZE_MULT_X_1
-* GP_SIZE_MULT_X_0
+* GP_SIZE_MULT_x_2
+* GP_SIZE_MULT_x_1
+* GP_SIZE_MULT_x_0
 
 
 ### 拓展属性
