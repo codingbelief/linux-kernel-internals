@@ -39,7 +39,7 @@ CMD 信号保持低电平不少于 74 个时钟周期，会触发 Original Boot 
 ![](alternative_boot.png)
 
 
-在 Boot State 下，如果有配置 BOOT_ACK，eMMC 会先发送 “010” 的 ACK 包，接着 eMMC 会将最大为 128Kbytes x BOOT_SIZE_MULT 的 Boot Data 发送给 Host。传输过程中，Host 可以通过拉高 CMD 信号(Original Boot)，或者发送 Reset 命令 (Alternative Boot) 来中断 eMMC 的数据发送，完成 Boot Data 传输。
+在 Boot State 下，如果有配置 BOOT_ACK，eMMC 会先发送 “010” 的 ACK 包，接着 eMMC 会将最大为 128Kbytes x BOOT_SIZE_MULT 的 Boot Data 发送给 Host。传输过程中，Host 可以通过拉高 CMD 信号 (Original Boot)，或者发送 Reset 命令 (Alternative Boot) 来中断 eMMC 的数据发送，完成 Boot Data 传输。
 
 Boot Data 根据 Extended CSD register 的 PARTITION_CONFIG Field 的 Bit[5:3]:BOOT_PARTITION_ENABLE 的设定，可以从 Boot Area Partition 1、Boot Area Partition 2 或者 User Data Area 
 读出。  
