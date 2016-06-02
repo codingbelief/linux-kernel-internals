@@ -111,6 +111,8 @@ Write protect group size = 512KB \* HC_ERASE_GRP_SIZE \* HC_WP_GRP_SIZE
 
 ### 分区属性
 
+
+
 ### 存储介质
 
 
