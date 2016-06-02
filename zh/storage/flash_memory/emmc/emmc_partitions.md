@@ -122,7 +122,6 @@ Size = (GP_SIZE_MULT_x_2 \* 2^16 + GP_SIZE_MULT_x_1 \* 2^8 + GP_SIZE_MULT_x_0 \*
 
 Write protect group size = 512KB \* HC_ERASE_GRP_SIZE \* HC_WP_GRP_SIZE
 
-> **NOTE:**  
 > eMMC 中，擦除和写保护都是按块进行的，上述表达式中的 HC_WP_GRP_SIZE 为写保护的操作块大小，HC_ERASE_GRP_SIZE 则为擦除操作的快的大小。
 
 ### 分区属性
