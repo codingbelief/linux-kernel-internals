@@ -69,7 +69,7 @@ RPMB 在实际应用中，通常用于存储一些有防止非法篡改需求的
 
 RPMB 数据读取的流程如下：
 
-![](rpmb_r.png)
+
 
 1. Host 向 eMMC 发起读 RPMB 的请求，同时生成一个 16 bytes 的随机数，发送给 eMMC。
 2. eMMC 将请求的数据从 RPMB 中读出，并使用 Secure Key 通过 HMAC SHA-256 算法，计算读取到的数据和接收到的随机数拼接到一起后的签名。然后，eMMC 将读取到的数据、接收到的随机数、计算得到的签名一并发送给 Host。
@@ -81,7 +81,7 @@ RPMB 数据读取的流程如下：
 
 RPMB 数据写入的流程如下：
 
-![](rpmb_w.png)
+
 
 1. Host 按照上面的读数据流程，读取 RPMB 的 Write Counter。
 2. Host 将需要写入的数据和 Write Counter 拼接到一起并计算签名，然后将数据、Write Counter 以及签名一并发给 eMMC。
