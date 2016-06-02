@@ -102,7 +102,7 @@ eMMC 最多可以支持 4 个 GPPs，每一个 GPP 的大小可以单独配置�
 GPPx 的容量计算公式如下：
 
 Size = (GP_SIZE_MULT_x_2 * 2^16 + GP_SIZE_MULT_x_1 * 2^8 + GP_SIZE_MULT_x_0 * 2^0) * 
-HC_WP_GRP_SIZEx HC_ERASE_GRP_SIZE x 512kBytes
+HC_WP_GRP_SIZE * HC_ERASE_GRP_SIZE * 512kBytes
 
 ### 拓展属性
 
