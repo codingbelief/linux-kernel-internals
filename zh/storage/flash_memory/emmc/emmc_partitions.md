@@ -30,13 +30,13 @@ eMMC 中定义了 Boot State，在 Power-up、HW reset 或者 SW reset 后，如
 **Original Boot Operation**  
 CMD 信号保持低电平不少于 74 个时钟周期，会触发 Original Boot Operation，进入 Boot State。
 
-![](original_boot)
+![](original_boot.png)
 
 
 **Alternative Boot Operation**  
 在 74 个时钟周期后，在 CMD 信号首次拉低或者 Host 发送 CMD1 之前，Host 发送参数为 0xFFFFFFFA 的 COM0时，会触发 Alternative Boot Operation，进入 Boot State。
 
-![](alternative_boot)
+![](alternative_boot.png)
 
 
 在 Boot State 下，如果有配置 BOOT_ACK，eMMC 会先发送 “010” 的 ACK 包，接着 eMMC 会将最大为 128Kbytes x BOOT_SIZE_MULT 的 Boot Data 发送给 Host。传输过程中，Host 可以通过拉高 CMD (Original Boot)，或者发送 Reset 命令 (Alternative Boot) 中断 eMMC 的数据发送，完成 Boot Data 传输。
