@@ -27,19 +27,19 @@ Boot Area 包含两个 Boot Area Partitions，主要用于存储 Bootloader，�
 ### 从 Boot Area 启动
 eMMC 中定义了 Boot State，在 Power-up、HW reset 或者 SW reset 后，如果满足一定的条件，eMMC 就会进入该 State。进入 Boot State 的条件如下：
 
-**Original boot operation**  
+**Original Boot Operation**  
 CMD 信号保持低电平不少于 74 个时钟周期，会触发 Original boot operation，进入 Boot State。
 
 ![](original_boot)
 
 
-**Alternative boot operation**  
+**Alternative Boot Operation**  
 在 74 个时钟周期后，在 CMD 信号首次拉低或者 Host 发送 CMD1 之前，Host 发送参数为 0xFFFFFFFA 的 COM0时，会触发 Alternative boot operation，进入 Boot State。
 
 ![](alternative_boot)
 
 
-在 Boot State 下，如果有配置 BOOT_ACK，eMMC 会先发送 “010” 的 ACK 包，接着 eMMC 会将大小为 128Kbytes x BOOT_SIZE_MULT 的 Boot Data 发送给 Host。  
+在 Boot State 下，如果有配置 BOOT_ACK，eMMC 会先发送 “010” 的 ACK 包，接着 eMMC 会将最大为 128Kbytes x BOOT_SIZE_MULT 的 Boot Data 发送给 Host。传输过程中，Host 可以通过拉高 CMD (Original Boot)，或者发送 Reset 命令 (Alternative Boot)
 
 Boot Data 根据 Extended CSD register 的 PARTITION_CONFIG Field 的 Bit[5:3]:BOOT_PARTITION_ENABLE 的设定，可以从 Boot Area Partition 1、Boot Area Partition 2 或者 User Data Area 
 读出。  
