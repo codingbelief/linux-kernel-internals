@@ -94,6 +94,8 @@ eMMC 提供了 General Purpose Partitions (GPP)，主要用于存储系统和应
 
 ### 容量大小
 
+
+
 ### 拓展属性
 
 ### 存储介质
