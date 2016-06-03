@@ -127,7 +127,12 @@ Write protect group size = 512KB \* HC_ERASE_GRP_SIZE \* HC_WP_GRP_SIZE
 
 ### 分区属性
 
-eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended attribute：
+eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended attribute
+
+
+
+![](gpp_attributes.png)
+
 
 **Enhanced attribute**  
 
@@ -142,10 +147,6 @@ eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended
 - Default, 未设定 Extended attribute。
 - System code， 设定 GPP 为 System code 属性，该属性主要用在存放操作系统类的、很少进行擦写更新的分区。
 - Non-Persistent，设定 GPP 为 Non-Persistent 属性，该属性主要用于存储临时数据的分区，例如 tmp 目录所在分区、 swap 分区等。
-
-
-![](gpp_attributes.png)
-
 
 
 
