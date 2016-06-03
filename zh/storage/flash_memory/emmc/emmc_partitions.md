@@ -145,7 +145,7 @@ eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended
 - System code， 设定 GPP 为 System code 属性，该属性主要用在存放操作系统类的、很少进行擦写更新的分区。
 - Non-Persistent，设定 GPP 为 Non-Persistent 属性，该属性主要用于存储临时数据的分区，例如 tmp 目录所在分区、 swap 分区等。
 
-在 eMMC 标准中，实际上并未定义设定 Extended attribute 后对 eMMC 的影响。Extended attribute 的具体作用，由芯片制造商定义。  
+在 eMMC 标准中，同样也没有定义设定 Extended attribute 后对 eMMC 的影响。Extended attribute 的具体作用，由芯片制造商定义。  
 
 
 ### 存储介质
