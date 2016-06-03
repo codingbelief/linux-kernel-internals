@@ -129,6 +129,8 @@ Write protect group size = 512KB \* HC_ERASE_GRP_SIZE \* HC_WP_GRP_SIZE
 
 
 
+![](gpp_attributes.png)
+
 
 ### 存储介质
 
