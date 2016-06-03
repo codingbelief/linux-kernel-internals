@@ -149,15 +149,17 @@ eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended
 
 ## User Data Area
 
-
+User Data Area (UDA) 通常是最大的一个分区，是实际产品中，最主要的存储区域。
 
 ### 容量大小
 
-### 区域属性
 
 ### 软件分区
 
 ![](uda_partitions.png)
+
+
+### 区域属性
 
 ----
 
