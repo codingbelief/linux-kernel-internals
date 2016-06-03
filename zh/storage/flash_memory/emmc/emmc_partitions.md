@@ -155,7 +155,7 @@ User Data Area (UDA) 通常是 eMMC 中最大的一个分区，是实际产品�
 UDA 的容量大小不需要设置，在配置完其他分区大小后，再扣除设置 Enhanced attribute 所损耗的容量，剩下的容量就是 UDA 的容量。
 
 ### 软件分区
-为了更合理的管理数据，满足不同的应用需求，UDA 在实际产品中，会进行软件再分区。
+为了更合理的管理数据，满足不同的应用需求，UDA 在实际产品中，会进行软件再分区。目前主流的软件分区技术有 MBR（Master Boot Record）和 GPT（GUID Partition Table）两种。这两种分区技术的基本原理类似，如下图所示：
 
 
 ![](uda_partitions.png)
