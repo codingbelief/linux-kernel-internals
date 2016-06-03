@@ -151,7 +151,7 @@ eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended
 
 ### 容量大小
 
-
+### 分区属性
 
 ### 软件分区
 
