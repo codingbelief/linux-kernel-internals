@@ -149,6 +149,8 @@ eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended
 
 ## User Data Area
 
+
+
 ----
 
 Boot 介绍
