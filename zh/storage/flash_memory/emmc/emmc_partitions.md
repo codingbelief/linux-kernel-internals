@@ -169,7 +169,7 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
 **Enhanced attribute**  
 
 - Default, 未设定 Enhanced attribute。
-- Enhanced storage media， 设定 GPP 为 Enhanced storage media。
+- Enhanced storage media， 设定该区域为 Enhanced storage media。
 
 
 在实际的产品中，
