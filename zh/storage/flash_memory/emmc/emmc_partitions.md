@@ -164,15 +164,14 @@ UDA 的容量大小不需要设置，在配置完其他分区大小后，再扣�
 > MBR 和 GPT 此处不展开详细介绍，更多的细节可以参考 [WIKI](https://en.wikipedia.org/wiki/Disk_partitioning) 相关介绍。
 
 ### 区域属性
-eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced attribute。与 GPP 中的 Enhanced attribute 相同，eMMC 标准也没有定义该区域设定 Enhanced attribute 后对 eMMC 的影响。  
+eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced attribute。与 GPP 中的 Enhanced attribute 相同，eMMC 标准也没有定义该区域设定 Enhanced attribute 后对 eMMC 的影响。Enhanced attribute 的具体作用，由芯片制造商定义。  
 
 **Enhanced attribute**  
 
 - Default, 未设定 Enhanced attribute。
 - Enhanced storage media， 设定该区域为 Enhanced storage media。
 
-
-在实际的产品中，
+在实际的产品中，UDA 区域设定为 Enhanced storage media 后，一般是把该区域的存储介质从 MLC 改变为 SLC。
 
 ----
 
