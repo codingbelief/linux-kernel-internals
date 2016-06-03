@@ -135,7 +135,7 @@ eMMC 标准中，为 GPP 定义了两类属性，如下：
 - Enhanced storage media， 设定 GPP 为 Enhanced storage media。
 
 > 在 eMMC 标准中，实际上并未定义设定 Enhanced attribute 后对 eMMC 的影响。Enhanced attribute 的具体作用，由芯片制造商定义。  
-> 在实际的产品中，设定 Enhanced storage media 后，通常会把该分区的存储介质从 MLC 改变为 SLC
+> 在实际的产品中，设定 Enhanced storage media 后，一般是把该分区的存储介质从 MLC 改变为 SLC，提高该分区的读写性能、寿命以及稳定性。
 
 ![](gpp_attributes.png)
 
