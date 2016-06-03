@@ -137,7 +137,6 @@ eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended
 在 eMMC 标准中，实际上并未定义设定 Enhanced attribute 后对 eMMC 的影响。Enhanced attribute 的具体作用，由芯片制造商定义。  
 在实际的产品中，设定 Enhanced storage media 后，一般是把该分区的存储介质从 MLC 改变为 SLC，提高该分区的读写性能、寿命以及稳定性。由于 1 个存储单元下，MLC 的容量是 SLC 的两倍，所以在总的存储单元数量一定的情况下，如果把原本为 MLC 的分区改变为 SLC，会减少 eMMC 的容量。（MLC 和 SLC 的细节可以参考 [Flash Memory](../index.html) 章节内容）
 
-
 **Extended attribute**  
 
 - Default, 未设定 Extended attribute。
