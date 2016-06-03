@@ -127,7 +127,7 @@ Write protect group size = 512KB \* HC_ERASE_GRP_SIZE \* HC_WP_GRP_SIZE
 
 ### 分区属性
 
-eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended attribute
+eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended attribute。每个 GPP 可以设定两类属性中的一种属性，不可以同时设定多个属性。
 
 
 
