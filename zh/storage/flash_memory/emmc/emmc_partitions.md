@@ -177,4 +177,4 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
 
 
 1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
-2. [Disk partitioning](https://en.wikipedia.org/wiki/Disk_partitioning) [WEB]
+2. [Disk partitioning](https://en.wikipedia.org/wiki/Disk_partitioning) [Web]
