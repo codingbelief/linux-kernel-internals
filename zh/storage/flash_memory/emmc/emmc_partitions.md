@@ -163,7 +163,7 @@ UDA 的容量大小不需要设置，在配置完其他分区大小后，再扣�
 
 软件分区技术一般是将存储介质划分为多个区域，既 SW Partitions，然后通过一个 Partition Table 来维护这些 SW Partitions。在 Partition Table 中，每一个条目都保存着一个 SW Partition 的起始地址、大小等的属性信息。软件系统在启动后，会去扫描 Partition Table，获取存储介质上的各个 SW Partitions 信息，然后根据这些信息，将各个 Partitions 加载到系统中，进行数据存取。
 
-> MBR 和 GPT 此处不展开详细介绍，更多的细节可以参考 [WIKI](https://en.wikipedia.org/wiki/Disk_partitioning) 相关介绍。
+> MBR 和 GPT 此处不展开详细介绍，更多的细节可以参考 wikipedia 上 [MBR](https://en.wikipedia.org/wiki/Master_boot_record) 和 [GPT](https://en.wikipedia.org/wiki/GUID_Partition_Table) 相关介绍。
 
 ### 区域属性
 eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced attribute。与 GPP 中的 Enhanced attribute 相同，eMMC 标准也没有定义该区域设定 Enhanced attribute 后对 eMMC 的影响。Enhanced attribute 的具体作用，由芯片制造商定义。  
