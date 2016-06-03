@@ -127,7 +127,7 @@ Write protect group size = 512KB \* HC_ERASE_GRP_SIZE \* HC_WP_GRP_SIZE
 
 ### 分区属性
 
-
+eMMC 标准中，为 GPP 定义了两类属性，如下：
 
 ![](gpp_attributes.png)
 
