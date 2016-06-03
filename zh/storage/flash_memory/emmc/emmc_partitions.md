@@ -131,6 +131,7 @@ eMMC 标准中，为 GPP 定义了两类属性，如下：
 
 **Enhanced attribute**
 
+
 ![](gpp_attributes.png)
 
 
