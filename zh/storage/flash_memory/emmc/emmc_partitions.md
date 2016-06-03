@@ -134,6 +134,8 @@ eMMC 标准中，为 GPP 定义了两类属性，如下：
 - Default, 未设定 Enhanced attribute。
 - Enhanced storage media， 设定 GPP 为 Enhanced storage media。
 
+> 在 eMMC 标准中，实际上并未定义设定 Enhanced attribute 后 eMMC 的行为。
+
 ![](gpp_attributes.png)
 
 
