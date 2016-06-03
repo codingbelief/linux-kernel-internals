@@ -177,6 +177,7 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
 
 ## eMMC 分区应用实例
 
+
 ## 参考资料
 
 1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
