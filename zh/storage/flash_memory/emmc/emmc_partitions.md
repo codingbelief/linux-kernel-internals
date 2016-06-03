@@ -132,6 +132,7 @@ eMMC 标准中，为 GPP 定义了两类属性，如下：
 ![](gpp_attributes.png)
 
 
+
 ### 存储介质
 
 ----
