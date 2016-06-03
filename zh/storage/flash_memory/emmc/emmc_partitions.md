@@ -147,8 +147,7 @@ eMMC 标准中，为 GPP 定义了两类属性，Enhanced attribute 和 Extended
 
 在 eMMC 标准中，同样也没有定义设定 Extended attribute 后对 eMMC 的影响。Extended attribute 的具体作用，由芯片制造商定义。  
 
-
-### 存储介质
+## 
 
 ----
 
