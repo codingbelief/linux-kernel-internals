@@ -171,8 +171,9 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
 - Default, 未设定 Enhanced attribute。
 - Enhanced storage media， 设定该区域为 Enhanced storage media。
 
-在实际的产品中，UDA 区域设定为 Enhanced storage media 后，一般是把该区域的存储介质从 MLC 改变为 SLC。
+在实际的产品中，UDA 区域设定为 Enhanced storage media 后，一般是把该区域的存储介质从 MLC 改变为 SLC。通常，产品中可以将某一个 SW Partition 设定为 Enhanced storage media，以获得更好的性能和健壮性。
 
+## eMMC 分区应用实例
 ----
 
 Boot 介绍
