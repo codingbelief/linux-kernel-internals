@@ -178,7 +178,8 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
 
 ```
 root@xxx:/ # ls /dev/block/mmcblk0*
-/dev/block/mmcblk0/dev/block/mmcblk0boot0
+/dev/block/mmcblk0
+/dev/block/mmcblk0boot0
 /dev/block/mmcblk0boot1
 /dev/block/mmcblk0rpmb
 /dev/block/mmcblk0p1
@@ -215,6 +216,41 @@ root@xxx:/ # ls /dev/block/mmcblk0*
 /dev/block/mmcblk0p32
 ```
 
+```
+root@xxx:/ # ls -l /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/
+lrwxrwxrwx root root 2015-01-03 04:03 boot -> /dev/block/mmcblk0p22
+lrwxrwxrwx root root 2015-01-03 04:03 cache -> /dev/block/mmcblk0p30
+lrwxrwxrwx root root 2015-01-03 04:03 custom -> /dev/block/mmcblk0p3
+lrwxrwxrwx root root 2015-01-03 04:03 devinfo -> /dev/block/mmcblk0p28
+lrwxrwxrwx root root 2015-01-03 04:03 expdb -> /dev/block/mmcblk0p4
+lrwxrwxrwx root root 2015-01-03 04:03 flashinfo -> /dev/block/mmcblk0p32
+lrwxrwxrwx root root 2015-01-03 04:03 frp -> /dev/block/mmcblk0p5
+lrwxrwxrwx root root 2015-01-03 04:03 keystore -> /dev/block/mmcblk0p27
+lrwxrwxrwx root root 2015-01-03 04:03 lk -> /dev/block/mmcblk0p20
+lrwxrwxrwx root root 2015-01-03 04:03 lk2 -> /dev/block/mmcblk0p21
+lrwxrwxrwx root root 2015-01-03 04:03 logo -> /dev/block/mmcblk0p23
+lrwxrwxrwx root root 2015-01-03 04:03 md1arm7 -> /dev/block/mmcblk0p17
+lrwxrwxrwx root root 2015-01-03 04:03 md1dsp -> /dev/block/mmcblk0p16
+lrwxrwxrwx root root 2015-01-03 04:03 md1img -> /dev/block/mmcblk0p15
+lrwxrwxrwx root root 2015-01-03 04:03 md3img -> /dev/block/mmcblk0p18
+lrwxrwxrwx root root 2015-01-03 04:03 metadata -> /dev/block/mmcblk0p8
+lrwxrwxrwx root root 2015-01-03 04:03 nvdata -> /dev/block/mmcblk0p7
+lrwxrwxrwx root root 2015-01-03 04:03 nvram -> /dev/block/mmcblk0p19
+lrwxrwxrwx root root 2015-01-03 04:03 oemkeystore -> /dev/block/mmcblk0p12
+lrwxrwxrwx root root 2015-01-03 04:03 para -> /dev/block/mmcblk0p2
+lrwxrwxrwx root root 2015-01-03 04:03 ppl -> /dev/block/mmcblk0p6
+lrwxrwxrwx root root 2015-01-03 04:03 proinfo -> /dev/block/mmcblk0p13
+lrwxrwxrwx root root 2015-01-03 04:03 protect1 -> /dev/block/mmcblk0p9
+lrwxrwxrwx root root 2015-01-03 04:03 protect2 -> /dev/block/mmcblk0p10
+lrwxrwxrwx root root 2015-01-03 04:03 recovery -> /dev/block/mmcblk0p1
+lrwxrwxrwx root root 2015-01-03 04:03 rstinfo -> /dev/block/mmcblk0p14
+lrwxrwxrwx root root 2015-01-03 04:03 seccfg -> /dev/block/mmcblk0p11
+lrwxrwxrwx root root 2015-01-03 04:03 secro -> /dev/block/mmcblk0p26
+lrwxrwxrwx root root 2015-01-03 04:03 system -> /dev/block/mmcblk0p29
+lrwxrwxrwx root root 2015-01-03 04:03 tee1 -> /dev/block/mmcblk0p24
+lrwxrwxrwx root root 2015-01-03 04:03 tee2 -> /dev/block/mmcblk0p25
+lrwxrwxrwx root root 2015-01-03 04:03 userdata -> /dev/block/mmcblk0p31
+```
 
 ## 参考资料
 
