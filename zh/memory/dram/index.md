@@ -1,2 +1,3 @@
-# SDRAM
+# DRAM
 
+TODO
