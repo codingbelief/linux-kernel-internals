@@ -16,4 +16,5 @@
 * [Memory](memory/index.md)
    * [DRAM](memory/dram/index.md)
        * [SDRAM](memory/dram/sdram/index.md)
+   * SRAM
 
