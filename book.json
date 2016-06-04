@@ -19,7 +19,7 @@
         },
         "atoc": {
             "addClass": true,
-            "className": "atoc"
+            "className": "right-nav"
         }
     }
 }
