@@ -15,5 +15,5 @@
    * [Linux SD/MMC Framework](storage/linux-sd-mmc-framework/index.md)
 * [Memory](memory/index.md)
    * [DRAM](memory/dram/index.md)
-       * SDRAM
+       * [SDRAM](memory/dram/sdram/index.md)
 
