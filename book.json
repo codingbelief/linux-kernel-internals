@@ -14,4 +14,7 @@
             "hostname": "http://linux.codingbelief.com/"
         }
     }
+    "styles": {
+      "website": "styles/website.css" 
+    }
 }
