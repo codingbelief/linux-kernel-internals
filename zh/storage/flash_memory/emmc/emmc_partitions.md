@@ -217,7 +217,7 @@ root@xxx:/ # ls /dev/block/mmcblk0*
 /dev/block/mmcblk0p32  
 ```
 
-```
+```shell
 root@xxx:/ # ls -l /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/  
 lrwxrwxrwx root     root              2015-01-03 04:03 boot -> /dev/block/mmcblk0p22  
 lrwxrwxrwx root     root              2015-01-03 04:03 cache -> /dev/block/mmcblk0p30  
