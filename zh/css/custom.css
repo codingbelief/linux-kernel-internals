@@ -1,4 +1,4 @@
-section  {
+/*section  {
     width:100%;
 }
 h1 {
@@ -49,11 +49,14 @@ th {
 	text-align: center;
 }
 */
+
+/*
 .right-nav .title .arrow{
 	cursor: pointer;
 	color:black;
 	font-weight: bolder;
 }
+*/
 .right-nav a{
 	position: relative;
 	display: block;
