@@ -12,6 +12,6 @@
        * [UFS](storage/flash_memory/ufs/index.md)
        * [NAND Flash](storage/flash_memory/nand_flash/index.md)
        * [NOR Flash](storage/flash_memory/nor_flash/index.md)
-   * [Linux SD/MMC Framework](storage/linux-sd-mmc-framework/introduction.md)
+   * [Linux SD/MMC Framework](storage/linux-sd-mmc-framework/index.md)
 * [Memory](memory/index.md)
 
