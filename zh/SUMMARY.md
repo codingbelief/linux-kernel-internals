@@ -14,5 +14,5 @@
        * [NOR Flash](storage/flash_memory/nor_flash/index.md)
    * [Linux SD/MMC Framework](storage/linux-sd-mmc-framework/index.md)
 * [Memory](memory/index.md)
-   * [SDRAM](memory/dram/index.md)
+   * [DRAM](memory/dram/index.md)
 
