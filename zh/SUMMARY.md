@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Storage](storage/index.md)
+   * [Linux SD/MMC Framework](linux-sd-mmc-framework/introduction.md)
    * [Flash Memory](storage/flash_memory/index.md)
        * [eMMC](storage/flash_memory/emmc/index.md)
            * [eMMC 分区管理](storage/flash_memory/emmc/emmc_partitions.md)
@@ -12,5 +13,4 @@
        * [UFS](storage/flash_memory/ufs/index.md)
        * [NAND Flash](storage/flash_memory/nand_flash/index.md)
        * [NOR Flash](storage/flash_memory/nor_flash/index.md)
-* [Linux SD/MMC Framework](linux-sd-mmc-framework/introduction.md)
 
