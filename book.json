@@ -15,7 +15,7 @@
         },
         "addcssjs": {
           "js": ["js/custom.js"],
-          //"css": ["css/custom.css"]
+          "css": ["css/custom.css"]
         },
         "toc": {
             "addClass": true,
