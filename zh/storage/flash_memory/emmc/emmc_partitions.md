@@ -177,6 +177,11 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
 
 ## eMMC 分区应用实例
 
+```
+test
+sdf
+```
+
 ```shell
 root@xxx:/ # ls /dev/block/mmcblk0*  
 /dev/block/mmcblk0  
