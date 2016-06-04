@@ -215,7 +215,6 @@ root@xxx:/ # ls /dev/block/mmcblk0*
 /dev/block/mmcblk0p30
 /dev/block/mmcblk0p31
 /dev/block/mmcblk0p32
-
 ```
 
 ```
