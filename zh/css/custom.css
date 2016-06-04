@@ -1,4 +1,4 @@
-/*section  {
+section  {
     width:100%;
 }
 h1 {
@@ -57,6 +57,7 @@ th {
 	font-weight: bolder;
 }
 */
+
 .right-nav a{
 	position: relative;
 	display: block;
