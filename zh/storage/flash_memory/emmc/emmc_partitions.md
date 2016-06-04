@@ -176,7 +176,7 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
 
 ## eMMC 分区应用实例
 
-在一个 Android 手机系统中，
+在一个 Android 手机系统中，各个分区的呈现形式如下：
 - mmcblk0 为 eMMC 的快设备;
 - mmcblk0boot0 和 mmcblk0boot1 对应两个 Boot Area Partitions;
 - mmcblk0rpmb 则为 RPMB Partition，mmcblk0p× 则为 UDA 划分出来的 SW Partitions;
