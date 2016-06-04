@@ -178,7 +178,7 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
 ## eMMC 分区应用实例
 
 
-
+  ```
   root@xxx:/ # ls /dev/block/mmcblk0*  
   /dev/block/mmcblk0  
   /dev/block/mmcblk0boot0  
@@ -216,9 +216,9 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
   /dev/block/mmcblk0p30  
   /dev/block/mmcblk0p31  
   /dev/block/mmcblk0p32  
+  ```
 
-
-
+  ```
   root@xxx:/ # ls -l /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/  
   lrwxrwxrwx root     root              2015-01-03 04:03 boot -> /dev/block/mmcblk0p22  
   lrwxrwxrwx root     root              2015-01-03 04:03 cache -> /dev/block/mmcblk0p30  
@@ -252,7 +252,7 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
   lrwxrwxrwx root     root              2015-01-03 04:03 tee1 -> /dev/block/mmcblk0p24  
   lrwxrwxrwx root     root              2015-01-03 04:03 tee2 -> /dev/block/mmcblk0p25  
   lrwxrwxrwx root     root              2015-01-03 04:03 userdata -> /dev/block/mmcblk0p31  
-
+  ```
 
 
 
