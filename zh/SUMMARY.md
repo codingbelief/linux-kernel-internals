@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * Memory
 * [Storage](storage/index.md)
    * [Flash Memory](storage/flash_memory/index.md)
        * [eMMC](storage/flash_memory/emmc/index.md)
