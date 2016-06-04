@@ -176,7 +176,82 @@ eMMC 标准中，支持为 UDA 中一个特定大小的区域设定 Enhanced att
 
 ## eMMC 分区应用实例
 
+```
+root@xxx:/ # ls /dev/block/mmcblk0*
 
+/dev/block/mmcblk0
+
+/dev/block/mmcblk0boot0
+
+/dev/block/mmcblk0boot1
+
+/dev/block/mmcblk0rpmb
+
+/dev/block/mmcblk0p1
+
+/dev/block/mmcblk0p2
+
+/dev/block/mmcblk0p3
+
+/dev/block/mmcblk0p4
+
+/dev/block/mmcblk0p5
+
+/dev/block/mmcblk0p6
+
+/dev/block/mmcblk0p7
+
+/dev/block/mmcblk0p8
+
+/dev/block/mmcblk0p9
+
+/dev/block/mmcblk0p10
+
+/dev/block/mmcblk0p11
+
+/dev/block/mmcblk0p12
+
+/dev/block/mmcblk0p13
+
+/dev/block/mmcblk0p14
+
+/dev/block/mmcblk0p15
+
+/dev/block/mmcblk0p16
+
+/dev/block/mmcblk0p17
+
+/dev/block/mmcblk0p18
+
+/dev/block/mmcblk0p19
+
+/dev/block/mmcblk0p20
+
+/dev/block/mmcblk0p21
+
+/dev/block/mmcblk0p22
+
+/dev/block/mmcblk0p23
+
+/dev/block/mmcblk0p24
+
+/dev/block/mmcblk0p25
+
+/dev/block/mmcblk0p26
+
+/dev/block/mmcblk0p27
+
+/dev/block/mmcblk0p28
+
+/dev/block/mmcblk0p29
+
+/dev/block/mmcblk0p30
+
+/dev/block/mmcblk0p31
+
+/dev/block/mmcblk0p32
+
+```
 
 
 ## 参考资料
