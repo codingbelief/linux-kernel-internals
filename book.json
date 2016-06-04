@@ -1,5 +1,5 @@
 {
-    "plugins": ["disqus","splitter","ga","baidu","sitemap","maxiang","toggle-chapters"],
+    "plugins": ["disqus","splitter","ga","baidu","sitemap","maxiang","toggle-chapters","addcssjs"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "codingbelief-gitbook"
@@ -13,5 +13,6 @@
         "sitemap": {
             "hostname": "http://linux.codingbelief.com/"
         }
-    }
+    },
+    
 }
