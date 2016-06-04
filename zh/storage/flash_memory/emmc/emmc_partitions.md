@@ -251,8 +251,10 @@ lrwxrwxrwx root     root              2015-01-03 04:03 system -> /dev/block/mmcb
 lrwxrwxrwx root     root              2015-01-03 04:03 tee1 -> /dev/block/mmcblk0p24
 lrwxrwxrwx root     root              2015-01-03 04:03 tee2 -> /dev/block/mmcblk0p25
 lrwxrwxrwx root     root              2015-01-03 04:03 userdata -> /dev/block/mmcblk0p31
-
 ```
+
+
+
 ## 参考资料
 
 1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
