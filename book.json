@@ -1,5 +1,5 @@
 {
-    "plugins": ["disqus","splitter","ga","baidu","sitemap","-maxiang","-toggle-chapters","addcssjs","-atoc"],
+    "plugins": ["disqus","splitter","ga","baidu","sitemap","-maxiang","-toggle-chapters","addcssjs","toc"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "codingbelief-gitbook"
@@ -17,7 +17,7 @@
           "js": ["js/custom.js"],
           "css": ["css/custom.css"]
         },
-        "atoc": {
+        "toc": {
             "addClass": true,
             "className": "right-nav"
         }
