@@ -222,7 +222,7 @@ root@xxx:/ # ls /dev/block/mmcblk0*
 /dev/block/mmcblk0p32
 ```
 
-每一个分区还会跟去实际的功能来设定别名。
+每一个分区会跟去实际的功能来设定名称。
 ```
 root@xxx:/ # ls -l /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/
 lrwxrwxrwx root root 2015-01-03 04:03 boot -> /dev/block/mmcblk0p22
