@@ -19,7 +19,7 @@
         },
         "atoc": {
             "addClass": true,
-            "className": "toc"
+            "className": "atoc"
         }
     }
 }
