@@ -14,7 +14,10 @@
 * Wordline，即字线，它决定了 Access Transistor 的导通或者截止。 
 * Bitline，即位线，它是外界访问 Storage Capacitor 的唯一通道，当 Access Transistor 导通后，外界可以通过 Bitline 对 Storage Capacitor 进行读取或者写入操作。
 
+具体实现上的问题：
 
+1. 电压不匹配，为了性能，电荷会少，为了功耗，电压会低。需要做一个转换的操作
+2. 一次读取后，电荷会变化，需要做 restore 的操作
 
 ## Differential Sense Amplifier
 
