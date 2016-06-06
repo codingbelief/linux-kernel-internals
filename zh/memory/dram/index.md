@@ -8,3 +8,5 @@ TODO
 * Access Transistor，即访问晶体管，
 * Bitline
 * Wordline
+
+![](dram_storage_cell.png)
