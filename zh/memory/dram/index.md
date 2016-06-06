@@ -19,5 +19,7 @@
 1. 电压不匹配，为了性能，电荷会少，电压会低。需要做一个转换的操作
 2. 一次读取后，电荷会变化，需要做 restore 的操作
 
+为解决写问题，引入了 Differential Sense Amplifier。
+
 ## Differential Sense Amplifier
 
