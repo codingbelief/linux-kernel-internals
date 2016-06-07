@@ -60,7 +60,7 @@ TODO: Add Sense Diagram
 
 TODO: Add Restore Diagram
 
-在完成 Sense 阶段的操作后，Bitline 线处于稳定的逻辑 1 电压，此时 Bitline Storage Capacitor 
+在完成 Sense 阶段的操作后，Bitline 线处于稳定的逻辑 1 电压，此时 Bitline 会对 Storage Capacitor 进行充电。经过特定的时间后，当 Storage Capacitor 的电荷恢复到读取操作前的状态时，就可以吧 Wordline 
 
 ## RAM Array Structures
 
