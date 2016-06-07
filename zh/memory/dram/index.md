@@ -48,7 +48,7 @@ TODO: Add Precharge Diagram
 
 TODO: Add Access Diagram
 
-
+经过 Rrecharge 阶段， Bitline 和 /Bitline 线上的电压已经稳定在 Vref 上了，此时，通过控制 Wordline 信号，将 Tc1 晶体管导通，
 
 
 ## RAM Array Structures
