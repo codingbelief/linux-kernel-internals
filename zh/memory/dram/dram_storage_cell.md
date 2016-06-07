@@ -40,6 +40,9 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 在后面的小节中，我们通过一次完整的数据读取过程，来了解 Differential Sense Amplifier 工作原理。
 
 ## Read Operation
+
+一个完整的 Read Operation 包含了，Precharge、Access、Sense、Restore 4 个阶段。
+
 ### Precharge
 
 TODO: Add Precharge Diagram
