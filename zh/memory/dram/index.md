@@ -40,6 +40,8 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 ### Precharge
 
+TODO: Add Precharge Diagram
+
 在这个阶段，首先会通过控制 EQ 信号，让 Te1、Te2、Te3 晶体管处于导通状态，将 Bitline 和 /Bitline 线上的电压稳定在 Vref 上。然后进入到下一个阶段。
 
 ### Access
