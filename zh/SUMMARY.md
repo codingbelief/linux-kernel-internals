@@ -17,5 +17,5 @@
    * [SRAM](memory/sram/index.md)
    * [DRAM](memory/dram/index.md)
        * [SDRAM](memory/dram/sdram/index.md)
-       * DRAM Storage Cell
+       * [DRAM Storage Cell](memory/dram/dram_storage_cell.md)
 
