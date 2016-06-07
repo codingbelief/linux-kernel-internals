@@ -50,14 +50,13 @@ TODO: Add Access Diagram
 
 经过 Rrecharge 阶段， Bitline 和 /Bitline 线上的电压已经稳定在 Vref 上了，此时，通过控制 Wordline 信号，将 Tc1 晶体管导通。由于 Storage Capacitor 中存储正电荷，Tc1 导通后，会将 Bitline 线上的电压拉升到 Vref+。然后进入到下一个阶段。 
 
-### Restore
-
-
 ### Sense
 
 TODO: Add Sense Diagram
 
 由于在 Access 阶段，Bitline 的电压被拉升到 Vref+，Tn2 会被导通，Tp2 则处于截止。此时，SAN 会被设定为逻辑 0 的电压，SAP 则会被设定为逻辑 1 的电压。由于 Tn2 处于导通状态，/Bitline 上的电压很快会被 SAN 拉到逻辑 0 电压，继而让 Tp1 进入导通状态，Tn1 进入截止状态。又由于 Tp1 进入了导通状态，Bitline 上的电压很快会被 SAP 拉到逻辑 1 电压。最后，Bitline 和 /Bitline 的电压都进入稳定状态，正确的呈现了 Storage Capacitor 所存储的信息 Bit。
+
+### Restore
 
 
 ## RAM Array Structures
