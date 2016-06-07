@@ -22,8 +22,8 @@
 然而，在具体实现上，我们对 DRAM Storage Cell 进行读写时，会遇到一下的问题：
 
 **外界的逻辑电平与 Storage Capacitor 的电平不匹配**
-Storage Capacitor 在电容一定的情况下，存储的电荷越少，充放电的时间就会越短，也就意味着写入的性能更好。在实际的 DRAM 实现中，为了获取更好的写入性能，通常只会在 Storage Capacitor 存储少量的电荷。  
-此时，当 Access Transistor 导通时，Bitline 上呈现的电压通常是要远远低于外界的逻辑电平 。
+Storage Capacitor 在电容一定的情况下，存储的电荷越少，充放电的时间就会越短，也就意味着写入的性能更好。  
+在实际的 DRAM 实现中，为了获取更好的写入性能，通常只会在 Storage Capacitor 存储少量的电荷。此时，当 Access Transistor 导通时，Bitline 上呈现的电压通常是要远远低于外界的逻辑电平 。
 
  Storage Capacitor 
 **进行一次读取操作后，Storage Capacitor 存储的电荷会变化**
