@@ -1,6 +1,8 @@
 
 # DRAM Storage Cell
 
+## Block Diagram
+
 从原理层面上看，一个最简单的，存储一个 Bit 信息的 DRAM Storage Cell 的结构如下图所示：
 
 ![](dram_storage_cell.png)
