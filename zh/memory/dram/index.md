@@ -16,7 +16,8 @@
 
 从上面的结构图上分析，我们可以很容易的推测出 DRAM Storage Cell 的数据读写流程：
 
-1. 
+1. 读数据时，Wordline 设为逻辑高电平，打开 Access Transistor，然后读取 Bitline 上的状态
+2. 写数据时，先把要写入的电平状态设定到 Bitline 上，然后打开 Access Transistor，通过 Bitline 改变 Storage Capacitor 内部的状态
 
 
 具体实现上的问题：
