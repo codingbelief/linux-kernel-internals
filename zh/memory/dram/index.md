@@ -32,6 +32,8 @@ Storage Capacitor 在电容一定的情况下，存储的电荷越少，充放�
 
 ## Differential Sense Amplifier
 
+Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Circuit 两个主要部分。
+
 
 ## RAM Array Structures
 
