@@ -54,7 +54,7 @@ TODO: Add Access Diagram
 
 TODO: Add Sense Diagram
 
-由于在 Access 阶段，Bitline 的电压被拉升到 Vref+，Tn2 会被导通，Tp2 则处于截止。
+由于在 Access 阶段，Bitline 的电压被拉升到 Vref+，Tn2 会被导通，Tp2 则处于截止。此时，SAN 会被设定为逻辑 0 的电压，SAP 则会被设定为逻辑 1 的电压。
 
 
 ## RAM Array Structures
