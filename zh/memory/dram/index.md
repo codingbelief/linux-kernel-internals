@@ -60,7 +60,7 @@ TODO: Add Sense Diagram
 
 TODO: Add Restore Diagram
 
-
+在完成 Sense 阶段的操作后， Storage Capacitor 
 
 ## RAM Array Structures
 
