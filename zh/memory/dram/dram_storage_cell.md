@@ -22,16 +22,18 @@
 
 然而，在具体实现上，我们对 DRAM Storage Cell 进行读写时，会遇到以下的问题：
 
-**外界的逻辑电平与 Storage Capacitor 的电平不匹配**
+**外界的逻辑电平与 Storage Capacitor 的电平不匹配**  
 Storage Capacitor 在电容一定的情况下，存储的电荷越少，充放电的时间就会越短，也就意味着写入的性能更好。  
 在实际的 DRAM 实现中，为了获取更好的写入性能，通常只会在 Storage Capacitor 存储少量的电荷。此时，当 Access Transistor 导通时，Bitline 上呈现的电压通常是要远远低于外界电路的逻辑电平。外界电路无法直接通过 Bitline 来读取Storage Capacitor 所存储的信息。
 
-**进行一次读取操作后，Storage Capacitor 存储的电荷会变化**
+**进行一次读取操作后，Storage Capacitor 存储的电荷会变化**  
 在进行一次读取操作的过程中，Access Transistor 导通后，由于 Bitline 和 Storage Capacitor 端的电压不一致，会导致 Storage Capacitor 中存储的电荷量被改变。最终可能会导致在下一次读取操作过程中，无法正确的读出 Storage Capacitor 内存储的信息。
 
 为解决上述的问题，DRAM 在设计上，引入了 Differential Sense Amplifier。
 
 ## Differential Sense Amplifier
+
+![](differential_sense_amplifier.png)
 
 TODO: Add Differential Sense Amplifier Block Diagram
 
