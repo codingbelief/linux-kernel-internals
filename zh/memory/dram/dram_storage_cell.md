@@ -75,6 +75,8 @@ TODO: Add Write Operation Diagram
 
 Write Operation 的前期流程和 Read Operation 是一样的，执行 Precharge、Access、Sense 和 Restore 操作。在完成 Restore 过程中， Wordline 让 Access Transistor 截止前，进行 Write Recovery 操作。
 
+### Write Recovery  
+
 在 Write Recovery 阶段时，通过控制 WE 信号，让 Tw1 和 Tw2 进入导通状态。此时，Bitline 会被 input 拉到逻辑 0 电平，/Bitline 则会被 /input 拉到逻辑 1 电平，
 
 ## 参考资料
