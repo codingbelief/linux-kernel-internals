@@ -73,6 +73,10 @@ TODO: Add Restore Diagram
 
 TODO: Add Write Operation Diagram
 
+Write Operation 的前期流程和 Read Operation 是一样的，执行 Precharge、Access、Sense 和 Restore 操作。在完成 Restore 操作后，进入 Write Recovery 阶段。
+
+在 Write Recovery 阶段时，通过控制 WE 信号，让 Tw1 和 Tw2 进入导通状态。此时，Bitline 会被 input 拉到逻辑 0 电平，/Bitline 则会被 /input 拉到逻辑 1 电平，
+
 ## 参考资料
 
 1. Memory Systems - Cache Dram and Disk ： Chapter 08
