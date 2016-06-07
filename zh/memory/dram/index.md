@@ -34,7 +34,7 @@ Storage Capacitor 在电容一定的情况下，存储的电荷越少，充放�
 
 TODO: Add Differential Sense Amplifier Block Diagram
 
-Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Circuit 两个主要部分。
+Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Circuit 两个主要部分。它主要的功能就是将 Storage Capacitor 的电压转换为逻辑 1 或者 0 所对应的电压，并且呈现到 Bitline 上，同时，在完成一次读取操作后，将
 后面我们通过一次完整的数据读取过程，来了解 Differential Sense Amplifier 所承载的功能。
 
 ### Precharge
