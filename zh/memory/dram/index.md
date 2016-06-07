@@ -19,7 +19,7 @@
 1. 读数据时，Wordline 设为逻辑高电平，打开 Access Transistor，然后读取 Bitline 上的状态
 2. 写数据时，先把要写入的电平状态设定到 Bitline 上，然后打开 Access Transistor，通过 Bitline 改变 Storage Capacitor 内部的状态。
 
-然而，在具体实现上，的问题：
+然而，在具体实现上，我们对 DRAM Storage Cell 进行读写时，会遇到一下的问题：
 
 1. 电压不匹配，为了性能，电荷会少，电压会低。需要做一个转换的操作
 2. 一次读取后，电荷会变化，需要做 restore 的操作
