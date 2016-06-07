@@ -28,11 +28,7 @@ Storage Capacitor 在电容一定的情况下，存储的电荷越少，充放�
 **进行一次读取操作后，Storage Capacitor 存储的电荷会变化**
 在进行一次读取操作的过程中，Access Transistor 导通后，由于 Bitline 和 Storage Capacitor 端的电压不一致，会导致 Storage Capacitor 中存储的电荷量被改变。最终可能会导致在下一次读取操作过程中，无法正确的读出 Storage Capacitor 内存储的信息。
 
-
-3. ，为了性能，电荷会少，电压会低。需要做一个转换的操作
-2. 一次读取后，电荷会变化，需要做 restore 的操作
-
-为解决写问题，引入了 Differential Sense Amplifier。
+为解决上述的问题，DRAM 在设计上，引入了 Differential Sense Amplifier。
 
 ## Differential Sense Amplifier
 
