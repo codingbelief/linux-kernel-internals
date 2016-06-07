@@ -17,6 +17,8 @@ DRAM Storage Cell 使用 Storage Capacitor 来存储 Bit 信息。
 * Wordline，即字线，它决定了 Access Transistor 的导通或者截止。 
 * Bitline，即位线，它是外界访问 Storage Capacitor 的唯一通道，当 Access Transistor 导通后，外界可以通过 Bitline 对 Storage Capacitor 进行读取或者写入操作。
 
+### 数据读写原理
+
 从上面的结构图上分析，我们可以很容易的推测出 DRAM Storage Cell 的数据读写流程：
 
 1. 读数据时，Wordline 设为逻辑高电平，打开 Access Transistor，然后读取 Bitline 上的状态
