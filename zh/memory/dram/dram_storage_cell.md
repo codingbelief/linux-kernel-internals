@@ -2,7 +2,7 @@
 # DRAM Storage Cell
 
 
-## Block Diagram
+## Storage Capacitor
 
 从原理层面上看，一个最简单的，存储一个 Bit 信息的 DRAM Storage Cell 的结构如下图所示：
 
@@ -39,6 +39,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 在后面的小节中，我们通过一次完整的数据读取过程，来了解 Differential Sense Amplifier 工作原理。
 
+## 
 ### Precharge
 
 TODO: Add Precharge Diagram
