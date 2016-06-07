@@ -4,6 +4,8 @@
 
 ## Storage Capacitor
 
+DRAM Storage Cell 使用 Storage Capacitor 来存储 Bit 信息。
+
 从原理层面上看，一个最简单的，存储一个 Bit 信息的 DRAM Storage Cell 的结构如下图所示：
 
 ![](dram_storage_cell.png)
