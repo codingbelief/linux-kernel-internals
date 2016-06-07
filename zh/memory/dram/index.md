@@ -21,7 +21,7 @@
 
 然而，在具体实现上，我们对 DRAM Storage Cell 进行读写时，会遇到一下的问题：
 
-**电压不匹配**
+**外界的逻辑电平与 Storage Capacitor 的电平不匹配**
 
 **进行一次读取操作后，Storage Capacitor 存储的电荷会变化**
 
