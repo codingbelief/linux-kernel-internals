@@ -60,7 +60,7 @@ TODO: Add Sense Diagram
 
 TODO: Add Restore Diagram
 
-在完成 Sense 阶段的操作后， Storage Capacitor 
+在完成 Sense 阶段的操作后，Bitline 线处于稳定的逻辑 1 电压，此时 Bitline Storage Capacitor 
 
 ## RAM Array Structures
 
