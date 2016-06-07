@@ -58,7 +58,7 @@ TODO: Add Sense Diagram
 
 ### Restore
 
-
+TODO: Add Restore Diagram
 
 ## RAM Array Structures
 
