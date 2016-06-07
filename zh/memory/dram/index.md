@@ -37,7 +37,7 @@ TODO: Add Differential Sense Amplifier Block Diagram
 Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Circuit 两个主要部分。
 后面我们通过一次完整的数据读取过程，来了解 Differential Sense Amplifier 所承载的功能。
 
-### 
+### Precharge
 
 ## RAM Array Structures
 
