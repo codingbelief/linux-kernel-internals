@@ -39,7 +39,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 在后面的小节中，我们通过一次完整的数据读取过程，来了解 Differential Sense Amplifier 工作原理。
 
-## 
+## Read Operation
 ### Precharge
 
 TODO: Add Precharge Diagram
