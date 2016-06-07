@@ -65,5 +65,4 @@ TODO: Add Restore Diagram
 
 ## 参考资料
 
-1. Memory Systems - Cache Dram and Disk Chapter 08
-. DRAM Device Organization Basic Circuits and Architecture
+1. Memory Systems - Cache Dram and Disk ： Chapter 08
