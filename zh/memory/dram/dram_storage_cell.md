@@ -1,4 +1,4 @@
- # DRAM Storage Cell
+# DRAM Storage Cell
 
 
 ## Storage Capacitor
