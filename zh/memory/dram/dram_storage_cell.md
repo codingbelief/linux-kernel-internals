@@ -33,7 +33,7 @@ Storage Capacitor 的 Common 端接在 Vcc/2。
   由于 Bitline 的电容值比 Storage Capacitor 要大的多，当 Access Transistor 导通后，如果 Storage Capacitor 存储的信息为 1 时，Bitline 电压变化非常小。外界电路无法直接通过 Bitline 来读取 Storage Capacitor 所存储的信息。
 
 2. 进行一次读取操作后，Storage Capacitor 存储的电荷会变化  
-  在进行一次读取操作的过程中，Access Transistor 导通后，由于 Bitline 和 Storage Capacitor 端的电压不一致，会导致 Storage Capacitor 中存储的电荷量被改变。最终可能会导致在下一次读取操作过程中，无法正确的读出 Storage Capacitor 内存储的信息。
+  在进行一次读取操作的过程中，Access Transistor 导通后，由于 Bitline 和 Storage Capacitor 端的电压不一致，会导致 Storage Capacitor 中存储的电荷量被改变。最终可能会导致在下一次读取操作过程中，无法正确的判断 Storage Capacitor 内存储的信息。
 
 3. 由于 Capacitor 的物理特性，即使不进行读写操作，其所存储的电荷都会慢慢变少  
   这个特性要求 DRAM 在没有读写操作时，也要主动对 Storage Capacitor 进行电荷恢复的操作。
