@@ -29,17 +29,14 @@ Storage Capacitor 的 Common 端接在 Vcc/2。
 
 然而，在具体实现上，如果按照上面的流程对 DRAM Storage Cell 进行读写，会遇到以下的问题：
 
-**1. 外界的逻辑电平与 Storage Capacitor 的电平不匹配**  
-
+1. 外界的逻辑电平与 Storage Capacitor 的电平不匹配  
   当 Access Transistor 导通后，如果 Storage Capacitor 存储的信息为 1 时，Bitline 上呈现的电压通常是要低于 Vcc。外界电路无法直接通过 Bitline 来读取 Storage Capacitor 所存储的信息。
 
-**2. 进行一次读取操作后，Storage Capacitor 存储的电荷会变化**  
+2. 进行一次读取操作后，Storage Capacitor 存储的电荷会变化  
+  在进行一次读取操作的过程中，Access Transistor 导通后，由于 Bitline 和 Storage Capacitor 端的电压不一致，会导致 Storage Capacitor 中存储的电荷量被改变。最终可能会导致在下一次读取操作过程中，无法正确的读出 Storage Capacitor 内存储的信息。
 
-在进行一次读取操作的过程中，Access Transistor 导通后，由于 Bitline 和 Storage Capacitor 端的电压不一致，会导致 Storage Capacitor 中存储的电荷量被改变。最终可能会导致在下一次读取操作过程中，无法正确的读出 Storage Capacitor 内存储的信息。
-
-**3. 由于 Capacitor 的物理特性，即使不进行读写操作，其所存储的电荷都会慢慢变少**  
-
-这个特性要求 DRAM 在没有读写操作时，也要主动对 Storage Capacitor 进行电荷恢复的操作。
+3. 由于 Capacitor 的物理特性，即使不进行读写操作，其所存储的电荷都会慢慢变少  
+  这个特性要求 DRAM 在没有读写操作时，也要主动对 Storage Capacitor 进行电荷恢复的操作。
 
 为解决上述的问题，DRAM 在设计上，引入了 Differential Sense Amplifier。
 
