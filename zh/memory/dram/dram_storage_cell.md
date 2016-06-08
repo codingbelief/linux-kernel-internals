@@ -76,7 +76,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 ![](restore.png)
 
-### Timming
+### Timing
 
 ![](read_operation_timing.png)
 
