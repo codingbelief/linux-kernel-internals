@@ -55,6 +55,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 ### Precharge
 
 在这个阶段，首先会通过控制 EQ 信号，让 Te1、Te2、Te3 晶体管处于导通状态，将 Bitline 和 /Bitline 线上的电压稳定在 Vref 上, Vref = Vcc/2。然后进入到下一个阶段。
+
 ![](precharge.png)
 
 ### Access
@@ -74,6 +75,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 ### Restore
 
 在完成 Sense 阶段的操作后，Bitline 线处于稳定的逻辑 1 电压 Vcc，此时 Bitline 会对 Storage Capacitor 进行充电。经过特定的时间后，Storage Capacitor 的电荷就可以恢复到读取操作前的状态。
+
 ![](restore.png)
 
 最后，通过 CSL 信号，让 Tc1 和 Tc2 进入导通状态，外界就可以从 Bitline 上读取到具体的信息。
@@ -81,6 +83,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 ### Timing
 
 整个 Read Operation 的时序如下图所示，其中的 Vcc 即为逻辑 1 所对应的电压，Gnd 为逻辑 0。
+
 ![](read_operation_timing.png)
 
 ## Write Operation
