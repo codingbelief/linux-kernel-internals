@@ -1,10 +1,5 @@
 # DRAM Storage Cell
 
-## 前言
-
-接下了 X Project SDRAM 的任务，趁机整理下 DRAM、SDRAM、DDR SDRAM、LPDDR 等相关的内容。
-
-这是第一篇，简单介绍下 DRAM Storage Cell 的相关内容。
 
 ## Storage Capacitor
 
