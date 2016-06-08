@@ -43,7 +43,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 ![](differential_sense_amplifier.png)
 
-在后面的小节中，我们通过完整的数据读取过程，来了解 Differential Sense Amplifier 工作原理。
+在后面的小节中，我们通过完整的数据读取和写入过程，来了解 Differential Sense Amplifier 工作原理。
 
 ## Read Operation
 
