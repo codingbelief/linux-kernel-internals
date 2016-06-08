@@ -1,5 +1,8 @@
 # DRAM Storage Cell
 
+## 前言
+
+
 
 ## Storage Capacitor
 
