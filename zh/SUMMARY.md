@@ -18,4 +18,5 @@
    * [SRAM](memory/sram/index.md)
    * [DRAM](memory/dram/index.md)
        * [DRAM Storage Cell](memory/dram/dram_storage_cell.md)
+       * DRAM Memory Array
 
