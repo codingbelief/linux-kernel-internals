@@ -1,5 +1,4 @@
- 
-# DRAM Storage Cell
+ # DRAM Storage Cell
 
 
 ## Storage Capacitor
@@ -78,7 +77,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 ### Timing
 
-整个 Read Operation 的时序如下图所示，其中的 Vcc 即为逻辑 1 所对应的电压，Gnd 为逻辑 0.
+整个 Read Operation 的时序如下图所示，其中的 Vcc 即为逻辑 1 所对应的电压，Gnd 为逻辑 0。
 ![](read_operation_timing.png)
 
 ## Write Operation
