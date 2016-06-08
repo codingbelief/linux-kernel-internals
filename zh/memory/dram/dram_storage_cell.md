@@ -47,7 +47,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 ## Read Operation
 
-一个完整的 Read Operation 包含了，Precharge、Access、Sense、Restore 四个阶段。
+一个完整的 Read Operation 包含了，Precharge、Access、Sense、Restore 四个阶段。后续的小节中，将描述从 Storage Capacitor 读取 Bit 1 的完整过程。
 
 ### Precharge
 
