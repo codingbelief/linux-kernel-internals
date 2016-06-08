@@ -78,6 +78,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 ### Timing
 
+整个 Read Operation 的时序如下图所示，
 ![](read_operation_timing.png)
 
 ## Write Operation
