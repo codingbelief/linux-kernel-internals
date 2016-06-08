@@ -56,7 +56,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 ### Access
 
-经过 Rrecharge 阶段， Bitline 和 /Bitline 线上的电压已经稳定在 Vref 上了，此时，通过控制 Wordline 信号，将 Tc1 晶体管导通。由于 Storage Capacitor 中存储正电荷，Ta 导通后，会将 Bitline 线上的电压拉升到 Vref+。然后进入到下一个阶段。 
+经过 Rrecharge 阶段， Bitline 和 /Bitline 线上的电压已经稳定在 Vref 上了，此时，通过控制 Wordline 信号，将 Ta 晶体管导通。由于 Storage Capacitor 中存储正电荷，Ta 导通后，会将 Bitline 线上的电压拉升到 Vref+。然后进入到下一个阶段。 
 
 ![](access.png)
 
