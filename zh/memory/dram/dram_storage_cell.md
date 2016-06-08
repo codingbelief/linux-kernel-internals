@@ -31,7 +31,7 @@ Storage Capacitor 的 Common 端接在 Vcc/2。
 
 **1. 外界的逻辑电平与 Storage Capacitor 的电平不匹配**  
 
-当 Access Transistor 导通后，如果 Storage Capacitor 存储的信息为 1 时，Bitline 上呈现的电压通常是要低于 Vcc。外界电路无法直接通过 Bitline 来读取 Storage Capacitor 所存储的信息。
+  当 Access Transistor 导通后，如果 Storage Capacitor 存储的信息为 1 时，Bitline 上呈现的电压通常是要低于 Vcc。外界电路无法直接通过 Bitline 来读取 Storage Capacitor 所存储的信息。
 
 **2. 进行一次读取操作后，Storage Capacitor 存储的电荷会变化**  
 
