@@ -17,8 +17,8 @@ DRAM Storage Cell 使用 Storage Capacitor 来存储 Bit 信息。
 * Bitline，即位线，它是外界访问 Storage Capacitor 的唯一通道，当 Access Transistor 导通后，外界可以通过 Bitline 对 Storage Capacitor 进行读取或者写入操作。
 
 Storage Capacitor 的 Common 端接在 Vcc/2。  
-当 Storage Capacitor 存储的信息为 1 时，另一端电压为 Vcc，此时其所存储的电量 Q = Vcc/2 / C
-当 Storage Capacitor 存储的信息为 1 时，另一端电压为 0，此时其所存储的电量 Q = -Vcc/2 / C
+当 Storage Capacitor 存储的信息为 1 时，另一端电压为 Vcc，此时其所存储的电量 Q = Vcc/2 / C  
+当 Storage Capacitor 存储的信息为 0 时，另一端电压为 0，此时其所存储的电量 Q = -Vcc/2 / C
 
 ### 数据读写原理
 
