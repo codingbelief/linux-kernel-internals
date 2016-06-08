@@ -80,7 +80,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 ## Write Operation
 
-Write Operation 的前期流程和 Read Operation 是一样的，执行 Precharge、Access、Sense 和 Restore 操作。在完成 Restore 过程中， Wordline 让 Access Transistor 截止前，进行 Write Recovery 操作。
+Write Operation 的前期流程和 Read Operation 是一样的，执行 Precharge、Access、Sense 和 Restore 操作。在 Restore 阶段中， Wordline 让 Access Transistor 截止前，进行 Write Recovery 操作。
 
 ### Write Recovery  
 
