@@ -87,4 +87,4 @@ Write Operation 的前期流程和 Read Operation 是一样的，执行 Precharg
 
 ## 参考资料
 
-1. Memory Systems - Cache Dram and Disk  Chapter 08
+1. Memory Systems - Cache Dram and Disk
