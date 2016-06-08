@@ -76,8 +76,7 @@ Differential Sense Amplifier 包含 Sensing Circuit 和 Voltage Equalization Cir
 
 ### Restore
 
-在完成 Sense 阶段的操作后，Bitline 线处于稳定的逻辑 1 电压 Vcc，此时 Bitline 会对 Storage Capacitor 进行充电。经过特定的时间后，当 Storage Capacitor 的电荷恢复到读取操作前的状态时，就可以通过控制 Wordline，将 Storage Capacitor 的 Access Transistor Ta 截止。
-
+在完成 Sense 阶段的操作后，Bitline 线处于稳定的逻辑 1 电压 Vcc，此时 Bitline 会对 Storage Capacitor 进行充电。经过特定的时间后，Storage Capacitor 的电荷就可以恢复到读取操作前的状态。
 ![](restore.png)
 
 最后，通过 CSL 信号，让 Tc1 和 Tc2 进入导通状态，外界就可以从 Bitline 上读取到具体的信息。
