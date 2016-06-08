@@ -39,6 +39,8 @@ Storage Capacitor 的 Common 端接在 Vcc/2。
 
 **3. 由于 Capacitor 的物理特性，即使不进行读写操作，其所存储的电荷都会慢慢变少**  
 
+这个特性要求 DRAM 在没有读写操作时，也要主动对 Storage Capacitor 进行电荷恢复的操作。
+
 为解决上述的问题，DRAM 在设计上，引入了 Differential Sense Amplifier。
 
 ## Differential Sense Amplifier
