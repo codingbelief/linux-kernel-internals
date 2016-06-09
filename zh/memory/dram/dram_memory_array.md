@@ -25,4 +25,6 @@ Column: Smallest addressable quantity of DRAM on chip
 
 ## Banks
 
+## Page
+
 ## Word
