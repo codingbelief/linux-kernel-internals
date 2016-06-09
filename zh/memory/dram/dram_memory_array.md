@@ -5,9 +5,13 @@
 1024 columns / row
 4 – 16 bits / column
 
+long bitlines cause very slow edge
+rates
+
 ## Rows
 定义：
 
+### Row Size
 
 ## Columns
 定义：
