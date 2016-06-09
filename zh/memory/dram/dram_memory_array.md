@@ -1,6 +1,6 @@
 # DRAM Memory Array
 
-在 DRAM Storage Cell 章节中，我们介绍了单个 Cell 的结构。
+在 DRAM Storage Cell 章节中，介绍了单个 Cell 的结构。在本章节中，将介绍 DRAM 的所有 Cells 的组织方式。
 
 ## Memory Array
 逐步构建一个 Memory Array，解释 bitline 太多和太少的情况。最终提供一个 memory array 抽象。
