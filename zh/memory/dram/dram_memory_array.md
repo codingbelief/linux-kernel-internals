@@ -31,5 +31,3 @@ width as external output bus width
  so the memory controller may send commands to only one bank at a time,
 
 ## Pages
-
-## Words
