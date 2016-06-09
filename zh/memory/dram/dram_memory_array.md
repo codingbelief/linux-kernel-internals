@@ -11,20 +11,20 @@
 long bitlines cause very slow edge rates
 very short bitlines Array efficiency goes down; wastes valuable silicon area
 
-## Rows
+### Rows
 定义：
 A row is a group of storage cells that are activated together when a row activation command is sent to the DRAM device.
 
-### Row Size
+#### Row Size
 
-## Columns
+### Columns
 定义：
 Column: Smallest addressable quantity of DRAM on chip
 
 
-### Column Size
+#### Column Size
 
-## Banks
+## Memory Banks
 
 Bank is a unit which can be active independently and has same data bus
 width as external output bus width
