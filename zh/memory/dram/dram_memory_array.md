@@ -10,6 +10,8 @@
 ## Columns
 定义：
 Column: Smallest addressable quantity of DRAM on chip
+
+
 ### Column Size
 
 ## Banks
