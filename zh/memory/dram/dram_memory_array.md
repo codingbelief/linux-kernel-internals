@@ -5,6 +5,6 @@
 1024 columns / row
 4 – 16 bits / column
 
-## Row Decoder
+## Rows
 
 ## Column
