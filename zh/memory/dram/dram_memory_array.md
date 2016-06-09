@@ -29,7 +29,7 @@ Column: Smallest addressable quantity of DRAM on chip
 
 #### Column Size
 
-## Memory Banks
+## Memory Bank
 
 主要用于增加容量？
 
