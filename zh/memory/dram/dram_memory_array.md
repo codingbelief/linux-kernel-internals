@@ -25,6 +25,9 @@ Column: Smallest addressable quantity of DRAM on chip
 
 ## Banks
 
+Bank is a unit which can be active independently and has same data bus
+width as external output bus width
+
 ## Pages
 
 ## Words
