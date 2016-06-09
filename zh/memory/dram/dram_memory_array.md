@@ -5,9 +5,8 @@
 1024 columns / row
 4 – 16 bits / column
 
-long bitlines cause very slow edge
-rates
-
+long bitlines cause very slow edge rates
+very short bitlines Array efficiency goes down; wastes valuable silicon area
 ## Rows
 定义：
 
