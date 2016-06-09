@@ -13,6 +13,7 @@ very short bitlines Array efficiency goes down; wastes valuable silicon area
 ## Rows
 定义：
 
+
 ### Row Size
 
 ## Columns
