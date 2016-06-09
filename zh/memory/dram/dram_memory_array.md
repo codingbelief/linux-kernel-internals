@@ -1,5 +1,6 @@
 # DRAM Memory Array
 
+逐步构建一个 Memory Array，
 4 – 8 banks
 16K rows / bank
 1024 columns / row
