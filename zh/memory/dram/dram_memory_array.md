@@ -1,6 +1,6 @@
 # DRAM Memory Array
 
-逐步构建一个 Memory Array，
+逐步构建一个 Memory Array，解释 bitline 太多和太少的情况。
 4 – 8 banks
 16K rows / bank
 1024 columns / row
