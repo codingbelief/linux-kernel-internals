@@ -18,7 +18,7 @@
    * [SRAM](memory/sram/index.md)
    * [DRAM](memory/dram/index.md)
        * [DRAM Storage Cell](memory/dram/dram_storage_cell.md)
-       * [DRAM Memory Orgnization](memory/dram/dram_memory_array.md)
+       * [DRAM Memory Orgnization](memory/dram/dram_memory_orgnization.md)
        * [DRAM Device](memory/dram/dram_device.md)
        * DRAM Timing
 
