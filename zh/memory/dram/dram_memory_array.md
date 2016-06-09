@@ -7,6 +7,7 @@
 
 long bitlines cause very slow edge rates
 very short bitlines Array efficiency goes down; wastes valuable silicon area
+
 ## Rows
 定义：
 
