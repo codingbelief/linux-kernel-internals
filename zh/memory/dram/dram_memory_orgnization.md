@@ -1,6 +1,6 @@
 # DRAM Memory Orgnization
 
-在 [DRAM Storage Cell](./dram_storage_cell.html) 章节中，介绍了单个 Cell 的结构。在本章节中，将介绍 DRAM 中的所有 Cells 的组织方式。
+在 [DRAM Storage Cell](./dram_storage_cell.html) 章节中，介绍了单个 Cell 的结构。在本章节中，将介绍 DRAM 中的 Cells 的组织方式。
 
 ## Memory Array
 
