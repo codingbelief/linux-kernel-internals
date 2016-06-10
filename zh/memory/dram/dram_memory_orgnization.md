@@ -20,7 +20,9 @@ TODO： Add diagram
 
 TODO：Add diagram
 
+当两条 Bitline 都挂接了足够多的 Cells 后，如果还需要继续拓展，那么就只能增加 Bitline 了，增加后的结构图如下：
 
+TODO：Add diagram
 
 CSL 是否合并决定了有多少列和 data width
 
