@@ -4,11 +4,11 @@
 
 首先，为了更清晰的描述 Cells 的组织方式，我们先对上一章节中的 DRAM Storage Cell 进行抽象，最后得到新的结构图，如下：
 
-
+TODO：Add diagram
 
 ## Memory Array
 
-
+DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory Array。由于物理特性和成本等因素，Memory Array 在具体的组织方式上会有所限制。本小节将通过描述从 Cells 到 Array 的构建过程来
 
 
 CSL 是否合并决定了有多少列和 data width
