@@ -24,6 +24,8 @@ TODO：Add diagram
 
 TODO：Add diagram
 
+从图中我们可以看到，增加 Bitline 后，Sense Amplifier、Read Latch 和 Write Driver 的数量也相应的增加了，这意味着成本、功耗、芯片体积都会随着增加.
+
 CSL 是否合并决定了有多少列和 data width
 
 逐步构建一个 Memory Array，解释 bitline 太多和太少的情况。最终提供一个 memory array 抽象。
