@@ -9,6 +9,7 @@
 
 
 
+
 CSL 是否合并决定了有多少列和 data width
 
 逐步构建一个 Memory Array，解释 bitline 太多和太少的情况。最终提供一个 memory array 抽象。
