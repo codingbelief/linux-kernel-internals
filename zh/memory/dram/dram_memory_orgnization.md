@@ -12,6 +12,8 @@ DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory 
 
 首先，最简单的方式，就是在一个 Bitline 上，挂接更多的 Cells，如下图所示：
 
+TODO： Add diagram
+
 
 
 
