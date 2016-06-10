@@ -16,6 +16,7 @@ TODO： Add diagram
 
 在实际制造过程中，Bitline 挂接越多的 Cells，Bitline 的长度就会越长，也就意味着 Bitline 的电容值会更大，这会导致 Bitline 的信号边沿速率下降（电平从高变低或者从低变高的速率），最终导致性能的下降。  
 
+从 Cell 的结构图中，我们可以发现，在一个 Cell 的结构中，有两条 Bitline，它们在功能上是完全等价的，因此，我们可以把 Cells 分摊到不同的 Bitline 上，以减下 Bitline 的长度。 
 
 
 CSL 是否合并决定了有多少列和 data width
