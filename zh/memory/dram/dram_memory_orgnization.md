@@ -10,7 +10,7 @@ TODO：Add diagram
 
 DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory Array。由于物理特性和成本等因素，Memory Array 在具体的组织方式上会有所限制。
 
-
+首先，最简单的方式，就是
 
 
 CSL 是否合并决定了有多少列和 data width
