@@ -66,7 +66,7 @@ TODO：Add diagram
 
 ## Memory Bank
 
-
+拓展 Bitline 
 
 主要用于增加容量？
 
