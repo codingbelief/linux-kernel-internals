@@ -44,6 +44,8 @@ DRAM Memory 中的一个 Row 本质上就是所有接在同一跟 Wordline 上�
 
 TODO：Add diagram
 
+
+
 定义：
 A row is a group of storage cells that are activated together when a row activation command is sent to the DRAM device.
 
