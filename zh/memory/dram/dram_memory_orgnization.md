@@ -62,7 +62,7 @@ TODO：Add diagram
 
 #### Column Size
 
-一个 Column 的 Size 即为该 Column 上所包含的 Cells 的数量，与 Data Width 相同。Column Size 和 Data Width 在本质上是一样的，也是与 CSL 和 WE 控制线的组织方式有关（参考 Memory Array 小节中关于 CSL 的描述）。
+一个 Column 的 Size 即为该 Column 上所包含的 Cells 的数量，与 Data Width 相同。Column Size 和 Data Width 在本质上是一样的，也是与 CSL 和 WE 控制线的组织方式有关（参考 [Memory Array](#Memory Array) 小节中关于 CSL 的描述）。
 
 ## Memory Bank
 
