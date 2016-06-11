@@ -40,6 +40,7 @@ TODO：Add diagram
 
 ### Data Width
 
+
 ### Rows
 
 DRAM Memory 中的一个 Row 本质上就是所有接在同一跟 Wordline 上的 Cells，如下图所示。
