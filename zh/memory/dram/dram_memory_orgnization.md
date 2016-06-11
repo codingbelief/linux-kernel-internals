@@ -70,7 +70,9 @@ TODO：Add diagram
 
 为了在不减损性能的基础上进一步增加容量，DRAM 在设计上将多个 Memory Array 堆叠到一起，如下图所示：
 
+TODO：Add diagram
 
+其中的
 
 主要用于增加容量？
 
