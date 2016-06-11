@@ -66,7 +66,7 @@ TODO：Add diagram
 
 ## Memory Bank
 
-
+Memory Array 不能无限制的增大，要增加 Cells 的数量，就需要找
 
 主要用于增加容量？
 
