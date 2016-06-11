@@ -8,7 +8,8 @@ TODO：Add diagram
 
 ## Memory Array
 
-DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory Array。由于物理特性和成本等因素，Memory Array 在具体的组织方式上会有所限制。
+
+DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory Array。本小节将介绍 DRAM 中是如何 Cells 以 Memory Array 的方式组织起来的。
 
 首先，最简单的方式，就是在一个 Bitline 上，挂接更多的 Cells，如下图所示：
 
