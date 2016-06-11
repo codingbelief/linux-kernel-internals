@@ -80,6 +80,6 @@ TODO：Add diagram
 | -- | -- |
 | Banks | 4 |
 | Rows / Bank | 16K |
-| Columns /Row | 1024 |
+| Columns / Row | 1024 |
 | Column Size | 16 Bits |
 
