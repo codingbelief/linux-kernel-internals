@@ -48,7 +48,7 @@ DRAM 在进行数据读写时，都会控制 Wordline，打开 Cells，并将 Ce
 
 #### Row Size
 
-一个 Row 的 Size 即为一个 Row 上面的 Cells 的数量。
+一个 Row 的 Size 即为一个 Row 上面的 Cells 的数量。其中一个 Cell 存储 1 个 Bit 的信息，也就是说，Row Size 即为一个 Row 所存储的 Bit 位数。
 
 ### Columns
 
