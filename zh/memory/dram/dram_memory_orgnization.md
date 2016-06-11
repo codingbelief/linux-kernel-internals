@@ -66,7 +66,7 @@ TODO：Add diagram
 
 ## Memory Bank
 
-上一小节提到，通过拓展 Bitline 的数量来解决 Bitline 
+随着 Bitline 数量的不断增加，Wordline 上面挂接的 Cells 也会越来越多，Wordline 会越来越长，继而也会导致电容变大，边沿速率变慢，性能变差。 
 
 主要用于增加容量？
 
