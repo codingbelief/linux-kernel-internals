@@ -26,9 +26,9 @@ TODO：Add diagram
 
 从图中我们可以看到，增加 Bitline 后，Sense Amplifier、Read Latch 和 Write Driver 的数量也相应的增加了，这意味着成本、功耗、芯片体积都会随着增加。由于这个原因，在实际的设计中，会优先考虑增加 Bitline 上挂接的 Cells 的数量，避免增加 Bitline 的数量，这也意味着，一般情况下 Wordline 的数量会比 Bitline 多很多。
 
-图片呈现了一个由 16 个 Cells 组成的 Memory Array。其中的控制信号有 8 个 Wordline、两个 CSL、两个 WE，一次操作可以输出 1 个 Bit，也就是可以理解为一个 8 x 2 x 1 的 Memory Array。
+图片呈现了一个由 16 个 Cells 组成的 Memory Array。其中的控制信号有 8 个 Wordline、2 个 CSL、2 个 WE，一次进行 1 个 Bit 的读写操，也就是可以理解为一个 8 x 2 x 1 的 Memory Array。
 
-如果把两个 CSL 和 两个 WE 合并成一个 CSL 和一个 WE，如下图所示。此时
+如果把 2 个 CSL 和 2 个 WE 合并成 1 个 CSL 和 1 个 WE，如下图所示。此时，这个 Memory Array 就有 8 Wordline、1 个 CSL、1 个 WE，一次操作可以输出
 
 CSL 是否合并决定了有多少列和 data width
 
