@@ -40,7 +40,7 @@ TODO：Add diagram
 
 ### Data Width
 
-Memory Array 的 Data Width 是指对该 Array 进行一次读写操作所访问的 Bit 位数。这个位数和 CSL 和 WE 控制线的组织方式有关。
+Memory Array 的 Data Width 是指对该 Array 进行一次读写操作所访问的 Bit 位数。这个位数与 CSL 和 WE 控制线的组织方式有关。
 
 ### Rows
 
@@ -62,7 +62,7 @@ TODO：Add diagram
 
 #### Column Size
 
-一个 Column 的 Size 即为该 Column 上所包含的 Cells 的数量，与 Data Width 相同。Column Size 和 Data Width 在本质上是一样的
+一个 Column 的 Size 即为该 Column 上所包含的 Cells 的数量，与 Data Width 相同。Column Size 和 Data Width 在本质上是一样的，也是与 CSL 和 WE 控制线的组织方式有关。
 
 ## Memory Bank
 
