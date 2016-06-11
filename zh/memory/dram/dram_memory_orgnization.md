@@ -28,7 +28,7 @@ TODO：Add diagram
 
 图片呈现了一个由 16 个 Cells 组成的 Memory Array。其中的控制信号有 8 个 Wordline、两个 CSL、两个 WE，一次操作可以输出 1 个 Bit，也就是可以理解为一个 8 x 2 x 1 的 Memory Array。
 
-
+如果把两个 CSL 和 两个 WE 合并成一个 CSL 和一个 WE，如下图所示。此时
 
 CSL 是否合并决定了有多少列和 data width
 
