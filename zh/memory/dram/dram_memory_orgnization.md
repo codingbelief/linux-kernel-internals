@@ -12,7 +12,7 @@ DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory 
 
 首先，我们在不考虑形式的情况下，最简单的组织方式，就是在一个 Bitline 上，挂接更多的 Cells，如下图所示：
 
-TODO： Add diagram
+![](cells_on_worldline.png)
 
 在实际制造过程中，我们并不会无限制的在 Bitline 上挂接 Cells。因为 Bitline 挂接越多的 Cells，Bitline 的长度就会越长，也就意味着 Bitline 的电容值会更大，这会导致 Bitline 的信号边沿速率下降（电平从高变低或者从低变高的速率），最终导致性能的下降。为此，我们需要限制一条 Bitline 上挂接的 Cells 的总数，并将剩余的 Cells 挂接到其他的 Bitline 上去。
 
