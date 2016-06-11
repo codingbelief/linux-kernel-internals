@@ -76,7 +76,7 @@ TODO：Add diagram
 
 以下是一个 DRAM Memory Orgnization 的例子：
 
-| 0:0 | 1:0 |
+|  |  |
 | -- | -- |
 | Banks | 4 |
 | Rows / Bank | 16K |
