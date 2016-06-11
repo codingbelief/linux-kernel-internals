@@ -18,7 +18,7 @@ DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory 
 
 从 Cell 的结构图中，我们可以发现，在一个 Cell 的结构中，有两条 Bitline，它们在功能上是完全等价的，因此，我们可以把 Cells 分摊到不同的 Bitline 上，以减小 Bitline 的长度。然后，Cells 的组织方式就变成了如下的形式：
 
-TODO：Add diagram
+![](cells_on_bitlines.png)
 
 当两条 Bitline 都挂接了足够多的 Cells 后，如果还需要继续拓展，那么就只能增加 Bitline 了，增加后的结构图如下：
 
