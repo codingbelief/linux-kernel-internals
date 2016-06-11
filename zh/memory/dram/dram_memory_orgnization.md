@@ -66,7 +66,7 @@ TODO：Add diagram
 
 ## Memory Bank
 
-由于物理特性和性能等方面的限制，一个 Memory Array 中 Cells 的数量不能无限制的增大，要增加 Cells 的数量，就需要找
+由于物理特性和性能等方面的限制，一个 Memory Array 中 Cells 的数量不能无限制的增加，要增加 Cells 的数量，就需要找
 
 主要用于增加容量？
 
