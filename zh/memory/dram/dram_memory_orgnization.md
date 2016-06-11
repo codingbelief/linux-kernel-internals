@@ -74,16 +74,6 @@ TODO：Add diagram
 
 其中的每一个 Memory Array 称为一个 Bank，每一个 Bank 的 Rows、Columns、Data Width 都是一样的。在 DRAM 的数据访问时，只有一个 Bank 会被激活，进行数据的读写操作。
 
-
-
-主要用于增加容量？
-
-Bank is a unit which can be active independently and has same data bus
-width as external output bus width
-
- so the memory controller may send commands to only one bank at a time,
-
-
 4 – 8 banks
 16K rows / bank
 1024 columns / row
