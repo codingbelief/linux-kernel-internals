@@ -68,7 +68,7 @@ TODO：Add diagram
 
 随着 Bitline 数量的不断增加，Wordline 上面挂接的 Cells 也会越来越多，Wordline 会越来越长，继而也会导致电容变大，边沿速率变慢，性能变差。因此，一个 Memory Array 也不能无限制的扩大。
 
-为了
+为了在不减损性能的基础上进一步增加容量，DRAM 在设计上将多个 Memory Array 堆叠到一起，如下图所示：
 
 主要用于增加容量？
 
