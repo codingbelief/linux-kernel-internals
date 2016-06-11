@@ -48,7 +48,7 @@ DRAM Memory 中的一个 Row 本质上就是所有接在同一跟 Wordline 上�
 
 TODO：Add diagram
 
-DRAM 在进行数据读写时，都会控制 Wordline，打开 Cells，并将 Cells 上的数据缓存到 Sense Amplifiers 上。
+DRAM 在进行数据读写时，选中某一 Row，实质上就是控制该 Row 所对应的 Wordline，打开 Cells，并将 Cells 上的数据缓存到 Sense Amplifiers 上。
 
 #### Row Size
 
