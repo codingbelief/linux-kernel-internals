@@ -4,7 +4,7 @@
 
 为了更清晰的描述 Cells 的组织方式，我们先对上一章节中的 DRAM Storage Cell 进行抽象，最后得到新的结构图，如下：
 
-TODO：Add diagram
+![](dram_memory_cell.png)
 
 ## Memory Array
 
