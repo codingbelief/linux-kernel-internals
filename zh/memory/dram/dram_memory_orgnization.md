@@ -40,7 +40,7 @@ TODO：Add diagram
 
 ### Data Width
 
-
+Memory Array 的 Data Width 是指对该 Array 进行一次读写操作所访问的 Bit 位数。
 
 ### Rows
 
