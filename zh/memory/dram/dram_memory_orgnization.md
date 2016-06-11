@@ -46,9 +46,6 @@ TODO：Add diagram
 
 DRAM 在进行数据读写时，都会控制 Wordline，打开 Cells，并将 Cells 上的数据缓存到 Sense Amplifiers 上。
 
-定义：
-A row is a group of storage cells that are activated together when a row activation command is sent to the DRAM device.
-
 #### Row Size
 
 ### Columns
