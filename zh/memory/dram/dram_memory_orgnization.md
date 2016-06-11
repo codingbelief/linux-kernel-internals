@@ -66,7 +66,7 @@ TODO：Add diagram
 
 ## Memory Bank
 
-拓展 Bitline 
+上一小节提到，通过拓展 Bitline 的数量来解决 Bitline 
 
 主要用于增加容量？
 
