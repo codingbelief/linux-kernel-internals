@@ -38,6 +38,8 @@ TODO：Add diagram
 
 其中，m 为 Wordline 的数量、n 为 CSL 和 WE 控制信号的数量、w 为一次可以进行读写操作的 Bits。
 
+### Data Width
+
 ### Rows
 
 DRAM Memory 中的一个 Row 本质上就是所有接在同一跟 Wordline 上的 Cells，如下图所示。
