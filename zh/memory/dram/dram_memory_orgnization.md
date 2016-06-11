@@ -72,7 +72,7 @@ TODO：Add diagram
 
 TODO：Add diagram
 
-其中的每一个 Memory Array 称为一个 Bank。在 DRAM 的数据访问时，只有一个 Bank 会被激活，进行数据的读写操作。
+其中的每一个 Memory Array 称为一个 Bank，每一个 Bank 的 Rows、Columns、Data Width 都是一样的。在 DRAM 的数据访问时，只有一个 Bank 会被激活，进行数据的读写操作。
 
 
 
