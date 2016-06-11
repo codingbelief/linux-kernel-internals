@@ -44,7 +44,7 @@ Memory Array 的 Data Width 是指对该 Array 进行一次读写操作所访问
 
 ### Rows
 
-DRAM Memory 中的一个 Row 本质上就是所有接在同一根 Wordline 上的 Cells，如下图所示。
+DRAM Memory 中的 Row 与 Wordline 是一一对应的，一个 Row 本质上就是所有接在同一根 Wordline 上的 Cells，如下图所示。
 
 TODO：Add diagram
 
