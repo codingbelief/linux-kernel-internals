@@ -38,11 +38,6 @@ TODO：Add diagram
 
 其中，m 为 Wordline 的数量、n 为 CSL 和 WE 控制信号的数量、w 为一次可以进行读写操作的 Bits。
 
-4 – 8 banks
-16K rows / bank
-1024 columns / row
-4 – 16 bits / column
-
 ### Rows
 
 
