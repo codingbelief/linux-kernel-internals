@@ -32,6 +32,7 @@ TODO：Add diagram
 
 
 
+
 4 – 8 banks
 16K rows / bank
 1024 columns / row
