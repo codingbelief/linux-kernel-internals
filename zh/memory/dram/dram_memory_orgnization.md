@@ -30,7 +30,11 @@ TODO：Add diagram
 
 如果把 2 个 CSL 和 2 个 WE 合并成 1 个 CSL 和 1 个 WE，如下图所示。此时，这个 Memory Array 就有 8 Wordline、1 个 CSL、1 个 WE，一次可以进行 2 个 Bit 的读写操作，也就是成为了 8 x 1 x 2 的 Memory Array。
 
+TODO：Add diagram
+
 按照上述的过程，不断的增加 Cells 的数量，最终可以得到一个 m x n x w 的 Memory Array，如下图所示
+
+TODO：Add diagram
 
 
 
