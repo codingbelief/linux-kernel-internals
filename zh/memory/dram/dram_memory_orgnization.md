@@ -60,10 +60,6 @@ Column 是 Memory Array 中可寻址的最小单元。一个 Row 中有 n 个 Co
 
 TODO：Add diagram
 
-定义：
-Column: Smallest addressable quantity of DRAM on chip
-
-
 #### Column Size
 
 ## Memory Bank
