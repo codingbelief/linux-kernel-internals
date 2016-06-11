@@ -62,7 +62,7 @@ TODO：Add diagram
 
 #### Column Size
 
-
+一个 Column 的 Size 即为该 Column 上所包含的 Cells 的数量，与 Data Width 相同。
 
 ## Memory Bank
 
