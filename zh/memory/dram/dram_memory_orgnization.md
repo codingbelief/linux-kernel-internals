@@ -66,7 +66,7 @@ TODO：Add diagram
 
 ## Memory Bank
 
-随着 Bitline 数量的不断增加，Wordline 上面挂接的 Cells 也会越来越多，Wordline 会越来越长，继而也会导致电容变大，边沿速率变慢，性能变差。 
+随着 Bitline 数量的不断增加，Wordline 上面挂接的 Cells 也会越来越多，Wordline 会越来越长，继而也会导致电容变大，边沿速率变慢，性能变差。因此，一个 Memory Array 也不能无限制的扩大。 
 
 主要用于增加容量？
 
