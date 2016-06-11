@@ -30,9 +30,7 @@ TODO：Add diagram
 
 如果把 2 个 CSL 和 2 个 WE 合并成 1 个 CSL 和 1 个 WE，如下图所示。此时，这个 Memory Array 就有 8 Wordline、1 个 CSL、1 个 WE，一次可以进行 2 个 Bit 的读写操作，也就是成为了 8 x 1 x 2 的 Memory Array。
 
-CSL 是否合并决定了有多少列和 data width
 
-逐步构建一个 Memory Array，解释 bitline 太多和太少的情况。最终提供一个 memory array 抽象。
 
 4 – 8 banks
 16K rows / bank
