@@ -75,6 +75,7 @@ TODO：Add diagram
 其中的每一个 Memory Array 称为一个 Bank，每一个 Bank 的 Rows、Columns、Data Width 都是一样的。在 DRAM 的数据访问时，只有一个 Bank 会被激活，进行数据的读写操作。
 
 以下是一个 DRAM Memory Orgnization 的例子：
+
 | 0:0 | 1:0 |
 | -- | -- |
 | Banks | 4 |
