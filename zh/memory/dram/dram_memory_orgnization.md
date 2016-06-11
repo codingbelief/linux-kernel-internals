@@ -44,6 +44,9 @@ TODO：Add diagram
 4 – 16 bits / column
 
 ### Rows
+
+
+
 定义：
 A row is a group of storage cells that are activated together when a row activation command is sent to the DRAM device.
 
