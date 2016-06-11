@@ -34,7 +34,7 @@ DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory 
 
 按照上述的过程，不断的增加 Cells 的数量，最终可以得到一个 m x n x w 的 Memory Array，如下图所示
 
-TODO：Add diagram
+![](array.png)
 
 其中，m 为 Wordline 的数量、n 为 CSL 和 WE 控制信号的数量、w 为一次可以进行读写操作的 Bits。
 
