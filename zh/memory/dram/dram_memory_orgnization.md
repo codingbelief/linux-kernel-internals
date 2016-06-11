@@ -66,6 +66,7 @@ TODO：Add diagram
 
 ## Memory Bank
 
+
 主要用于增加容量？
 
 Bank is a unit which can be active independently and has same data bus
