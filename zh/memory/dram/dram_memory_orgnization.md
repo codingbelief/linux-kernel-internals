@@ -63,3 +63,8 @@ width as external output bus width
 
  so the memory controller may send commands to only one bank at a time,
 
+
+4 – 8 banks
+16K rows / bank
+1024 columns / row
+4 – 16 bits / column
