@@ -56,7 +56,7 @@ DRAM 在进行数据读写时，都会控制 Wordline，打开 Cells，并将 Ce
 
 ### Columns
 
-Column 是 Memory Array 中可寻址的最小单元。一个 Row 中有 n 个 Column，其中 n = Row Size / Data Width。下图是 Row Size 为 32，Data Width 为 8 的 Column 的示例。
+Column 是 Memory Array 中可寻址的最小单元。一个 Row 中有 n 个 Column，其中 n = Row Size / Data Width。下图是 Row Size 为 32，Data Width 为 8 时，Column 的示例。
 
 TODO：Add diagram
 
