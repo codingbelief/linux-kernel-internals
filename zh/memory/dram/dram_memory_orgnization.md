@@ -78,7 +78,9 @@ TODO：Add diagram
 | 0:0 | 1:0 |
 | -- | -- |
 | Banks | 4 |
-| Rows / Bank | 4 |
+| Rows / Bank | 16K |
+| Columns /Row | 1024 |
+| Column Size | 16 Bits |
 
 4 – 8 banks
 16K rows / bank
