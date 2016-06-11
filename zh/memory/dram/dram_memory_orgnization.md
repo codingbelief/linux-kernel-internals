@@ -72,7 +72,9 @@ TODO：Add diagram
 
 TODO：Add diagram
 
-其中的每一个 Memory Array 称为一个 Bank
+其中的每一个 Memory Array 称为一个 Bank。
+
+
 
 主要用于增加容量？
 
