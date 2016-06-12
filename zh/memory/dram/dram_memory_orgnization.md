@@ -36,8 +36,8 @@ DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory 
 
 ![](array.png)
 
-其中，m 为 Wordline 的数量、n 为 CSL 和 WE 控制信号的数量、w 则为一次可以进行读写操作的 Bits。
-
+其中，m 为 Wordline 的数量、n 为 CSL 和 WE 控制信号的数量、w 则为一次可以进行读写操作的 Bits。  
+在实际的应用中，我们通常以 Rows x Columns x Data Width 来描述一个 Memory Array
 
 ### Data Width
 
