@@ -26,7 +26,7 @@ DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory 
 
 从图中我们可以看到，增加 Bitline 后，Sense Amplifier、Read Latch 和 Write Driver 的数量也相应的增加了，这意味着成本、功耗、芯片体积都会随着增加。由于这个原因，在实际的设计中，会优先考虑增加 Bitline 上挂接的 Cells 的数量，避免增加 Bitline 的数量，这也意味着，一般情况下 Wordline 的数量会比 Bitline 多很多。
 
-图片呈现了一个由 16 个 Cells 组成的 Memory Array。其中的控制信号有 8 个 Wordline、2 个 CSL、2 个 WE，一次进行 1 个 Bit 的读写操，也就是可以理解为一个 8 x 2 x 1 的 Memory Array。
+上图中，呈现了一个由 16 个 Cells 组成的 Memory Array。其中的控制信号有 8 个 Wordline、2 个 CSL、2 个 WE，一次进行 1 个 Bit 的读写操，也就是可以理解为一个 8 x 2 x 1 的 Memory Array。
 
 如果把 2 个 CSL 和 2 个 WE 合并成 1 个 CSL 和 1 个 WE，如下图所示。此时，这个 Memory Array 就有 8 Wordline、1 个 CSL、1 个 WE，一次可以进行 2 个 Bit 的读写操作，也就是成为了 8 x 1 x 2 的 Memory Array。
 
