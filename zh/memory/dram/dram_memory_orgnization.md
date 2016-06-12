@@ -38,6 +38,7 @@ DRAM 在设计上，会将所有的 Cells 以特定的方式组成一个 Memory 
 
 其中，m 为 Wordline 的数量、n 为 CSL 和 WE 控制信号的数量、w 则为一次可以进行读写操作的 Bits。
 
+
 ### Data Width
 
 Memory Array 的 Data Width 是指对该 Array 进行一次读写操作所访问的 Bit 位数。这个位数与 CSL 和 WE 控制线的组织方式有关。
