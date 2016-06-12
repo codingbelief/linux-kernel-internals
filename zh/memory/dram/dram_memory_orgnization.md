@@ -70,7 +70,7 @@ Column 是 Memory Array 中可寻址的最小单元。一个 Row 中有 n 个 Co
 
 为了在不减损性能的基础上进一步增加容量，DRAM 在设计上将多个 Memory Array 堆叠到一起，如下图所示：
 
-TODO：Add diagram
+![](banks.png)
 
 其中的每一个 Memory Array 称为一个 Bank，每一个 Bank 的 Rows、Columns、Data Width 都是一样的。在 DRAM 的数据访问时，只有一个 Bank 会被激活，进行数据的读写操作。
 
