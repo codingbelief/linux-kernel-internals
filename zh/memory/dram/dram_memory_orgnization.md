@@ -46,7 +46,7 @@ Memory Array 的 Data Width 是指对该 Array 进行一次读写操作所访问
 
 DRAM Memory 中的 Row 与 Wordline 是一一对应的，一个 Row 本质上就是所有接在同一根 Wordline 上的 Cells，如下图所示。
 
-TODO：Add diagram
+![](row.png)
 
 DRAM 在进行数据读写时，选中某一 Row，实质上就是控制该 Row 所对应的 Wordline，打开 Cells，并将 Cells 上的数据缓存到 Sense Amplifiers 上。
 
@@ -56,9 +56,9 @@ DRAM 在进行数据读写时，选中某一 Row，实质上就是控制该 Row 
 
 ### Columns
 
-Column 是 Memory Array 中可寻址的最小单元。一个 Row 中有 n 个 Column，其中 n = Row Size / Data Width。下图是 Row Size 为 32，Data Width 为 8 时，Column 的示例。
+Column 是 Memory Array 中可寻址的最小单元。一个 Row 中有 n 个 Column，其中 n = Row Size / Data Width。下图是 Row Size 为 16，Data Width 为 4 时，Column 的示例。
 
-TODO：Add diagram
+![](column.png)
 
 #### Column Size
 
