@@ -21,4 +21,5 @@
        * [DRAM Memory Orgnization](memory/dram/dram_memory_orgnization.md)
        * [DRAM Device](memory/dram/dram_device.md)
        * DRAM Timing
+       * DRAM Devices Orgnization
 
