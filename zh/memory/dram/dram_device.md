@@ -8,5 +8,8 @@
 
 ## Data IO
 
+In electronics, a flip-flop or latch is a circuit that has two stable states and can be used to store state information. 
+
+
 ## Device Type
 
