@@ -1,4 +1,5 @@
 # DRAM Devices Orgnization
 
-1 个 CS 对应一个 Rank
-Channel 如何区别？ 每个 Channel 上的控制信号是一样的？ 数据总线拼接到一起？
+1 个 CS 对应一个 Rank！
+Channel 如何区别？ 每个 Channel 上的控制信号是一样的？ 数据总线拼接到一起？ 
+如果是共用数据总线的，那么必然需要在控制信号上加以区分，以保证不会同时访问总线。
