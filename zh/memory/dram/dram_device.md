@@ -1,15 +1,17 @@
 # DRAM Device
 
-## Control Logic
+## Component
+### Control Logic
 
-## Memory Address
+### Memory Array
 
 内存编址，地址到 row 和 column 的转换
 
-## Data IO
+### Data IO
 
 In electronics, a flip-flop or latch is a circuit that has two stable states and can be used to store state information. 
 
+### Reflash Counter
 
 ## Device Type
 
