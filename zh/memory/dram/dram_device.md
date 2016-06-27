@@ -14,3 +14,10 @@ In electronics, a flip-flop or latch is a circuit that has two stable states and
 ## Device Type
 
 选择一个具体的芯片作为例子。
+
+### SDR
+
+### DDR
+### DDR2
+### DDR3
+### DDR4
