@@ -18,6 +18,9 @@ In electronics, a flip-flop or latch is a circuit that has two stable states and
 ### SDR
 
 ### DDR
+
 ### DDR2
+
 ### DDR3
+
 ### DDR4
