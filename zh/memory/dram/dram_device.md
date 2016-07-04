@@ -15,6 +15,16 @@ In electronics, a flip-flop or latch is a circuit that has two stable states and
 
 ## DRAM Operations
 
+### Active
+
+### Read / Write
+
+### Precharge
+
+### Auto-reflash
+
+### Self-reflash
+
 ## Device Type
 
 选择一个具体的芯片作为例子。
