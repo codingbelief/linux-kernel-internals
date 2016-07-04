@@ -28,3 +28,5 @@ Just as with standard SDRAM, each generation of LPDDR has doubled the internal f
 ### DDR3
 
 ### DDR4
+
+### LPDDRx
