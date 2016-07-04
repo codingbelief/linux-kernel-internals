@@ -1,6 +1,6 @@
 # DRAM Device
 
-
+                                                                                                                                                                                                          
 
 ## Component
 ### Control Logic
