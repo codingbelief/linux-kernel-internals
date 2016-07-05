@@ -9,6 +9,17 @@ SDR SDRAM 是 DRAM 的一种，它与 Host 端的硬件接口如下图所示：
 
 TODO: Add sdram interface
 
+### DRAM Operations
+
+#### Active
+
+#### Read / Write
+
+#### Precharge
+
+#### Auto-reflash
+
+#### Self-reflash
 
 ## Synchronous DRAM
 
