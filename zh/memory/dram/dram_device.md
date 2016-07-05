@@ -17,9 +17,10 @@ TODO: Add sdram interface
 
 #### Read / Write
 
-#### Auto-reflash
+#### Reflash
 
-#### Self-reflash
+##### Auto-reflash
+##### Self-reflash
 
 ## SDRAM 内部结构
 
