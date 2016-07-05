@@ -5,7 +5,9 @@
 
 ## SDRAM Interface
 
-SDR SDRAM 是 DRAM 的一种，相对于异步的 DRAM，它引入了一个参考时钟，降低了 DRAM Controller 实现的复杂度，
+SDR SDRAM 是 DRAM 的一种，它与 Host 端的硬件接口如下图所示：
+
+TODO: Add sdram interface
 
 
 ## Synchronous DRAM
