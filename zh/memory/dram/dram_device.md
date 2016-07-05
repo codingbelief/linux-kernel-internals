@@ -5,7 +5,7 @@
 
 ## SDR SDRAM
 
-
+SDR SDRAM，即 Single Data Rate synchronous DRAM，是 DRAM 的一种。
 
 TODO: DRAM Devcie
 
