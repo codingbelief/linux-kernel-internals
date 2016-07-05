@@ -4,6 +4,7 @@
 
 ## Component
 
+如下图所示，
 
 
 ### Control Logic
