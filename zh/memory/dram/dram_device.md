@@ -1,7 +1,7 @@
 # DRAM Device
 
 在前面的章节中，介绍了 DRAM Cell 和 Memory Array。
-在此章节中，将会以 SDR SDRAM (Single Data Rate synchronous DRAM) 为例，描述构成 DRAM Device 的其他模块，包括 Control Logic、IO、Row & Column Decoder 等。
+在此章节中，将描述构成 DRAM Device 的其他模块，包括 Control Logic、IO、Row & Column Decoder 等。
 
 ## SDR SDRAM
 
