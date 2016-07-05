@@ -5,7 +5,7 @@
 
 ## SDR SDRAM
 
-SDR SDRAM，即 ，是 DRAM 的一种。
+SDR SDRAM 是 DRAM 的一种，相对于异步的 DRAM，它引入了一个参考时钟，
 
 TODO: DRAM Devcie
 
