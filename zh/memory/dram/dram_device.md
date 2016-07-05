@@ -6,7 +6,7 @@
 
 TODO: DRAM Devcie
 
-如下图所示，
+如图所示，
 
 
 ### Control Logic
