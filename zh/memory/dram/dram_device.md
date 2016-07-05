@@ -1,6 +1,6 @@
 # DRAM Device
 
-在前面的章节中，介绍了 DRAM Cell 和 Memory Array，                                                                                                                                                                                                          
+在前面的章节中，介绍了 DRAM Cell 和 Memory Array。                                                                                                                                                                                                          
 
 ## Component
 ### Control Logic
