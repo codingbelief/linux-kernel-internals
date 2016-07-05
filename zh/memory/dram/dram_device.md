@@ -8,7 +8,6 @@ TODO: DRAM Devcie
 
 如图所示，DRAM Device 内部主要有 Control Logic、Memory Array、Decoders、Reflash Counter 等模块。在后续的小节中，将逐一介绍各个模块的主要功能。
 
-
 ### Control Logic
 
 ### Memory Array
