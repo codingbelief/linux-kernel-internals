@@ -11,11 +11,11 @@ TODO: Add sdram interface
 
 ### SDRAM Operations
 
+#### Precharge
+
 #### Active
 
 #### Read / Write
-
-#### Precharge
 
 #### Auto-reflash
 
