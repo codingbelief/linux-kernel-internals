@@ -4,6 +4,8 @@
 
 ## Component
 
+TODO: DRAM Devcie
+
 如下图所示，
 
 
