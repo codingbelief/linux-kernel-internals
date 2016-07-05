@@ -17,7 +17,7 @@ TODO: Add sdram interface
 
 #### Precharge
 
-precharge 是以 Bank 为单位进行的，可以单独对某一个 Bank 进行，也可以一次对所有 Bank 进行。
+precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank 进行，也可以一次对所有 Bank 进行。
 
 #### Reflash
 
