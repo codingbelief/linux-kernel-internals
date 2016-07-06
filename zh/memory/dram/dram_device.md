@@ -1,4 +1,4 @@
-内容# DRAM Device
+# DRAM Device
 
 在前面的章节中，介绍了 DRAM Cell 和 Memory Array。
 在此章节中，将以 SDR SDRAM 为例，描述 DRAM Device 与 Host 端的接口，以及其内部的其他模块，包括 Control Logic、IO、Row & Column Decoder 等。
