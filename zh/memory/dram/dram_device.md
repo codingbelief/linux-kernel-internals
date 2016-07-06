@@ -19,7 +19,7 @@ TODO: Add sdram interface
 | CAS# | Input | Column Address Strobe，列地址选通信号 |
 | RAS# | Input | Row Address Strobe， 行地址选通信号 |
 | WE# | Input | Write Enable，写使能信号 |
-| DQML | Input | 2:6 |
+| DQML | Input | 当进行写数据时，如果该 DQML 为高， |
 | DQMH | Input | 2:6 |
 | BA[1:0] | Input | Bank Address |
 | A[12:0] | Input | Address 总线，用于传输行列地址 |
