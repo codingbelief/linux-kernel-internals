@@ -59,6 +59,8 @@ Precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank �
 
 #### Refresh
 
+
+
 ##### Auto-refresh
 ##### Self-refresh
 
