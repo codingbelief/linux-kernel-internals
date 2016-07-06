@@ -42,6 +42,8 @@ Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。�
 
 #### Active
 
+Active Command 会选中指定 Bank 中的一个 Row，并打开该 Row 的 wordline。
+
 #### Read / Write
 
 #### Precharge
