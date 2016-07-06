@@ -23,7 +23,7 @@ TODO: Add sdram interface
 | DQMH | Input | 2:6 |
 | BA[1:0] | Input | Bank Address |
 | A[12:0] | Input | Address 总线，用于传输行列地址 |
-| DQ[15:0] | I/O | Data 总线，用于传输读写的数据内存 |
+| DQ[15:0] | I/O | Data 总线，用于传输读写的数据内容 |
 
 ### SDRAM Operations
 
