@@ -29,15 +29,15 @@ TODO: Add sdram interface
 
 Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。一个 Command 由多个信号组合而成，下面表格中描述了主要的 Command。
 
-| Command | CS# | RAS# | CAS# | WE# | DQM | A[12:0] | DQ[15:0] |
+| Command | CS# | RAS# | CAS# | WE# | DQM | BA[1:0] & A[12:0] | DQ[15:0] |
 | -- | -- | -- | -- | -- | -- | -- | -- |
-| NOP | H | X | 3:2 | 4:2 | 5:2 | 6:2 | 7:2 |
-| Active | L | H | 3:2 | 4:2 | 5:2 | 6:2 | 7:2 |
-| Read | L | L | 3:3 | 4:3 | 5:3 | 6:3 | 7:3 |
-| Write | L | H | 3:4 | 4:4 | 5:4 | 6:4 | 7:4 |
-| Precharge | L | L | 3:5 | 4:5 | 5:5 | 6:5 | 7:5 |
-| Auto-refresh | L | L | 3:6 | 4:6 | 5:6 | 6:6 | 7:6 |
-| Self-refresh | L | L | 3:7 | 4:7 | 5:7 | 6:7 | 7:7 |
+| NOP                | L | H | H | H | X | X | X |
+| Active             | L | L | H | H | X | 6:2 | 7:2 |
+| Read               | L | L | 3:3 | 4:3 | 5:3 | 6:3 | 7:3 |
+| Write              | L | H | 3:4 | 4:4 | 5:4 | 6:4 | 7:4 |
+| Precharge          | L | L | 3:5 | 4:5 | 5:5 | 6:5 | 7:5 |
+| Auto-refresh       | L | L | 3:6 | 4:6 | 5:6 | 6:6 | 7:6 |
+| Self-refresh       | L | L | 3:7 | 4:7 | 5:7 | 6:7 | 7:7 |
 | Load Mode Register | L | L | 3:8 | 4:8 | 5:8 | 6:8 | 7:8 |
 
 
