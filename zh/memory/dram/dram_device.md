@@ -13,8 +13,8 @@ TODO: Add sdram interface
 
 | Symbol | Type | Description |
 | -- | -- | -- |
-| CLK | Input | 2:2 |
-| CKE | Input | 2:3 |
+| CLK | Input | 从 Host 端输出的同步时钟信号 |
+| CKE | Input | 用于指示 CLK 信号是否有效， |
 | CS# | Input | 2:4 |
 | CAS# RAS# WE# | Input | 2:5 |
 | DQML DQMH | Input | 2:6 |
