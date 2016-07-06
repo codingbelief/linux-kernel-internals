@@ -14,7 +14,7 @@ TODO: Add sdram interface
 | Symbol | Type | Description |
 | -- | -- | -- |
 | CLK | Input | 从 Host 端输出的同步时钟信号 |
-| CKE | Input | 用于指示 CLK 信号是否有效，SDRAM 会根据此信号进入或者退出 Power down、Self-reflash 等模式 |
+| CKE | Input | 用于指示 CLK 信号是否有效，SDRAM 会根据此信号进入或者退出 Power down、Self-refresh 等模式 |
 | CS# | Input | Chip Select 信号 |
 | CAS# | Input | Column Address Strobe，列地址选通信号 |
 | RAS# | Input | Row Address Strobe， 行地址选通信号 |
@@ -48,7 +48,7 @@ Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。�
 
 Precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank 进行，也可以一次对所有 Bank 进行。
 
-#### Reflash
+#### Refresh
 
 ##### Auto-refresh
 ##### Self-refresh
