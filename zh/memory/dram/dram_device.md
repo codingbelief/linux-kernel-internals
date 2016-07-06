@@ -17,7 +17,8 @@ TODO: Add sdram interface
 | CS# | Input | 2:4 |
 | CAS# RAS# WE# | Input | 2:5 |
 | DQML DQMH | 1:6 | 2:6 |
-
+| DQML DQMH | 1:6 | 2:6 |
+| DQML DQMH | 1:6 | 2:6 |
 
 ### SDRAM Operations
 
