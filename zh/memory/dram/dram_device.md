@@ -22,8 +22,8 @@ TODO: Add sdram interface
 | DQML | Input | 2:6 |
 | DQMH | Input | 2:6 |
 | BA[1:0] | Input | Bank Address |
-| A[12:0] | Input | 2:6 |
-| DQ[15:0] | I/O | 2:6 |
+| A[12:0] | Input | Address 总线 |
+| DQ[15:0] | I/O | Data 总线 |
 
 ### SDRAM Operations
 
