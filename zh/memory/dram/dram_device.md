@@ -33,8 +33,8 @@ Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。�
 | -- | -- | -- | -- | -- | -- | -- | -- |
 | NOP                | L | H | H | H | X | X | X |
 | Active             | L | L | H | H | X | Bank & Row | X |
-| Read               | L | H | L | H | L/H | Bank & Col | 7:3 |
-| Write              | L | H | 3:4 | 4:4 | 5:4 | 6:4 | 7:4 |
+| Read               | L | H | L | H | L/H | Bank & Col | X |
+| Write              | L | H | L | L | L/H | 6:4 | 7:4 |
 | Precharge          | L | L | 3:5 | 4:5 | 5:5 | 6:5 | 7:5 |
 | Auto-refresh       | L | L | 3:6 | 4:6 | 5:6 | 6:6 | 7:6 |
 | Self-refresh       | L | L | 3:7 | 4:7 | 5:7 | 6:7 | 7:7 |
