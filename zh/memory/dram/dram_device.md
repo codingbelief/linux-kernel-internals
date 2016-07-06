@@ -60,7 +60,7 @@ Precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank �
 
 #### Auto-Refresh
 
-DRAM 的存储电容
+DRAM 的 Storage Cell 中的电荷会随着时间慢慢减少
 
 #### Self-Refresh
 
