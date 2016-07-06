@@ -12,7 +12,7 @@ TODO: Add sdram interface
 总线上各个信号的描述如下表所示：
 | Symbol | Type | Description |
 | -- | -- | -- |
-| 0:2 | 1:2 | 2:2 |
+| CLK | Input | 2:2 |
 | 0:3 | 1:3 | 2:3 |
 | 0:4 | 1:4 | 2:4 |
 | 0:5 | 1:5 | 2:5 |
