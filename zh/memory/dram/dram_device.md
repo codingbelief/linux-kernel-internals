@@ -50,7 +50,7 @@ Read Command 将通过 A[12:0] 信号，发送需要读取的 Column 的地址�
 
 #### Write
 
-Write Command 将通过 A[12:0] 信号，发送需要写入的 Column 的地址给 SDRAM，同时通过 DQ[15:0] 将待写入的数据发送给 SDRAM。然后 SDRAM 将数据写入到指定的 Column 中。
+Write Command 将通过 A[12:0] 信号，发送需要写入的 Column 的地址给 SDRAM，同时通过 DQ[15:0] 将待写入的数据发送给 SDRAM。然后 SDRAM 将数据写入到 Actived Row 的指定的 Column 中。
 
 #### Precharge
 
