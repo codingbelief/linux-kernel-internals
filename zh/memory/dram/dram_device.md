@@ -27,7 +27,7 @@ TODO: Add sdram interface
 
 ### SDRAM Operations
 
-Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。
+Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。一个 Command 由多个信号组合而成，下面表格中描述了主要的 Command。
 
 #### Active
 
