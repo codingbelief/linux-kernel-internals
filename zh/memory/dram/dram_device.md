@@ -21,7 +21,7 @@ TODO: Add sdram interface
 | WE# | Input | Write Enable，写使能信号 |
 | DQML | Input | 2:6 |
 | DQMH | Input | 2:6 |
-| BA[1:0] | Input | 2:6 |
+| BA[1:0] | Input | Bank Address |
 | A[12:0] | Input | 2:6 |
 | DQ[15:0] | I/O | 2:6 |
 
