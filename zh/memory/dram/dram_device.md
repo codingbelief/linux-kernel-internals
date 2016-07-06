@@ -27,6 +27,8 @@ TODO: Add sdram interface
 
 ### SDRAM Operations
 
+Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。
+
 #### Active
 
 #### Read / Write
