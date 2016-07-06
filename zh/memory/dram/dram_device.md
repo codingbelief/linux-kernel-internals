@@ -29,7 +29,7 @@ TODO: Add sdram interface
 
 Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。一个 Command 由多个信号组合而成，下面表格中描述了主要的 Command。
 
-| Command | CS# | RAS# | CAS# | WE# | DQM | BA[1:0] & A[12:0] | DQ[15:0] |
+| Command | CS# | RAS# | CAS# | WE# | DQM | BA[1:0] A[12:0] | DQ[15:0] |
 | -- | -- | -- | -- | -- | -- | -- | -- |
 | NOP                | L | H | H | H | X | X | X |
 | Active             | L | L | H | H | X | 6:2 | 7:2 |
