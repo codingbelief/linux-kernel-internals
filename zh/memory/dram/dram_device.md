@@ -14,8 +14,8 @@ TODO: Add sdram interface
 | Symbol | Type | Description |
 | -- | -- | -- |
 | CLK | Input | 从 Host 端输出的同步时钟信号 |
-| CKE | Input | 用于指示 CLK 信号是否有效， |
-| CS# | Input | 2:4 |
+| CKE | Input | 用于指示 CLK 信号是否有效，SDRAM 会跟进此信号进入或者退出 Power down、Self-reflash 等模式 |
+| CS# | Input | Chip Select 信号， |
 | CAS# RAS# WE# | Input | 2:5 |
 | DQML DQMH | Input | 2:6 |
 | BA[1:0] | Input | 2:6 |
