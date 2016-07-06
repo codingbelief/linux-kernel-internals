@@ -46,7 +46,7 @@ Active Command 会选中指定 Bank 中的一个 Row，并打开该 Row 的 word
 
 #### Read
 
-Read 
+Read Command 将发送需要读取的 Column 的地址给 SDRAM，然后 SDRAM 再将 Active Command 所选中的 Row 中，将对应 Column 的数据通过 DQ 总线发送给 Host。
 
 #### Write
 
