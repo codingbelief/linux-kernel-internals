@@ -38,7 +38,7 @@ Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。�
 | Precharge          | L | L | H | L | X | Code | X |
 | Auto-refresh       | L | L | L | H | X | X | X |
 | Self-refresh       | L | L | L | H | X | X | X |
-| Load Mode Register | L | L | 3:8 | 4:8 | 5:8 | 6:8 | 7:8 |
+| Load Mode Register | L | L | L | L | X | X | REG Value |
 
 
 #### Active
