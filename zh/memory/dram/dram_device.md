@@ -15,7 +15,7 @@ TODO: Add sdram interface
 | CLK | Input | 2:2 |
 | CKE | 1:3 | 2:3 |
 | CS# | 1:4 | 2:4 |
-| 0:5 | 1:5 | 2:5 |
+| CAS# RAS# WE# | 1:5 | 2:5 |
 | 0:6 | 1:6 | 2:6 |
 
 
