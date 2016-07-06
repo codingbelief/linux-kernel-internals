@@ -10,6 +10,7 @@ SDR SDRAM 是 DRAM 的一种，它与 Host 端的硬件接口如下图所示：
 TODO: Add sdram interface
 
 总线上各个信号的描述如下表所示：
+
 | Symbol | Type | Description |
 | -- | -- | -- |
 | CLK | Input | 2:2 |
