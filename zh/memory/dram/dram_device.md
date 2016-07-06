@@ -19,6 +19,7 @@ TODO: Add sdram interface
 | DQML DQMH | 1:6 | 2:6 |
 | BA[1:0] | 1:6 | 2:6 |
 | A[12:0] | 1:6 | 2:6 |
+| A[12:0] | 1:6 | 2:6 |
 
 ### SDRAM Operations
 
