@@ -21,7 +21,7 @@ TODO: Add sdram interface
 | WE# | Input | Write Enable，写使能信号 |
 | DQML | Input | 当进行写数据时，如果该 DQML 为高，那么 DQ[7:0] 的数据会被忽略，不写入到 DRAM |
 | DQMH | Input | 当进行写数据时，如果该 DQMH 为高，那么 DQ[15:8] 的数据会被忽略，不写入到 DRAM |
-| BA[1:0] | Input | Bank Address |
+| BA[1:0] | Input | Bank Address，用于选择操作的 Memory Bank |
 | A[12:0] | Input | Address 总线，用于传输行列地址 |
 | DQ[15:0] | I/O | Data 总线，用于传输读写的数据内容 |
 
