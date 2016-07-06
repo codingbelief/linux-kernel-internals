@@ -16,10 +16,10 @@ TODO: Add sdram interface
 | CKE | Input | 2:3 |
 | CS# | Input | 2:4 |
 | CAS# RAS# WE# | Input | 2:5 |
-| DQML DQMH | 1:6 | 2:6 |
+| DQML DQMH | Input | 2:6 |
 | BA[1:0] | 1:6 | 2:6 |
 | A[12:0] | 1:6 | 2:6 |
-| A[12:0] | 1:6 | 2:6 |
+| DQ[15:0] | 1:6 | 2:6 |
 
 ### SDRAM Operations
 
