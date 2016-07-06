@@ -31,7 +31,6 @@ Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。�
 
 | Command | CS# | RAS# | CAS# | WE# | DQM | BA[1:0] & A[12:0] | DQ[15:0] |
 | -- | -- | -- | -- | -- | -- | -- | -- |
-| NOP                | L | H | H | H | X | X | X |
 | Active             | L | L | H | H | X | Bank & Row | X |
 | Read               | L | H | L | H | L/H | Bank & Col | X |
 | Write              | L | H | L | L | L/H | Bank & Col | Valid |
