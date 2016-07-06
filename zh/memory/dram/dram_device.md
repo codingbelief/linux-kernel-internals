@@ -46,7 +46,7 @@ Active Command 会通过 BA[1:0] 和 A[12:0] 信号，选中指定 Bank 中的�
 
 #### Read
 
-Read Command 将通过 A[12:0] 信号，发送需要读取的 Column 的地址给 SDRAM，然后 SDRAM 再将 Active Command 所选中的 Row 中，将对应 Column 的数据通过 DQ 总线发送给 Host。
+Read Command 将通过 A[12:0] 信号，发送需要读取的 Column 的地址给 SDRAM。然后 SDRAM 再将 Active Command 所选中的 Row 中，将对应 Column 的数据通过 DQ 总线发送给 Host。
 
 #### Write
 
