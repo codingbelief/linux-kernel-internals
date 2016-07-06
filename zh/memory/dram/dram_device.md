@@ -42,7 +42,7 @@ Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。�
 
 #### Active
 
-Active Command 会选中指定 Bank 中的一个 Row，并打开该 Row 的 wordline。在进行 Read 或者 Write 前，都需要先执行 Active Command。
+Active Command 会通过 BA[1:0] 和 A[12:0] 信号，选中指定 Bank 中的一个 Row，并打开该 Row 的 wordline。在进行 Read 或者 Write 前，都需要先执行 Active Command。
 
 #### Read
 
