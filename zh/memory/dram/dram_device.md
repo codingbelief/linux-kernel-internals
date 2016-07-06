@@ -13,8 +13,8 @@ TODO: Add sdram interface
 | Symbol | Type | Description |
 | -- | -- | -- |
 | CLK | Input | 2:2 |
-| CKE | 1:3 | 2:3 |
-| CS# | 1:4 | 2:4 |
+| CKE | Input | 2:3 |
+| CS# | Input | 2:4 |
 | CAS# RAS# WE# | 1:5 | 2:5 |
 | 0:6 | 1:6 | 2:6 |
 
