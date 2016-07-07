@@ -71,7 +71,7 @@ SDRAM 每收到一个 Auto-Refresh Command，就进行 n 个 Row 的刷新操作
 
 一般情况下，SDRAM Controller 会周期性的发送 AR，每两个 AR 直接的时间间隔定义为 tREFI = 64ms / 8192 = 7.8 us。
 
-
+SDRAM 完成一次刷新操作所需要的时间定义为 tRFC, 这个时间会随着 SDRAM Row 的数量的增加而变大。
 
 #### Self-Refresh
 
