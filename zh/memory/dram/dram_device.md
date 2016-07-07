@@ -62,7 +62,7 @@ Precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank �
 
 DRAM 的 Storage Cell 中的电荷会随着时间慢慢减少，为了保证其存储的信息不丢失，需要周期性的对其进行刷新操作。
 
-SDRAM 的刷新是按 Row 进行，标准中定义了在常温下，每 64ms 就需要完成一次所有 Row 的刷新操作
+SDRAM 的刷新是按 Row 进行，标准中定义了在常温下，每 64ms 就需要完成一次所有 Row 的刷新操作。
 
 #### Self-Refresh
 
