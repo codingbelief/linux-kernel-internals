@@ -106,6 +106,8 @@ TODO: DRAM Devcie
 
 Control Logic 的主要功能是解析 SDRAM Controller 发出的 Command，然后根据具体的 Command 做具体内部模块的控制，例如：选中指定的 Bank、打开 wordline 等的操作。
 
+
+
 ### Memory Array
 
 内存编址，地址到 row 和 column 的转换
