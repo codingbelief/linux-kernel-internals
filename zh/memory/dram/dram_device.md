@@ -114,3 +114,6 @@ Just as with standard SDRAM, each generation of LPDDR has doubled the internal f
 ### LPDDRx
 
 ### GDDRx
+
+## 参考资料
+
