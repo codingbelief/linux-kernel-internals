@@ -79,7 +79,7 @@ SDRAM 每收到一个 AR，就进行 n 个 Row 的刷新操作，n = 总的 Row 
 
 SDRAM 完成一次刷新操作所需要的时间定义为 tRFC, 这个时间会随着 SDRAM Row 的数量的增加而变大。
 
-由于 AR 会占用总线，阻塞正常的数据请求，同时 SDRAM 在执行 refresh 操作是会耗费较多的电，在 SDRAM 的标准中，还提供了一些优化的措施，例如 DRAM Controller 可以最多延时 8 个 tREFI 后，再一起把 8 个 AR 同时发出。
+由于 AR 会占用总线，阻塞正常的数据请求，同时 SDRAM 在执行 refresh 操作是很费电，所以在 SDRAM 的标准中，还提供了一些优化的措施，例如 DRAM Controller 可以最多延时 8 个 tREFI 后，再一起把 8 个 AR 同时发出。
 
 更多相关的优化可以参考 《大容量 DRAM 的刷新开销问题及优化技术综述》文中的描述。
 
