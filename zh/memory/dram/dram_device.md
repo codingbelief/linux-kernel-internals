@@ -69,7 +69,7 @@ SDRAM 的刷新是按 Row 进行，标准中定义了在一个刷新周期内（
 SDRAM 每收到一个 Auto-Refresh Command，就进行 n 个 Row 的刷新操作，n = 总的 Row 数量 / 8192
 同时，SDRAM 内部维护一个刷新计数器，每完成一次刷新操作，就将计数器更新为下一次需要进行刷新操作的 Row。
 
-一般情况下，SDRAM Controller 会周期性的发送 AR，每两个 AR 直接的时间间隔定义为 tREFI = 64ms / 8192 = 7.8 us
+一般情况下，SDRAM Controller 会周期性的发送 AR，每两个 AR 直接的时间间隔定义为 tREFI = 64ms / 8192 = 7.8 us。
 
 #### Self-Refresh
 
