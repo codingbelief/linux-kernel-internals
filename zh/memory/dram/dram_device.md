@@ -91,7 +91,8 @@ Host 还可以让 SDRAM 进入 Self-Refresh 模式，降低功耗。在该模式
 
 ### Address Mapping
 
-SDRAM Controller 的主要功能之一是将 CPU 对指定地址的内存访问操作，转换为 SDRAM 读写时序，完成数据的传输。
+SDRAM Controller 的主要功能之一是将 CPU 对指定物理地址的内存访问操作，转换为 SDRAM 读写时序，完成数据的传输。  
+在实际的产品中，通常需要考虑 CPU 中的物理地址到 SDRAM 的 Bank、Row 和 Column 地址转换
 
 ## SDRAM 内部结构
 
