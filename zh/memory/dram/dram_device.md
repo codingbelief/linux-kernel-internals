@@ -54,6 +54,8 @@ Host 端发送 Read Command，到 SDRAM 将数据发送到总线上的需要的�
 
 Write Command 将通过 A[12:0] 信号，发送需要写入的 Column 的地址给 SDRAM，同时通过 DQ[15:0] 将待写入的数据发送给 SDRAM。然后 SDRAM 将数据写入到 Actived Row 的指定 Column 中。
 
+SDRAM 接收到最后一个数据到完成数据写入到 Memory 的时间定义为 tWR。
+
 #### Precharge
 
 在进行下一次的 Read 或者 Write 操作前，必须要先执行 Precharge 操作。（具体的细节可以参考 DRAM Storage Cell 章节）
