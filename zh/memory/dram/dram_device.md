@@ -85,7 +85,7 @@ SDRAM 完成一次刷新操作所需要的时间定义为 tRFC, 这个时间会�
 
 #### Self-Refresh
 
-Host 还可以让 SDRAM 进入 Self-Refresh 模式。在该模式下，Host 不能对 SDRAM 进行读写操作，SDRAM 内部自行进行刷新操作保证数据的完整。
+Host 还可以让 SDRAM 进入 Self-Refresh 模式，以降低功能。在该模式下，Host 不能对 SDRAM 进行读写操作，SDRAM 内部自行进行刷新操作保证数据的完整。
 
 
 ### Address Mapping
