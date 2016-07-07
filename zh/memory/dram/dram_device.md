@@ -108,6 +108,8 @@ Control Logic 的主要功能是解析 SDRAM Controller 发出的 Command，然�
 
 Control Logic 包含了 1 个或者多个 Mode Register。该 Register 中包含了时序、数据模式等的配置，更多的细节会在 [DRAM Timing](../dram_timing.html) 章节进行描述。 
 
+### Row & Column 
+
 ### Memory Array
 
 内存编址，地址到 row 和 column 的转换
