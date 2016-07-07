@@ -122,6 +122,8 @@ Just as with standard SDRAM, each generation of LPDDR has doubled the internal f
 
 ### DDRx
 
+DDR 如何做到每一代的设计在速率上翻一倍：1. 2n-prefetch 架构 2. clock 速率翻倍
+
 ### LPDDRx
 
 ### GDDRx
