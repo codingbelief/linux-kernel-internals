@@ -117,3 +117,5 @@ Just as with standard SDRAM, each generation of LPDDR has doubled the internal f
 
 ## 参考资料
 
+1. Memory Systems - Cache Dram and Disk
+
