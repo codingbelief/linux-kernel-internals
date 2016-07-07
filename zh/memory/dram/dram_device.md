@@ -58,6 +58,8 @@ Write Command 将通过 A[12:0] 信号，发送需要写入的 Column 的地址�
 
 Precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank 进行，也可以一次对所有 Bank 进行。如果 A10 为高，那么 SDRAM 进行 All Bank Precharge 操作，如果 A10 为低，那么 SDRAM 根据 BA[1:0] 的值，对指定的 Bank 进行 Precharge 操作。
 
+SDRAM 完成 Precharge 操作需要的时间定义为 tPR。
+
 #### Auto-Refresh
 
 DRAM 的 Storage Cell 中的电荷会随着时间慢慢减少，为了保证其存储的信息不丢失，需要周期性的对其进行刷新操作。
