@@ -144,4 +144,5 @@ DDR 如何做到每一代的设计在速率上翻一倍：1. 2n-prefetch 架构 
 
 1. Memory Systems - Cache Dram and Disk
 2. 大容量 DRAM 的刷新开销问题及优化技术综述 [PDF]
+3. Micron Technical Note - General DDR SDRAM Functionality [PDF]
 
