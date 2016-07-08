@@ -124,13 +124,13 @@ IO 电路主要是用于处理数据的缓存、输入和输出。其中 Data La
 
 Refresh Counter 用于记录下次需要进行 refresh 操作的 Row。在接收到 AR 或者在 Self-Refresh 模式下，完成 一次 refresh 后，Refresh Counter 会进行更新。
 
-## 不同类型的 DRAM
+## 不同类型的 SDRAM
 
 目前市面上在使用的 DRAM 主要有 SDR、DDR、LPDDR、GDDR 这几类，后续小节中，将对各种类型的 DRAM 进行简单的介绍。
 
 ### SDR 和 DDR
 
-
+SDR（Single Data Rate） SDRAM 是第一
 
 DDR 如何做到每一代的设计在速率上翻一倍：1. 2n-prefetch 架构 2. clock 速率翻倍
 
