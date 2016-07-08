@@ -124,7 +124,7 @@ IO 电路主要是用于处理数据的缓存、输入和输出。其中 Data La
 
 Refresh Counter 用于记录下次需要进行 refresh 操作的 Row。在接收到 AR 或者在 Self-Refresh 模式下，完成 一次 refresh 后，Refresh Counter 会进行更新。
 
-## 更多类型的 DRAM
+## 不同类型的 DRAM
 
 Just as with standard SDRAM, each generation of LPDDR has doubled the internal fetch size and external transfer speed.
 
