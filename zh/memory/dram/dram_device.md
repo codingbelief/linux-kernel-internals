@@ -153,7 +153,7 @@ LPDDR，即 Low Power DDR SDRAM，主要是用着移动设备上，例如手机�
 
 ### GDDRx
 
-GDDR，即 Graphic DDR，主要用在显卡设备上。相对于 DDR，GDDR 具有更高的性能以及更低的功耗，以满足显卡设备的工作需求。
+GDDR，即 Graphic DDR，主要用在显卡设备上。相对于 DDR，GDDR 具有更高的性能、更低的功耗、更少的发热，以满足显卡设备的计算需求。
 
 ## 参考资料
 
