@@ -118,11 +118,11 @@ Memory Array 是存储信息的主要模块，具体细节可以参考 [DRAM Mem
 
 ### IO
 
-
-
-In electronics, a flip-flop or latch is a circuit that has two stable states and can be used to store state information. 
+IO 电路主要是用于处理数据的缓存、输入和输出。
 
 ### Reflash Counter
+
+
 
 ## 更多类型的 DRAM
 
