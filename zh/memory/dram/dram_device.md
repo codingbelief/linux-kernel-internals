@@ -126,8 +126,7 @@ Refresh Counter 用于记录下次需要进行 refresh 操作的 Row。在接收
 
 ## 不同类型的 DRAM
 
-
-Just as with standard SDRAM, each generation of LPDDR has doubled the internal fetch size and external transfer speed.
+目前市面上在使用的 DRAM 主要有 SDR、DDR、LPDDR、GDDR 这几类，后续小节中，将对各种类型的 DRAM 进行简单的介绍。
 
 ### SDR
 
