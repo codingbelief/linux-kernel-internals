@@ -120,9 +120,9 @@ Memory Array 是存储信息的主要模块，具体细节可以参考 [DRAM Mem
 
 IO 电路主要是用于处理数据的缓存、输入和输出。其中 Data Latch 和 Data Register 用于缓存数据，DQM Mask Logic 和 IO Gating 等则用于输入输出的控制。 
 
-### Reflash Counter
+### Refresh Counter
 
-
+Refresh Counter 用于记录下次需要进行 refresh 操作的 Row。
 
 ## 更多类型的 DRAM
 
