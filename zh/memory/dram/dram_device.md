@@ -144,7 +144,7 @@ DDR 后续还有 DDR2、DDR3、DDR4 的更新，基本上每一代都通过更�
 | DDR4 | 1066.67–2133.33 | 133.33–266.67 | 8n | 2133.33–4266.67 | 1.05/1.2 |
 
 > **Transfer Rate (MT/s)** 为每秒发生的 Transfer 的数量，一般为 Bus Clock 的 2 倍 （一个 Clock 周期内，上升沿和下降沿各有一个 Transfer）  
-> **Internal rate (MHz)** 则是内部 Memory Array 操作的的频率。由于 SDRAM 采用电容作为存储介质，电容由于工艺和物理特性的限制，充放电的时间没有办法进一步的缩短，所以内部 Memory Array 的操作频率也受到了限制，目前最高能到 266.67 MHz。
+> **Internal rate (MHz)** 则是内部 Memory Array 操作的的频率。由于 SDRAM 采用电容作为存储介质，电容由于工艺和物理特性的限制，充放电的时间没有办法进一步的缩短，所以内部 Memory Array 的操作频率也受到了限制，目前最高能到 266.67 MHz，这也是 SDR 到 DDR 采用 Prefetch 架构的主要原因。
 
 ### LPDDRx
 
