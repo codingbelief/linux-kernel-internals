@@ -130,7 +130,7 @@ Refresh Counter 用于记录下次需要进行 refresh 操作的 Row。在接收
 
 ### SDR 和 DDR
 
-SDR（Single Data Rate） SDRAM 是第一
+SDR（Single Data Rate） SDRAM 是第一个引入 Clock 信号的 DRAM 产品，
 
 DDR 如何做到每一代的设计在速率上翻一倍：1. 2n-prefetch 架构 2. clock 速率翻倍
 
