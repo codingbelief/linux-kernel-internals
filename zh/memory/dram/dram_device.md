@@ -153,4 +153,6 @@ DDR 后续还有 DDR2、DDR3、DDR4 的更新，基本上每一代都通过更�
 1. Memory Systems - Cache Dram and Disk
 2. 大容量 DRAM 的刷新开销问题及优化技术综述 [PDF]
 3. Micron Technical Note - General DDR SDRAM Functionality [PDF]
+4. [Everything You Need To Know About DDR, DDR2 and DDR3 Memories [WEB]](http://www.hardwaresecrets.com/everything-you-need-to-know-about-ddr-ddr2-and-ddr3-memories/)
+5. 
 
