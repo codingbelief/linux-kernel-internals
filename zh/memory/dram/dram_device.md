@@ -147,9 +147,11 @@ DDR 后续还有 DDR2、DDR3、DDR4 的更新，基本上每一代都通过更�
 
 ### LPDDRx
 
-LPDDR 的 SDRAM 主要是用着移动设备上，例如手机、平板等。相对于 DDR，LPDDR 采用了更低的工作电压、Partial Array Self-Refresh 等机制，降低整体的功耗，以满足移动设备的低功耗需求。
+LPDDR，即 Low Power DDR SDRAM，主要是用着移动设备上，例如手机、平板等。相对于 DDR，LPDDR 采用了更低的工作电压、Partial Array Self-Refresh 等机制，降低整体的功耗，以满足移动设备的低功耗需求。
 
 ### GDDRx
+
+
 
 ## 参考资料
 
