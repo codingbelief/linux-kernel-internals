@@ -122,7 +122,7 @@ IO 电路主要是用于处理数据的缓存、输入和输出。其中 Data La
 
 ### Refresh Counter
 
-Refresh Counter 用于记录下次需要进行 refresh 操作的 Row。
+Refresh Counter 用于记录下次需要进行 refresh 操作的 Row。在接收到 AR 或者在 Self-Refresh 模式下，完成 refresh 后，Refresh Counter 进行更新。
 
 ## 更多类型的 DRAM
 
