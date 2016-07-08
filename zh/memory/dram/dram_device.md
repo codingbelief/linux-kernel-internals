@@ -130,9 +130,9 @@ Refresh Counter 用于记录下次需要进行 refresh 操作的 Row。在接收
 
 ### SDR 和 DDR
 
-SDR（Single Data Rate） SDRAM 是第一个引入 Clock 信号的 DRAM 产品，SDR 在 Clock 的上升沿进行总线信号的处理，一个时钟周期内可以传输一组数据，一次称为 Single Data Rate。
+SDR（Single Data Rate） SDRAM 是第一个引入 Clock 信号的 DRAM 产品，SDR 在 Clock 的上升沿进行总线信号的处理，一个时钟周期内可以传输一组数据。
 
-DDR（Double Data Rate） SDRAM 是在 SDR 基础上的一个更新。DDR 通过内部 2n-Prefetch 架构，相对于 SDR，在同样的时间内，完成 2 倍数据的预取，然后在 Clock 的上升沿和下降沿都进行数据传输，最终达到在相同时钟频率下 2 倍于 SDR 的数据传输速率。（更多 2n-Prefetch 相关的细节可以参考 《Micron Technical Note - General DDR SDRAM Functionality》文中的介绍）
+DDR（Double Data Rate） SDRAM 是在 SDR 基础上的一个更新。DDR 内部采用 2n-Prefetch 架构，相对于 SDR，在同样的时间内可以完成 2 倍数据的预取，然后在 Clock 的上升沿和下降沿都进行数据传输，最终达到在相同时钟频率下 2 倍于 SDR 的数据传输速率。（更多 2n-Prefetch 相关的细节可以参考 《Micron Technical Note - General DDR SDRAM Functionality》文中的介绍）
 
 
 
