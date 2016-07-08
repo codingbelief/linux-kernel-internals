@@ -147,7 +147,7 @@ DDR 后续还有 DDR2、DDR3、DDR4 的更新，基本上每一代都通过更�
 
 ### LPDDRx
 
-
+LPDDR 的 SDRAM 主要是用着移动设备上，例如手机、平板等。
 
 ### GDDRx
 
