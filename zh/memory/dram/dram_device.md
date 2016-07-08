@@ -132,7 +132,7 @@ Refresh Counter 用于记录下次需要进行 refresh 操作的 Row。在接收
 
 SDR（Single Data Rate） SDRAM 是第一个引入 Clock 信号的 DRAM 产品，SDR 在 Clock 的上升沿进行总线信号的处理，一个时钟周期内可以传输一组数据，一次称为 Single Data Rate。
 
-DDR（Double Data Rate） SDRAM 是在 SDR 基础上的一个更新。DDR 通过内部 2n-Prefetch 架构，在与 SDR 同样的时间内，完成 2 倍数据的预取，然后在 Clock 的上升沿和下降沿都进行数据传输，最终达到
+DDR（Double Data Rate） SDRAM 是在 SDR 基础上的一个更新。DDR 通过内部 2n-Prefetch 架构，相对于 SDR，在同样的时间内，完成 2 倍数据的预取，然后在 Clock 的上升沿和下降沿都进行数据传输，最终达到在相同时钟频率下 2 倍与 SDR 的数据传输速率。
 
 DDR 如何做到每一代的设计在速率上翻一倍：1. 2n-prefetch 架构 2. clock 速率翻倍
 
