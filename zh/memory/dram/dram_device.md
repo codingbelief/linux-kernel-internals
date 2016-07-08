@@ -159,5 +159,4 @@ LPDDR，即 Low Power DDR SDRAM，主要是用着移动设备上，例如手机�
 2. 大容量 DRAM 的刷新开销问题及优化技术综述 [PDF]
 3. Micron Technical Note - General DDR SDRAM Functionality [PDF]
 4. [Everything You Need To Know About DDR, DDR2 and DDR3 Memories [WEB]](http://www.hardwaresecrets.com/everything-you-need-to-know-about-ddr-ddr2-and-ddr3-memories/)
-5. 
 
