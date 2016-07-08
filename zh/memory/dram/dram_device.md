@@ -116,7 +116,8 @@ Row Decoder 的主要功能是将 Active Command 所带的 Row Address 映射到
 
 Memory Array 是存储信息的主要模块，具体细节可以参考 [DRAM Memory Orgization](../dram_memory_orgization.html) 章节的描述。
 
-### Data IO
+### IO
+
 
 
 In electronics, a flip-flop or latch is a circuit that has two stable states and can be used to store state information. 
