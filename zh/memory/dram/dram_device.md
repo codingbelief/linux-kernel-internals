@@ -114,8 +114,7 @@ Row Decoder 的主要功能是将 Active Command 所带的 Row Address 映射到
 
 ### Memory Array
 
-
-内存编址，地址到 row 和 column 的转换
+Memory Array 是存储信息的主要模块，具体细节可以参考 DRAM Memory Orgization 章节的描述。
 
 ### Data IO
 
