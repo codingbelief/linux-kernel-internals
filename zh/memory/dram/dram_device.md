@@ -110,9 +110,10 @@ Control Logic 包含了 1 个或者多个 Mode Register。该 Register 中包含
 
 ### Row & Column Decoder
 
-Row Decoder 的主要功能是对 Active Command 所带的 Row Address 映射到具体的 wordline，最终打开指定的 Row。同样 Column Decoder 则是把 Column Address 映射到具体的 csl，最终选中特定的 Column。
+Row Decoder 的主要功能是将 Active Command 所带的 Row Address 映射到具体的 wordline，最终打开指定的 Row。同样 Column Decoder 则是把 Column Address 映射到具体的 csl，最终选中特定的 Column。
 
 ### Memory Array
+
 
 内存编址，地址到 row 和 column 的转换
 
