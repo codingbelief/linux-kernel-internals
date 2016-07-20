@@ -12,47 +12,46 @@ TODO: Add sdram interface
 总线上各个信号的描述如下表所示：
 
 | Symbol | Type | Description |
-| -- | -- | -- |
+| :--- | :--- | :--- |
 | CLK | Input | 从 Host 端输出的同步时钟信号 |
 | CKE | Input | 用于指示 CLK 信号是否有效，SDRAM 会根据此信号进入或者退出 Power down、Self-refresh 等模式 |
-| CS# | Input | Chip Select 信号 |
-| CAS# | Input | Column Address Strobe，列地址选通信号 |
-| RAS# | Input | Row Address Strobe， 行地址选通信号 |
-| WE# | Input | Write Enable，写使能信号 |
-| DQML | Input | 当进行写数据时，如果该 DQML 为高，那么 DQ[7:0] 的数据会被忽略，不写入到 DRAM |
-| DQMH | Input | 当进行写数据时，如果该 DQMH 为高，那么 DQ[15:8] 的数据会被忽略，不写入到 DRAM |
-| BA[1:0] | Input | Bank Address，用于选择操作的 Memory Bank |
-| A[12:0] | Input | Address 总线，用于传输行列地址 |
-| DQ[15:0] | I/O | Data 总线，用于传输读写的数据内容 |
+| CS\# | Input | Chip Select 信号 |
+| CAS\# | Input | Column Address Strobe，列地址选通信号 |
+| RAS\# | Input | Row Address Strobe， 行地址选通信号 |
+| WE\# | Input | Write Enable，写使能信号 |
+| DQML | Input | 当进行写数据时，如果该 DQML 为高，那么 DQ\[7:0\] 的数据会被忽略，不写入到 DRAM |
+| DQMH | Input | 当进行写数据时，如果该 DQMH 为高，那么 DQ\[15:8\] 的数据会被忽略，不写入到 DRAM |
+| BA\[1:0\] | Input | Bank Address，用于选择操作的 Memory Bank |
+| A\[12:0\] | Input | Address 总线，用于传输行列地址 |
+| DQ\[15:0\] | I\/O | Data 总线，用于传输读写的数据内容 |
 
 ### SDRAM Operations
 
 Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。一个 Command 由多个信号组合而成，下面表格中描述了主要的 Command。
 
-| Command | CS# | RAS# | CAS# | WE# | DQM | BA[1:0] & A[12:0] | DQ[15:0] |
-| -- | -- | -- | -- | -- | -- | -- | -- |
-| Active             | L | L | H | H | X | Bank & Row | X |
-| Read               | L | H | L | H | L/H | Bank & Col | X |
-| Write              | L | H | L | L | L/H | Bank & Col | Valid |
-| Precharge          | L | L | H | L | X | Code | X |
-| Auto-refresh       | L | L | L | H | X | X | X |
-| Self-refresh       | L | L | L | H | X | X | X |
+| Command | CS\# | RAS\# | CAS\# | WE\# | DQM | BA\[1:0\] & A\[12:0\] | DQ\[15:0\] |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Active | L | L | H | H | X | Bank & Row | X |
+| Read | L | H | L | H | L\/H | Bank & Col | X |
+| Write | L | H | L | L | L\/H | Bank & Col | Valid |
+| Precharge | L | L | H | L | X | Code | X |
+| Auto-refresh | L | L | L | H | X | X | X |
+| Self-refresh | L | L | L | H | X | X | X |
 | Load Mode Register | L | L | L | L | X | REG Value | X |
-
 
 #### Active
 
-Active Command 会通过 BA[1:0] 和 A[12:0] 信号，选中指定 Bank 中的一个 Row，并打开该 Row 的 wordline。在进行 Read 或者 Write 前，都需要先执行 Active Command。
+Active Command 会通过 BA\[1:0\] 和 A\[12:0\] 信号，选中指定 Bank 中的一个 Row，并打开该 Row 的 wordline。在进行 Read 或者 Write 前，都需要先执行 Active Command。
 
 #### Read
 
-Read Command 将通过 A[12:0] 信号，发送需要读取的 Column 的地址给 SDRAM。然后 SDRAM 再将 Active Command 所选中的 Row 中，将对应 Column 的数据通过 DQ[15:0] 发送给 Host。
+Read Command 将通过 A\[12:0\] 信号，发送需要读取的 Column 的地址给 SDRAM。然后 SDRAM 再将 Active Command 所选中的 Row 中，将对应 Column 的数据通过 DQ\[15:0\] 发送给 Host。
 
 Host 端发送 Read Command，到 SDRAM 将数据发送到总线上的需要的时钟周期个数定义为 CL。
 
 #### Write
 
-Write Command 将通过 A[12:0] 信号，发送需要写入的 Column 的地址给 SDRAM，同时通过 DQ[15:0] 将待写入的数据发送给 SDRAM。然后 SDRAM 将数据写入到 Actived Row 的指定 Column 中。
+Write Command 将通过 A\[12:0\] 信号，发送需要写入的 Column 的地址给 SDRAM，同时通过 DQ\[15:0\] 将待写入的数据发送给 SDRAM。然后 SDRAM 将数据写入到 Actived Row 的指定 Column 中。
 
 SDRAM 接收到最后一个数据到完成数据写入到 Memory 的时间定义为 tWR （Write Recovery）。
 
@@ -60,7 +59,7 @@ SDRAM 接收到最后一个数据到完成数据写入到 Memory 的时间定义
 
 在进行下一次的 Read 或者 Write 操作前，必须要先执行 Precharge 操作。（具体的细节可以参考 [DRAM Storage Cell](../dram_storage_cell.html) 章节）
 
-Precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank 进行，也可以一次对所有 Bank 进行。如果 A10 为高，那么 SDRAM 进行 All Bank Precharge 操作，如果 A10 为低，那么 SDRAM 根据 BA[1:0] 的值，对指定的 Bank 进行 Precharge 操作。
+Precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank 进行，也可以一次对所有 Bank 进行。如果 A10 为高，那么 SDRAM 进行 All Bank Precharge 操作，如果 A10 为低，那么 SDRAM 根据 BA\[1:0\] 的值，对指定的 Bank 进行 Precharge 操作。
 
 SDRAM 完成 Precharge 操作需要的时间定义为 tPR。
 
@@ -72,10 +71,10 @@ SDRAM 的刷新是按 Row 进行，标准中定义了在一个刷新周期内（
 
 为了简化 SDRAM Controller 的设计，标准还定义了 Auto-Refresh 机制，该机制要求 SDRAM Controller 在一个刷新周期内，发送 8192 个 Auto-Refresh Command，即 AR， 给 SDRAM。
 
-SDRAM 每收到一个 AR，就进行 n 个 Row 的刷新操作，n = 总的 Row 数量 / 8192
+SDRAM 每收到一个 AR，就进行 n 个 Row 的刷新操作，n = 总的 Row 数量 \/ 8192
 同时，SDRAM 内部维护一个刷新计数器，每完成一次刷新操作，就将计数器更新为下一次需要进行刷新操作的 Row。
 
-一般情况下，SDRAM Controller 会周期性的发送 AR，每两个 AR 直接的时间间隔定义为 tREFI = 64ms / 8192 = 7.8 us。
+一般情况下，SDRAM Controller 会周期性的发送 AR，每两个 AR 直接的时间间隔定义为 tREFI = 64ms \/ 8192 = 7.8 us。
 
 SDRAM 完成一次刷新操作所需要的时间定义为 tRFC, 这个时间会随着 SDRAM Row 的数量的增加而变大。
 
@@ -106,7 +105,7 @@ TODO: DRAM Devcie
 
 Control Logic 的主要功能是解析 SDRAM Controller 发出的 Command，然后根据具体的 Command 做具体内部模块的控制，例如：选中指定的 Bank、触发 refresh 等的操作。
 
-Control Logic 包含了 1 个或者多个 Mode Register。该 Register 中包含了时序、数据模式等的配置，更多的细节会在 [DRAM Timing](../dram_timing.html) 章节进行描述。 
+Control Logic 包含了 1 个或者多个 Mode Register。该 Register 中包含了时序、数据模式等的配置，更多的细节会在 [DRAM Timing](../dram_timing.html) 章节进行描述。
 
 ### Row & Column Decoder
 
@@ -118,7 +117,7 @@ Memory Array 是存储信息的主要模块，具体细节可以参考 [DRAM Mem
 
 ### IO
 
-IO 电路主要是用于处理数据的缓存、输入和输出。其中 Data Latch 和 Data Register 用于缓存数据，DQM Mask Logic 和 IO Gating 等则用于输入输出的控制。 
+IO 电路主要是用于处理数据的缓存、输入和输出。其中 Data Latch 和 Data Register 用于缓存数据，DQM Mask Logic 和 IO Gating 等则用于输入输出的控制。
 
 ### Refresh Counter
 
@@ -136,15 +135,15 @@ DDR（Double Data Rate） SDRAM 是在 SDR 基础上的一个更新。DDR 内部
 
 DDR 后续还有 DDR2、DDR3、DDR4 的更新，基本上每一代都通过更多的 Prefetch 和更高的时钟频率，达到 2 倍于上一代的数据传输速率。
 
-| DDR SDRAM Standard | Bus clock (MHz) | Internal rate (MHz) | Prefetch (min burst) | Transfer Rate (MT/s) | Voltage |
-| -- | -- | -- | -- | -- | -- |
-| DDR | 100–200 | 100–200 | 2n | 200–400 | 2.5/2.6 |
+| DDR SDRAM Standard | Bus clock \(MHz\) | Internal rate \(MHz\) | Prefetch \(min burst\) | Transfer Rate \(MT\/s\) | Voltage |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| DDR | 100–200 | 100–200 | 2n | 200–400 | 2.5\/2.6 |
 | DDR2 | 200–533.33 | 100–266.67 | 4n | 400–1066.67 | 1.8 |
-| DDR3 | 400–1066.67 | 100–266.67 |8n | 800–2133.33 | 1.5 | 
-| DDR4 | 1066.67–2133.33 | 133.33–266.67 | 8n | 2133.33–4266.67 | 1.05/1.2 |
+| DDR3 | 400–1066.67 | 100–266.67 | 8n | 800–2133.33 | 1.5 |  |
+| DDR4 | 1066.67–2133.33 | 133.33–266.67 | 8n | 2133.33–4266.67 | 1.05\/1.2 |
 
-> **Transfer Rate (MT/s)** 为每秒发生的 Transfer 的数量，一般为 Bus Clock 的 2 倍 （一个 Clock 周期内，上升沿和下降沿各有一个 Transfer）  
-> **Internal rate (MHz)** 则是内部 Memory Array 读写的频率。由于 SDRAM 采用电容作为存储介质，由于工艺和物理特性的限制，电容充放电的时间难以进一步的缩短，所以内部 Memory Array 的读写频率也受到了限制，目前最高能到 266.67 MHz，这也是 SDR 到 DDR 采用 Prefetch 架构的主要原因。  
+> **Transfer Rate \(MT\/s\)** 为每秒发生的 Transfer 的数量，一般为 Bus Clock 的 2 倍 （一个 Clock 周期内，上升沿和下降沿各有一个 Transfer）  
+> **Internal rate \(MHz\)** 则是内部 Memory Array 读写的频率。由于 SDRAM 采用电容作为存储介质，由于工艺和物理特性的限制，电容充放电的时间难以进一步的缩短，所以内部 Memory Array 的读写频率也受到了限制，目前最高能到 266.67 MHz，这也是 SDR 到 DDR 采用 Prefetch 架构的主要原因。  
 > Memory Array 读写频率受到限制，那就只能在读写宽度上做优化，通过增加单次读写周期内操作的数据宽度，结合总线和 IO 频率的增加来提高整体传输速率。
 
 ### LPDDRx
@@ -160,6 +159,6 @@ GDDR，即 Graphic DDR，主要用在显卡设备上。相对于 DDR，GDDR 具�
 1. Memory Systems - Cache Dram and Disk
 2. 大容量 DRAM 的刷新开销问题及优化技术综述 [PDF]
 3. Micron Technical Note - General DDR SDRAM Functionality [PDF]
-4. [Everything You Need To Know About DDR, DDR2 and DDR3 Memories [WEB]](http://www.hardwaresecrets.com/everything-you-need-to-know-about-ddr-ddr2-and-ddr3-memories/)
-5. [記憶體10年技術演進史 [WEB]](http://www.techbang.com/posts/17190)
+4. [Everything You Need To Know About DDR, DDR2 and DDR3 Memories ](http://www.hardwaresecrets.com/everything-you-need-to-know-about-ddr-ddr2-and-ddr3-memories/)[WEB]
+5. [記憶體10年技術演進史 ](http://www.techbang.com/posts/17190)[\[](http://www.techbang.com/posts/17190)[WEB\]](http://www.techbang.com/posts/17190)
 
