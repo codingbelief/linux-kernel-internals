@@ -160,5 +160,5 @@ GDDR，即 Graphic DDR，主要用在显卡设备上。相对于 DDR，GDDR 具�
 2. 大容量 DRAM 的刷新开销问题及优化技术综述 [PDF]
 3. Micron Technical Note - General DDR SDRAM Functionality [PDF]
 4. [Everything You Need To Know About DDR, DDR2 and DDR3 Memories ](http://www.hardwaresecrets.com/everything-you-need-to-know-about-ddr-ddr2-and-ddr3-memories/)[WEB]
-5. [記憶體10年技術演進史 ](http://www.techbang.com/posts/17190)[\[](http://www.techbang.com/posts/17190)[WEB\]](http://www.techbang.com/posts/17190)
+5. [記憶體10年技術演進史 ](http://www.techbang.com/posts/17190)[WEB]
 
