@@ -93,7 +93,7 @@ Host 还可以让 SDRAM 进入 Self-Refresh 模式，降低功耗。在该模式
 SDRAM Controller 的主要功能之一是将 CPU 对指定物理地址的内存访问操作，转换为 SDRAM 读写时序，完成数据的传输。  
 在实际的产品中，通常需要考虑 CPU 中的物理地址到 SDRAM 的 Bank、Row 和 Column 地址映射。下图是一个 32 位物理地址映射的一个例子：
 
-TODO： Add address mapping
+![](address_mapping.png)
 
 ## SDRAM 内部结构
 
