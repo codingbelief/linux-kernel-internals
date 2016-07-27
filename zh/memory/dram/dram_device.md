@@ -69,7 +69,7 @@ DRAM 的 Storage Cell 中的电荷会随着时间慢慢减少，为了保证其�
 
 SDRAM 的刷新是按 Row 进行，标准中定义了在一个刷新周期内（常温下 64ms，高温下 32ms）需要完成一次所有 Row 的刷新操作。
 
-为了简化 SDRAM Controller 的设计，标准还定义了 Auto-Refresh 机制，该机制要求 SDRAM Controller 在一个刷新周期内，发送 8192 个 Auto-Refresh Command，即 AR， 给 SDRAM。
+为了简化 SDRAM Controller 的设计，SDRAM 标准定义了 Auto-Refresh 机制，该机制要求 SDRAM Controller 在一个刷新周期内，发送 8192 个 Auto-Refresh Command，即 AR， 给 SDRAM。
 
 SDRAM 每收到一个 AR，就进行 n 个 Row 的刷新操作，n = 总的 Row 数量 / 8192  
 同时，SDRAM 内部维护一个刷新计数器，每完成一次刷新操作，就将计数器更新为下一次需要进行刷新操作的 Row。
