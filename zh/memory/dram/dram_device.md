@@ -57,7 +57,7 @@ SDRAM 接收到最后一个数据到完成数据写入到 Memory 的时间定义
 
 #### Precharge
 
-在进行下一次的 Read 或者 Write 操作前，必须要先执行 Precharge 操作。（具体的细节可以参考 [DRAM Storage Cell](../dram_storage_cell.html) 章节）
+在进行下一次的 Read 或者 Write 操作前，必须要先执行 Precharge 操作。（具体的细节可以参考 [DRAM Storage Cell](./dram_storage_cell.html) 章节）
 
 Precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank 进行，也可以一次对所有 Bank 进行。如果 A10 为高，那么 SDRAM 进行 All Bank Precharge 操作，如果 A10 为低，那么 SDRAM 根据 BA[1:0] 的值，对指定的 Bank 进行 Precharge 操作。
 
@@ -87,7 +87,7 @@ SDRAM 完成一次刷新操作所需要的时间定义为 tRFC, 这个时间会�
 Host 还可以让 SDRAM 进入 Self-Refresh 模式，降低功耗。在该模式下，Host 不能对 SDRAM 进行读写操作，SDRAM 内部自行进行刷新操作保证数据的完整。通常在设备进入待机状态时，Host 会让 SDRAM 进入 Self-Refresh 模式，以节省功耗。
 
 
-更多各个 Command 相关的细节，可以参考后续的 [DRAM Timing](../dram_timing.html) 章节。
+更多各个 Command 相关的细节，可以参考后续的 [DRAM Timing](./dram_timing.html) 章节。
 
 ### Address Mapping
 
@@ -114,7 +114,7 @@ Row Decoder 的主要功能是将 Active Command 所带的 Row Address 映射到
 
 ### Memory Array
 
-Memory Array 是存储信息的主要模块，具体细节可以参考 [DRAM Memory Orgization](../dram_memory_orgization.html) 章节的描述。
+Memory Array 是存储信息的主要模块，具体细节可以参考 [DRAM Memory Orgization](./dram_memory_orgization.html) 章节的描述。
 
 ### IO
 
