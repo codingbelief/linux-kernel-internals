@@ -39,7 +39,6 @@ Host 与 SDRAM 之间的交互都是由 Host 以 Command 的形式发起的。�
 | Self-refresh       | L | L | L | H | X | X | X |
 | Load Mode Register | L | L | L | L | X | REG Value | X |
 
-
 #### Active
 
 Active Command 会通过 BA[1:0] 和 A[12:0] 信号，选中指定 Bank 中的一个 Row，并打开该 Row 的 wordline。在进行 Read 或者 Write 前，都需要先执行 Active Command。
@@ -100,7 +99,7 @@ TODO： Add address mapping
 
 如图所示，DRAM Device 内部主要有 Control Logic、Memory Array、Decoders、Reflash Counter 等模块。在后续的小节中，将逐一介绍各个模块的主要功能。
 
-TODO: DRAM Devcie
+![](sdr_block_diagram.png)
 
 ### Control Logic
 
