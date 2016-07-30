@@ -15,4 +15,6 @@ tWR : Write Recovery Time, the time that must elapse between the last write comm
 
 每一个时间参数所代表的含义以及如何计算得到
 
+auto precharge 有何作用？
+
 [timings explication](http://www.tweakers.fr/timings.html)
