@@ -2,3 +2,4 @@
 
 TODO
 
+tRCD: Row Address to Column Address Delay
