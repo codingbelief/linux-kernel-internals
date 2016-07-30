@@ -14,4 +14,4 @@ tRC : Row Cycle Time. TRC = TRAS + TRP.
 
 每一个时间参数所代表的含义以及如何计算得到
 
-http://www.tweakers.fr/timings.html
+[timings explication](http://www.tweakers.fr/timings.html)
