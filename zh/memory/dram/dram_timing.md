@@ -13,3 +13,5 @@ tWR : Write Recovery Time, the time that must elapse between the last write comm
 tRC : Row Cycle Time. TRC = TRAS + TRP.
 
 每一个时间参数所代表的含义以及如何计算得到
+
+http://www.tweakers.fr/timings.html
