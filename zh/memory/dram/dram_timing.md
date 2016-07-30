@@ -12,6 +12,7 @@ CAS : Column Address Strobe
 tWR : Write Recovery Time, the time that must elapse between the last write command to a row and precharging it. Generally, TRAS = TRCD + TWR.
 tRC : Row Cycle Time. TRC = TRAS + TRP.
 tRRD: Row to Row Delay
+
 每一个时间参数所代表的含义以及如何计算得到
 
 [timings explication](http://www.tweakers.fr/timings.html)
