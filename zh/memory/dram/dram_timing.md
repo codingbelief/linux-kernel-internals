@@ -8,6 +8,7 @@
 
 ## 时序图例
 
+## Row Active Command
 
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
