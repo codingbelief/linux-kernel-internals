@@ -1,5 +1,7 @@
 # DRAM Timing
 
+为什么需要有 Timing：
+1. 当一个资源正在被使用时，如果后续的操作也需要用到该资源，那么就必须等待
 
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
