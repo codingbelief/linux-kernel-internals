@@ -14,6 +14,9 @@ Row sense
 Row restore
 
 ## Column Read Command
+tCAS，即 CL
+burst length
+
 
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
