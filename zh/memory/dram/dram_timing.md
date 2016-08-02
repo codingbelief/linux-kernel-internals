@@ -6,7 +6,9 @@
 2. 启动某一个资源时，本身就需要一定的时间
 3. 有些延时是为了节省功耗，例如通过限制某些操作的频率，来控制 DRAM 的平均电流
 
-## 
+## 时序图例
+
+
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
 tRP: Row Precharge Time
