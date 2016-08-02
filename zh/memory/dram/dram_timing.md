@@ -27,6 +27,7 @@ tRP
 tRC
 
 ## Row Refresh Command
+tREFI
 
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
