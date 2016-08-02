@@ -9,6 +9,7 @@
 ## 时序图例
 
 ## Row Active Command
+tRCD、tRAS
 
 
 
