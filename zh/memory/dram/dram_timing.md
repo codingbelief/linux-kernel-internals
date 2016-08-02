@@ -20,7 +20,7 @@ burst length
 
 ## Column Write Command
 tCWD
-
+tWR
 
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
