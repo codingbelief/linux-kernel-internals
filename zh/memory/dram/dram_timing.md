@@ -52,7 +52,7 @@ Row Active Time (tRAS) - This is the minimum number of cycles that a row has to 
 
 每一个时间参数所代表的含义以及如何计算得到
 
-auto precharge 有何作用？
+auto precharge 有何作用？（每一个 row 的 access 都必须先进行 precharge）
 
 [The following content are mainly got from Bruce Jacob’s book Memory Systems-Cache, DRAM, Disk(Chapter 11). Please refer to the book for more details.]
 
