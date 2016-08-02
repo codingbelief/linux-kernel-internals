@@ -13,7 +13,7 @@ tRCD、tRAS
 Row sense
 Row restore
 
-
+## Column Read Command
 
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
