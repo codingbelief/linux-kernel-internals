@@ -26,6 +26,8 @@ tWR
 tRP
 tRC
 
+## Row Refresh Command
+
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
 tRP: Row Precharge Time
