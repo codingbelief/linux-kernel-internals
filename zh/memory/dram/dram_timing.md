@@ -22,6 +22,8 @@ burst length
 tCWD
 tWR
 
+## Precharge Command
+
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
 tRP: Row Precharge Time
