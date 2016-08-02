@@ -15,6 +15,7 @@ Row restore
 
 ## Column Read Command
 tCAS，即 CL
+tBurst
 burst length
 
 
