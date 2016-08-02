@@ -10,6 +10,8 @@
 
 ## Row Active Command
 tRCD、tRAS
+Row sense
+Row restore
 
 
 
