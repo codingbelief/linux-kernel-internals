@@ -20,6 +20,8 @@ burst length
 
 ## Column Write Command
 
+
+
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
 tRP: Row Precharge Time
