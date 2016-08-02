@@ -19,7 +19,7 @@ tBurst
 burst length
 
 ## Column Write Command
-
+tCWD
 
 
 tRCD: Row Address to Column Address Delay
