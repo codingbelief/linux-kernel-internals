@@ -23,6 +23,8 @@ tCWD
 tWR
 
 ## Precharge Command
+tRP
+tRC
 
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
