@@ -18,6 +18,7 @@ tCAS，即 CL
 tBurst
 burst length
 
+## Column Write Command
 
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
