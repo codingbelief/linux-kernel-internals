@@ -2,7 +2,7 @@
 
 在 DRAM Device 章节中，我们简单介绍了 SDRAM 的 Active、Read、Write 等的操作，在本章节中，我们将详细的介绍各个操作的时序。
 
-## Why we need timing
+## Overview
 为什么需要有 Timing：
 
 1. 当一个资源正在被使用时，如果后续的操作也需要用到该资源，那么就必须等待
