@@ -1,5 +1,7 @@
 # DRAM Timing
 
+在 DRAM Device 章节中，
+
 ## Why we need timing
 为什么需要有 Timing：
 
