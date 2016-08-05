@@ -7,6 +7,8 @@
 2. 启动某一个资源时，本身就需要一定的时间
 3. 有些延时是为了节省功耗，例如通过限制某些操作的频率，来控制 DRAM 的平均电流
 
+TODO：内部流程图（1,2,3,4）
+
 ## 时序图例
 
 ## Row Active Command
@@ -51,7 +53,7 @@ Row Active Time (tRAS) - This is the minimum number of cycles that a row has to 
 
 每一个时间参数所代表的含义以及如何计算得到
 
-auto precharge 有何作用？
+auto precharge 有何作用？（每一个 row 的 access 都必须先进行 precharge）
 
 [The following content are mainly got from Bruce Jacob’s book Memory Systems-Cache, DRAM, Disk(Chapter 11). Please refer to the book for more details.]
 
