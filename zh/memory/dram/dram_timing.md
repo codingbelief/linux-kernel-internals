@@ -1,6 +1,6 @@
 # DRAM Timing
 
-在 DRAM Device 章节中，我们简单介绍了 SDRAM 的 Active、Read、Write 等的操作，在本章节中，我们将详细的介绍各个操作的流程和时序。
+在 DRAM Device 章节中，我们简单介绍了 SDRAM 的 Active、Read、Write 等的操作，在本章节中，我们将详细的介绍各个操作的时序。
 
 ## Why we need timing
 为什么需要有 Timing：
