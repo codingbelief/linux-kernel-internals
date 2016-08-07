@@ -3,9 +3,10 @@
 在 DRAM Device 章节中，我们简单介绍了 SDRAM 的 Active、Read、Write 等的操作，在本章节中，我们将详细的介绍各个操作的时序。
 
 ## Overview
-如下图所示，SDRAM 的读写操作在内部大概可以分为以下的几个步骤：
+如下图所示，SDRAM 的相关操作在内部大概可以分为以下的几个步骤：
 
-1. 
+1. Command Transport and Decode
+
 
 TODO：内部流程图（1,2,3,4）
 
