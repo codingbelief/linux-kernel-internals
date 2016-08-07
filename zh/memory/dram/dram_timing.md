@@ -15,6 +15,7 @@
  
 3. In device data movement
 
+    这个阶段中，数据将通过 IO 电路缓存到 Read Latchs 或者通过 IO 电路和 Write Drivers 更新到 Sense Amplifiers。
 
 4. System data transport
 
