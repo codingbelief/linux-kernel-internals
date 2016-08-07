@@ -32,7 +32,7 @@ TODO：内部流程图（1,2,3,4）
 
 ## 时序图例
 
-TODO：时序图例
+TODO：时序图例（需要描述各个）
 
 ## Row Active Command
 tRCD、tRAS
