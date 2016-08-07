@@ -3,7 +3,8 @@
 在 DRAM Device 章节中，我们简单介绍了 SDRAM 的 Active、Read、Write 等的操作，在本章节中，我们将详细的介绍各个操作的时序。
 
 ## Overview
-如下图所示，SDRAM 的相关操作在内部大概可以分为以下的几个阶段：
+
+如上图所示，SDRAM 的相关操作在内部大概可以分为以下的几个阶段：
 
 1. Command transport and decode
 
