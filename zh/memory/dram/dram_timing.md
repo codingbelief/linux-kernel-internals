@@ -11,7 +11,8 @@
 
 2. In bank data movement
 
-    
+    在这个阶段，SDRAM 主要是将 Memory Array 中的数据从 DRAM Cells 中读取到 Sense Amplifiers 中，或者将数据从 Sense Amplifiers 写入到 DRAM Cells。
+ 
 3. In device data movement
 4. System data transport
 
