@@ -32,6 +32,8 @@ TODO：内部流程图（1,2,3,4）
 
 ## 时序图例
 
+TODO：时序图例
+
 ## Row Active Command
 tRCD、tRAS
 Row sense
