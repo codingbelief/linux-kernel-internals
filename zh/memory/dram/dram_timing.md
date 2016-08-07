@@ -6,7 +6,7 @@
 如下图所示，SDRAM 的相关操作在内部大概可以分为以下的几个阶段：
 
 1. Command transport and decode
-在这个阶段，Host 端会通过 Command Bus 和 Address Bus 将具体的 Command 以及参数传递给 SDRAM。SDRAM 接收并解析 Command，接着驱动内部模块进行相应的操作。 
+在这个阶段，Host 端会通过 Command Bus 和 Address Bus 将具体的 Command 以及相应参数传递给 SDRAM。SDRAM 接收并解析 Command，接着驱动内部模块进行相应的操作。 
 
 2. In bank data movement
 3. In device data movement
