@@ -6,6 +6,7 @@
 如下图所示，SDRAM 的相关操作在内部大概可以分为以下的几个步骤：
 
 1. Command Transport and Decode
+2. 
 
 
 TODO：内部流程图（1,2,3,4）
