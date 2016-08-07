@@ -5,8 +5,10 @@
 ## Overview
 如下图所示，SDRAM 的相关操作在内部大概可以分为以下的几个步骤：
 
-1. Command Transport and Decode
-2. 
+1. Command transport and decode
+2. In bank data movement
+3. In device data movement
+4. System data transport
 
 
 TODO：内部流程图（1,2,3,4）
