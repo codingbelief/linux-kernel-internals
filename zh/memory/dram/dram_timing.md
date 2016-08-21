@@ -38,6 +38,10 @@ TODO：时序图例（需要描述各个部分的含义）
 
 Controller 与 DRAM 之间的交互，都是以 Controller 发起一个 Command 开始的。从 Controller 发出一个 Command 到 DRAM 接收并解析该 Command 所需要的时间定义为 tCMD，不同类型的 Command 的 tCMD 都是相同的。
 
+DRAM 在成功解析 Command 后，就会根据 Command 在内部进行相应的操作。从 Controller 发出 Command 到 DRAM 执行完 Command 所对应的操作所需要的时间定义为 tParam。不同类型的 Command 的 tParam 可能不一样，相同 Command 的 tParam 由于 Command 参数的不同也可能会不一样。
+
+Controller 发出一个 Command 后，必须要等到相应的 tParam 时间后，才能发出第二个 Command。
+
 ## Row Active Command
 tRCD、tRAS
 Row sense
