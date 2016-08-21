@@ -58,8 +58,8 @@ DRAM 在完成 Row Sense 阶段后，Controller 就可以发送 Read 或 Write C
 
 ### Row Restore
 
-由于 DRAM 的特性，Row 中的数据在被读取到 Sense Amplifiers 后，需要进行 Restore 的操作（细节请参考 [DRAM Storage Cell](./dram_storage_cell.html) 章节）。DRAM 接收到 Row Active Command 到完成 Row Restore 操作所需要的时间定义为 tRAS（RAS for Row Address Strobe）。  
-需要注意的是，这个阶段可以和数据的读写同时进行，即在这个阶段，Controller 可能发送了 Read 或者 Write Command 进行数据读写。  
+由于 DRAM 的特性，Row 中的数据在被读取到 Sense Amplifiers 后，需要进行 Restore 的操作（细节请参考 [DRAM Storage Cell](./dram_storage_cell.html) 章节）。这个阶段可以和数据的读写同时进行，即在这个阶段，Controller 可能发送了 Read 或者 Write Command 进行数据读写。  
+DRAM 接收到 Row Active Command 到完成 Row Restore 操作所需要的时间定义为 tRAS（RAS for Row Address Strobe）。  
 Controller 在发出一个 Row Active Command 后，必须要等待 tRAS 时间后，才可以发起另一次的 Precharge 和 Row Access。
 
 ## Column Read Command
