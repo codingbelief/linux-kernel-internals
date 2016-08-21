@@ -43,6 +43,13 @@ DRAM 在成功解析 Command 后，就会根据 Command 在内部进行相应的
 Controller 发出一个 Command 后，必须要等到相应的 tParam 时间后，才能发出第二个 Command。
 
 ## Row Active Command
+
+在进行数据的读写前，Controller 需要先发送 Row Active Command，打开 DRAM Memory Array 中的指定的 Row。Row Active Command 的时序如下图所示：
+
+TODO：Row Active Command Timing
+
+
+
 tRCD、tRAS
 Row sense
 Row restore
