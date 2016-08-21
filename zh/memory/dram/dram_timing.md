@@ -49,7 +49,7 @@ Controller 发出一个 Command 后，必须要等到相应的 tParam 时间后�
 TODO：Row Active Command Timing
 
 Row Active Command 通过地址总线指明需要打开某一个 Bank 的某一个 Row。  
-DRAM 在接收到该 Command 后，会打开该 Row 的 Wordline，将其存储的数据读取到 Sense Amplifiers 中，这一时间定义为 tRCD（RCD for Row  to Column  Delay）。  
+DRAM 在接收到该 Command 后，会打开该 Row 的 Wordline，将其存储的数据读取到 Sense Amplifiers 中，这一时间定义为 tRCD（RCD for Row Address to Column Address Delay）。  
 
 
 
