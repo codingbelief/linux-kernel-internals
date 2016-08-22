@@ -64,9 +64,13 @@ Controller 在发出一个 Row Active Command 后，必须要等待 tRAS 时间�
 
 ## Column Read Command
 
+Controller 发送 Row Active Command 后，再发送 Column Read Command 进行数据读取。
+Column Read Command 的时序如下图所示：
+
+
 TODO：Column Read Command Timing
 
-Controller 发送 Row Active Command 后，再发送 Column Read Command 进行数据读取。  
+
 Column Read Command 通过地址总线指明需要读取的 Column 的起始地址。DRAM 在接收到该 Command 后，会将数据从 Sense Amplifiers 中通过 IO 电路搬运到数据总线上。  
 DRAM 从接收到 Command 到第一组数据从数据总线上输出的时间称为 tCAS（CAS for Column Address Strobe），也称为 tCL（CL for CAS Latency），这一时间可以通过 mode register 进行配置，通常为 3~5 个时钟周期。  
 
