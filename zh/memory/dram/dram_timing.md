@@ -70,6 +70,8 @@ DRAM 从接收到 Command 到第一组数据从数据总线上输出的时间称
 
 DRAM 在接收到 Column Read Command 的 tCAS 时间后，会通过数据总线，将 n 个 Column 的数据逐个发送给 Controller，其中 n 由 mode register 中的 burst length 决定，通常可以将 burst length 设定为 2、4 或者 8。
 
+开始发送第一个 Column 数据，到最后一个 Column 数据的时间定义为 tBurst。
+
 
 
 tCAS，即 CL
