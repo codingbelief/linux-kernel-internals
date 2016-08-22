@@ -63,6 +63,9 @@ DRAM 接收到 Row Active Command 到完成 Row Restore 操作所需要的时间
 Controller 在发出一个 Row Active Command 后，必须要等待 tRAS 时间后，才可以发起另一次的 Precharge 和 Row Access。
 
 ## Column Read Command
+
+
+
 tCAS，即 CL
 tBurst
 burst length
