@@ -70,6 +70,7 @@ DRAM 从接收到 Command 到第一组数据从数据总线上输出的时间称
 
 
 
+
 tCAS，即 CL
 tBurst
 burst length
