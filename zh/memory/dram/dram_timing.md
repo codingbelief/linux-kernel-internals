@@ -64,7 +64,7 @@ Controller 在发出一个 Row Active Command 后，必须要等待 tRAS 时间�
 
 ## Column Read Command
 
-
+Controller 在发送完 Row Active Command 后，再发送 Column Read Command 进行数据读取。
 
 tCAS，即 CL
 tBurst
