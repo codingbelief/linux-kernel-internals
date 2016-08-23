@@ -79,6 +79,12 @@ DRAM 在接收到 Column Read Command 的 tCAS 时间后，会通过数据总线
 ## Column Write Command
 
 Controller 发送 Row Active Command 后，再发送 Column Write Command 进行数据写入。 
+Column Write Command 的时序如下图所示：
+
+TODO：Column Write Command Timing
+
+Column Write Command 通过地址总线指明需要写入数据的 Column 的起始地址。
+
 
 ## Precharge Command
 tRP
