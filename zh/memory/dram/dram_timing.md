@@ -92,6 +92,7 @@ Column Write Command 通过地址总线指明需要写入数据的 Column 的起
 | DDR2 SDRAM | tCAS - 1 cycle |
 | DDR3 SDRAM | programmable |
 
+DRAM 接收完数据后，需要一定的时间将数据写入到 DRAM Cells 中，这个时间定义为 tWR（WR for Write Recovery）。
 
 ## Precharge Command
 tRP
