@@ -96,7 +96,9 @@ DRAM 接收完数据后，需要一定的时间将数据写入到 DRAM Cells 中
 
 ## Precharge Command
 
-在 DRAM Storage Cell 章节中，我们了解到，要访问 DRAM Cell 中的数据，需要先进行 Precharge 操作。相应地，在 Controller 发送 Row Active Command 访问一个具体的 Row 前， Controller 需要发送 Precharge Command 对 DRAM 的一个 Row 或者一个 Bank 进行 Precharge 操作。
+在 [DRAM Storage Cell](./dram_storage_cell.html) 章节中，我们了解到，要访问 DRAM Cell 中的数据，需要先进行 Precharge 操作。相应地，在 Controller 发送 Row Active Command 访问一个具体的 Row 前， Controller 需要发送 Precharge Command 对 DRAM 的一个 Row 或者一个 Bank 进行 Precharge 操作。
+
+
 
 ## Row Refresh Command
 tREFI
