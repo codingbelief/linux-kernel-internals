@@ -83,7 +83,14 @@ Column Write Command 的时序如下图所示：
 
 TODO：Column Write Command Timing
 
-Column Write Command 通过地址总线指明需要写入数据的 Column 的起始地址。
+Column Write Command 通过地址总线指明需要写入数据的 Column 的起始地址。Controller 在发送完 Write Command 后，需要等待 tCWD （CWD for Column Write Delay） 时间后，才可以发送待写入的数据。tCWD 在不同类型的 SDRAM 标准有所不同：
+
+| Memory Type | tCWD |
+| -- | -- |
+| SDRAM | 0 cycles |
+| DDR SDRAM | 1 cycle |
+| DDR2 SDRAM | tCAS - 1 cycle |
+| DDR3 SDRAM | programmable |
 
 
 ## Precharge Command
