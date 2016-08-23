@@ -64,7 +64,7 @@ Controller 在发出一个 Row Active Command 后，必须要等待 tRAS 时间�
 
 ## Column Read Command
 
-Controller 发送 Row Active Command 后，再发送 Column Read Command 进行数据读取。  
+Controller 发送 Row Active Command 并等待 tRCD 时间后，再发送 Column Read Command 进行数据读取。  
 Column Read Command 的时序如下图所示：
 
 TODO：Column Read Command Timing
@@ -78,7 +78,7 @@ DRAM 在接收到 Column Read Command 的 tCAS 时间后，会通过数据总线
 
 ## Column Write Command
 
-Controller 发送 Row Active Command 后，再发送 Column Write Command 进行数据写入。 
+Controller 发送 Row Active Command 并等待 tRCD 时间后，再发送 Column Write Command 进行数据写入。 
 Column Write Command 的时序如下图所示：
 
 TODO：Column Write Command Timing
@@ -95,8 +95,8 @@ Column Write Command 通过地址总线指明需要写入数据的 Column 的起
 DRAM 接收完数据后，需要一定的时间将数据写入到 DRAM Cells 中，这个时间定义为 tWR（WR for Write Recovery）。
 
 ## Precharge Command
-tRP
-tRC
+
+在 DRAM Storage Cell 章节中，我们了解到，要访问 DRAM Cell 中的数据，需要先进行 Precharge 操作。相应地，在 Controller 发送 Row Active Command 访问一个具体的 Row 前， Controller 需要发送 Precharge Command 对 DRAM 的一个 Row 或者一个 Bank 进行 Precharge 操作。
 
 ## Row Refresh Command
 tREFI
