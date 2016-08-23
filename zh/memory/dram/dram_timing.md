@@ -77,8 +77,8 @@ DRAM 在接收到 Column Read Command 的 tCAS 时间后，会通过数据总线
 开始发送第一个 Column 数据，到最后一个 Column 数据的时间定义为 tBurst。
 
 ## Column Write Command
-tCWD
-tWR
+
+Controller 发送 Row Active Command 后，再发送 Column Write Command 进行数据写入。 
 
 ## Precharge Command
 tRP
