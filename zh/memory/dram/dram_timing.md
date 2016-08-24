@@ -98,6 +98,14 @@ DRAM 接收完数据后，需要一定的时间将数据写入到 DRAM Cells 中
 
 在 [DRAM Storage Cell](./dram_storage_cell.html) 章节中，我们了解到，要访问 DRAM Cell 中的数据，需要先进行 Precharge 操作。相应地，在 Controller 发送 Row Active Command 访问一个具体的 Row 前， Controller 需要发送 Precharge Command 对 DRAM 的一个 Row 或者一个 Bank 进行 Precharge 操作。
 
+下面的时序图描述了 Controller 访问一个 Row 后，执行 Precharge，然后再访问另一个 Row 的流程。
+
+TODO：Precharge Command Timing
+
+DRAM 执行 Precharge Command 所需要的时间定义为 tPR（PR for Precharge）。Controller 在发送一个 Row Active Command 后，需要等待 tRC（RC for Row Cycle）时间后，才能发送第二个 Row Active Command 进行另一个 Row 的访问。
+
+从时序图上我们可以看到，tRC = tRAS + tPR，tRC 时间决定了
+
 
 
 ## Row Refresh Command
