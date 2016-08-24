@@ -104,7 +104,7 @@ TODO：Precharge Command Timing
 
 DRAM 执行 Precharge Command 所需要的时间定义为 tPR（PR for Precharge）。Controller 在发送一个 Row Active Command 后，需要等待 tRC（RC for Row Cycle）时间后，才能发送第二个 Row Active Command 进行另一个 Row 的访问。
 
-从时序图上我们可以看到，tRC = tRAS + tPR，tRC 时间决定了访问 DRAM 不同 Row 的性能。在实际的产品中，通常会通过降低 tRC 耗时或者在一个 Row Cycle 执行多个数据读写等方式来优化性能。
+从时序图上我们可以看到，tRC = tRAS + tPR，tRC 时间决定了访问 DRAM 不同 Row 的性能。在实际的产品中，通常会通过降低 tRC 耗时或者在一个 Row Cycle 执行尽可能多数据读写等方式来优化性能。
 
 > Note：  
 > 在一个 Row Cycle 中，可以发起多个 Read 或者 Write Command 进行一个 Row 内的数据访问。这种情况下，由于不用进行 Row 切换，数据访问的性能会比需要切换 Row 的情况好很多。
