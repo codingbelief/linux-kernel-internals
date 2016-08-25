@@ -122,6 +122,8 @@ DRAM 完成刷新操作所需的时间定义为 tRFC（RFC for Refresh Cycle）�
 
 tRFC 包含两个部分的时间，一是完成刷新操作所需要的时间，由于 DRAM Refresh 是同时对所有 Bank 进行的，刷新操作会比单个 Row 的 Active + Precharge 操作需要更长的时间；tRFC 的另一部分时间则是为了降低平均功耗而引入的延时，DRAM Refresh 操作所消耗的电流会比单个 Row 的 Active + Precharge 操作要大的多，tRFC 限制 Refresh 操作的频率。
 
+在通常的 DDR3 SDRAM 上，tRFC 最小的值大概为 110ns，tRC 则为 52.5ns
+
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
 tRP: Row Precharge Time
