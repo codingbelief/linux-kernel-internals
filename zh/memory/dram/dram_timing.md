@@ -129,6 +129,10 @@ tRFC 包含两个部分的时间，一是完成刷新操作所需要的时间，
 
 ## Read Cycle
 
+一个完整的 Read Cycle 如下图所示：
+
+TODO：Add Read Cycle Address
+
 ## Write Cycle
 
 ## Auto Precharge
