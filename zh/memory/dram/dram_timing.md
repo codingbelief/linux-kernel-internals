@@ -112,6 +112,8 @@ DRAM 执行 Precharge Command 所需要的时间定义为 tPR（PR for Precharge
 
 ## Row Refresh Command
 tREFI
+一般情况下，Controller 每隔 tREFI 时间就需要发送一个 Row Refresh Command 给 DRAM，进行 Row 刷新操作。
+
 
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
