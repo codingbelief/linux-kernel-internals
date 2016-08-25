@@ -155,6 +155,6 @@ Additive Latency 机制同样是降低了 Controller 实现的复杂度，在功
 
 ## DRAM Timing 设定
 
-
+## 参考资料
 
 [timings explication](http://www.tweakers.fr/timings.html)
