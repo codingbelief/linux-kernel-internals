@@ -143,6 +143,8 @@ Auto Precharge 机制的引入，可以降低 Controller 实现的复杂度，�
 
 ## Additive Latency
 
+在 DDR2 中，有引入了 Additive Latency 机制，即 AL。
+
 
 
 tRCD: Row Address to Column Address Delay
