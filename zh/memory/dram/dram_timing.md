@@ -135,7 +135,7 @@ TODO：Add Read Cycle Address
 
 ## Read Command With Auto Precharge
 
-
+SDRAM 还可以支持 Auto Precharge 机制。在 Read Command 中的某一个非 Column Address 的地址线设为 1 时，就可以触发 Auto Precharge。此时 DRAM 在完成 Read Command 后的合适的时机会在内部自动执行 Precharge 操作。时序如下图所示：
 
 ## Additive Latency
 
