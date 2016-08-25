@@ -114,12 +114,11 @@ DRAM 执行 Precharge Command 所需要的时间定义为 tPR（PR for Precharge
 
 一般情况下，Controller 每隔 tREFI（REFI for Refresh Interval） 时间就需要发送一个 Row Refresh Command 给 DRAM，进行 Row 刷新操作。DRAM 在接收到 Row Refresh Command 后，会根据内部 Refresh Counter 的值，对所有 Bank 的一个或者多个 Row 进行刷新操作。
 
-DRAM 刷新的操作与 Active + Precharge Command 组合类似，差别在于 Refresh Command 是对 DRAM 所有 Bank 同时进行操作的。DRAM 执行刷新操作所需的时间定义为 tRFC（RFC for Refresh Cycle）。
-
-下图为 DRAM Row Refresh Command 的时序图：
+DRAM 刷新的操作与 Active + Precharge Command 组合类似，差别在于 Refresh Command 是对 DRAM 所有 Bank 同时进行操作的。下图为 DRAM Row Refresh Command 的时序图：
 
 TODO：Row Refresh Command Timing
 
+DRAM 执行刷新操作所需的时间定义为 tRFC（RFC for Refresh Cycle）。
 
 
 
