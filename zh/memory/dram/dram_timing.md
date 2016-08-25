@@ -142,7 +142,7 @@ TODO：Add Auto Precharge timing
 Auto Precharge 机制的引入，可以降低 Controller 实现的复杂度，进而在功耗和性能上带来改善。
 
 > NOTE:  
-> Write Command 也支持 Auto Precharge 机制，参考后续章节的时序图。
+> Write Command 也支持 Auto Precharge 机制，参考下一小节的时序图。
 
 ## Additive Latency
 
