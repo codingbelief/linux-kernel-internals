@@ -153,7 +153,7 @@ TODO：AL Write timing
 
 Additive Latency 机制同样是降低了 Controller 实现的复杂度，在功耗和性能上带来改善。
 
-
+## DRAM Timing 设定
 
 
 tRCD: Row Address to Column Address Delay
