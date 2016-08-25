@@ -111,7 +111,7 @@ DRAM 执行 Precharge Command 所需要的时间定义为 tPR（PR for Precharge
 > 在一些产品上，DRAM Controller 会利用这一特性，对 CPU 发起的内存访问进行调度，在不影响数据有效性的情况下，将同一个 Row 上的数据访问汇聚到一直起执行，以提供整体访问性能。
 
 ## Row Refresh Command
-tREFI
+
 一般情况下，Controller 每隔 tREFI 时间就需要发送一个 Row Refresh Command 给 DRAM，进行 Row 刷新操作。
 
 
