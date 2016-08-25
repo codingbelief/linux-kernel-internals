@@ -45,7 +45,7 @@ Active Command 会通过 BA[1:0] 和 A[12:0] 信号，选中指定 Bank 中的�
 
 #### Read
 
-Read Command 将通过 A[9:0] 信号，发送需要读取的 Column 的地址给 SDRAM。然后 SDRAM 再将 Active Command 所选中的 Row 中，将对应 Column 的数据通过 DQ[15:0] 发送给 Host。
+Read Command 将通过 A[9:0] 信号，发送需要读取的 Column 的地址给 SDRAM。然后 SDRAM 再将 Active Command 所选中的 Row 中，将对应 Column 的数据通过 DQ[15:0] 发送给 Host。如果 A10 地址线为 1，那么在 Read Command 结束后，DRAM 会自动执行一次 Precharge 操作，即 Auto-Precharge。
 
 Host 端发送 Read Command，到 SDRAM 将数据发送到总线上的需要的时钟周期个数定义为 CL。
 
