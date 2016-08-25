@@ -157,4 +157,5 @@ Additive Latency 机制同样是降低了 Controller 实现的复杂度，在功
 
 ## 参考资料
 
-[timings explication](http://www.tweakers.fr/timings.html)
+1. Memory Systems - Cache Dram and Disk
+2. [timings explication](http://www.tweakers.fr/timings.html)
