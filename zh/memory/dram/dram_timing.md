@@ -127,6 +127,8 @@ tRFC 包含两个部分的时间，一是完成刷新操作所需要的时间，
 
 ## Read Cycle
 
+
+
 tRCD: Row Address to Column Address Delay
 CL: CAS latency
 tRP: Row Precharge Time
