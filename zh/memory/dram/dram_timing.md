@@ -131,6 +131,8 @@ tRFC 包含两个部分的时间，一是完成刷新操作所需要的时间，
 
 ## Write Cycle
 
+## Auto Precharge
+
 ## Additive Latency
 
 
