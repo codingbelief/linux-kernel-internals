@@ -129,6 +129,10 @@ tRFC 包含两个部分的时间，一是完成刷新操作所需要的时间，
 
 ## Read Cycle
 
+## Write Cycle
+
+## Additive Latency
+
 
 
 tRCD: Row Address to Column Address Delay
