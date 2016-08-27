@@ -41,7 +41,7 @@ Controller 与 DRAM 之间的交互，都是以 Controller 发起一个 Command 
 DRAM 在成功解析 Command 后，就会根据 Command 在内部进行相应的操作。从 Controller 发出 Command 到 DRAM 执行完 Command 所对应的操作所需要的时间定义为 tParam。不同类型的 Command 的 tParam 可能不一样，相同 Command 的 tParam 由于 Command 参数的不同也可能会不一样。
 
 > NOTE: 
-> 各个 Command 的定义和内部操作细节可以参考前面的几个章节，本章节中将主要关注时序方面的细节。
+> 各种 Command 的定义和内部操作细节可以参考前面的几个章节，本章节中将主要关注时序方面的细节。
 
 ## Row Active Command
 
