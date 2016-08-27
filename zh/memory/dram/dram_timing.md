@@ -4,7 +4,7 @@
 
 ## Overview
 
-TODO：内部流程图（1,2,3,4）
+![](./dram-command-and-data-movement.png)
 
 如上图所示，SDRAM 的相关操作在内部大概可以分为以下的几个阶段：
 
@@ -34,6 +34,8 @@ TODO：内部流程图（1,2,3,4）
 
 TODO：时序图例（需要描述各个部分的含义）
 
+![](./basic-format-of-dram-commands.png)
+
 上图中，Clock 信号是由 SDRAM Controller 发出的，用于和 DRAM 之间的同步。在 DDRx 中，Clock 信号是一组差分信号，在本文中为了简化描述，将只画出其中的 Positive Clock。
 
 Controller 与 DRAM 之间的交互，都是以 Controller 发起一个 Command 开始的。从 Controller 发出一个 Command 到 DRAM 接收并解析该 Command 所需要的时间定义为 tCMD，不同类型的 Command 的 tCMD 都是相同的。
@@ -47,7 +49,7 @@ DRAM 在成功解析 Command 后，就会根据 Command 在内部进行相应的
 
 在进行数据的读写前，Controller 需要先发送 Row Active Command，打开 DRAM Memory Array 中的指定的 Row。Row Active Command 的时序如下图所示：
 
-TODO：Row Active Command Timing
+![](./row-active-command-timing.png)
 
 Row Active Command 可以分为两个阶段：
 
@@ -68,7 +70,7 @@ Controller 在发出一个 Row Active Command 后，必须要等待 tRAS 时间�
 Controller 发送 Row Active Command 并等待 tRCD 时间后，再发送 Column Read Command 进行数据读取。  
 Column Read Command 的时序如下图所示：
 
-TODO：Column Read Command Timing
+![](./column-read-command-timing.png)
 
 Column Read Command 通过地址总线 A[0:9] 指明需要读取的 Column 的起始地址。DRAM 在接收到该 Command 后，会将数据从 Sense Amplifiers 中通过 IO 电路搬运到数据总线上。  
 DRAM 从接收到 Command 到第一组数据从数据总线上输出的时间称为 tCAS（CAS for Column Address Strobe），也称为 tCL（CL for CAS Latency），这一时间可以通过 mode register 进行配置，通常为 3~5 个时钟周期。  
@@ -82,7 +84,7 @@ DRAM 在接收到 Column Read Command 的 tCAS 时间后，会通过数据总线
 Controller 发送 Row Active Command 并等待 tRCD 时间后，再发送 Column Write Command 进行数据写入。 
 Column Write Command 的时序如下图所示：
 
-TODO：Column Write Command Timing
+![](./column-write-command-timing.png)
 
 Column Write Command 通过地址总线 A[0:9] 指明需要写入数据的 Column 的起始地址。Controller 在发送完 Write Command 后，需要等待 tCWD （CWD for Column Write Delay） 时间后，才可以发送待写入的数据。tCWD 在一些描述中也称为 tCWL（CWL for Column Write Latency）
 
@@ -103,7 +105,7 @@ DRAM 接收完数据后，需要一定的时间将数据写入到 DRAM Cells 中
 
 下面的时序图描述了 Controller 访问一个 Row 后，执行 Precharge，然后再访问另一个 Row 的流程。
 
-TODO：Precharge Command Timing
+![](./precharge-command-timing.png)
 
 DRAM 执行 Precharge Command 所需要的时间定义为 tRP（RP for Row Precharge）。Controller 在发送一个 Row Active Command 后，需要等待 tRC（RC for Row Cycle）时间后，才能发送第二个 Row Active Command 进行另一个 Row 的访问。
 
@@ -119,7 +121,7 @@ DRAM 执行 Precharge Command 所需要的时间定义为 tRP（RP for Row Prech
 
 DRAM 刷新的操作与 Active + Precharge Command 组合类似，差别在于 Refresh Command 是对 DRAM 所有 Bank 同时进行操作的。下图为 DRAM Row Refresh Command 的时序图：
 
-TODO：Row Refresh Command Timing
+![](./row-refresh-command-timing.png)
 
 DRAM 完成刷新操作所需的时间定义为 tRFC（RFC for Refresh Cycle）。  
 
@@ -132,7 +134,7 @@ tRFC 包含两个部分的时间，一是完成刷新操作所需要的时间，
 
 一个完整的 Read Cycle 如下图所示：
 
-TODO：Add Read Cycle Address
+![](./read-cycle-timing.png)
 
 ## Read Command With Auto Precharge
 
@@ -140,7 +142,7 @@ DRAM 还可以支持 Auto Precharge 机制。在 Read Command 中的地址线 A1
 
 Read Command With Auto Precharge 的时序如下图所示： 
 
-TODO：Add Auto Precharge timing
+![](/zh/memory/dram/auto-precharge-timing.png)
 
 Auto Precharge 机制的引入，可以降低 Controller 实现的复杂度，进而在功耗和性能上带来改善。
 
