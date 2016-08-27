@@ -153,8 +153,9 @@ Auto Precharge 机制的引入，可以降低 Controller 实现的复杂度，�
 
 在 DDR2 中，又引入了 Additive Latency 机制，即 AL。通过 AL 机制，Controller 可以在发送完 Active Command 后紧接着就发送 Read 或者 Write Command，而后 DRAM 会在合适的时机（延时 tAL 时间）执行 Read 或者 Write Command。时序如下图所示：
 
-TODO：AL Read timing
-TODO：AL Write timing
+![](./al-read-timing.png)
+
+![](./al-read-timing.png)
 
 Additive Latency 机制同样是降低了 Controller 实现的复杂度，在功耗和性能上带来改善。
 
