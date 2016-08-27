@@ -144,7 +144,7 @@ DRAM 还可以支持 Auto Precharge 机制。在 Read Command 中的地址线 A1
 
 Read Command With Auto Precharge 的时序如下图所示： 
 
-![](/zh/memory/dram/auto-precharge-timing.png)
+![](./auto-precharge-timing.png)
 
 Auto Precharge 机制的引入，可以降低 Controller 实现的复杂度，进而在功耗和性能上带来改善。
 
