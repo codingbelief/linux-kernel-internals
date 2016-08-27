@@ -14,7 +14,7 @@ TODO：内部流程图（1,2,3,4）
 
 2. In bank data movement
 
-    在这个阶段，SDRAM 主要是将 Memory Array 中的数据从 DRAM Cells 中读取到 Sense Amplifiers 中，或者将数据从 Sense Amplifiers 写入到 DRAM Cells。
+    在这个阶段，SDRAM 主要是将 Memory Array 中的数据从 DRAM Cells 中读出到 Sense Amplifiers，或者将数据从 Sense Amplifiers 写入到 DRAM Cells。
  
 3. In device data movement
 
@@ -25,10 +25,10 @@ TODO：内部流程图（1,2,3,4）
     在这个阶段，进行读数据操作时，SDRAM 会将数据输出到数据总线上，进行写数据操作时，则是 Host 端的 Controller 将数据输出到总线上。
 
 在上述的四个阶段中，每个阶段都会有一定的耗时，例如数据从 DRAM Cells 搬运到 Read Latchs 的操作需要一定的时间，因此在一个具体的操作需要按照一定时序进行。  
-同时，由于内部的一些部件可能会被多个操作使用，例如读数据和取数据都需要用到部分 IO 电路，因此多个不同的操作通常不能同时进行，也需要遵守一定的时序。  
+同时，由于内部的一些部件可能会被多个操作使用，例如读数据和写数据都需要用到部分 IO 电路，因此多个不同的操作通常不能同时进行，也需要遵守一定的时序。  
 此外，某些操作会消耗很大的电流，为了满足 SDRAM 设计上的功耗指标，可能会限制某一些操作的执行频率。
 
-基于上面的几点限制，SDRAM Controller 在发出 Command 时，需要遵守一定的时序和规则，这些时序和规则有相应的 SDRAM 标准定义。在后续的章节中，我们将对各个 Command 的时序进行详细的介绍。
+基于上面的几点限制，SDRAM Controller 在发出 Command 时，需要遵守一定的时序和规则，这些时序和规则由相应的 SDRAM 标准定义。在后续的章节中，我们将对各个 Command 的时序进行详细的介绍。
 
 ## 时序图例
 
@@ -40,7 +40,8 @@ Controller 与 DRAM 之间的交互，都是以 Controller 发起一个 Command 
 
 DRAM 在成功解析 Command 后，就会根据 Command 在内部进行相应的操作。从 Controller 发出 Command 到 DRAM 执行完 Command 所对应的操作所需要的时间定义为 tParam。不同类型的 Command 的 tParam 可能不一样，相同 Command 的 tParam 由于 Command 参数的不同也可能会不一样。
 
-Controller 发出一个 Command 后，必须要等到相应的 tParam 时间后，才能发出第二个 Command。
+> NOTE: 
+> 各个 Command 的定义和内部操作细节可以参考前面的几个章节，本章节中将主要关注时序方面的细节。
 
 ## Row Active Command
 
