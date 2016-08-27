@@ -136,7 +136,7 @@ TODO：Add Read Cycle Address
 
 ## Read Command With Auto Precharge
 
-DRAM 还可以支持 Auto Precharge 机制。在 Read Command 中的地址线 A10 设为 1 时，就可以触发 Auto Precharge。此时 DRAM 在完成 Read Command 后的合适的时机会在内部自动执行 Precharge 操作。
+DRAM 还可以支持 Auto Precharge 机制。在 Read Command 中的地址线 A10 设为 1 时，就可以触发 Auto Precharge。此时 DRAM 会在完成 Read Command 后的合适的时机，在内部自动执行 Precharge 操作。
 
 Read Command With Auto Precharge 的时序如下图所示： 
 
