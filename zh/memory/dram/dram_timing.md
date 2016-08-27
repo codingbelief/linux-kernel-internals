@@ -32,8 +32,6 @@
 
 ## 时序图例
 
-TODO：时序图例（需要描述各个部分的含义）
-
 ![](./basic-format-of-dram-commands.png)
 
 上图中，Clock 信号是由 SDRAM Controller 发出的，用于和 DRAM 之间的同步。在 DDRx 中，Clock 信号是一组差分信号，在本文中为了简化描述，将只画出其中的 Positive Clock。
