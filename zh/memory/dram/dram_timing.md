@@ -163,6 +163,11 @@ Additive Latency 机制同样是降低了 Controller 实现的复杂度，在功
 
 ## DRAM Timing 设定
 
+上述的 DRAM Timing 中的一部分参数可以编程设定，例如 tCAS、tAL 等。这些参数通常是在 Host 初始化时，通过 Controller 发起 Load Mode Register Command 写入到 DRAM 的 Mode Register 中。DRAM 完成初始化后，就会按照设定的参数运行。
+
+> NOTE:  
+> 初始化和参数设定过程不在本文中详细描述，感兴趣的同学可以参考具体 CPU 和 DRAM 芯片的 Datasheet。
+
 ## 参考资料
 
 1. Memory Systems - Cache Dram and Disk
