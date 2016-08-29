@@ -21,6 +21,7 @@
         * [DRAM Storage Cell](memory/dram/dram_storage_cell.md)
         * [DRAM Memory Orgnization](memory/dram/dram_memory_orgnization.md)
         * [DRAM Device](memory/dram/dram_device.md)
+ * [DRAM Timing](memory/dram/dram_timing.md)
+
         * [DRAM Devices Orgnization](memory/dram/dram_devices_orgnization.md)
-        * [DRAM Timing](memory/dram/dram_timing.md)
 
