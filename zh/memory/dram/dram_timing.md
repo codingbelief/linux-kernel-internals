@@ -134,7 +134,7 @@ tRFC 包含两个部分的时间，一是完成刷新操作所需要的时间，
 
 ## Read Cycle
 
-一个完整的 Read Cycle 如下图所示：
+一个完整的 Burst Length 为 4 的 Read Cycle 如下图所示：
 
 ![](./read-cycle-timing.png)
 
