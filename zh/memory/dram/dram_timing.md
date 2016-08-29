@@ -69,7 +69,7 @@ Controller 在发出一个 Row Active Command 后，必须要等待 tRAS 时间�
 ## Column Read Command
 
 Controller 发送 Row Active Command 并等待 tRCD 时间后，再发送 Column Read Command 进行数据读取。  
-Column Read Command 的时序如下图所示：
+数据 Burst Length 为 8 时的 Column Read Command 时序如下图所示：
 
 ![](./column-read-command-timing.png)
 
@@ -84,7 +84,7 @@ DRAM 在接收到 Column Read Command 的 tCAS 时间后，会通过数据总线
 ## Column Write Command
 
 Controller 发送 Row Active Command 并等待 tRCD 时间后，再发送 Column Write Command 进行数据写入。 
-Column Write Command 的时序如下图所示：
+数据 Burst Length 为 8 时的 Column Write Command 时序如下图所示：
 
 ![](./column-write-command-timing.png)
 
