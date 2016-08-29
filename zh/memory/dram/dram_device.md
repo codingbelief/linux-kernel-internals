@@ -61,7 +61,7 @@ SDRAM 接收到最后一个数据到完成数据写入到 Memory 的时间定义
 
 Precharge 操作是以 Bank 为单位进行的，可以单独对某一个 Bank 进行，也可以一次对所有 Bank 进行。如果 A10 为高，那么 SDRAM 进行 All Bank Precharge 操作，如果 A10 为低，那么 SDRAM 根据 BA[1:0] 的值，对指定的 Bank 进行 Precharge 操作。
 
-SDRAM 完成 Precharge 操作需要的时间定义为 tPR。
+SDRAM 完成 Precharge 操作需要的时间定义为 tRP。
 
 #### Auto-Refresh
 
