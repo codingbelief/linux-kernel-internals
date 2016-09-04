@@ -1,5 +1,9 @@
 # DRAM Devices Orgnization
 
+## 共用数据总线
+
+## 共用控制和地址总线
+
 1 个 CS 对应一个 Rank！  
 Channel 如何区别？ 
 每个 Channel 上的控制信号是一样的？ 
