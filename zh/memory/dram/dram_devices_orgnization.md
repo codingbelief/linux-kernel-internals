@@ -6,6 +6,10 @@
 
 为何要由多个 Devices 组成一个 Rank？
 
+为何要创造 Channel 的概念？
+
+Device 内部的 Channel 概念？
+
 1 个 CS 对应一个 Rank！  
 Channel 如何区别？ 
 每个 Channel 上的控制信号是一样的？ 
