@@ -4,6 +4,8 @@
 
 ## 共用控制和地址总线
 
+为何要由多个 Devices 组成一个 Rank？
+
 1 个 CS 对应一个 Rank！  
 Channel 如何区别？ 
 每个 Channel 上的控制信号是一样的？ 
