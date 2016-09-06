@@ -19,3 +19,9 @@ Channel 如何区别？
 
 理论上，channel 是拓展总线的  
 如果是数据总线是拼接的，那么可以共用控制信号  
+
+DIMM(Dual In-line Memory Module)
+
+
+SIMM (Single In-line Memory Module)
+
