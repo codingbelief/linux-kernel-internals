@@ -13,7 +13,7 @@
         * [NAND Flash](storage/flash_memory/nand_flash/index.md)
         * [NOR Flash](storage/flash_memory/nor_flash/index.md)
         * NVMe
-    * [Linux SD/MMC Framework](storage/linux-sd-mmc-framework/index.md)
+    * [Linux SD\/MMC Framework](storage/linux-sd-mmc-framework/index.md)
 * [Memory](memory/index.md)
     * [SDRAM](memory/sdram/index.md)
     * [SRAM](memory/sram/index.md)
@@ -23,4 +23,5 @@
         * [DRAM Device](memory/dram/dram_device.md)
         * [DRAM Timing](memory/dram/dram_timing.md)
         * [DRAM Devices Orgnization](memory/dram/dram_devices_orgnization.md)
+    * [Cache](memory/cache.md)
 
