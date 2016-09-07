@@ -23,5 +23,5 @@
         * [DRAM Device](memory/dram/dram_device.md)
         * [DRAM Timing](memory/dram/dram_timing.md)
         * [DRAM Devices Orgnization](memory/dram/dram_devices_orgnization.md)
-    * [Cache](memory/cache.md)
+    * [Cache](memory/cache/index.md)
 
