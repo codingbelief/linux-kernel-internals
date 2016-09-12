@@ -30,3 +30,11 @@ SIMM (Single In-line Memory Module)
 rank指的是连接到同一个cs(Chip Select，片选)的所有内存颗粒chips，内存控制器能够对同一个rank的所有chips同时进行读写操作，而在同一个rank的chip也分享同样的控制信号。以目前的电脑来说，因为一组channel的位宽是64bit，所以能够同时读写8byte的资料，如果是具有ECC功能的内存控制器和ECC内存模组，那么一组channel的位宽就是72bit
 
 Modern CPU microarchitectures support triple or quadruple memory channels. These multiple independent channels increases data transfer rates due to concurrent access of multiple DIMMs.
+
+1. host 只存在一个 channel 的场景
+1.1 单设备
+1.2 多设备
+1.2.1 是否共享数据总线
+2. host 存在多个 channel 的场景
+2.1 多个单 channel 设备
+2.2 单个多 channel 设备
