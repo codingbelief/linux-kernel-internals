@@ -10,6 +10,8 @@
 
 Device 内部的 Channel 概念？
 
+Host 端的 DRAM Controller 可以有多组数据总线、地址总线和控制总线
+
 1 个 CS 对应一个 Rank！  
 Channel 如何区别？ 
 每个 Channel 上的控制信号是一样的？ 
