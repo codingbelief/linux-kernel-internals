@@ -31,10 +31,10 @@ rank指的是连接到同一个cs(Chip Select，片选)的所有内存颗粒chip
 
 Modern CPU microarchitectures support triple or quadruple memory channels. These multiple independent channels increases data transfer rates due to concurrent access of multiple DIMMs.
 
-1. host 只存在一个 channel 的场景
-1.1 单设备
-1.2 多设备
-1.2.1 是否共享数据总线
-2. host 存在多个 channel 的场景
-2.1 多个单 channel 设备
-2.2 单个多 channel 设备
+1. host 只存在一个 channel 的场景  
+1.1 单设备  
+1.2 多设备  
+1.2.1 是否共享数据总线  
+2. host 存在多个 channel 的场景  
+2.1 多个单 channel 设备  
+2.2 单个多 channel 设备  
