@@ -33,6 +33,9 @@ rank指的是连接到同一个cs(Chip Select，片选)的所有内存颗粒chip
 
 Modern CPU microarchitectures support triple or quadruple memory channels. These multiple independent channels increases data transfer rates due to concurrent access of multiple DIMMs.
 
+Dual Channel memory controllers are memory controllers where the DRAM devices are separated on to two different buses to allow two memory controllers to access them in parallel. This doubles the theoretical amount of bandwidth of the bus. In theory, more channels can be built (a channel for every DRAM cell would be the ideal solution), but due to wire count, line capacitance, and the need for parallel access lines to have identical lengths, more channels are very difficult to add.
+
+
 1. host 只存在一个 channel 的场景  
 1.1 单设备  
 1.2 多设备  
