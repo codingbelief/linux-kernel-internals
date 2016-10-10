@@ -2,9 +2,12 @@
 
 随着系统对内存容量、带宽等方面的需求提高，系统会接入多个 DRAM Devices。而多个 DRAM Devices 不同的组织方式，会带来不同的效果。本小节将对不同的组织方式及其效果进行简单介绍。
 
-## 单 Channel SDRAM Controller 连接方式
+## Single Channel DRAM Controller 组织方式
 
+Single Channel 指 DRAM Controller 只有一组控制和数据总线。
+在这种场景下，DRAM Controller 与单个或者多个 DRAM Devices 的连接方式如下所示：
 
+### 连接单个 DRAM Device
 
 ## 共用数据总线
 
