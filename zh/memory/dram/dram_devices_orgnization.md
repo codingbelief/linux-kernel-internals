@@ -11,6 +11,13 @@ Single Channel 指 DRAM Controller 只有一组控制和数据总线。
 
 TODO：figure_single_channel_single_device
 
+Single Channel 连接单个 DRAM Device 是最常见的一种组织方式。
+由于成本、工艺等方面的因素，单个 DRAM Device 在总线宽度、容量上有所限制，在需要大带宽、大容量的产品中，通常接入多个 DRAM Devices。
+
+### 连接多个 DRAM Devices
+
+TODO：figure_single_channel_multi_devices
+
 
 
 ## 共用数据总线
