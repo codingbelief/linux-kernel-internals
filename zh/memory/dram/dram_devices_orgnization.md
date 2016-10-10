@@ -16,8 +16,11 @@ Single Channel 连接单个 DRAM Device 是最常见的一种组织方式。
 
 ### 连接多个 DRAM Devices
 
-TODO：figure_single_channel_multi_devices
+TODO：figure_single_channel_multi_devices_1
 
+
+
+TODO：figure_single_channel_multi_devices_2
 
 
 ## 共用数据总线
