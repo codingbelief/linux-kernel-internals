@@ -9,6 +9,8 @@ Single Channel 指 DRAM Controller 只有一组控制和数据总线。
 
 ### 连接单个 DRAM Device
 
+
+
 ## 共用数据总线
 
 ## 共用控制和地址总线
