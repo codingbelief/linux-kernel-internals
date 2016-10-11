@@ -43,4 +43,4 @@ TODO：figure_multi_channel_controller_single_channel_devices
 
 TODO：figure_multi_channel_controller_Multi_channel_devices
 
-在 LPDDR3 标准中，引入了 Multi Channel 的设计，即一个 DRAM Devices 中包括多个 Channel。这样就可以在单个 Device 上达成 Multi Channel 同时访问的效果，最终带来读写请求吞吐率的提升。
+在一些 DRAM 产品中，例如 LPDDR3、LPDDR4 等，引入了 Multi Channel 的设计，即一个 DRAM Devices 中包括多个 Channel。这样就可以在单个 Device 上达成 Multi Channel 同时访问的效果，最终带来读写请求吞吐率的提升。
