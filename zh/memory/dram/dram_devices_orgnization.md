@@ -33,15 +33,15 @@ TODO：figure_single_channel_multi_devices_2
 Multi Channel 指 DRAM Controller 只有多组控制和数据总线，每一组总线可以独立访问 DRAM Devices。
 在这种场景下，DRAM Controller 与 DRAM Devices 的连接方式如下所示：
 
-### 连接多个 Single Channel DRAM Device
+### 连接 Single Channel DRAM Device
 
 TODO：figure_multi_channel_controller_single_channel_devices
 
 这种组织方式的优势在于多个 Devices 可以同时工作，DRAM Controller 可以对不同 Channel 上的 Devices 同时发起读写请求，提高了读写请求的吞吐率。
 
-### 连接单个 Multi Channel DRAM Device
+### 连接 Multi Channel DRAM Device
 
-TODO：figure_multi_channel_controller_single_channel_devices
+TODO：figure_multi_channel_controller_Multi_channel_devices
 
 这种组织方式的优势在于多个 Devices 可以同时工作，DRAM Controller 可以对不同 Channel 上的 Devices 同时发起读写请求，提高了读写请求的吞吐率。
 
