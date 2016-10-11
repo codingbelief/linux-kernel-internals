@@ -28,6 +28,10 @@ TODO：figure_single_channel_multi_devices_2
 
 这种组织方式既增加总体容量，也增加带宽。
 
+## Multi Channel DRAM Controller 组织方式
+
+
+
 ## 共用数据总线
 
 ## 共用控制和地址总线
