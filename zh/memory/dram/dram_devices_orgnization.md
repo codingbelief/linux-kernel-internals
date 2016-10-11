@@ -20,7 +20,7 @@ TODO：figure_single_channel_multi_devices_1
 
 上图中，多个 DRAM Devices 共享控制和数据总线，DRAM Controller 通过 Chip Select 分时单独访问各个 DRAM Devices。
 
-这种组织方式只增加总体容量，不增加带宽
+这种组织方式只增加总体容量，不增加带宽。
 
 TODO：figure_single_channel_multi_devices_2
 
