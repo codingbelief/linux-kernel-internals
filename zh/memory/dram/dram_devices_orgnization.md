@@ -38,6 +38,7 @@ Multi Channel 指 DRAM Controller 只有多组控制和数据总线，每一组�
 TODO：figure_multi_channel_single_channel_devices
 
 
+
 ## 共用数据总线
 
 ## 共用控制和地址总线
