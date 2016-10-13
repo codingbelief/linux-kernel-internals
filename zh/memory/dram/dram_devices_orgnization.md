@@ -18,15 +18,12 @@ Single Channel 连接单个 DRAM Device 是最常见的一种组织方式。
 ### 连接多个 DRAM Devices
 
 ![](./single_channel_multi_devices_1.png)
-TODO：figure_single_channel_multi_devices_1
 
 上图中，多个 DRAM Devices 共享控制和数据总线，DRAM Controller 通过 Chip Select 分时单独访问各个 DRAM Devices。
 
 这种组织方式只增加总体容量，不增加带宽。
 
 ![](./single_channel_multi_devices_2.png)
-
-TODO：figure_single_channel_multi_devices_2
 
 上图中，多个 DRAM Devices 共享控制总线和 Chip Select 信号，DRAM Controller 同时访问每个 DRAM Devices，各个 Devices 的数据拼接到一起。
 
@@ -41,13 +38,10 @@ Multi Channel 指 DRAM Controller 只有多组控制和数据总线，每一组�
 
 ![](./multi_channel_controller_single_channel_devices.png)
 
-TODO：figure_multi_channel_controller_single_channel_devices
-
 这种组织方式的优势在于多个 Devices 可以同时工作，DRAM Controller 可以对不同 Channel 上的 Devices 同时发起读写请求，提高了读写请求的吞吐率。
 
 ### 连接 Multi Channel DRAM Device
-![](./multi_channel_controller_Multi_channel_devices.png)
 
-TODO：figure_multi_channel_controller_Multi_channel_devices
+![](./multi_channel_controller_Multi_channel_devices.png)
 
 在一些 DRAM 产品中，例如 LPDDR3、LPDDR4 等，引入了 Multi Channel 的设计，即一个 DRAM Devices 中包括多个 Channel。这样就可以在单个 Device 上达成 Multi Channel 同时访问的效果，最终带来读写请求吞吐率的提升。
