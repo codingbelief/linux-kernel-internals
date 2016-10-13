@@ -9,7 +9,7 @@ Single Channel 指 DRAM Controller 只有一组控制和数据总线。
 
 ### 连接单个 DRAM Device
 
-![](/assets/single_channel_single_device.png)
+![](./single_channel_single_device.png)
 TODO：figure_single_channel_single_device
 
 Single Channel 连接单个 DRAM Device 是最常见的一种组织方式。
