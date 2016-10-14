@@ -34,7 +34,7 @@ Single Channel 连接单个 DRAM Device 是最常见的一种组织方式。
 Multi Channel 指 DRAM Controller 只有多组控制和数据总线，每一组总线可以独立访问 DRAM Devices。
 在这种场景下，DRAM Controller 与 DRAM Devices 的连接方式如下所示：
 
-### 连接 Single Channel DRAM Device
+### 连接 Single Channel DRAM Devices
 
 ![](./multi_channel_controller_single_channel_devices.png)
 
