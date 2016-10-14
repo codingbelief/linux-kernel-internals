@@ -24,7 +24,7 @@ Single Channel 连接单个 DRAM Device 是最常见的一种组织方式。
 
 ![](./single_channel_multi_devices_2.png)
 
-上图中，多个 DRAM Devices 共享控制总线和 Chip Select 信号，DRAM Controller 同时访问每个 DRAM Devices，各个 Devices 的数据合并到一起，例如 Device 1 的数据输出到数据总线的 DATA[0:7] 信号上，Device 2 的数据输出到数据总线的 DATA[8:15] 上。这样的组织方式下，访问 16 bits 的数据就只需要一个访问周期就可以完成。
+上图中，多个 DRAM Devices 共享控制总线和 Chip Select 信号，DRAM Controller 同时访问每个 DRAM Devices，各个 Devices 的数据合并到一起，例如 Device 1 的数据输出到数据总线的 DATA[0:7] 信号上，Device 2 的数据输出到数据总线的 DATA[8:15] 上。这样的组织方式下，访问 16 bits 的数据就只需要一个访问周期就可以完成，而不需要分解为两个 8 bits 的访问周期。
 
 ## Multi Channel DRAM Controller 组织方式
 
