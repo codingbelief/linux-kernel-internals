@@ -1,4 +1,4 @@
-# DRAM Devices Orgnization
+# DRAM Devices Organization
 
 随着系统对内存容量、带宽、性能等方面的需求提高，系统会接入多个 DRAM Devices。而多个 DRAM Devices 不同的组织方式，会带来不同的效果。本小节将对不同的组织方式及其效果进行简单介绍。
 
