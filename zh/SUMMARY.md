@@ -19,9 +19,9 @@
     * [SRAM](memory/sram/index.md)
     * [DRAM](memory/dram/index.md)
         * [DRAM Storage Cell](memory/dram/dram_storage_cell.md)
-        * [DRAM Memory Organization](memory/dram/dram_memory_orgnization.md)
+        * [DRAM Memory Organization](memory/dram/dram_memory_organization.md)
         * [DRAM Device](memory/dram/dram_device.md)
         * [DRAM Timing](memory/dram/dram_timing.md)
-        * [DRAM Devices Organization](memory/dram/dram_devices_orgnization.md)
+        * [DRAM Devices Organization](memory/dram/dram_devices_organization.md)
     * [Cache](memory/cache/index.md)
 
