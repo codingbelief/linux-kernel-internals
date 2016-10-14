@@ -20,6 +20,9 @@ Single Channel 连接单个 DRAM Device 是最常见的一种组织方式。
 
 上图中，多个 DRAM Devices 共享控制和数据总线，DRAM Controller 通过 Chip Select 分时单独访问各个 DRAM Devices。此外，在其中一个 Device 进入刷新周期时，DRAM Controller 可以按照一定的调度算法，优先执行其他 Device 上的访问请求，提高系统整体内存访问性能。
 
+> *NOTE*  
+> CS0 和 CS1 在同一时刻，只有一个可以处于时能状态，即同一时刻，只有一个 Device 可以被访问。
+
 上述的这种组织方式只增加总体容量，不增加带宽。下图中描述的组织方式则可以既增加总体容量，也增加带宽。
 
 ![](./single_channel_multi_devices_2.png)
@@ -36,6 +39,10 @@ Multi Channel 指 DRAM Controller 只有多组控制和数据总线，每一组�
 ![](./multi_channel_controller_single_channel_devices.png)
 
 这种组织方式的优势在于多个 Devices 可以同时工作，DRAM Controller 可以对不同 Channel 上的 Devices 同时发起读写请求，提高了读写请求的吞吐率。
+
+> *NOTE*  
+> CS0 和 CS1 在同一时刻，可以同时被使能，即同一时刻，两个 Devices 可以同时被访问。
+
 
 ### 连接 Multi Channel DRAM Device
 
