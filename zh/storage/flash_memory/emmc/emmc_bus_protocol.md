@@ -11,7 +11,7 @@ eMMC 总线接口定义如下图所示：
 **CLK**  
 
 CLK 信号用于从 Host 端输出时钟信号，进行数据传输的同步和设备运作的驱动。  
-在一个时钟周期内，CMD 和 DAT0-7 信号上都可以传输 1 个比特，即 SDR (Single Data Rate) 模式。此外，DAT0-7 信号还支持配置为 DDR (Double Data Rate) 模式，在一个时钟周期内，可以传输 2 个比特。  
+在一个时钟周期内，CMD 和 DAT0-7 信号上都可以支持传输 1 个比特，即 SDR (Single Data Rate) 模式。此外，DAT0-7 信号还支持配置为 DDR (Double Data Rate) 模式，在一个时钟周期内，可以传输 2 个比特。  
 
 
 需要描述的内容：
