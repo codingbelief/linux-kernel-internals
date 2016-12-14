@@ -8,6 +8,7 @@
             * [eMMC 总线协议](storage/flash_memory/emmc/emmc_bus_protocol.md)
             * [eMMC RPMB](storage/flash_memory/emmc/emmc_rpmb.md)
             * [eMMC 设备寄存器](storage/flash_memory/emmc/emmc_device_registers.md)
+            * [eMMC 命令](storage/flash_memory/emmc/emmc_commands.md)
         * [SD Card](storage/flash_memory/sdcard/index.md)
         * [UFS](storage/flash_memory/ufs/index.md)
         * [NAND Flash](storage/flash_memory/nand_flash/index.md)
