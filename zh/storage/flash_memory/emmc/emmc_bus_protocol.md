@@ -19,8 +19,9 @@ Host 可以在通讯过程中动态调整时钟信号的频率（注，频率范
 
 CMD 信号主要用于 Host 向 eMMC 发送 Command 和 eMMC 向 Host 发送对于的 Response。Command 和 Response 的细节会在后续章节中介绍。
 
-**DAT0-7**
+**DAT0-7**  
 
+DAT0-7 信号主要用于 Host 和 eMMC 之间的数据传输。在 eMMC 上电或者软复位后，只有 DAT0 可以进行数据传输，完成初始化后，可配置 DAT0-3 或者 DAT0-7 进行数据传输。
 
 
 
