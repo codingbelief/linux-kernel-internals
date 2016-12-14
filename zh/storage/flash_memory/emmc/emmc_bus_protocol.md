@@ -17,7 +17,7 @@ Host 可以在通讯过程中动态调整时钟信号的频率（注，频率范
 
 **CMD**  
 
-
+CMD 信号主要用于 Host 向 eMMC 发送 Command 和 eMMC 向 Host 发送对于的 Response。
 
 
 需要描述的内容：
