@@ -3,6 +3,7 @@
 ## eMMC 总线接口
 
 eMMC 总线接口定义如下图所示：  
+
 ![](emmc_host_interfaces.png)  
 
 需要描述的内容：
