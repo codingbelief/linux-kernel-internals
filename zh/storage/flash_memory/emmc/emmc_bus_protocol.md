@@ -25,7 +25,7 @@ DAT0-7 信号主要用于 Host 和 eMMC 之间的数据传输。在 eMMC 上电�
 
 **Data Strobe**  
 
-Data Strobe 信号由 eMMC 发送给 Host，用于 Host 端进行数据读取的同步。
+Data Strobe 时钟信号由 eMMC 发送给 Host，频率与 CLK 信号上的频率相同，用于 Host 端进行数据读取的同步。Data Strobe 信号只能在 HS400 模式下配置启用，启用后可以提高数据传输的稳定性，省去总线 tuning 过程。
 
 需要描述的内容：
 
