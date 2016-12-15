@@ -29,6 +29,8 @@ Data Strobe 时钟信号由 eMMC 发送给 Host，频率与 CLK 信号相同，�
 
 ## eMMC 总线通讯模型
 
+
+
 需要描述的内容：
 
 1. Pin 定义
