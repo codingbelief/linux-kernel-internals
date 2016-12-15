@@ -25,7 +25,7 @@ DAT0-7 信号主要用于 Host 和 eMMC 之间的数据传输。在 eMMC 上电�
 
 **Data Strobe**  
 
-Data Strobe 信号
+Data Strobe 信号由 eMMC 发送给 Host，用于 Host 端进行数据读取的同步。
 
 需要描述的内容：
 
