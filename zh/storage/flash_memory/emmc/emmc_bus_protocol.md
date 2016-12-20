@@ -35,7 +35,6 @@ Data Strobe 时钟信号由 eMMC 发送给 Host，频率与 CLK 信号相同，�
 
 ![](multi_block_read.png)
 
-
 ![](multi_block_write.png)
 
 ![](no_resp_or_data.png)
