@@ -29,7 +29,9 @@ Data Strobe 时钟信号由 eMMC 发送给 Host，频率与 CLK 信号相同，�
 
 ## eMMC 总线通讯模型
 
+### 拓扑结构
 
+### 通讯模型
 
 ![](multi_block_read.png)
 
@@ -37,6 +39,13 @@ Data Strobe 时钟信号由 eMMC 发送给 Host，频率与 CLK 信号相同，�
 ![](multi_block_write.png)
 
 ![](no_resp_or_data.png)
+
+#### eMMC Command
+
+#### eMMC Response
+
+#### eMMC Data Block
+
 
 需要描述的内容：
 
