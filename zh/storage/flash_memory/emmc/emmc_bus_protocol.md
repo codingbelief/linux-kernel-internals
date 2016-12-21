@@ -40,6 +40,8 @@ TODO: Add Pic
 
 ### 速率模式
 
+
+
 ### 通讯模型
 
 ![](multi_block_read.png)
