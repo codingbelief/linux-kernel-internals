@@ -37,6 +37,10 @@ TODO: Add Pic
 
 系统在上电启动后，Host 会给所有 eMMC Device 逐个分配地址（RCA，Relative device Address）。当 Host 需要和某一个 eMMC Device 通讯时，会先根据 RCA 选中该 eMMC Device，只有被选中的 eMMC Device 才会响应 Host 的 Command。
 
+> NOTE:  
+> 更详细的工作原理请参考 [eMMC 工作模式](/emmc_modes.html) 章节。
+
+
 主从一对多
 上电后 eMMC 等待分配地址
 每次一有个 eMMC 与 Host 进行通讯
