@@ -35,7 +35,7 @@ TODO: Add Pic
 
 如上图所示，eMMC 总线中，可以有一个 Host，多个 eMMC Devices。总线上的所有通讯都由 Host 端以一个 Command 开发发起，Host 一次只能与一个 eMMC Device 通讯。
 
-系统在上电启动后，所有 eMMC Device 会进入 Standby 状态，然后 Host 会给所有 eMMC Device 逐个分配地址（RCA，Relative device Address）。
+系统在上电启动后，所有 eMMC Device 会进入 Idle 状态，然后 Host 会给所有 eMMC Device 逐个分配地址（RCA，Relative device Address）。
 
 主从一对多
 上电后 eMMC 等待分配地址
