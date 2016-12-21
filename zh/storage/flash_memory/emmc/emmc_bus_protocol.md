@@ -40,11 +40,6 @@ TODO: Add Pic
 > NOTE:  
 > 更详细的工作原理请参考 [eMMC 工作模式](/emmc_modes.html) 章节。
 
-
-主从一对多
-上电后 eMMC 等待分配地址
-每次一有个 eMMC 与 Host 进行通讯
-
 ### 速率模式
 
 ### 通讯模型
