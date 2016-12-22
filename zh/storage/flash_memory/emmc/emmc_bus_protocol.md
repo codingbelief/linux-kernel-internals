@@ -50,7 +50,6 @@ TODO: Add Pic
 | HS200 | Single | x4, x8 | 0-200 MHz | 200 MB/s |
 | HS400 | Dual | x8 | 0-200 MHz | 400 MB/s |
 
-
 ### 通讯模型
 
 ![](multi_block_read.png)
