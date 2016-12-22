@@ -40,7 +40,7 @@ TODO: Add Pic
 
 ### 速率模式
 
-
+随着 eMMC 协议的版本迭代，eMMC 总线的速率越来越高。为了兼容旧版本的 eMMC Device，所有 Devices 在上电启动后，都会进入兼容速率模式（Backward Compatible Mode），
 
 ### 通讯模型
 
