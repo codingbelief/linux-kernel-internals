@@ -44,7 +44,7 @@ TODO: Add Pic
 
 | Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
 | -- | --  | -- | -- | -- |
-| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
+| Backward Compatible | Data Rate  | Bus Width | Frequency | Max Data Transfer |
 | Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
 | Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
 | Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
