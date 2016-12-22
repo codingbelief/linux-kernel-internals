@@ -13,6 +13,9 @@
         "sitemap-codingbelief": {
             "hostname": "http://linux.codingbelief.com/"
         },
+        "sitemap": {
+            "hostname": "http://linux.codingbelief.com/"
+        },
         "addcssjs": {
           "js": ["js/custom.js"],
           "css": ["css/custom.css"]
