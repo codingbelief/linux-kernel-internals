@@ -42,13 +42,13 @@ TODO: Add Pic
 
 随着 eMMC 协议的版本迭代，eMMC 总线的速率越来越高。为了兼容旧版本的 eMMC Device，所有 Devices 在上电启动后，都会先进入兼容速率模式（Backward Compatible Mode）。在完成 eMMC Devices 的初始化后，Host 可以通过特定的流程，让 Device 进入其他高速率模式，目前支持以下的几种速率模式。
 
-| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
+| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer (x8) |
 | -- | --  | -- | -- | -- |
-| Backward Compatible | Data Rate  | Bus Width | Frequency | Max Data Transfer |
-| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
-| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
-| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
-| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
+| Backward Compatible | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
+| High Speed SDR | Single  | x1, x4, x8 | 0-52 MHz | 52 MB/s |
+| High Speed DDR | Dual | x4, x8 | 0-52 MHz | 104 MB/s |
+| HS200 | Single | x4, x8 | 0-200 MHz | 200 MB/s |
+| HS400 | Dual | x8 | 0-200 MHz | 400 MB/s |
 
 
 ### 通讯模型
