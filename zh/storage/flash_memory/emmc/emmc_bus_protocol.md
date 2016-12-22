@@ -47,8 +47,8 @@ TODO: Add Pic
 | Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
 | Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
 | Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
-
-
+| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
+| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer |
 
 
 ### 通讯模型
