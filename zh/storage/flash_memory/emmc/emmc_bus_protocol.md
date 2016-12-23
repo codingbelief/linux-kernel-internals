@@ -50,15 +50,16 @@ TODO: Add Pic
 | HS200 | Single | x4, x8 | 0-200 MHz | 200 MB/s |
 | HS400 | Dual | x8 | 0-200 MHz | 400 MB/s |
 
-### 通讯模型
+### 通信模型
 
-Host 与 eMMC Device 之间的通讯都是由 Host 以一个 Command 开始发起的，eMMC Device 在完成 Command 所指定的任务后，则返回一个 Response。
+Host 与 eMMC Device 之间的通信都是由 Host 以一个 Command 开始发起的，eMMC Device 在完成 Command 所指定的任务后，则返回一个 Response。
 
 #### Read Data
 
 ![](multi_block_read.png)
 
 Host 从 eMMC Device 读取数据的流程如上图所示。
+如果 Host 发送的是 Single Block Read 的 Command，那么 eMMC Device 只会发送一个 Block 的数据（一个 Block 的数据的字节数在 eMMC Device 初始化时有 Host 设定）。
 
 #### Write Data
 
