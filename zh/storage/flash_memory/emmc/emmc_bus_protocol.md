@@ -52,17 +52,19 @@ TODO: Add Pic
 
 ### 通讯模型
 
+Host 与 eMMC Device 之间的通讯都是由 Host 以一个 Command 开始发起的。
+
 ![](multi_block_read.png)
 
 ![](multi_block_write.png)
 
 ![](no_resp_or_data.png)
 
-#### eMMC Command
+#### Command
 
-#### eMMC Response
+#### Response
 
-#### eMMC Data Block
+#### Data Block
 
 ## eMMC 总线测试过程
 
