@@ -59,12 +59,19 @@ Host 与 eMMC Device 之间的通信都是由 Host 以一个 Command 开始发�
 ![](multi_block_read.png)
 
 Host 从 eMMC Device 读取数据的流程如上图所示。  
+
 如果 Host 发送的是 Single Block Read 的 Command，那么 eMMC Device 只会发送一个 Block 的数据（一个 Block 的数据的字节数由 Host 设定或者为 eMMC Device 的默认值，更多细节请参考 [eMMC 工作模式](/emmc_modes.html) 章节）。  
 如果 Host 发送的是 Multiple Block Read 的 Command，那么 eMMC Device 会持续发送数据，直到 Host 主动发送 Stop Command。
 
 #### Write Data
 
 ![](multi_block_write.png)
+
+Host 向 eMMC Device 写入数据的流程如上图所示。  
+
+如果 Host 发送的是 Single Block Write Command，那么 eMMC Device 只会将后续第一个 Block 的数据写入的存储器中。  
+如果 Host 发送的是 Multiple Block Write Command，那么 eMMC Device 持续地将接收到的数据写入到存储器中，直到 Host 主动发送 Stop Command。  
+此外，当 eMMC Device 正在将数据写入到内部存储器时，eMMC Device 会将 DAT0 信号拉低，作为 Busy 信号。Host 会持续检测 DAT0 信号，直到为高电平时，才会接着发送下一个 Block 的数据。  
 
 #### No Data
 
