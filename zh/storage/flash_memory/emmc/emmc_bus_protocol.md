@@ -52,11 +52,13 @@ TODO: Add Pic
 
 ### 通讯模型
 
-Host 与 eMMC Device 之间的通讯都是由 Host 以一个 Command 开始发起的。
+Host 与 eMMC Device 之间的通讯都是由 Host 以一个 Command 开始发起的，eMMC Device 在完成 Command 所指定的任务后，则返回一个 Response。
 
 #### Read Data
 
 ![](multi_block_read.png)
+
+Host 从 eMMC Device 读取数据的流程如上图所示。
 
 #### Write Data
 
