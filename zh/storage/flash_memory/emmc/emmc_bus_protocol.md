@@ -70,10 +70,12 @@ Host 从 eMMC Device 读取数据的流程如上图所示。
 Host 向 eMMC Device 写入数据的流程如上图所示。  
 
 如果 Host 发送的是 Single Block Write Command，那么 eMMC Device 只会将后续第一个 Block 的数据写入的存储器中。  
-如果 Host 发送的是 Multiple Block Write Command，那么 eMMC Device 持续地将接收到的数据写入到存储器中，直到 Host 主动发送 Stop Command。  
-此外，当 eMMC Device 正在将数据写入到内部存储器时，eMMC Device 会将 DAT0 信号拉低，作为 Busy 信号。Host 会持续检测 DAT0 信号，直到为高电平时，才会接着发送下一个 Block 的数据。  
+如果 Host 发送的是 Multiple Block Write Command，那么 eMMC Device 会持续地将接收到的数据写入到存储器中，直到 Host 主动发送 Stop Command。  
+当 eMMC Device 正在将数据写入到内部存储器时，eMMC Device 会将 DAT0 信号拉低，作为 Busy 信号。Host 会持续检测 DAT0 信号，直到为高电平时，才会接着发送下一个 Block 的数据。  
 
 #### No Data
+
+在 Host 与 eMMC Device 的通信中，有部分交互是不需要进行数据传输的，还有部分交互甚至不需要 eMMC Device 的回复 Response。
 
 ![](no_resp_or_data.png)
 
