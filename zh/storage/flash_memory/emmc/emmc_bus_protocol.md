@@ -88,12 +88,18 @@ TODO: Add Pic
  
  
  47 46 [45:40] [39:8] [7:1] 0
-Width (bits) 1 1 6 32 7 1
-Value “0” “1” x x x “1”
+ 1 1 6 32 7 1
+“0” “1” x x x “1”
 
 | Description | Start Bit  | Transmission Bit | Command Index | Argument | CRC7 | End Bit |
 | -- | --  | -- | -- | -- | -- | -- |
 | Bit position | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
+| Width (bits) | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
+| Value  | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
+
+
+
+
 
 
 #### Response
