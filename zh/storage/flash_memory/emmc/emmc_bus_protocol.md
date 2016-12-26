@@ -83,6 +83,8 @@ Host 向 eMMC Device 写入数据的流程如上图所示。
 
 TODO: Add Pic
 
+如上图所示，eMMC Command 由 48 Bits 组成，各个 Bits 的解析如下所示：
+
 
 
 #### Response
