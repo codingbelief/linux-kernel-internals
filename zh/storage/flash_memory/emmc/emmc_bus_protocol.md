@@ -91,6 +91,11 @@ TODO: Add Pic
 | Width (bits) | 1 | 1 | 6 | 32 | 7 | 1 |
 | Value | "0" | "1" | x | x | x | "1" |
 
+Start Bit 固定为 "0"，在没有数据传输的情况下，CMD 信号保持高电平，当 Host 将 Start Bit 发送到总线上时，eMMC Device 可以很方便检测到该信号，并进入接收状态。
+
+Transmission Bit 固定为 "1"，指示了该数据包为一个 Command。
+
+Command Index 和 Argument 为 Command 的具体内容，不同的 Command 有不同的 Index，不同的 Command 也有各自的 Argument。 更多的细节，请参考 [eMMC Commands](/emmc_commands.html) 章节。
 
 #### Response
 
