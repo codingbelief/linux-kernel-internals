@@ -97,6 +97,8 @@ Transmission Bit 固定为 "1"，指示了该数据包的传输方向为 Host �
 
 Command Index 和 Argument 为 Command 的具体内容，不同的 Command 有不同的 Index，不同的 Command 也有各自的 Argument。 更多的细节，请参考 [eMMC Commands](/emmc_commands.html) 章节。
 
+CRC7 是包含 Start Bit、Transmission Bit、 Command Index 和 Argument 内容的 crc 校验值。
+
 #### Response
 
 #### Data Block
