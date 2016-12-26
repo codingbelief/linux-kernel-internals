@@ -92,7 +92,6 @@ TODO: Add Pic
 | Value | "0" | "1" | x | x | x | "1" |
 
 
-
 #### Response
 
 #### Data Block
