@@ -95,7 +95,7 @@ TODO: Add Pic
 | -- | --  | -- | -- | -- | -- | -- |
 | Bit position | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
 | Width (bits) | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
-| Value  | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
+| Value | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
 
 
 
