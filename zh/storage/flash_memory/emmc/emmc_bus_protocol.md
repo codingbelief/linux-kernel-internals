@@ -85,6 +85,15 @@ TODO: Add Pic
 
 如上图所示，eMMC Command 由 48 Bits 组成，各个 Bits 的解析如下所示：
 
+ 
+ 
+Bit position 47 46 [45:40] [39:8] [7:1] 0
+Width (bits) 1 1 6 32 7 1
+Value “0” “1” x x x “1”
+
+| Description | Start Bit  | Transmission Bit | Command Index | Argument | CRC7 | End Bit |
+| -- | --  | -- | -- | -- |
+| Backward Compatible | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
 
 
 #### Response
