@@ -92,7 +92,7 @@ Width (bits) 1 1 6 32 7 1
 Value “0” “1” x x x “1”
 
 | Description | Start Bit  | Transmission Bit | Command Index | Argument | CRC7 | End Bit |
-| -- | --  | -- | -- | -- |
+| -- | --  | -- | -- | -- | -- | -- |
 | Backward Compatible | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
 
 
