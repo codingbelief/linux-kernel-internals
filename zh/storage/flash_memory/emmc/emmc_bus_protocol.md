@@ -119,7 +119,7 @@ End Bit 为结束标志位，固定为"1"。
 
 #### Data Block
 
-#### CRC Token
+#### CRC Token Status
 
 ## eMMC 总线测试过程
 
