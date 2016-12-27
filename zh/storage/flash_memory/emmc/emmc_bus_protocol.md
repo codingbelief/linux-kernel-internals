@@ -103,6 +103,16 @@ End Bit 为结束标志位，固定为"1"。
 
 #### Response
 
+TODO: Add Pic
+
+eMMC Response 有两种长度的数据包，分别为 48 Bits 和 136 Bits。
+
+Start Bit 与 Command 一样，固定为 "0"，在没有数据传输的情况下，CMD 信号保持高电平，当 eMMC Device 将 Start Bit 发送到总线上时，Host 可以很方便检测到该信号，并开始接收 Response。
+
+Transmission Bit 固定为 "0"，指示了该数据包的传输方向为 eMMC Device 发送到 Host。
+
+
+
 #### Data Block
 
 ## eMMC 总线测试过程
