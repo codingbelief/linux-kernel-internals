@@ -99,6 +99,8 @@ Command Index 和 Argument 为 Command 的具体内容，不同的 Command 有�
 
 CRC7 是包含 Start Bit、Transmission Bit、 Command Index 和 Argument 内容的 crc 校验值。
 
+End Bit 为结束标志位，固定为"1"。 
+
 #### Response
 
 #### Data Block
