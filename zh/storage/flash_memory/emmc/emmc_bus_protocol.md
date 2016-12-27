@@ -91,7 +91,7 @@ TODO: Add Pic
 | Width (bits) | 1 | 1 | 6 | 32 | 7 | 1 |
 | Value | "0" | "1" | x | x | x | "1" |
 
-Start Bit 固定为 "0"，在没有数据传输的情况下，CMD 信号保持高电平，当 Host 将 Start Bit 发送到总线上时，eMMC Device 可以很方便检测到该信号，并进入接收状态。
+Start Bit 固定为 "0"，在没有数据传输的情况下，CMD 信号保持高电平，当 Host 将 Start Bit 发送到总线上时，eMMC Device 可以很方便检测到该信号，并开始接收 Command。
 
 Transmission Bit 固定为 "1"，指示了该数据包的传输方向为 Host 发送到 eMMC Device。
 
