@@ -111,9 +111,15 @@ Start Bit 与 Command 一样，固定为 "0"，在没有数据传输的情况下
 
 Transmission Bit 固定为 "0"，指示了该数据包的传输方向为 eMMC Device 发送到 Host。
 
+Content 为 Response 的具体内容，不同的 Command 会有不同的 Content。 更多的细节，请参考 [eMMC Responses](/emmc_responses.html) 章节。
 
+CRC7 是包含 Start Bit、Transmission Bit 和 Content 内容的 crc 校验值。
+
+End Bit 为结束标志位，固定为"1"。 
 
 #### Data Block
+
+
 
 ## eMMC 总线测试过程
 
