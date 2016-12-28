@@ -123,15 +123,21 @@ End Bit 为结束标志位，固定为"1"。
 
 Data Block 由 Start Bit、Data、CRC 和 End Bit 组成。以下是不同总线宽度和 Data Rate 下，Data Block 详细格式。
 
-**1 Bit Bus SDR**
+**1 Bit Bus SDR**  
+TODO： Add Pic
 
-**4 Bits Bus SDR**
+CRC 为 Data 的校验值，不包含 Start Bit。
 
-**8 Bits Bus SDR**
+**4 Bits Bus SDR**  
+TODO： Add Pic
 
-**4 Bits Bus DDR**
 
-**8 Bits Bus DDR**
+
+**8 Bits Bus SDR**  
+
+**4 Bits Bus DDR**  
+
+**8 Bits Bus DDR**  
 
 #### CRC Token Status
 
