@@ -131,11 +131,16 @@ CRC 为 Data 的校验值，不包含 Start Bit。
 **4 Bits Bus SDR**  
 TODO： Add Pic
 
-
+各个 Data Line 上的 CRC 为对应 Data Line 的 Data 的校验值。
 
 **8 Bits Bus SDR**  
+TODO： Add Pic
+
+各个 Data Line 上的 CRC 为对应 Data Line 的 Data 的校验值。
 
 **4 Bits Bus DDR**  
+
+
 
 **8 Bits Bus DDR**  
 
