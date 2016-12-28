@@ -121,6 +121,18 @@ End Bit 为结束标志位，固定为"1"。
 
 #### Data Block
 
+Data Block 由 Start Bit、Data、CRC 和 End Bit 组成。以下是不同总线宽度和 Data Rate 下，Data Block 详细格式。
+
+**1 Bit Bus SDR**
+
+**4 Bits Bus SDR**
+
+**8 Bits Bus SDR**
+
+**4 Bits Bus DDR**
+
+**8 Bits Bus DDR**
+
 #### CRC Token Status
 
 ## eMMC 总线测试过程
