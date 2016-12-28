@@ -127,5 +127,9 @@ End Bit 为结束标志位，固定为"1"。
 
 ## eMMC 总线 Tuning
 
+## 参考资料
+
+1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
+2. [SD/MMC Controller, Hard Processor System (HPS) Technical Reference Manual (TRM)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.296.5338&rep=rep1&type=pdf) [PDF]
 
 
