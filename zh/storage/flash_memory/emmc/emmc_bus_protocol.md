@@ -148,6 +148,8 @@ TODO： Add Pic
 
 ## eMMC 总线测试过程
 
+只在 SDR 模式测试硬件连通性
+
 ## eMMC 总线 Tuning
 
 ## 参考资料
