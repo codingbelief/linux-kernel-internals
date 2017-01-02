@@ -140,6 +140,9 @@ TODO： Add Pic
 
 **4 Bits Bus DDR**  
 
+在SDR模式中，数据由设备发出的时钟控制而host则在时钟上升沿取样。而且每一个data line都有一个单独的CRC内容。
+
+在DDR模式中，数据则会在时钟的上升和下降沿同时取样，而且每一个data line有两个CRC内容。在这个模式下，block长度总是为512 bytes，而且数据会以4bit或者8bit模式交叉出现。奇数bytes(1,3,5……511)会被host在时钟上升沿取样，而偶数bytes(2,4,6……512)则被host在时钟的下降沿取样。设备会附加两个CRC16到每个有效地data line上(若是4bit数据模式，则有4个line是无效的)，一个对应上升沿的奇数bytes，一个对应下降沿的偶数bytes。
 
 
 **8 Bits Bus DDR**  
