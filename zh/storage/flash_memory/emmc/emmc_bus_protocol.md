@@ -99,9 +99,12 @@ Transmission Bit 固定为 "1"，指示了该数据包的传输方向为 Host �
 
 Command Index 和 Argument 为 Command 的具体内容，不同的 Command 有不同的 Index，不同的 Command 也有各自的 Argument。 更多的细节，请参考 [eMMC Commands](/emmc_commands.html) 章节。
 
-CRC7 是包含 Start Bit、Transmission Bit、 Command Index 和 Argument 内容的 crc 校验值。
+CRC7 是包含 Start Bit、Transmission Bit、 Command Index 和 Argument 内容的 CRC 校验值。
 
 End Bit 为结束标志位，固定为"1"。 
+
+> **NOTE:**  
+> CRC 校验简单来说，是发送方将需要传输的数据“除于”（模2除）一个约定的数，并将得到的余数附在数据上一并发送出去。接收方收到数据后，再做同样的“除法”，然后校验得到余数是否与接收的余数相同。如果不相同，那么意味着数据在传输过程中发生了改变。更多的细节不在本文展开描述，感兴趣的读者可以参考 [CRC wiki](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) 中的介绍。
 
 #### Response
 
@@ -144,7 +147,7 @@ TODO： Add Pic
 
 在DDR模式中，数据则会在时钟的上升和下降沿同时取样，而且每一个data line有两个CRC内容。在这个模式下，block长度总是为512 bytes，而且数据会以4bit或者8bit模式交叉出现。奇数bytes(1,3,5……511)会被host在时钟上升沿取样，而偶数bytes(2,4,6……512)则被host在时钟的下降沿取样。设备会附加两个CRC16到每个有效地data line上(若是4bit数据模式，则有4个line是无效的)，一个对应上升沿的奇数bytes，一个对应下降沿的偶数bytes。
 
-在 DDR 模式下
+在 DDR 模式下，1 个 Data Line 在时钟的上升沿和下降沿都会传输 1 个 Bit 的数据，
 
 **8 Bits Bus DDR**  
 
@@ -160,5 +163,5 @@ TODO： Add Pic
 
 1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
 2. [SD/MMC Controller, Hard Processor System (HPS) Technical Reference Manual (TRM)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.296.5338&rep=rep1&type=pdf) [PDF]
-
+3. [CRC wiki](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) [WEB]
 
