@@ -115,28 +115,28 @@ Transmission Bit 固定为 "0"，指示了该数据包的传输方向为 eMMC De
 
 Content 为 Response 的具体内容，不同的 Command 会有不同的 Content。 更多的细节，请参考 [eMMC Responses](/emmc_responses.html) 章节。
 
-CRC7 是包含 Start Bit、Transmission Bit 和 Content 内容的 crc 校验值。
+CRC7 是包含 Start Bit、Transmission Bit 和 Content 内容的 CRC 校验值。
 
 End Bit 为结束标志位，固定为"1"。 
 
 #### Data Block
 
-Data Block 由 Start Bit、Data、CRC 和 End Bit 组成。以下是不同总线宽度和 Data Rate 下，Data Block 详细格式。
+Data Block 由 Start Bit、Data、CRC16 和 End Bit 组成。以下是不同总线宽度和 Data Rate 下，Data Block 详细格式。
 
 **1 Bit Bus SDR**  
 TODO： Add Pic
 
-CRC 为 Data 的校验值，不包含 Start Bit。
+CRC16 为 Data 的校验值，不包含 Start Bit。
 
 **4 Bits Bus SDR**  
 TODO： Add Pic
 
-各个 Data Line 上的 CRC 为对应 Data Line 的 Data 的校验值。
+各个 Data Line 上的 CRC16 为对应 Data Line 的 Data 的校验值。
 
 **8 Bits Bus SDR**  
 TODO： Add Pic
 
-各个 Data Line 上的 CRC 为对应 Data Line 的 Data 的校验值。
+各个 Data Line 上的 CRC16 为对应 Data Line 的 Data 的校验值。
 
 **4 Bits Bus DDR**  
 
@@ -144,6 +144,7 @@ TODO： Add Pic
 
 在DDR模式中，数据则会在时钟的上升和下降沿同时取样，而且每一个data line有两个CRC内容。在这个模式下，block长度总是为512 bytes，而且数据会以4bit或者8bit模式交叉出现。奇数bytes(1,3,5……511)会被host在时钟上升沿取样，而偶数bytes(2,4,6……512)则被host在时钟的下降沿取样。设备会附加两个CRC16到每个有效地data line上(若是4bit数据模式，则有4个line是无效的)，一个对应上升沿的奇数bytes，一个对应下降沿的偶数bytes。
 
+在 DDR 模式下
 
 **8 Bits Bus DDR**  
 
