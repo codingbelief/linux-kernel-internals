@@ -151,13 +151,33 @@ TODO： Add Pic
 > **NOTE:**  
 > DDR 模式下使用两个 CRC16 作为校验，可能是为了更可靠的校验，选用 CRC16 而非 CRC32 则可能是出于兼容性设计的考虑。
 
-#### CRC Token Status
+#### CRC Status Token 
+
+在写数据传输中，eMMC Device 接收到 Host 发送的一个 Data Block 后，会进行 CRC 校验，如果校验成功，eMMC 会在对应的 Data Line 上向 Host 发回一个 Positive CRC status token (010)，如果校验失败，则会在对应的 Data Line 上发送一个 Negative CRC status token (101)。  
+
+> **NOTE:**  
+> 读数据时，Host 接收到 eMMC Device 发送的 Data Block 后，也会进行 CRC 校验，但是不管校验成功或者失败，都不会向 eMMC Device 发送 CRC Status Token。
+
+Positive 和 Negative CRC status token 的详细格式如下图所示：
+
+TODO：Add Pic
 
 ## eMMC 总线测试过程
 
-只在 SDR 模式测试硬件连通性
+当 eMMC Device 处于 SDR 模式时，Host 可以发送 CMD19 命令，触发总线测试过程，测试总线硬件上的连通性。如果 eMMC Device 支持总线测试，那么 eMMC Device 在接收到 CMD19 后，会发回对应的 Response，接着 eMMC Device 会发送一组固定的测试数据给 Host。Host 接收到数据后，检查数据正确与否，即可得知总线是否正确连通。
 
-## eMMC 总线 Tuning
+> **NOTE:** 
+> 如果 eMMC Device 不支持总线测试，那么接收到 CMD19 时，不会发回 Response。  
+> 总线测试不支持在 DDR 模式下进行。  
+
+测试数据如下所示：
+
+TODO：Add Pic
+
+> **NOTE:** 
+> 总线宽度为 1 时，只发送 DAT0 上的数据，总线宽度为 4 时，则只发送 DAT0-3 上的数据
+
+## eMMC 总线 Sampling Tuning
 
 ## 参考资料
 
