@@ -164,7 +164,7 @@ TODO：Add Pic
 
 ## eMMC 总线测试过程
 
-当 eMMC Device 处于 SDR 模式时，Host 可以发送 CMD19 命令，触发总线测试过程，测试总线硬件上的连通性。如果 eMMC Device 支持总线测试，那么 eMMC Device 在接收到 CMD19 后，会发回对应的 Response，接着 eMMC Device 会发送一组固定的测试数据给 Host。Host 接收到数据后，检查数据正确与否，即可得知总线是否正确连通。
+当 eMMC Device 处于 SDR 模式时，Host 可以发送 CMD19 命令，触发总线测试过程（Bus testing procedure），测试总线硬件上的连通性。如果 eMMC Device 支持总线测试，那么 eMMC Device 在接收到 CMD19 后，会发回对应的 Response，接着 eMMC Device 会发送一组固定的测试数据给 Host。Host 接收到数据后，检查数据正确与否，即可得知总线是否正确连通。
 
 > **NOTE:** 
 > 如果 eMMC Device 不支持总线测试，那么接收到 CMD19 时，不会发回 Response。  
