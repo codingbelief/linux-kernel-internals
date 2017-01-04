@@ -143,13 +143,13 @@ TODO： Add Pic
 
 **4 Bits Bus DDR**  
 
-在SDR模式中，数据由设备发出的时钟控制而host则在时钟上升沿取样。而且每一个data line都有一个单独的CRC内容。
-
-在DDR模式中，数据则会在时钟的上升和下降沿同时取样，而且每一个data line有两个CRC内容。在这个模式下，block长度总是为512 bytes，而且数据会以4bit或者8bit模式交叉出现。奇数bytes(1,3,5……511)会被host在时钟上升沿取样，而偶数bytes(2,4,6……512)则被host在时钟的下降沿取样。设备会附加两个CRC16到每个有效地data line上(若是4bit数据模式，则有4个line是无效的)，一个对应上升沿的奇数bytes，一个对应下降沿的偶数bytes。
-
-在 DDR 模式下，1 个 Data Line 在时钟的上升沿和下降沿都会传输 1 个 Bit 的数据，
-
 **8 Bits Bus DDR**  
+
+在 DDR 模式下，Data Line 在时钟的上升沿和下降沿都会传输数据，其中上升沿传输数据的奇数字节 （Byte 1,3,5 ...），下降沿则传输数据的偶数字节（Byte 2,4,6 ...）。  
+此外，在 DDR 模式下，1 个 Data Line 上有两个相互交织的 CRC16，上升沿的 CRC 比特组成 odd CRC16，下降沿的 CRC 比特组成 even CRC16。odd CRC16 用于校验该 Data Line 上所有上升沿比特组成的数据，even CRC16 则用于校验该 Data Line 上所有下降沿比特组成的数据。
+
+> **NOTE:**  
+> DDR 模式下使用两个 CRC16 作为校验，可能是为了更可靠的校验，选用 CRC16 而非 CRC32 则可能是出于兼容性设计的考虑。
 
 #### CRC Token Status
 
