@@ -179,6 +179,32 @@ TODO：Add Pic
 
 ## eMMC 总线 Sampling Tuning
 
+由于芯片制造工艺、PCB 走线、电压、温度等因素的影响，数据信号从 eMMC Device 到达 Host 端的时间是存在差异的，Host 接收数据时采样的时间点也需要相应的进行调整。而 Host 端最佳采样时间点，则是通过 Sampling Tuning 流程得到。  
+
+> **NOTE:**  
+> 不同 eMMC Device 最佳的采样点可能不同，同一 eMMC Device 在不同的环境下运作时的最佳采样点也可能不同。  
+> 在 eMMC 标准中，定义了在 HS200 模式下可以进行 Sampling Tuning。
+
+### Sampling Tuning 流程
+
+Sampling Tuning 是用于计算 Host 最佳采样时间点的流程，大致的流程如下：
+
+1. Host 将采样时间点重置为默认值
+2. Host 向 eMMC Device 发送 Send Tuning Block 命令
+3. eMMC Device 向 Host 发送固定的 Tuning Block 数据
+4. Host 接收到 Tuning Block 并进行校验
+5. Host 修改采样时点，重新从第 2 步开始执行，直到 Host 获取到一个有效采样时间点区间
+6. Host 取有效采样时间点区间的中间值作为采样时间点，并推出 Tuning 流程
+ 
+> **NOTE:**  
+> 上述流程仅仅是一个示例。Tuning 流程执行的时机、频率和具体的步骤是由 Host 端的 eMMC Controller 具体实现而定的。
+
+### Tuning Block 数据
+
+Tuning Block 是专门为了 Tuning 而设计的一组特殊数据。相对于普通的数据，这组特殊数据在传输过程中，会更高概率的出现 high SSO noise、deterministic jitter、ISI、timing errors 等问题。这组数据的具体内容如下所示：
+
+TODO：Add Pic 1 & 2
+
 ## 参考资料
 
 1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
