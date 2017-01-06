@@ -169,9 +169,15 @@ CRC 为 Data 的 16 bit CRC 校验值，不包含 Start Bit。
 > **NOTE:**  
 > 读数据时，Host 接收到 eMMC Device 发送的 Data Block 后，也会进行 CRC 校验，但是不管校验成功或者失败，都不会向 eMMC Device 发送 CRC Status Token。
 
-Positive 和 Negative CRC status token 的详细格式如下图所示：
+详细格式如下图所示：
 
-TODO：Add Pic
+**Positive CRC status token**  
+
+![](positive_crc_status_token.png)
+
+**Negative CRC status token**  
+
+![](negative_crc_status_token.png)
 
 ## eMMC 总线测试过程
 
