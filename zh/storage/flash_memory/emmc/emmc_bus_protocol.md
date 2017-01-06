@@ -87,7 +87,7 @@ eMMC Device 在接收到一个 Block 的数据后，会进行 CRC 校验，然�
 
 #### Command
 
-TODO: Add Pic
+![](command_token_format.png)
 
 如上图所示，eMMC Command 由 48 Bits 组成，各个 Bits 的解析如下所示：
 
@@ -112,7 +112,7 @@ End Bit 为结束标志位，固定为"1"。
 
 #### Response
 
-TODO: Add Pic
+![](respone_token_format.png)
 
 eMMC Response 有两种长度的数据包，分别为 48 Bits 和 136 Bits。
 
