@@ -131,23 +131,30 @@ End Bit 为结束标志位，固定为"1"。
 Data Block 由 Start Bit、Data、CRC16 和 End Bit 组成。以下是不同总线宽度和 Data Rate 下，Data Block 详细格式。
 
 **1 Bit Bus SDR**  
-TODO： Add Pic
 
-CRC16 为 Data 的校验值，不包含 Start Bit。
+![](1_bit_bus_sdr.png)
+
+CRC 为 Data 的 16 bit CRC 校验值，不包含 Start Bit。
 
 **4 Bits Bus SDR**  
-TODO： Add Pic
 
-各个 Data Line 上的 CRC16 为对应 Data Line 的 Data 的校验值。
+![](4_bits_bus_sdr.png)
+
+各个 Data Line 上的 CRC 为对应 Data Line 的 Data 的 16 bit CRC 校验值。
 
 **8 Bits Bus SDR**  
-TODO： Add Pic
 
-各个 Data Line 上的 CRC16 为对应 Data Line 的 Data 的校验值。
+![](8_bits_bus_sdr.png)
+
+各个 Data Line 上的 CRC 为对应 Data Line 的 Data 的16 bit CRC 校验值。
 
 **4 Bits Bus DDR**  
 
+![](4_bits_bus_ddr.png)
+
 **8 Bits Bus DDR**  
+
+![](8_bits_bus_ddr.png)
 
 在 DDR 模式下，Data Line 在时钟的上升沿和下降沿都会传输数据，其中上升沿传输数据的奇数字节 （Byte 1,3,5 ...），下降沿则传输数据的偶数字节（Byte 2,4,6 ...）。  
 此外，在 DDR 模式下，1 个 Data Line 上有两个相互交织的 CRC16，上升沿的 CRC 比特组成 odd CRC16，下降沿的 CRC 比特组成 even CRC16。odd CRC16 用于校验该 Data Line 上所有上升沿比特组成的数据，even CRC16 则用于校验该 Data Line 上所有下降沿比特组成的数据。
