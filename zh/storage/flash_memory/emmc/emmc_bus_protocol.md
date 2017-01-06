@@ -189,7 +189,7 @@ CRC 为 Data 的 16 bit CRC 校验值，不包含 Start Bit。
 
 测试数据如下所示：
 
-TODO：Add Pic
+![](bus_testing_data.png)
 
 > **NOTE:** 
 > 总线宽度为 1 时，只发送 DAT0 上的数据，总线宽度为 4 时，则只发送 DAT0-3 上的数据
@@ -220,7 +220,9 @@ Sampling Tuning 是用于计算 Host 最佳采样时间点的流程，大致的�
 
 Tuning Block 是专门为了 Tuning 而设计的一组特殊数据。相对于普通的数据，这组特殊数据在传输过程中，会更高概率的出现 high SSO noise、deterministic jitter、ISI、timing errors 等问题。这组数据的具体内容如下所示：
 
-TODO：Add Pic 1 & 2
+![](tuning_block_pattern.png)
+
+![](tuning_block_on_data_lines.png)
 
 ## 参考资料
 
