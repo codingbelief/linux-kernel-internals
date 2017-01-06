@@ -224,6 +224,9 @@ Tuning Block 是专门为了 Tuning 而设计的一组特殊数据。相对于�
 
 ![](tuning_block_on_data_lines.png)
 
+> **NOTE:** 
+> 总线宽度为 1 时，只发送 DAT0 上的数据，总线宽度为 4 时，则只发送 DAT0-3 上的数据
+
 ## 参考资料
 
 1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
