@@ -33,6 +33,11 @@ If it is greater than 2GB it is assumed to be supporting sector addressing.
 But actually we need to check the OCR value to determine the correct access mode
 See patch (http://www.spinics.net/lists/linux-mmc/msg01466.html) by Philip.
 
+Sector A sector has a size of 512 bytes, the same size as a sector in the FAT file system
+under DOS.
+Block A page is the minimum size unit for writing and reading. The size is configurable
+(512, 1024, 2048 bytes), but normally the size is 512 bytes.
+
 ## Data Transfer Mode
 
 ## Interrupt Mode
