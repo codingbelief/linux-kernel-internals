@@ -2,7 +2,9 @@
 
 ## Overview
 
-系统 Power On、HW Reset 或者 SW Reset 时，如果 Host 有触发 Boot From eMMC Device 流程，那么 eMMC Device 进入 Boot Mode。如果没有触发 Boot 流程，那么就会跳过 Boot Mode 直接进入 Device Identification Mode。
+eMMC Device 在 Power On、HW Reset 或者 SW Reset 时，如果 Host 有触发 Boot From eMMC Device 流程，就会进入 Boot Mode。在此模式下，eMMC Device 会将 Boot partition 的内容发送给 Host，这部分内容通常为系统的启动代码，如 BootLoader。
+
+如果没有触发 Boot 流程或者 Boot 流程完成后，eMMC Device 进入 Device Identification Mode。
 
 
 
@@ -11,6 +13,26 @@
 为什么需要 Alternative boot 模式？
 
 ## Device Identification Mode
+
+This patch provides handling of the two way handshake when SEND_OP_COND
+(CMD1) is send to mmc card. It is necessary to inform eMMC card if the
+host can work with high capacity cards (Jedec JESD84-A441, point 7.4.3).
+
+The extra flag MMC_MODE_HC (high capacity) is added to indicate if the
+host is capable of handling the high capacity eMMC cards.
+
+
+According to eMMC spec v4.3, Section 6.1 says that greater than 2GB
+density cards are sector addressable and less than 2GB are byte addressable.
+But Section 7.3.3 says that OCR bit 30 needs to be used which access mode
+the host must use for all its future transactions.
+
+In mainline kernel the support for less than 2GB cards is by checking
+the density of card.
+If it is greater than 2GB it is assumed to be supporting sector addressing.
+
+But actually we need to check the OCR value to determine the correct access mode
+See patch (http://www.spinics.net/lists/linux-mmc/msg01466.html) by Philip.
 
 ## Data Transfer Mode
 
