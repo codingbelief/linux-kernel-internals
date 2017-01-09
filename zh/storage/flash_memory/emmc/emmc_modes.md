@@ -21,7 +21,6 @@ host can work with high capacity cards (Jedec JESD84-A441, point 7.4.3).
 The extra flag MMC_MODE_HC (high capacity) is added to indicate if the
 host is capable of handling the high capacity eMMC cards.
 
-
 According to eMMC spec v4.3, Section 6.1 says that greater than 2GB
 density cards are sector addressable and less than 2GB are byte addressable.
 But Section 7.3.3 says that OCR bit 30 needs to be used which access mode
