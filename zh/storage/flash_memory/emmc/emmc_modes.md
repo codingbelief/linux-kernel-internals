@@ -14,6 +14,10 @@ eMMC Device 在 Power On、HW Reset 或者 SW Reset 时，如果 Host 有触发 
 
 ## Device Identification Mode
 
+### Memory Access Mode
+
+在数据读写的 Command 中，会将读写的地址作为 Command 的参数发送给 eMMC Device，这个地址可能是按 Byte 寻址的（Byte Access Mode，即从第几个 Byte 开始进行读写），也可能是按照 Sector 寻址的 （Sector Access Mode，即从第几个 Sector 开始进行读写）。
+
 This patch provides handling of the two way handshake when SEND_OP_COND
 (CMD1) is send to mmc card. It is necessary to inform eMMC card if the
 host can work with high capacity cards (Jedec JESD84-A441, point 7.4.3).
