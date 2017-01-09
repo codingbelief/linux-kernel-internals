@@ -14,6 +14,11 @@ eMMC Device 在 Power On、HW Reset 或者 SW Reset 时，如果 Host 有触发 
 
 ## Device Identification Mode
 
+###
+
+Dual-Voltage MultimediaCard (DV-MMC)
+One of the first substantial changes in MMC was the introduction of dual-voltage cards that support operations at 1.8 V in addition to 3.3 V. Running at lower voltages reduces the card's power consumption, which is important in mobile devices. However, simple dual-voltage parts quickly went out of production in favour of MMCplus and MMCmobile which offer additional capabilities on top of dual-voltage support.
+
 ### Memory Access Mode
 
 在数据读写的 Command 中，会将读写的地址作为 Command 的参数发送给 eMMC Device，这个地址可能是按 Byte 寻址的（Byte Access Mode，即从第几个 Byte 开始进行读写），也可能是按照 Sector 寻址的 （Sector Access Mode，即从第几个 Sector 开始进行读写）。
