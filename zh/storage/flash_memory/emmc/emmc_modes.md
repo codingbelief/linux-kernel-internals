@@ -4,9 +4,9 @@
 
 eMMC Device 在 Power On、HW Reset 或者 SW Reset 时，如果 Host 有触发 Boot From eMMC Device 流程，就会进入 Boot Mode。在此模式下，eMMC Device 会将 Boot partition 的内容发送给 Host，这部分内容通常为系统的启动代码，如 BootLoader。
 
-如果没有触发 Boot 流程或者 Boot 流程完成后，eMMC Device 进入 Device Identification Mode。
+如果没有触发 Boot 流程或者 Boot 流程完成后，eMMC Device 进入 Device Identification Mode。在此模式下，eMMC Device 将进行初始化，Host 会为 eMMC Device 设定工作电压、协商寻址模式以及分配 RCA 设备地址。
 
-
+Device Identification Mode 结束后，就会进入 Data Transfer Mode。在此模式下，Host 可以发起数据读写流程。
 
 ## Boot Operation Mode
 
@@ -52,6 +52,9 @@ Block A page is the minimum size unit for writing and reading. The size is confi
 High capacity negotiation	For devices larger than 2GB, the addressing mechanism is switched from byte addressing to sector addressing.
 
 ## Data Transfer Mode
+
+eMMC cards need to occasionally spend some time cleaning up garbage and perform cache/buffer related operations which are strictly on the card side and do not involve the host. These operations are at various levels based on the importance/severity of the operation 1- Normal, 2- Important and 3 - Critical. If an operation is delayed for long it becomes critical and the regular read/write from host can be delayed or take more time than expected. 
+To avoid such issues the MMC HW and core driver provide a framework which can check for pending background operations and give the card some time to clear up the same.
 
 ## Interrupt Mode
 
