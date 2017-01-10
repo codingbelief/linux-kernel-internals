@@ -14,7 +14,9 @@ eMMC Device 在 Power On、HW Reset 或者 SW Reset 时，如果 Host 有触发 
 
 ## Device Identification Mode
 
-###
+### Voltage Range
+
+eMMC Device 部分支持 3.3v 和 1.8v，1.8v 有功耗优势。
 
 Dual-Voltage MultimediaCard (DV-MMC)
 One of the first substantial changes in MMC was the introduction of dual-voltage cards that support operations at 1.8 V in addition to 3.3 V. Running at lower voltages reduces the card's power consumption, which is important in mobile devices. However, simple dual-voltage parts quickly went out of production in favour of MMCplus and MMCmobile which offer additional capabilities on top of dual-voltage support.
