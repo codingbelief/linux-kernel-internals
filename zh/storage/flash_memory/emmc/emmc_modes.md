@@ -2,6 +2,8 @@
 
 ## Overview
 
+TODO：Add Pic
+
 eMMC Device 在 Power On、HW Reset 或者 SW Reset 时，如果 Host 有触发 Boot From eMMC Device 流程，就会进入 Boot Mode。在此模式下，eMMC Device 会将 Boot partition 的内容发送给 Host，这部分内容通常为系统的启动代码，如 BootLoader。
 
 如果没有触发 Boot 流程或者 Boot 流程完成后，eMMC Device 进入 Device Identification Mode。在此模式下，eMMC Device 将进行初始化，Host 会为 eMMC Device 设定工作电压、协商寻址模式以及分配 RCA 设备地址。
