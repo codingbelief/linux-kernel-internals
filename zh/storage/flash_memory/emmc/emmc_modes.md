@@ -8,6 +8,8 @@ eMMC Device 在 Power On、HW Reset 或者 SW Reset 时，如果 Host 有触发 
 
 Device Identification Mode 结束后，就会进入 Data Transfer Mode。在此模式下，Host 可以发起数据读写流程。
 
+进入 Data Transfer Mode 后，Host 可以发起命令，让 eMMC Device 进入 Interrupt Mode。
+
 ## Boot Operation Mode
 
 为什么需要 Alternative boot 模式？
