@@ -14,6 +14,13 @@ Device Identification Mode 结束后，就会进入 Data Transfer Mode。在此�
 
 ## Boot Operation Mode
 
+在 Power On、HW Reset 或者 SW Reset 后，Host 有两种方式可以让 eMMC Device 进入 Boot Mode，分别定义为   Original Boot 和 Alternative Boot，如下：
+
+1. Original Boot：拉低 CMD 信号并保持不少于 74 个时钟周期
+2. Alternative Boot：保持 CMD 信号为高电平，74 个时钟周期后，发送参数为 0xFFFFFFFA 的 CMD0 命令
+
+
+
 eMMC Device 在 Power On、HW Reset 或者 SW Reset 后，会进入 Pre-idle state。
 
 > **NOTE:**  
@@ -22,6 +29,7 @@ eMMC Device 在 Power On、HW Reset 或者 SW Reset 后，会进入 Pre-idle sta
 
 Original Boot
 Alternative Boot
+boot acknowledge
 boot partition uda partition
 如何更新 Boot 分区数据
 WP
