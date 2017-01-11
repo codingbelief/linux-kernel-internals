@@ -14,6 +14,12 @@ Device Identification Mode 结束后，就会进入 Data Transfer Mode。在此�
 
 ## Boot Operation Mode
 
+eMMC Device 在 Power On、HW Reset 或者 SW Reset 后，会进入 Pre-idle state。
+
+> **NOTE:**  
+> Host 发送参数为 0xF0F0F0F0 的 CMD0 命令，可以让 eMMC Device 进行 SW Reset  
+> Host 拉高 RST_n 信号可以触发 eMMC Device 进行 HW Reset
+
 Original Boot
 Alternative Boot
 boot partition uda partition
