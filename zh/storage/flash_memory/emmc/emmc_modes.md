@@ -14,25 +14,37 @@ Device Identification Mode 结束后，就会进入 Data Transfer Mode。在此�
 
 ## Boot Operation Mode
 
-在 Power On、HW Reset 或者 SW Reset 后，如果 eMMC Device  有使能 Boot Mode（即，BOOT_PARTITION_ENABLE 指定了启动分区），那么 Host 有两种方式可以让 eMMC Device 进入 Boot Mode，分别定义为   Original Boot 和 Alternative Boot，如下：
+### Boot From eMMC Device
+
+TODO：Add Pic
+
+在 Power On、HW Reset 或者 SW Reset 后，如果 eMMC Device  有使能 Boot Mode（即，BOOT_PARTITION_ENABLE (EXT_CSD byte [179]) 指定了启动分区），那么 Host 有两种方式可以让 eMMC Device 进入 Boot Mode，分别定义为 Original Boot 和 Alternative Boot，如下：
 
 1. Original Boot：拉低 CMD 信号并保持不少于 74 个时钟周期
 2. Alternative Boot：保持 CMD 信号为高电平，74 个时钟周期后，发送参数为 0xFFFFFFFA 的 CMD0 命令
 
 进入 Boot Mode 后，eMMC Device 会根据 BOOT_PARTITION_ENABLE 的设定，从两个 Boot partitions 和 UDA 中选择一个分区读取大小为 128KB × BOOT_SIZE_MULT (EXT_CSD byte [226]) 的 Boot Data 通过 Data Lines 发送给 Host。
 
+在 Boot Data 数据传输过程中，Host 可以打断数据传输，提前结束 Boot Mode，方法如下：
 
-
-eMMC Device 在 Power On、HW Reset 或者 SW Reset 后，会进入 Pre-idle state。
+1. Original Boot：传输过程中，拉高 CMD 信号
+2. Alternative Boot：传输过程中，发送参数为 0xF0F0F0F0 的 CMD0 命令
 
 > **NOTE:**  
 > Host 发送参数为 0xF0F0F0F0 的 CMD0 命令，可以让 eMMC Device 进行 SW Reset  
 > Host 拉高 RST_n 信号可以触发 eMMC Device 进行 HW Reset
 
+### Boot Acknowledge
+
+eMMC Device 在 Power On、HW Reset 或者 SW Reset 后，会进入 Pre-idle state。
+
+
+
 Original Boot
 Alternative Boot
 boot acknowledge
 boot partition uda partition
+eMMC 裸片不支持 Boot
 如何更新 Boot 分区数据
 WP
 Boot bus width 
