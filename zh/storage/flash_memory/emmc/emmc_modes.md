@@ -44,6 +44,13 @@ TODO：Add Original Boot
 
 TODO：Add Alternative Boot
 
+### Boot Bus 配置
+width
+spee
+data rate
+reset
+
+### Boot Data 更新
 
 
 Original Boot
