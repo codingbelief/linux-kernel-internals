@@ -40,13 +40,18 @@ TODO：Add Boot States
 
 包含 Boot ACK 的时序图如下所示：
 
-TODO：Add Original Boot
+TODO：Add Original Boot Pic
 
-TODO：Add Alternative Boot
+TODO：Add Alternative Boot Pic
 
 ### Boot Bus 配置
+
+EXT_CSD byte [177] BOOT_BUS_CONDITIONS 寄存器用于配置在 Boot Mode 时，数据传输的总线状态。
+
+
+
 width
-spee
+speed
 data rate
 reset
 
