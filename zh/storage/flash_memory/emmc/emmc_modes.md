@@ -65,11 +65,6 @@ BOOT_BUS_CONDITIONS 寄存器还可以配置退出 Boot Mode 后，是复位还�
 
 ### Boot Data 更新
 
-
-Original Boot
-Alternative Boot
-boot acknowledge
-boot partition uda partition
 eMMC 裸片不支持 Boot
 如何更新 Boot 分区数据
 WP
