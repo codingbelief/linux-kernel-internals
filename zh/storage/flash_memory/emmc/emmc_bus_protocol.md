@@ -51,6 +51,10 @@ eMMC 总线中，可以有一个 Host，多个 eMMC Devices。总线上的所有
 | HS200 | Single | x4, x8 | 0-200 MHz | 200 MB/s |
 | HS400 | Dual | x8 | 0-200 MHz | 400 MB/s |
 
+> **NOTE:**  
+> Extended CSD byte[185] HS_TIMING 寄存器可以配置总线速率模式  
+> Extended CSD byte[183] BUS_WIDTH 寄存器用于配置总线宽度和 Data Strobe 
+
 ### 通信模型
 
 Host 与 eMMC Device 之间的通信都是由 Host 以一个 Command 开始发起的，eMMC Device 在完成 Command 所指定的任务后，则返回一个 Response。
