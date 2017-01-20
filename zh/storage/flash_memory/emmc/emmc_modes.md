@@ -48,12 +48,20 @@ TODO：Add Alternative Boot Pic
 
 EXT_CSD byte [177] BOOT_BUS_CONDITIONS 寄存器用于配置在 Boot Mode 时，数据传输的总线状态。
 
+通过 BOOT_BUS_CONDITIONS 寄存器配置，在 Boot Mode 时，总线可以支持以下几种模式：
 
+| Mode | Data Rate  | Bus Width | Frequency | Max Data Transfer (x8) |
+| -- | --  | -- | -- | -- |
+| Backward Compatible | Single  | x1, x4, x8 | 0-26 MHz | 26 MB/s |
+| High Speed SDR | Single  | x1, x4, x8 | 0-52 MHz | 52 MB/s |
+| High Speed DDR | Dual | x4, x8 | 0-52 MHz | 104 MB/s |
 
-width
-speed
-data rate
-reset
+BOOT_BUS_CONDITIONS 寄存器还可以配置退出 Boot Mode 后，是复位还是保留当前总线配置。如果配置为复位，那么退出 Boot Mode 后，总线会被复位为 x1 SDR Backward Compatible 模式，如果配置为保留，那么退出 Boot Mode 后，总线会保留 Boot Mode 时的总线模式。
+
+> **NOTE:**  
+> BOOT_BUS_CONDITIONS 寄存器为 nonvolatile 属性，配置内容掉电不会丢失。  
+> 如果 eMMC Device 没有经过 Boot Mode，BOOT_BUS_CONDITIONS 寄存器不会改变总线模式。  
+> 退出 Boot Mode 后，还可以通过 HS_TIMING 和 BUS_WIDTH 寄存器配置总线模式。
 
 ### Boot Data 更新
 
