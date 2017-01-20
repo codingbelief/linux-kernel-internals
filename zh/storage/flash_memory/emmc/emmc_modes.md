@@ -56,7 +56,7 @@ EXT_CSD byte [177] BOOT_BUS_CONDITIONS 寄存器用于配置在 Boot Mode 时，
 | High Speed SDR | Single  | x1, x4, x8 | 0-52 MHz | 52 MB/s |
 | High Speed DDR | Dual | x4, x8 | 0-52 MHz | 104 MB/s |
 
-BOOT_BUS_CONDITIONS 寄存器还可以配置退出 Boot Mode 后，是复位还是保留当前总线配置。如果配置为复位，那么退出 Boot Mode 后，总线会被复位为 x1 SDR Backward Compatible 模式，如果配置为保留，那么退出 Boot Mode 后，总线会保留 Boot Mode 时的总线模式。
+BOOT_BUS_CONDITIONS 寄存器还可以配置退出 Boot Mode 后，是复位还是保留当前总线配置。如果配置为复位，那么退出 Boot Mode 后，总线会被复位为 Backward Compatible SDR x1 模式，如果配置为保留，那么退出 Boot Mode 后，总线会保留 Boot Mode 时的总线模式。
 
 > **NOTE:**  
 > BOOT_BUS_CONDITIONS 寄存器为 nonvolatile 属性，配置内容掉电不会丢失。  
