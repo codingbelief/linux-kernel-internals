@@ -65,12 +65,9 @@ BOOT_BUS_CONDITIONS 寄存器还可以配置退出 Boot Mode 后，是复位还�
 
 ### Boot Data 更新
 
-eMMC 裸片不支持 Boot
-如何更新 Boot 分区数据
-WP
-Boot bus width 
+eMMC Device 在从厂商出货时，没有存储内容，也没有使能 Boot Mode。使用 eMMC Devcie 产品需要先通过其他的方式（例如，通过 USB、UART 等）启动一个下载系统，将 Boot Data 以及其他的系统数据写入到 eMMC 中，同时使能 Boot Mode 并设定 Boot Bus 模式。
 
-为什么需要 Alternative boot 模式？
+Boot Data 的更新与其他数据的写入类似，更多的数据写入细节，请参考 Data Transfer Mode 小节。
 
 ## Device Identification Mode
 
