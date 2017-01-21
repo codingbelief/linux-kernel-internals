@@ -71,6 +71,8 @@ Boot Data 的更新与其他数据的写入类似，更多的数据写入细节�
 
 ## Device Identification Mode
 
+如果 Host 没有触发 Boot 流程或者 Boot 流程完成后，eMMC Device 会进入 Device Identification Mode。在此模式下，eMMC Device 将进行初始化，Host 会为 eMMC Device 设定工作电压、协商寻址模式以及分配 RCA 设备地址。
+
 ### Voltage Range
 
 eMMC Device 部分支持 3.3v 和 1.8v，1.8v 有功耗优势。
