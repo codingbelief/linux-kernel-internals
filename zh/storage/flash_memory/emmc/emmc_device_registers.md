@@ -8,3 +8,5 @@ OCR，即 Operation Conditions Register，此寄存器包含 eMMC Device 支持�
 
 此寄存器的值，会在 Device Identification Mode 中，作为 CMD1 的响应内容返回给 Host。
 
+> **NOTE: **  
+> Voltage Window 指明 eMMC Device 支持 1.70v - 1.95v 和 2.7v - 3.6v 两个工作电压范围。

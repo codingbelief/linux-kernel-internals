@@ -71,7 +71,13 @@ Boot Data 的更新与其他数据的写入类似，更多的数据写入细节�
 
 ## Device Identification Mode
 
-如果 Host 没有触发 Boot 流程或者 Boot 流程完成后，eMMC Device 会进入 Device Identification Mode。在此模式下，eMMC Device 将进行初始化，Host 会为 eMMC Device 设定工作电压、协商寻址模式以及分配 RCA 设备地址。
+如果 Host 没有触发 Boot 流程或者 Boot 流程完成后，eMMC Device 会进入 Device Identification Mode。
+
+TODO：Add States 
+
+eMMC Device 在退出 Boot Mode 后或者没使能 Boot Mode 时 Power On、HW Reset 或者 SW Reset 后，会进入 Device Identification Mode 的 Idle State。
+
+在 Idle State 下，eMMC Device 会进行内部初始化，Host 需要持续发送 CMD1 命令，查询 eMMC Device 是否已经完成初始化。
 
 ### Voltage Range
 
@@ -109,6 +115,8 @@ Block A page is the minimum size unit for writing and reading. The size is confi
 (512, 1024, 2048 bytes), but normally the size is 512 bytes.
 
 High capacity negotiation	For devices larger than 2GB, the addressing mechanism is switched from byte addressing to sector addressing.
+
+### Relative device Address RCA
 
 ## Data Transfer Mode
 
