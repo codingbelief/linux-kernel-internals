@@ -9,7 +9,7 @@
             * [eMMC 工作模式](storage/flash_memory/emmc/emmc_modes.md)
             * [eMMC CMDQ](storage/flash_memory/emmc/emmc_cmdq.md)
             * [eMMC RPMB](storage/flash_memory/emmc/emmc_rpmb.md)
-            * [eMMC Registers](storage/flash_memory/emmc/emmc_device_registers.md)
+            * [eMMC 设备寄存器](storage/flash_memory/emmc/emmc_device_registers.md)
             * [eMMC Commands](storage/flash_memory/emmc/emmc_commands.md)
         * [SD Card](storage/flash_memory/sdcard/index.md)
         * [UFS](storage/flash_memory/ufs/index.md)
@@ -28,5 +28,5 @@
         * [DRAM Devices Organization](memory/dram/dram_devices_organization.md)
     * [Cache](memory/cache/index.md)
 * [CPU](zh/cpu/index.md)
-    * ISA
+    * [ISA](zh/cpu/isa.md)
 
