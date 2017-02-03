@@ -27,4 +27,6 @@
         * [DRAM Timing](memory/dram/dram_timing.md)
         * [DRAM Devices Organization](memory/dram/dram_devices_organization.md)
     * [Cache](memory/cache/index.md)
+* [CPU](zh/cpu/index.md)
+    * ISA
 
