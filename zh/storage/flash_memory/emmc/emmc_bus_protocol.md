@@ -21,11 +21,14 @@ CMD 信号主要用于 Host 向 eMMC 发送 Command 和 eMMC 向 Host 发送对�
 
 **DAT0-7**  
 
-DAT0-7 信号主要用于 Host 和 eMMC 之间的数据传输。在 eMMC 上电或者软复位后，只有 DAT0 可以进行数据传输，完成初始化后，可配置 DAT0-3 或者 DAT0-7 进行数据传输，即数据总线可以配置为 4 bits 或者 8 bits 模式。（疑问：为什么提供这两种模式？什么情况下用不同的模式？）
+DAT0-7 信号主要用于 Host 和 eMMC 之间的数据传输。在 eMMC 上电或者软复位后，只有 DAT0 可以进行数据传输，完成初始化后，可配置 DAT0-3 或者 DAT0-7 进行数据传输，即数据总线可以配置为 4 bits 或者 8 bits 模式。
 
 **Data Strobe**  
 
 Data Strobe 时钟信号由 eMMC 发送给 Host，频率与 CLK 信号相同，用于 Host 端进行数据接收的同步。Data Strobe 信号只能在 HS400 模式下配置启用，启用后可以提高数据传输的稳定性，省去总线 tuning 过程。
+
+> **NOTE:**  
+> Extended CSD byte[183] BUS_WIDTH 寄存器用于配置总线宽度和 Data Strobe 
 
 ## eMMC 总线模型
 
@@ -47,6 +50,10 @@ eMMC 总线中，可以有一个 Host，多个 eMMC Devices。总线上的所有
 | High Speed DDR | Dual | x4, x8 | 0-52 MHz | 104 MB/s |
 | HS200 | Single | x4, x8 | 0-200 MHz | 200 MB/s |
 | HS400 | Dual | x8 | 0-200 MHz | 400 MB/s |
+
+> **NOTE:**  
+> Extended CSD byte[185] HS_TIMING 寄存器可以配置总线速率模式  
+> Extended CSD byte[183] BUS_WIDTH 寄存器用于配置总线宽度和 Data Strobe 
 
 ### 通信模型
 
@@ -223,6 +230,9 @@ Tuning Block 是专门为了 Tuning 而设计的一组特殊数据。相对于�
 ![](tuning_block_pattern.png)
 
 ![](tuning_block_on_data_lines.png)
+
+> **NOTE:** 
+> 总线宽度为 1 时，只发送 DAT0 上的数据，总线宽度为 4 时，则只发送 DAT0-3 上的数据
 
 ## 参考资料
 

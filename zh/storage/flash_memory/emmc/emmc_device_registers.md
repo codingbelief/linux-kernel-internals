@@ -1,3 +1,12 @@
 # eMMC 设备寄存器
 
-TODO
+## OCR register
+
+OCR，即 Operation Conditions Register，此寄存器包含 eMMC Device 支持的电压模式、数据寻址模式（按 Byte 寻址 or 按 Sector 寻址）以及 Busy 标志位。
+
+![](ocr.png) 
+
+此寄存器的值，会在 Device Identification Mode 中，作为 CMD1 的响应内容返回给 Host。
+
+> **NOTE: **  
+> Voltage Window 指明 eMMC Device 支持 1.70v - 1.95v 和 2.7v - 3.6v 两个工作电压范围。
