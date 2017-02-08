@@ -21,14 +21,14 @@ TODO：Add Boot States
 在 Power On、HW Reset 或者 SW Reset 后，如果 eMMC Device  有使能 Boot Mode（即，寄存器位 BOOT_PARTITION_ENABLE (EXT_CSD byte [179]) 指定了启动分区），那么 Host 有两种方式可以让 eMMC Device 进入 Boot Mode，分别定义为 Original Boot 和 Alternative Boot，如下：
 
 1. Original Boot：拉低 CMD 信号并保持不少于 74 个时钟周期
-2. Alternative Boot：保持 CMD 信号为高电平，74 个时钟周期后，发送参数为 0xFFFFFFFA 的 CMD0 命令
+2. Alternative Boot：保持 CMD 信号为高电平，74 个时钟周期后，发送参数为 0xFFFFFFFA 的 [CMD0](/emmc_commands.html#cmd0) 命令
 
 进入 Boot Mode 后，eMMC Device 会根据寄存器位 BOOT_PARTITION_ENABLE 的设定，从两个 Boot partitions 和 UDA 中选择一个分区读取大小为 128KB × BOOT_SIZE_MULT (EXT_CSD byte [226]) 的 Boot Data 通过 Data Lines 发送给 Host。
 
 在 Boot Data 数据传输过程中，Host 可以打断数据传输，提前结束 Boot Mode，方法如下：
 
 1. Original Boot：传输过程中，拉高 CMD 信号
-2. Alternative Boot：传输过程中，发送参数为 0xF0F0F0F0 的 CMD0 命令
+2. Alternative Boot：传输过程中，发送参数为 0xF0F0F0F0 的 [CMD0](/emmc_commands.html#cmd0) 命令
 
 > **NOTE:**  
 > Host 发送参数为 0xF0F0F0F0 的 CMD0 命令，可以让 eMMC Device 进行 SW Reset  
@@ -77,10 +77,10 @@ TODO：Add States
 
 eMMC Device 在退出 Boot Mode 后或者没使能 Boot Mode 时 Power On、HW Reset 或者 SW Reset 后，会进入 Device Identification Mode 的 Idle State。
 
-在 Idle State 下，eMMC Device 会进行内部初始化，Host 需要持续发送 CMD1 命令，查询 eMMC Device 是否已经完成初始化。
+在 Idle State 下，eMMC Device 会进行内部初始化，Host 需要持续发送 [CMD1](/emmc_commands.html#cmd1)命令，查询 eMMC Device 是否已经完成初始化。
 
 > **NOTE:**  
-> eMMC Device 在接收到 CMD1 命令后，会将 [OCR register](/emmc_device_registers.html#ocr-register) 的内容作为 Response 返回给 Host，其中包含了 eMMC Device 是否完成初始化的标志位。
+> eMMC Device 在接收到 [CMD1](/emmc_commands.html#cmd1) 命令后，会将 [OCR register](/emmc_device_registers.html#ocr-register) 的内容作为 Response 返回给 Host，其中包含了 eMMC Device 是否完成初始化的标志位。
 
 ### Voltage Range
 
