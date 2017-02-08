@@ -4,6 +4,9 @@ TODO
 
 ### SEND_OP_COND
 
+#### Type
+bcr
+
 #### Argument
 [31:0] OCR without busy
 
