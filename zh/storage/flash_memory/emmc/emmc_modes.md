@@ -31,7 +31,7 @@ TODO：Add Boot States
 2. Alternative Boot：传输过程中，发送参数为 0xF0F0F0F0 的 [CMD0](/emmc_commands.html#cmd0) 命令
 
 > **NOTE:**  
-> Host 发送参数为 0xF0F0F0F0 的 CMD0 命令，可以让 eMMC Device 进行 SW Reset  
+> Host 发送参数为 0xF0F0F0F0 的 [CMD0](/emmc_commands.html#cmd0) 命令，可以让 eMMC Device 进行 SW Reset  
 > Host 拉高 RST_n 信号可以触发 eMMC Device 进行 HW Reset
 
 ### Boot Acknowledge
