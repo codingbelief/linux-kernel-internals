@@ -2,6 +2,10 @@ TODO
 
 ## CMD1
 
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+
+
 ### SEND_OP_COND
 
 #### Type
