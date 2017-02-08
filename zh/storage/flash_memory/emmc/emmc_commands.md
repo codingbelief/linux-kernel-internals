@@ -7,6 +7,9 @@ TODO
 #### Type
 bcr
 
+#### Resp
+R3
+
 #### Argument
 [31:0] OCR without busy
 
