@@ -1,4 +1,4 @@
-TODO
+# eMMC Commands
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
