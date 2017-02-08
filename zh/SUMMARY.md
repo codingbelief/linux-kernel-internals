@@ -36,4 +36,5 @@
     * Superscalar
     * Out-of-order execution
     * [Multiprocessing and multithreading](zh/cpu/microarchitecture/multiprocessing-and-multithreading.md)
+  * 虚拟化
 
