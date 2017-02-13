@@ -34,7 +34,7 @@
     * Cache
     * Branch prediction
     * Superscalar
-    * Out-of-order execution
+    * [Out-of-order execution](zh/cpu/microarchitecture/out-of-order-execution.md)
     * [Multiprocessing and multithreading](zh/cpu/microarchitecture/multiprocessing-and-multithreading.md)
   * 虚拟化
 
