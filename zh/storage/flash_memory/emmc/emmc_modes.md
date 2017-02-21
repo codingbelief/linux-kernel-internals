@@ -79,8 +79,7 @@ eMMC Device 在退出 Boot Mode 后或者没使能 Boot Mode 时 Power On、HW R
 
 在 Idle State 下，eMMC Device 会进行内部初始化，Host 需要持续发送 [CMD1](/emmc_commands.html#cmd1)命令，查询 eMMC Device 是否已经完成初始化。
 
-> **NOTE:**  
-> eMMC Device 在接收到 [CMD1](/emmc_commands.html#cmd1) 命令后，会将 [OCR register](/emmc_device_registers.html#ocr-register) 的内容作为 Response 返回给 Host，其中包含了 eMMC Device 是否完成初始化的标志位。
+eMMC Device 在接收到 [CMD1](/emmc_commands.html#cmd1) 命令后，会将 [OCR register](/emmc_device_registers.html#ocr-register) 的内容作为 Response 返回给 Host，其中包含了 eMMC Device 是否完成初始化的标志位、设备工作电压范围 Voltage Range 和存储访问模式 Memory Access Mode 信息。
 
 ### Voltage Range
 
