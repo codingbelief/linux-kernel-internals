@@ -83,14 +83,13 @@ eMMC Device 在接收到 [CMD1](/emmc_commands.html#cmd1) 命令后，会将 [OC
 
 ### Voltage Range
 
-eMMC Device 部分支持 3.3v 和 1.8v，1.8v 有功耗优势。
-
-Dual-Voltage MultimediaCard (DV-MMC)
-One of the first substantial changes in MMC was the introduction of dual-voltage cards that support operations at 1.8 V in addition to 3.3 V. Running at lower voltages reduces the card's power consumption, which is important in mobile devices. However, simple dual-voltage parts quickly went out of production in favour of MMCplus and MMCmobile which offer additional capabilities on top of dual-voltage support.
+eMMC Device 支持 3.3v 和 1.8v 两种工作电压模式。在 1.8v 模式下，eMMC Device 会更加的省电。
 
 ### Memory Access Mode
 
 在数据读写的 Command 中，会将读写的地址作为 Command 的参数发送给 eMMC Device，这个地址可能是按 Byte 寻址的（Byte Access Mode，即从第几个 Byte 开始进行读写），也可能是按照 Sector 寻址的 （Sector Access Mode，即从第几个 Sector 开始进行读写）。
+
+
 
 This patch provides handling of the two way handshake when SEND_OP_COND
 (CMD1) is send to mmc card. It is necessary to inform eMMC card if the
