@@ -85,6 +85,8 @@ eMMC Device 在接收到 [CMD1](/emmc_commands.html#cmd1) 命令后，会将 [OC
 
 eMMC Device 支持 3.3v 和 1.8v 两种工作电压模式。在 1.8v 模式下，eMMC Device 会更加的省电。
 
+TODO：描述如何设定或者切换不同的工作电压模式
+
 ### Memory Access Mode
 
 在数据读写的 Command 中，会将读写的地址作为 Command 的参数发送给 eMMC Device，这个地址可能是按 Byte 寻址的（Byte Access Mode，即从第几个 Byte 开始进行读写），也可能是按照 Sector 寻址的 （Sector Access Mode，即从第几个 Sector 开始进行读写）。
