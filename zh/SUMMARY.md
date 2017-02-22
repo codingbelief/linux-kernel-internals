@@ -37,5 +37,6 @@
     * [Out-of-order execution](zh/cpu/microarchitecture/out-of-order-execution.md)
     * [Multiprocessing and multithreading](zh/cpu/microarchitecture/multiprocessing-and-multithreading.md)
     * [Register Renaming](zh/cpu/microarchitecture/register-renaming.md)
+    * [VLIW](zh/cpu/microarchitecture/vliw.md)
   * 虚拟化
 
