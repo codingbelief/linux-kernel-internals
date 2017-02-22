@@ -10,3 +10,4 @@ OCR，即 Operation Conditions Register，此寄存器包含 eMMC Device 支持�
 
 > **NOTE: **  
 > Voltage Window 指明 eMMC Device 支持 1.70v - 1.95v 和 2.7v - 3.6v 两个工作电压范围。
+> 容量小于等于 2 GB 的 eMMC Devcie 的 Access Mode 为 Byte Mode，容量大于 2 GB 的 eMMC Devcie 的 Access Mode 为 Sector Mode。
