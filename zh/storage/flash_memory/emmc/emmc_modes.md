@@ -93,8 +93,7 @@ TODO：描述如何设定或者切换不同的工作电压模式
 
 Memory Access Mode 决定了 eMMC Device 在响应 Host 的数据读写请求时，是如何访问内部存储器的。在 eMMC 标准中存在两种 Memory Access Mode：Byte Access Mode 和 Sector Access Mode。
 
-在数据读写的 Command 中，Host 会将读写的地址 A 作为 Command 的参数发送给 eMMC Device，在 Byte Access Mode 下，eMMC Device 将从第 A 个 Byte 开始进行读写操作，而在 Sector Access Mode 下，eMMC Device 将会从第 A 个 Sector 开始进行读写操作（一个 Sector 的大小为 512 Bytes）。
-
+在数据读写的 Command 中，Host 会将读写的地址 A 作为 Command 的参数发送给 eMMC Device，在 Byte Access Mode 下，eMMC Device 将从第 A 个 Byte 开始进行读写操作，而在 Sector Access Mode 下，eMMC Device 将会从第 A 个 Sector 开始进行读写操作，一个 Sector 的大小为 512 Bytes 或者 4 KBytes，更大的 Sector 支持更大容量的存储器访问。
 
 
 This patch provides handling of the two way handshake when SEND_OP_COND
