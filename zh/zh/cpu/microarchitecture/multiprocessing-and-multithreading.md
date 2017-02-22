@@ -9,3 +9,10 @@ Conceptually, multithreading is equivalent to a context switch at the operating 
 
 
 In processor design, there are two ways to increase on-chip parallelism with fewer resource requirements: one is superscalar technique which tries to exploit instruction level parallelism (ILP); the other is multithreading approach exploiting thread level parallelism (TLP).
+
+Interleaved multithreading
+Simultaneous multithreading (SMT)
+Chip-level multiprocessing (CMP or multicore)
+Any combination of multithreaded/SMT/CMP
+The key factor to distinguish them is to look at how many instructions the processor can issue in one cycle and how many threads from which the instructions come. 
+
