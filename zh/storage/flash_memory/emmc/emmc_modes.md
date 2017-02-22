@@ -77,7 +77,10 @@ TODO：Add States
 
 eMMC Device 在退出 Boot Mode 后或者没使能 Boot Mode 时 Power On、HW Reset 或者 SW Reset 后，会进入 Device Identification Mode 的 Idle State。
 
-在 Idle State 下，eMMC Device 会进行内部初始化，Host 需要持续发送 [CMD1](/emmc_commands.html#cmd1)命令，查询 eMMC Device 是否已经完成初始化，同时进行工作电压和寻址模式协商。如果 Host 和 eMMC Devcie 的工作电压和寻址模式不匹配，eMMC Device 会进入 Inactive State。
+在 Idle State 下，eMMC Device 会进行内部初始化，Host 需要持续发送 [CMD1](/emmc_commands.html#cmd1)命令，查询 eMMC Device 是否已经完成初始化，同时进行工作电压和寻址模式协商。
+
+
+如果 Host 和 eMMC Devcie 的工作电压和寻址模式不匹配，eMMC Device 会进入 Inactive State。
 
 eMMC Device 在接收到 [CMD1](/emmc_commands.html#cmd1) 命令后，会将 [OCR register](/emmc_device_registers.html#ocr-register) 的内容作为 Response 返回给 Host，其中包含了 eMMC Device 是否完成初始化的标志位、设备工作电压范围 Voltage Range 和存储访问模式 Memory Access Mode 信息。
 
