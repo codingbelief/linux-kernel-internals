@@ -16,3 +16,19 @@ OCR，即 Operation Conditions Register，此寄存器包含 eMMC Device 支持�
 
 ![](cid-register.png) 
 
+### MID [127:120]
+
+MID is an 8 bit binary number that identifies the device manufacturer. The MID number is controlled, defined and allocated to an e•MMC manufacturer by JEDEC. This procedure is established to ensure uniqueness of the CID register.
+
+### CBX [113:112]
+
+CBX indicates the device type.
+| [113:112] | Type  |
+| -- | --  |
+| 00 | Device (removable) |
+| 01 | BGA (Discrete embedded) |
+| 10 | POP |
+| 11 | Reserved |
+
+
+
