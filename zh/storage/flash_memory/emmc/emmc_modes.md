@@ -95,7 +95,7 @@ Memory Access Mode 决定了 eMMC Device 在响应 Host 的数据读写请求时
 
 在数据读写的 Command 中，Host 会将读写的地址 A 作为 Command 的参数发送给 eMMC Device，在 Byte Access Mode 下，eMMC Device 将从第 A 个 Byte 开始进行读写操作，而在 Sector Access Mode 下，eMMC Device 将会从第 A 个 Sector 开始进行读写操作，一个 Sector 的大小为 512 Bytes 或者 4 KBytes，更大的 Sector 支持更大容量的存储器访问。
 
-
+使用 Byte Access Mode 更加的灵活高效，但是由于寻址位数的限制，不能访问超过 2GB 的存储内容。Sector Access Mode 则支持大容量存储的访问，其中 512 Bytes Sector 可以支持最大 256 GB 容量的存储访问，更大容量的需求则可以使用 4 KBytes Sector。
 
 This patch provides handling of the two way handshake when SEND_OP_COND
 (CMD1) is send to mmc card. It is necessary to inform eMMC card if the
