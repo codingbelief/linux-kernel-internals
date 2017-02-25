@@ -135,7 +135,7 @@ Block A page is the minimum size unit for writing and reading. The size is confi
 High capacity negotiation	For devices larger than 2GB, the addressing mechanism is switched from byte addressing to sector addressing.
 -->
 
-### Relative device Address RCA
+### RCA - Relative device Address 
 
 
 
