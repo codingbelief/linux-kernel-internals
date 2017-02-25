@@ -142,7 +142,9 @@ High capacity negotiation	For devices larger than 2GB, the addressing mechanism 
 
 RCA 是在 Devcie Identification 过程中，由 Host 分配的 16 Bits 的设备地址，主要用于 Data Transfer Mode 下进行数据传输时，选定具体要进行读写的 eMMC Devcie。
 
-eMMC Devcie 由 RCA register 保存 Host 分配的 RCA。
+Host 分配的 RCA 通常从 1 开始递增，0 地址作为广播地址。eMMC Devcie 的 [RCA register](./emmc_device_registers.html#rca-register) 保存了 Host 分配的 RCA。
+
+TODO：确认掉电重启后，RCA register 的值是否丢失。
 
 ## Data Transfer Mode
 
