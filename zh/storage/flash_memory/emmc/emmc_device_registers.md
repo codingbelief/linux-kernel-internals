@@ -70,3 +70,5 @@ The Device-Specific Data (CSD) register provides information on how to access th
 
 ![](csd-register.png) 
 
+> **NOTE:**  
+> 更多 CSD Register 的细节请参考 eMMC Spec.
