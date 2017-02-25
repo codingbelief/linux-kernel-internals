@@ -142,6 +142,8 @@ High capacity negotiation	For devices larger than 2GB, the addressing mechanism 
 
 RCA 是在 Devcie Identification 过程中，由 Host 分配的 16 Bits 的设备地址，主要用于 Data Transfer Mode 下进行数据传输时，选定具体要进行读写的 eMMC Devcie。
 
+eMMC Devcie 由 RCA register 保存 Host 分配的 RCA。
+
 ## Data Transfer Mode
 
 eMMC cards need to occasionally spend some time cleaning up garbage and perform cache/buffer related operations which are strictly on the card side and do not involve the host. These operations are at various levels based on the importance/severity of the operation 1- Normal, 2- Important and 3 - Critical. If an operation is delayed for long it becomes critical and the regular read/write from host can be delayed or take more time than expected. 

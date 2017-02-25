@@ -72,3 +72,11 @@ The Device-Specific Data (CSD) register provides information on how to access th
 
 > **NOTE:**  
 > 更多 CSD register 的细节请参考 eMMC Spec.
+
+## RCA register
+
+The writable 16-bit relative Device address (RCA) register carries the Device address assigned by the host during the Device identification. This address is used for the addressed host-Device communication after the Device identification procedure. The default value of the RCA register is 0x0001. The value 0x0000 is reserved to set all Devices into the Stand-by State with CMD7.
+
+
+
+
