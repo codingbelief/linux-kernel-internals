@@ -148,8 +148,10 @@ TODO：确认掉电重启后，RCA register 的值是否丢失。
 
 ## Data Transfer Mode
 
+<!--
 eMMC cards need to occasionally spend some time cleaning up garbage and perform cache/buffer related operations which are strictly on the card side and do not involve the host. These operations are at various levels based on the importance/severity of the operation 1- Normal, 2- Important and 3 - Critical. If an operation is delayed for long it becomes critical and the regular read/write from host can be delayed or take more time than expected. 
 To avoid such issues the MMC HW and core driver provide a framework which can check for pending background operations and give the card some time to clear up the same.
+-->
 
 ## Interrupt Mode
 
