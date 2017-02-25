@@ -22,7 +22,19 @@
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| ALL_SEND_CID | bcr | [31:0] stuff bits | R3 | Asks Device to send its CID number on the CMD line |
+| ALL_SEND_CID | bcr | [31:0] stuff bits | R2 | Asks Device to send its CID number on the CMD line |
+
+## CMD3
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| SET_RELATIVE_ADDR | bcr | [31:16] RCA, [15:0] stuff bits | R1 | Assigns relative address to the Device |
+
+
+
+
+
+
 
 
 
