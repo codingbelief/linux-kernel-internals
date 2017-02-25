@@ -123,8 +123,8 @@ Block A page is the minimum size unit for writing and reading. The size is confi
 (512, 1024, 2048 bytes), but normally the size is 512 bytes.
 
 High capacity negotiation	For devices larger than 2GB, the addressing mechanism is switched from byte addressing to sector addressing.
-
 -->
+
 ### Relative device Address RCA
 
 ## Data Transfer Mode
