@@ -83,6 +83,10 @@ Host 发送的 [CMD1](./emmc_commands.html#cmd1) 命令的参数中，包含了 
 
 eMMC Device 在接收到 [CMD1](./emmc_commands.html#cmd1) 命令后，会将 [OCR register](./emmc_device_registers.html#ocr-register) 的内容作为 Response 返回给 Host，其中包含了 eMMC Device 是否完成初始化的标志位、设备工作电压范围 Voltage Range 和存储访问模式 Memory Access Mode 信息。
 
+eMMC Device 完成初始化后，就会进入 Ready State。在该 State 下，Host 会发送 [CMD2](./emmc_commands.html#cmd2) 命令，
+
+Device identification (CID) number
+
 ### Voltage Range
 
 eMMC Device 支持 3.3v 和 1.8v 两种工作电压模式。在 1.8v 模式下，eMMC Device 会更加的省电。
