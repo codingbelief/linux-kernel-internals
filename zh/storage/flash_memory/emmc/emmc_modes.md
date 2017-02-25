@@ -89,7 +89,7 @@ CID，即 Device identification number，用于标识一个 eMMC Device。它包
 
 eMMC Device 接收到 [CMD2](./emmc_commands.html#cmd2) 后，会将 127 Bits 的 [CID register](./emmc_device_registers.html#cid-register) 的内容通过 Response 返回给 Host。
 
-发送完 CID 后，eMMC Device 接着就会进入 **Identification State**。而后，Host 会发送 CMD3
+发送完 CID 后，eMMC Device 接着就会进入 **Identification State**。而后，Host 会发送 [CMD3](./emmc_commands.html#cmd3) 命令
 
 ### Voltage Range
 
