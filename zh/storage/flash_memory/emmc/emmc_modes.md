@@ -77,13 +77,13 @@ TODO：Add States
 
 eMMC Device 在退出 Boot Mode 后或者没使能 Boot Mode 时 Power On、HW Reset 或者 SW Reset 后，会进入 Device Identification Mode 的 Idle State。
 
-在 Idle State 下，eMMC Device 会进行内部初始化，Host 需要持续发送 [CMD1](./emmc_commands.html#cmd1)命令，查询 eMMC Device 是否已经完成初始化，同时进行工作电压和寻址模式协商。
+在 **Idle State** 下，eMMC Device 会进行内部初始化，Host 需要持续发送 [CMD1](./emmc_commands.html#cmd1)命令，查询 eMMC Device 是否已经完成初始化，同时进行工作电压和寻址模式协商。
 
-Host 发送的 [CMD1](./emmc_commands.html#cmd1) 命令的参数中，包含了 Host 所支持的工作电压和寻址模式信息，eMMC Device 在接收到这些信息后，会进行匹配。如果 eMMC Devcie 和 Host 所支持的工作电压和寻址模式不匹配，那么 eMMC Device 会进入 Inactive State。
+Host 发送的 [CMD1](./emmc_commands.html#cmd1) 命令的参数中，包含了 Host 所支持的工作电压和寻址模式信息，eMMC Device 在接收到这些信息后，会进行匹配。如果 eMMC Devcie 和 Host 所支持的工作电压和寻址模式不匹配，那么 eMMC Device 会进入 **Inactive State**。
 
 eMMC Device 在接收到 [CMD1](./emmc_commands.html#cmd1) 命令后，会将 [OCR register](./emmc_device_registers.html#ocr-register) 的内容作通过 Response 返回给 Host，其中包含了 eMMC Device 是否完成初始化的标志位、设备工作电压范围 Voltage Range 和存储访问模式 Memory Access Mode 信息。
 
-eMMC Device 完成初始化后，就会进入 Ready State。在该 State 下，Host 会发送 [CMD2](./emmc_commands.html#cmd2) 命令，eMMC Device 接收到 [CMD2](./emmc_commands.html#cmd2) 后，会将 127 Bits 的 [CID register](./emmc_device_registers.html#cid-register) 的内容通过 Response 返回给 Host。
+eMMC Device 完成初始化后，就会进入 **Ready State**。在该 State 下，Host 会发送 [CMD2](./emmc_commands.html#cmd2) 命令，eMMC Device 接收到 [CMD2](./emmc_commands.html#cmd2) 后，会将 127 Bits 的 [CID register](./emmc_device_registers.html#cid-register) 的内容通过 Response 返回给 Host。
 
 Device identification (CID) number
 
