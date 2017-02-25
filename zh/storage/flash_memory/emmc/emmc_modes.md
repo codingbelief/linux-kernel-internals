@@ -89,7 +89,9 @@ CID，即 Device identification number，用于标识一个 eMMC Device。它包
 
 eMMC Device 接收到 [CMD2](./emmc_commands.html#cmd2) 后，会将 127 Bits 的 [CID register](./emmc_device_registers.html#cid-register) 的内容通过 Response 返回给 Host。
 
-发送完 CID 后，eMMC Device 接着就会进入 **Identification State**。而后，Host 会发送 [CMD3](./emmc_commands.html#cmd3) 命令
+发送完 CID 后，eMMC Device 接着就会进入 **Identification State**。而后，Host 会发送参数包含 16 Bits RCA 的 [CMD3](./emmc_commands.html#cmd3) 命令，为 eMMC Device 分配 RCA。
+
+RCA，即 Relative device Address，是在后续的进行数据通信过程中，作为
 
 ### Voltage Range
 
