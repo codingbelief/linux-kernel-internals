@@ -93,6 +93,9 @@ eMMC Device 接收到 [CMD2](./emmc_commands.html#cmd2) 后，会将 127 Bits �
 
 设定完 RCA 后，eMMC Devcie 就完成了 Devcie Identification，进入 Data Transfer Mode。
 
+> **NOTE:**  
+> 本节只描述了单个 eMMC Device 的 Devcie Identification 过程，多 Device Identification 过程与此类似，更多的细节可以参考 eMMC Spec。
+
 ### Voltage Range
 
 eMMC Device 支持 3.3v 和 1.8v 两种工作电压模式。在 1.8v 模式下，eMMC Device 会更加的省电。
