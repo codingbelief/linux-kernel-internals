@@ -23,6 +23,7 @@ MID is an 8 bit binary number that identifies the device manufacturer. The MID n
 ### CBX [113:112]
 
 CBX indicates the device type.
+
 | [113:112] | Type  |
 | -- | --  |
 | 00 | Device (removable) |
