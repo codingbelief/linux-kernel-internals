@@ -91,7 +91,7 @@ eMMC Device 接收到 [CMD2](./emmc_commands.html#cmd2) 后，会将 127 Bits �
 
 发送完 CID 后，eMMC Device 接着就会进入 **Identification State**。而后，Host 会发送参数包含 16 Bits RCA 的 [CMD3](./emmc_commands.html#cmd3) 命令，为 eMMC Device 分配 RCA。
 
-RCA，即 Relative device Address，是在后续的进行数据通信过程中，作为
+设定完 RCA 后，eMMC Devcie 就完成了 Devcie Identification，进入 Data Transfer Mode。
 
 ### Voltage Range
 
