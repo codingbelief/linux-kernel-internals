@@ -18,6 +18,15 @@
 | -- | --  | -- | -- | -- |
 | SEND_OP_COND | bcr | [31:0] OCR without busy | R3 | Asks Device, in idle state, to send its [Operating Conditions Register](./emmc_device_registers.html#ocr-register) contents in the response on the CMD line. |
 
+## CMD2
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| ALL_SEND_CID | bcr | [31:0] stuff bits | R3 | Asks Device to send its CID number on the CMD line |
+
+
+
+
 
 
 
