@@ -97,6 +97,7 @@ Memory Access Mode 决定了 eMMC Device 在响应 Host 的数据读写请求时
 
 使用 Byte Access Mode 更加的灵活高效，但是由于寻址位数的限制，不能访问超过 2GB 的存储内容。Sector Access Mode 则支持大容量存储的访问，其中 512 Bytes Sector 可以支持最大 256 GB 容量的存储访问，更大容量的需求则可以使用 4 KBytes Sector。
 
+<!--
 This patch provides handling of the two way handshake when SEND_OP_COND
 (CMD1) is send to mmc card. It is necessary to inform eMMC card if the
 host can work with high capacity cards (Jedec JESD84-A441, point 7.4.3).
@@ -123,6 +124,7 @@ Block A page is the minimum size unit for writing and reading. The size is confi
 
 High capacity negotiation	For devices larger than 2GB, the addressing mechanism is switched from byte addressing to sector addressing.
 
+-->
 ### Relative device Address RCA
 
 ## Data Transfer Mode
