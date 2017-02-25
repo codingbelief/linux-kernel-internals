@@ -35,3 +35,10 @@ CBX indicates the device type.
 
 OID is an 8-bit binary number that identifies the Device OEM and/or the Device contents (when used as a distribution media either on ROM or FLASH Devices). The OID number is controlled, defined and allocated to an e•MMC manufacturer by JEDEC. This procedure is established to ensure uniqueness of the CID register
 
+### PNM [103:56]
+
+The product name, PNM, is a string, 6 ASCII characters long.
+
+### PRV [55:48]
+
+The product revision, PRV, is composed of two Binary Coded Decimal (BCD) digits, four bits each, representing an “n.m” revision number. The “n” is the most significant nibble and “m” is the least significant nibble. As an example, the PRV binary value field for product revision “6.2” will be: 0110 0010.
