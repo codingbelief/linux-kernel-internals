@@ -83,9 +83,13 @@ Host 发送的 [CMD1](./emmc_commands.html#cmd1) 命令的参数中，包含了 
 
 eMMC Device 在接收到 [CMD1](./emmc_commands.html#cmd1) 命令后，会将 [OCR register](./emmc_device_registers.html#ocr-register) 的内容作通过 Response 返回给 Host，其中包含了 eMMC Device 是否完成初始化的标志位、设备工作电压范围 Voltage Range 和存储访问模式 Memory Access Mode 信息。
 
-eMMC Device 完成初始化后，就会进入 **Ready State**。在该 State 下，Host 会发送 [CMD2](./emmc_commands.html#cmd2) 命令，eMMC Device 接收到 [CMD2](./emmc_commands.html#cmd2) 后，会将 127 Bits 的 [CID register](./emmc_device_registers.html#cid-register) 的内容通过 Response 返回给 Host。
+eMMC Device 完成初始化后，就会进入 **Ready State**。在该 State 下，Host 会发送 [CMD2](./emmc_commands.html#cmd2) 命令，获取 eMMC Device 的 CID。
 
-Device identification (CID) number
+CID，即 Device identification number，用于标识一个 eMMC Device。它包含了 eMMC Device 的制造商、OEM、设备名称、设备序列号、生产年份等信息，每一个 eMMC Device 的 CID 都是唯一的，不会与其他的 eMMC Device 完全相同。
+
+eMMC Device 接收到 [CMD2](./emmc_commands.html#cmd2) 后，会将 127 Bits 的 [CID register](./emmc_device_registers.html#cid-register) 的内容通过 Response 返回给 Host。
+
+发送完 CID 后，eMMC Device 接着就会进入 **Identification State**。而后，Host 会发送 CMD3
 
 ### Voltage Range
 
