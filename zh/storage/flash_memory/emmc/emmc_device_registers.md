@@ -55,5 +55,5 @@ The manufacturing date, MDT, is composed of two hexadecimal digits, four bits ea
 
 The CRC7 checksum (7 bits). This is the checksum of the CID contents computed according to 0.
 
-
+## CSD register
 
