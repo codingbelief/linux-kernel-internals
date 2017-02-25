@@ -37,7 +37,7 @@ eMMC 总线中，可以有一个 Host，多个 eMMC Devices。总线上的所有
 系统在上电启动后，Host 会为所有 eMMC Device 逐个分配地址（RCA，Relative device Address）。当 Host 需要和某一个 eMMC Device 通讯时，会先根据 RCA 选中该 eMMC Device，只有被选中的 eMMC Device 才会响应 Host 的 Command。
 
 > NOTE:  
-> 更详细的工作原理请参考 [eMMC 工作模式](/emmc_modes.html) 章节。
+> 更详细的工作原理请参考 [eMMC 工作模式](./emmc_modes.html) 章节。
 
 ### 速率模式
 
@@ -65,7 +65,7 @@ Host 与 eMMC Device 之间的通信都是由 Host 以一个 Command 开始发�
 
 Host 从 eMMC Device 读取数据的流程如上图所示。  
 
-如果 Host 发送的是 Single Block Read 的 Command，那么 eMMC Device 只会发送一个 Block 的数据（一个 Block 的数据的字节数由 Host 设定或者为 eMMC Device 的默认值，更多细节请参考 [eMMC 工作模式](/emmc_modes.html) 章节）。  
+如果 Host 发送的是 Single Block Read 的 Command，那么 eMMC Device 只会发送一个 Block 的数据（一个 Block 的数据的字节数由 Host 设定或者为 eMMC Device 的默认值，更多细节请参考 [eMMC 工作模式](./emmc_modes.html) 章节）。  
 如果 Host 发送的是 Multiple Block Read 的 Command，那么 eMMC Device 会持续发送数据，直到 Host 主动发送 Stop Command。
 
 > **NOTE:**  
@@ -108,7 +108,7 @@ Start Bit 固定为 "0"，在没有数据传输的情况下，CMD 信号保持�
 
 Transmission Bit 固定为 "1"，指示了该数据包的传输方向为 Host 发送到 eMMC Device。
 
-Command Index 和 Argument 为 Command 的具体内容，不同的 Command 有不同的 Index，不同的 Command 也有各自的 Argument。 更多的细节，请参考 [eMMC Commands](/emmc_commands.html) 章节。
+Command Index 和 Argument 为 Command 的具体内容，不同的 Command 有不同的 Index，不同的 Command 也有各自的 Argument。 更多的细节，请参考 [eMMC Commands](./emmc_commands.html) 章节。
 
 CRC7 是包含 Start Bit、Transmission Bit、 Command Index 和 Argument 内容的 CRC 校验值。
 
@@ -127,7 +127,7 @@ Start Bit 与 Command 一样，固定为 "0"，在没有数据传输的情况下
 
 Transmission Bit 固定为 "0"，指示了该数据包的传输方向为 eMMC Device 发送到 Host。
 
-Content 为 Response 的具体内容，不同的 Command 会有不同的 Content。 更多的细节，请参考 [eMMC Responses](/emmc_responses.html) 章节。
+Content 为 Response 的具体内容，不同的 Command 会有不同的 Content。 更多的细节，请参考 [eMMC Responses](./emmc_responses.html) 章节。
 
 CRC7 是包含 Start Bit、Transmission Bit 和 Content 内容的 CRC 校验值。
 
