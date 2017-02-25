@@ -140,7 +140,7 @@ High capacity negotiation	For devices larger than 2GB, the addressing mechanism 
 
 ### RCA - Relative device Address 
 
-
+RCA 是在 Devcie Identification 过程中，由 Host 分配的 16 Bits 的设备地址，主要用于 Data Transfer Mode 下进行数据传输时，选定具体要进行读写的 eMMC Devcie。
 
 ## Data Transfer Mode
 
