@@ -94,7 +94,7 @@ eMMC Device 接收到 [CMD2](./emmc_commands.html#cmd2) 后，会将 127 Bits �
 设定完 RCA 后，eMMC Devcie 就完成了 Devcie Identification，进入 Data Transfer Mode。
 
 > **NOTE:**  
-> 本节只描述了单个 eMMC Device 的 Devcie Identification 过程，多 Device Identification 过程与此类似，更多的细节可以参考 eMMC Spec。
+> 本节只描述了单个 eMMC Device 的 Devcie Identification 过程，多个 eMMC 的 Device Identification 过程与此类似，更多的细节可以参考 eMMC Spec。
 
 ### Voltage Range
 
@@ -149,3 +149,6 @@ To avoid such issues the MMC HW and core driver provide a framework which can ch
 
 ## Interrupt Mode
 
+## 参考资料
+
+1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
