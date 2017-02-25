@@ -67,3 +67,6 @@ The Device-Specific Data (CSD) register provides information on how to access th
 **R/W/C_P**: Writable after value cleared by power failure and HW/rest assertion (the value not cleared by CMD0 reset) and readable.  
 **R/W/E_P**: Multiple writable with value reset after power failure, H/W reset assertion and any CMD0 reset and readable.  
 **W/E_P**: Multiple writable with value reset after power failure, H/W reset assertion and any CMD0 reset and not readable.  
+
+![](csd-register.png) 
+
