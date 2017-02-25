@@ -50,3 +50,10 @@ PSN is a 32-bit unsigned binary integer.
 ### MDT [15:8]
 
 The manufacturing date, MDT, is composed of two hexadecimal digits, four bits each, representing a two digits date code m/y; The “m” field, most significant nibble, is the month code. 1 = January. The “y” field, least significant nibble, is the year code. 0 = 1997. As an example, the binary value of the MDT field for production date “April 2000” will be: 0100 0011
+
+### CRC [7:1]
+
+The CRC7 checksum (7 bits). This is the checksum of the CID contents computed according to 0.
+
+
+
