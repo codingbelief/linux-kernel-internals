@@ -57,3 +57,13 @@ The CRC7 checksum (7 bits). This is the checksum of the CID contents computed ac
 
 ## CSD register
 
+The Device-Specific Data (CSD) register provides information on how to access the Device contents. The CSD defines the data format, error correction type, maximum data access time, data transfer speed, whether the DSR register can be used etc. The programmable part of the register (entries marked by W or E below) can be changed by CMD27. The type of the CSD Registry entries below is coded as follows:
+
+**R**: Read only.  
+**W**: One time programmable and not readable.  
+**R/W**: One time programmable and readable.  
+**W/E**: Multiple writable with value kept after power failure, H/W reset assertion and any CMD0 reset and not readable.  
+**R/W/E**: Multiple writable with value kept after power failure, H/W reset assertion and any CMD0 reset and readable.  
+**R/W/C_P**: Writable after value cleared by power failure and HW/rest assertion (the value not cleared by CMD0 reset) and readable.  
+**R/W/E_P**: Multiple writable with value reset after power failure, H/W reset assertion and any CMD0 reset and readable.  
+**W/E_P**: Multiple writable with value reset after power failure, H/W reset assertion and any CMD0 reset and not readable.  
