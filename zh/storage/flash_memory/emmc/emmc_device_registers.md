@@ -42,3 +42,11 @@ The product name, PNM, is a string, 6 ASCII characters long.
 ### PRV [55:48]
 
 The product revision, PRV, is composed of two Binary Coded Decimal (BCD) digits, four bits each, representing an “n.m” revision number. The “n” is the most significant nibble and “m” is the least significant nibble. As an example, the PRV binary value field for product revision “6.2” will be: 0110 0010.
+
+### PSN [47:16]
+
+PSN is a 32-bit unsigned binary integer.
+
+### MDT [15:8]
+
+The manufacturing date, MDT, is composed of two hexadecimal digits, four bits each, representing a two digits date code m/y; The “m” field, most significant nibble, is the month code. 1 = January. The “y” field, least significant nibble, is the year code. 0 = 1997. As an example, the binary value of the MDT field for production date “April 2000” will be: 0100 0011
