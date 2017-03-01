@@ -30,6 +30,54 @@
 | -- | --  | -- | -- | -- |
 | SET_RELATIVE_ADDR | bcr | [31:16] RCA, [15:0] stuff bits | R1 | Assigns relative address to the Device |
 
+## CMD4
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| SET_DSR | bc | [31:16] DSR, [15:0] stuff bits | - | Programs the DSR of the Device |
+
+## CMD5
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| SLEEP_AWAKE | ac | [31:16] RCA, [15]Sleep/Awake, [14:0] stuff bits | r1b | Toggles the Device between Sleep state and Standby state. |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
