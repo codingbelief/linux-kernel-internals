@@ -42,6 +42,16 @@
 | -- | --  | -- | -- | -- |
 | SLEEP_AWAKE | ac | [31:16] RCA, [15]Sleep/Awake, [14:0] stuff bits | r1b | Toggles the Device between Sleep state and Standby state. |
 
+## CMD6
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| SWITCH | bc | [31:26] Set to 0, [25:24] Access, [23:16] Index, [15:8] Value, [7:3] Set to 0, [2:0] Cmd Set | - | Switches the mode of operation of the selected Device or modifies the EXT_CSD registers. |
+
+
+
+
+
 
 
 
