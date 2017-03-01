@@ -46,9 +46,13 @@
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| SWITCH | bc | [31:26] Set to 0, [25:24] Access, [23:16] Index, [15:8] Value, [7:3] Set to 0, [2:0] Cmd Set | - | Switches the mode of operation of the selected Device or modifies the EXT_CSD registers. |
+| SWITCH | ac | [31:26] Set to 0, [25:24] Access, [23:16] Index, [15:8] Value, [7:3] Set to 0, [2:0] Cmd Set | r1b  | Switches the mode of operation of the selected Device or modifies the EXT_CSD registers. |
 
+## CMD7
 
+| Abbr. | Type | Argument | Resp | Description |
+| -- | -- | -- | -- | -- |
+| SELECT/DESELECT_CARD | ac | [31:16] RCA, [15:0] stuff bits | r1/r1b  | Command toggles a device between the standby and transfer states or between the programming and disconnect states. |
 
 
 
