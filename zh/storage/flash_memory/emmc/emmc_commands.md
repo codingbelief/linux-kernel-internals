@@ -54,6 +54,12 @@
 | -- | -- | -- | -- | -- |
 | SELECT/DESELECT_CARD | ac | [31:16] RCA, [15:0] stuff bits | r1/r1b  | Command toggles a device between the standby and transfer states or between the programming and disconnect states. |
 
+## CMD8
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| SEND_EXT_CSD | adtc | [31:0] stuff bits | - | Device sends its EXT_CSD register as a block of data. |
+
 
 
 
