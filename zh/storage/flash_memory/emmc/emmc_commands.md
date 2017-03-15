@@ -60,17 +60,25 @@
 | -- | --  | -- | -- | -- |
 | SEND_EXT_CSD | adtc | [31:0] stuff bits | - | Device sends its EXT_CSD register as a block of data. |
 
+# Block-oriented read commands
+
+## CMD16
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| SET_BLOCKLEN | ac | [31:0] block length | R1 | Sets the block length (in bytes) for all following block commands (read and write). Default block length is specified in the CSD |
+
 ## CMD17
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| READ_SINGLE_BLOCK | adtc | [31:0] data address | - | Reads a block of the size selected by the SET_BLOCKLEN command |
+| READ_SINGLE_BLOCK | adtc | [31:0] data address | R1 | Reads a block of the size selected by the SET_BLOCKLEN command |
 
 ## CMD18
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| READ_MULTIPLE_BLOCK | adtc | [31:0] data address | - | Continuously transfers data blocks from Device to host until interrupted by a stop command, or the requested number of data blocks is transmitted If sent as part of a packed read command, the argument shall contain the first read data address in the pack (address of first individual read command inside the pack).  |
+| READ_MULTIPLE_BLOCK | adtc | [31:0] data address | R1 | Continuously transfers data blocks from Device to host until interrupted by a stop command, or the requested number of data blocks is transmitted If sent as part of a packed read command, the argument shall contain the first read data address in the pack (address of first individual read command inside the pack).  |
 
 
 
