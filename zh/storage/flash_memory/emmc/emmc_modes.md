@@ -156,7 +156,12 @@ eMMC Device 完成 Device Identification 后，就会进入到 Data Transfer Mod
 
 ### Read Data
 
+在 Transfer State 时，Host 可以发送以下的命令，触发数据读取流程：
 
+| 命令 | 描述 |
+|-|-|
+|[CMD8](./emmc_commands.html#cmd8)||
+|||
 
 ### Write Data
 
