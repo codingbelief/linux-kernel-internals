@@ -60,11 +60,11 @@
 | -- | --  | -- | -- | -- |
 | SEND_EXT_CSD | adtc | [31:0] stuff bits | - | Device sends its EXT_CSD register as a block of data. |
 
-## CMD8
+## CMD17
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| SEND_EXT_CSD | adtc | [31:0] stuff bits | - | Device sends its EXT_CSD register as a block of data. |
+| READ_SINGLE_BLOCK | adtc | [31:0] data address | - | Reads a block of the size selected by the SET_BLOCKLEN command |
 
 
 
