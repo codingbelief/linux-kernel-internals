@@ -60,7 +60,7 @@
 | -- | --  | -- | -- | -- |
 | SEND_EXT_CSD | adtc | [31:0] stuff bits | - | Device sends its EXT_CSD register as a block of data. |
 
-# Block-oriented read commands  (class 2)
+# Block-oriented read commands (class 2)
 
 ## CMD16
 
