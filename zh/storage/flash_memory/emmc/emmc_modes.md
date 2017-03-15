@@ -149,6 +149,9 @@ TODO：确认掉电重启后，RCA register 的值是否丢失。
 ## Data Transfer Mode
 
 eMMC Device 完成 Device Identification 后，就会进入到 Data Transfer Mode 的 Standby State。
+在 Standby State 时，Host 可以通过发送 [CMD5](./emmc_commands.html#cmd5) 命令，让 eMMC Devcie 进入 低功耗的 Sleep State，而后再发送 [CMD5](./emmc_commands.html#cmd5) 命令则可以让 eMMC Device 退出 Sleep State。
+
+
 
 
 
