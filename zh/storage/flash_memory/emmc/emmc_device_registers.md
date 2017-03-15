@@ -77,6 +77,8 @@ The Device-Specific Data (CSD) register provides information on how to access th
 
 The writable 16-bit relative Device address (RCA) register carries the Device address assigned by the host during the Device identification. This address is used for the addressed host-Device communication after the Device identification procedure. The default value of the RCA register is 0x0001. The value 0x0000 is reserved to set all Devices into the Stand-by State with CMD7.
 
+## Extended CSD register
 
+The Extended CSD register defines the Device properties and selected modes. It is 512 bytes long. The most significant 320 bytes are the Properties segment, that defines the Device capabilities and cannot be modified by the host. The lower 192 bytes are the Modes segment, that defines the configuration the Device is working in. These modes can be changed by the host by means of the SWITCH command.
 
 
