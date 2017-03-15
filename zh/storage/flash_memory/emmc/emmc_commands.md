@@ -66,6 +66,11 @@
 | -- | --  | -- | -- | -- |
 | READ_SINGLE_BLOCK | adtc | [31:0] data address | - | Reads a block of the size selected by the SET_BLOCKLEN command |
 
+## CMD17
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| READ_SINGLE_BLOCK | adtc | [31:0] data address | - | Reads a block of the size selected by the SET_BLOCKLEN command |
 
 
 
