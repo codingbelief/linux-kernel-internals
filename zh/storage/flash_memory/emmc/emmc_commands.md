@@ -66,11 +66,11 @@
 | -- | --  | -- | -- | -- |
 | READ_SINGLE_BLOCK | adtc | [31:0] data address | - | Reads a block of the size selected by the SET_BLOCKLEN command |
 
-## CMD17
+## CMD18
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| READ_SINGLE_BLOCK | adtc | [31:0] data address | - | Reads a block of the size selected by the SET_BLOCKLEN command |
+| READ_MULTIPLE_BLOCK | adtc | [31:0] data address | - | Continuously transfers data blocks from Device to host until interrupted by a stop command, or the requested number of data blocks is transmitted If sent as part of a packed read command, the argument shall contain the first read data address in the pack (address of first individual read command inside the pack).  |
 
 
 
