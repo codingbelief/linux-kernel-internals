@@ -160,7 +160,7 @@ eMMC Device 完成 Device Identification 后，就会进入到 Data Transfer Mod
 
 | 命令 | 描述 |
 |-|-|
-|[CMD8](./emmc_commands.html#cmd8)| 读取 EXT_CSD 寄存器数据 |
+|[CMD8](./emmc_commands.html#cmd8)| 读取 [EXT_CSD](./emmc_device_registers.html#extend-csd-register) 寄存器数据 |
 |||
 
 ### Write Data
