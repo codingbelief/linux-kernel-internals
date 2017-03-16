@@ -175,12 +175,12 @@ eMMC Device 在接收到上述几个 CMD 时，就会进入 Sending-data State�
 |-|-|
 |[CMD24](./emmc_commands.html#cmd24)| 写入一个 Block 的数据 |
 |[CMD25](./emmc_commands.html#cmd25)| 写入多个 Block 的数据 |
-|[CMD26](./emmc_commands.html#cmd26)| 写入 CID 寄存器值 |
-|[CMD27](./emmc_commands.html#cmd26)| 写入 CSD 寄存器值 |
+|[CMD26](./emmc_commands.html#cmd26)| 写入 [CID](./emmc_device_registers.html#cid-register) 寄存器值 |
+|[CMD27](./emmc_commands.html#cmd26)| 写入 [CSD](./emmc_device_registers.html#csd-register)寄存器值 |
 
 > NOTE:  
-> CID 寄存器值通常是只能写一次，由厂家在生产时确定并写入
-> CSD 寄存器值的部分位则可以多次改写。
+> [CID](./emmc_device_registers.html#cid-register) 寄存器值通常是只能写一次，由厂家在生产时确定并写入
+> [CSD](./emmc_device_registers.html#csd-register) 寄存器值的部分位则可以多次改写。
 
 <!--
 eMMC cards need to occasionally spend some time cleaning up garbage and perform cache/buffer related operations which are strictly on the card side and do not involve the host. These operations are at various levels based on the importance/severity of the operation 1- Normal, 2- Important and 3 - Critical. If an operation is delayed for long it becomes critical and the regular read/write from host can be delayed or take more time than expected. 
