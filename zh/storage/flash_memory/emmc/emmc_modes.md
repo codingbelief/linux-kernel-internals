@@ -163,7 +163,7 @@ eMMC Device 完成 Device Identification 后，就会进入到 Data Transfer Mod
 |[CMD8](./emmc_commands.html#cmd8)| 读取 [EXT_CSD](./emmc_device_registers.html#extend-csd-register) 寄存器数据 |
 |[CMD17](./emmc_commands.html#cmd17)| 从指定的地址开始，读取一个 Block 的数据 |
 |[CMD18](./emmc_commands.html#cmd17)| 从指定的地址开始，读取多个 Block 的数据 |
-|[CMD21](./emmc_commands.html#cmd17)| 读取多个 Tunning Block 的数据 |
+|[CMD21](./emmc_commands.html#cmd17)| 读取 Tuning Block 的数据 |
 
 
 
