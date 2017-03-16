@@ -86,7 +86,8 @@
 | -- | --  | -- | -- | -- |
 | SEND_TUNING_BLOCK | adtc | [31:0] stuff bits | R1 | 128 clocks of tuning pattern (64 byte in 4bit mode or 128 byte in 8 bit mode) is sent for HS200 optimal sampling point detection. |
 
-
+> NOTE 1 Data address for media =<2 GB is a 32 bit byte address and data address for media > 2GB is a 32 bit sector (512 B) address.
+> NOTE 2 The transferred data must not cross a physical block boundary, unless READ_BLK_MISALIGN is set in the CSD register.
 
 
 
