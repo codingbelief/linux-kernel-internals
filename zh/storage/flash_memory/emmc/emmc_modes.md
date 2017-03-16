@@ -165,10 +165,16 @@ eMMC Device 完成 Device Identification 后，就会进入到 Data Transfer Mod
 |[CMD18](./emmc_commands.html#cmd17)| 从指定的地址开始，读取多个 Block 的数据 |
 |[CMD21](./emmc_commands.html#cmd17)| 读取 Tuning Block 的数据 |
 
-
-
+eMMC Device 在接收到上述几个 CMD 时，就会进入 Sending-data State。在此 State 下，eMMC Device 会持续将指定的数据发送给 Host，直到所有数据传输完成或者接收到 Host 发送的 [CMD12](./emmc_commands.html#cmd12) 传输停止命令。
 
 ### Write Data
+
+在 Transfer State 时，Host 可以发送以下的命令，触发数据写入流程：
+
+| 命令 | 描述 |
+|-|-|
+|[CMD21](./emmc_commands.html#cmd17)| 读取 Tuning Block 的数据 |
+
 
 
 
