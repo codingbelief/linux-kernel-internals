@@ -67,7 +67,6 @@
 | STOP_TRANSMISSION | ac | [31:16] RCA, [15:1] stuff bits, [0] HPI | - | Forces the Device to stop transmission. If HPI flag is set the device shall interrupt its internal operations in a well-defined timing. |
 
 
-
 # Block-oriented read commands (class 2)
 
 ## CMD16

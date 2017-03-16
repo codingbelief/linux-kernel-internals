@@ -173,9 +173,8 @@ eMMC Device 在接收到上述几个 CMD 时，就会进入 Sending-data State�
 
 | 命令 | 描述 |
 |-|-|
-|[CMD21](./emmc_commands.html#cmd17)| 读取 Tuning Block 的数据 |
-
-
+|[CMD24](./emmc_commands.html#cmd24)| 写入一个 Block 的数据 |
+|[CMD25](./emmc_commands.html#cmd25)| 写入多个 Block 的数据 |
 
 
 
