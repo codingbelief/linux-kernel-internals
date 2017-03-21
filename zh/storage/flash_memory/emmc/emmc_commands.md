@@ -108,7 +108,7 @@
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| SET_BLOCK_COUNT | ac | [31] set to 0, [30] ‘1’ packed, [29:16] set to 0, [15:0] number of blocks | R1 | Defines the number of blocks (read/write) and the reliable writer parameter (write) for a block read or write command.|
+| SET_BLOCK_COUNT | ac | [31] set to 0, [30] ‘1’ packed, [29:16] set to 0, [15:0] number of blocks | R1 | Defines the number of blocks (read/write) for the following packed write command or for the header of the following packed read command.|
 
 
 
