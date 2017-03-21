@@ -189,7 +189,13 @@ eMMC Device 在接收到上述几个 CMD 时，就会进入 Sending-data State�
 > [CID](./emmc_device_registers.html#cid-register) 寄存器值通常是只能写一次，由厂家在生产时确定并写入
 > [CSD](./emmc_device_registers.html#csd-register) 寄存器值的部分位则可以多次改写。
 
-eMMC Device 在接收到 CMD24 或者 CMD25 时，就会进入 Receive-data State，在此 State 下，eMMC Devcie 会持续从 Host 接收数据，并存储到内部的 Flash 中。
+eMMC Device 在接收到上述几个 CMD 时，就会进入 Receive-data State，在此 State 下，eMMC Devcie 会持续从 Host 接收数据，并存储到内部的 Flash 中。
+
+如果 Host 在发送 [CMD18](./emmc_commands.html#cmd18) 前，先发送一个设定需要读取的 Block Count 的 [CMD23](./emmc_commands.html#cmd23)。eMMC Device 在完成指定 Block Count 的数据发送后，就自动结束数据传输，不需要 Host 主动发送停止命令 [CMD12](./emmc_commands.html#cmd12)。  
+
+如果 Host 没有发送设定需要读取的 Block Count 的 Command，发送 Multiple Block Read 的 Command 后，eMMC Device 会持续发送数据，直到 Host 发送 Stop Command 停止数据传输。  
+
+
 
 > NOTE:
 > 如果在发送 [CMD25](./emmc_commands.html#cmd18) 前，先发送 [CMD23](./emmc_commands.html#cmd23) 设定需要写入的 Block Count，那么 eMMC Device 会在发送完指定数量的 Block 后，自动停止发送数据。
