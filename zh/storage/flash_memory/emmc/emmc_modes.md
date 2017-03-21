@@ -185,7 +185,7 @@ eMMC Device 在接收到上述几个 CMD 时，就会进入 Sending-data State�
 > [CID](./emmc_device_registers.html#cid-register) 寄存器值通常是只能写一次，由厂家在生产时确定并写入
 > [CSD](./emmc_device_registers.html#csd-register) 寄存器值的部分位则可以多次改写。
 
-eMMC Device 在接收到上述几个 CMD 时，就会进入 Receive-data State，在此 State 下，eMMC Devcie 会持续从 Host 接收数据，并存储到内部 buffer 中
+eMMC Device 在接收到 CMD24 或者 CMD25 时，就会进入 Receive-data State，在此 State 下，eMMC Devcie 会持续从 Host 接收数据，并存储到内部 buffer 中
 
 ## Packed Commands - Packed Read and Packed Write
 
