@@ -92,6 +92,7 @@ eMMC Device 在接收到一个 Block 的数据后，会进行 CRC 校验，然�
 
 > **NOTE:**  
 > 向 eMMC Device 写数据都是按 Block 写入的。
+> Block 大小可以由 Host 设定，或者固定为 512 Bytes，不同的速率模式下有所不同。
 
 #### No Data
 
