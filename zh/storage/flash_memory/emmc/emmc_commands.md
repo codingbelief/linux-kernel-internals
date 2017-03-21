@@ -110,6 +110,20 @@
 | -- | --  | -- | -- | -- |
 | SET_BLOCK_COUNT | ac | [31] set to 0, [30] ‘1’ packed, [29:16] set to 0, [15:0] number of blocks | R1 | Defines the number of blocks (read/write) for the following packed write command or for the header of the following packed read command.|
 
+## CMD24
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| WRITE_BLOCK | adtc | [31:0] data address | R1 | Writes a block of the size selected by the
+SET_BLOCKLEN command. |
+
+## CMD25
+
+| Abbr. | Type  | Argument | Resp | Description |
+| -- | --  | -- | -- | -- |
+| WRITE_MULTIPLE_BLOCK | adtc | [31:0] data address | R1 | Continuously writes blocks of data until a STOP_TRANSMISSION follows or the requested number of block received. If sent as a packed command (either packed write, or the header of packed read) the argument shall contain
+the first read/write data address in the pack (address of first individual command inside the pack). |
+
 
 
 
