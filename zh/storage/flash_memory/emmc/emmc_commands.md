@@ -124,7 +124,23 @@ SET_BLOCKLEN command. |
 | WRITE_MULTIPLE_BLOCK | adtc | [31:0] data address | R1 | Continuously writes blocks of data until a STOP_TRANSMISSION follows or the requested number of block received. If sent as a packed command (either packed write, or the header of packed read) the argument shall contain
 the first read/write data address in the pack (address of first individual command inside the pack). |
 
+## CMD26
 
+| Abbr. | Type | Argument | Resp | Description |
+| -- | -- | -- | -- | -- |
+| PROGRAM_CID | adtc | [31:0] stuff bits | R1 | Programming of the Device identification register. This command shall be issued only once. The Device contains hardware to prevent this operation after the first programming. Normally this command is reserved for the manufacturer.|
+
+## CMD27
+
+| Abbr. | Type | Argument | Resp | Description |
+| -- | -- | -- | -- | -- |
+| PROGRAM_CSD | adtc | [31:0] stuff bits | R1 | Reads a block of the size selected by the SET_BLOCKLEN command |
+
+## CMD49
+
+| Abbr. | Type | Argument | Resp | Description |
+| -- | -- | -- | -- | -- |
+| SET_TIME | adtc | [31:0] stuff bits | R1 | Reads a block of the size selected by the SET_BLOCKLEN command |
 
 
 
