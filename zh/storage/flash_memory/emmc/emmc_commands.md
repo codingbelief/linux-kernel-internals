@@ -96,6 +96,8 @@
 > NOTE 1 Data address for media =<2 GB is a 32 bit byte address and data address for media > 2GB is a 32 bit sector (512 B) address.
 > NOTE 2 The transferred data must not cross a physical block boundary, unless READ_BLK_MISALIGN is set in the CSD register.
 
+# Block-oriented write commands (class 4)
+
 
 
 
