@@ -187,7 +187,10 @@ eMMC Device 在接收到上述几个 CMD 时，就会进入 Sending-data State�
 
 eMMC Device 在接收到 CMD24 或者 CMD25 时，就会进入 Receive-data State，在此 State 下，eMMC Devcie 会持续从 Host 接收数据，并存储到内部的 Flash 中。
 
-> 
+> NOTE:
+> 如果在发送 [CMD25](./emmc_commands.html#cmd18) 前，先发送 [CMD23](./emmc_commands.html#cmd23) 设定需要写入的 Block Count，那么 eMMC Device 会在发送完指定数量的 Block 后，自动停止发送数据。
+
+
 
 ### Packed Commands - Packed Read and Packed Write
 
