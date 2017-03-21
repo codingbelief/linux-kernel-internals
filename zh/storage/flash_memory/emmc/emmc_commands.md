@@ -140,7 +140,7 @@ the first read/write data address in the pack (address of first individual comma
 
 | Abbr. | Type | Argument | Resp | Description |
 | -- | -- | -- | -- | -- |
-| SET_TIME | adtc | [31:0] stuff bits | R1 | Reads a block of the size selected by the SET_BLOCKLEN command |
+| SET_TIME | adtc | [31:0] stuff bits | R1 | Sets the real time clock according to the RTC information in the 512 B data block. |
 
 
 
