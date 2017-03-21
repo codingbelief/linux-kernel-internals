@@ -65,11 +65,15 @@ Host 与 eMMC Device 之间的通信都是由 Host 以一个 Command 开始发�
 
 Host 从 eMMC Device 读取数据的流程如上图所示。  
 
-如果 Host 发送的是 Single Block Read 的 Command，那么 eMMC Device 只会发送一个 Block 的数据（一个 Block 的数据的字节数由 Host 设定或者为 eMMC Device 的默认值，更多细节请参考 [eMMC 工作模式](./emmc_modes.html) 章节）。  
-如果 Host 发送的是 Multiple Block Read 的 Command，那么 eMMC Device 会持续发送数据，直到 Host 主动发送 Stop Command。
+如果 Host 发送的是 Single Block Read 的 Command，那么 eMMC Device 只会发送一个 Block 的数据。
+
+如果 Host 在发送 Multiple Block Read 的 Command 前，先发送一个设定需要读取的 Block Count 的 Command。eMMC Device 在完成指定 Block Count 的数据发送后，就自动结束数据传输，不需要 Host 主动发送 Stop Command。  
+
+如果 Host 没有发送设定需要读取的 Block Count 的 Command，发送 Multiple Block Read 的 Command 后，eMMC 会持续发送数据，直到 Host 发送 Stop Command 停止数据传输。  
 
 > **NOTE:**  
 > 从 eMMC Device 读数据都是按 Block 读取的。
+> Block 大小可以由 Host 设定，或者固定为 512 Bytes，不同的速率模式下有所不同。
 
 #### Write Data
 
@@ -78,7 +82,10 @@ Host 从 eMMC Device 读取数据的流程如上图所示。
 Host 向 eMMC Device 写入数据的流程如上图所示。  
 
 如果 Host 发送的是 Single Block Write Command，那么 eMMC Device 只会将后续第一个 Block 的数据写入的存储器中。  
-如果 Host 发送的是 Multiple Block Write Command，那么 eMMC Device 会持续地将接收到的数据写入到存储器中，直到 Host 主动发送 Stop Command。  
+
+如果 Host 在发送 Multiple Block Write 的 Command 前，先发送一个设定需要读取的 Block Count 的 Command。eMMC Device 在接收到指定 Block Count 的数据后，就自动结束数据接收，不需要 Host 主动发送 Stop Command。  
+
+如果 Host 没有发送设定需要读取的 Block Count 的 Command，发送 Multiple Block Write 的 Command 后，eMMC 会持续接收数据，直到 Host 发送 Stop Command 停止数据传输。  
 
 eMMC Device 在接收到一个 Block 的数据后，会进行 CRC 校验，然后将校验结果通过 CRC Token 发送给 Host。  
 发送完 CRC Token 后，如果 CRC 校验成功，eMMC Device 会将数据写入到内部存储器时，此时 DAT0 信号会拉低，作为 Busy 信号。Host 会持续检测 DAT0 信号，直到为高电平时，才会接着发送下一个 Block 的数据。如果 CRC 校验失败，那么 eMMC Device 不会进行数据写入，此次传输后续的数据都会被忽略。
