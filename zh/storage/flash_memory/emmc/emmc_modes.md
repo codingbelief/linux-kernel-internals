@@ -197,8 +197,9 @@ eMMC Device 在接收到上述几个 CMD 时，就会进入 Receive-data State�
 
 当 eMMC Device 完成数据接收后，就会进入到 Programming State，将内部 Buffer 中的数据写入到 Flash 中，完成后再退回到 Transfer State。
 
-如果 eMMC Devcie 在 Programming State 时，还没有完成写入操作，就收到 [CMD7](./emmc_commands.html#cmd7) 命令，那么 eMMC Device 会进入到 DisDisconnect
-State
+如果 eMMC Devcie 在 Programming State 时，还没有完成写入操作，就收到参数不等于自身 RCA 的 [CMD7](./emmc_commands.html#cmd7) 命令，那么 eMMC Device 会进入到 Disconnect State。在该 State 下，eMMC Device 会继续进行写入操作，写入完成后则进入到 Stand-by State。
+
+如果 eMMC Device 在 Disconnect State 时，还没有完成写入操作，就收到参数等于自身 RCA 的 [CMD7](./emmc_commands.html#cmd7) 命令，那么 eMMC Devcie 会从新回到 Programming State。
 
 ### Packed Commands - Packed Read and Packed Write
 
