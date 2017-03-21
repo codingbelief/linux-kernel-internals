@@ -195,7 +195,7 @@ eMMC Device 在接收到上述几个 CMD 时，就会进入 Receive-data State�
 
 如果 Host 没有发送设定需要写入的 Block Count 的 Command，发送 Multiple Block Write 的 Command 后，eMMC Device 会持续接收数据，直到 Host 发送 Stop Command 停止数据传输。  
 
-当 eMMC Device 完成数据接收后，就会进入到 Programming State
+当 eMMC Device 完成数据接收后，就会进入到 Programming State，将内部 Buffer 中的数据写入到 Flash 中，完成后再退回到 Transfer State。
 
 ### Packed Commands - Packed Read and Packed Write
 
