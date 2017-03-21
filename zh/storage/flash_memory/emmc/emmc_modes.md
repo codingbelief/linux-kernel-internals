@@ -184,6 +184,8 @@ eMMC Device 在接收到上述几个 CMD 时，就会进入 Sending-data State�
 
 eMMC Device 在接收到上述几个 CMD 时，就会进入 Receive-data State，在此 State 下，eMMC Devcie 会持续从 Host 接收数据，并存储到内部 buffer 中
 
+## Packed Read Write
+
 <!--
 eMMC cards need to occasionally spend some time cleaning up garbage and perform cache/buffer related operations which are strictly on the card side and do not involve the host. These operations are at various levels based on the importance/severity of the operation 1- Normal, 2- Important and 3 - Critical. If an operation is delayed for long it becomes critical and the regular read/write from host can be delayed or take more time than expected. 
 To avoid such issues the MMC HW and core driver provide a framework which can check for pending background operations and give the card some time to clear up the same.
