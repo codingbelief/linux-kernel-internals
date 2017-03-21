@@ -102,7 +102,7 @@
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| SET_BLOCK_COUNT | ac | [31] Reliable Write Request, [30] ‘0’ non- packed, [29] tag request,[28:25] context ID, [24]: forced programming, [23:16] set to 0, [15:0] number of blocks | R1 | Reads a block of the size selected by the SET_BLOCKLEN command |
+| SET_BLOCK_COUNT | ac | [31] Reliable Write Request, [30] ‘0’ non- packed, [29] tag request,[28:25] context ID, [24]: forced programming, [23:16] set to 0, [15:0] number of blocks | R1 | Defines the number of blocks (read/write) and the reliable writer parameter (write) for a block read or write command.|
 
 
 
