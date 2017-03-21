@@ -134,7 +134,7 @@ the first read/write data address in the pack (address of first individual comma
 
 | Abbr. | Type | Argument | Resp | Description |
 | -- | -- | -- | -- | -- |
-| PROGRAM_CSD | adtc | [31:0] stuff bits | R1 | Reads a block of the size selected by the SET_BLOCKLEN command |
+| PROGRAM_CSD | adtc | [31:0] stuff bits | R1 | Programming of the programmable bits of the CSD. |
 
 ## CMD49
 
