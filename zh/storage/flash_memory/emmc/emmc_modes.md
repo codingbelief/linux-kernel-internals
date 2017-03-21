@@ -205,6 +205,8 @@ eMMC Device 在开始进行写入操作时，会先将接收到的数据存储�
 
 ### Packed Commands - Packed Read and Packed Write
 
+### Erase
+
 <!--
 eMMC cards need to occasionally spend some time cleaning up garbage and perform cache/buffer related operations which are strictly on the card side and do not involve the host. These operations are at various levels based on the importance/severity of the operation 1- Normal, 2- Important and 3 - Critical. If an operation is delayed for long it becomes critical and the regular read/write from host can be delayed or take more time than expected. 
 To avoid such issues the MMC HW and core driver provide a framework which can check for pending background operations and give the card some time to clear up the same.
