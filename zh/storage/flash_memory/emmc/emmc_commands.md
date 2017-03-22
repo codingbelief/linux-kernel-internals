@@ -88,7 +88,7 @@
 
 | Abbr. | Type | Argument | Resp | Description |
 | -- | -- | -- | -- | -- |
-| BUSTEST_R | adtc | [31:0] stuff bits | R1 | Addressed Device sends its Device identification (CID) on CMD the line. |
+| BUSTEST_R | adtc | [31:0] stuff bits | R1 | A host reads the reversed bus testing data pattern from a Device. |
 
 
 
