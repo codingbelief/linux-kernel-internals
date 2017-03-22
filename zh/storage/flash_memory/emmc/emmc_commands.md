@@ -60,6 +60,12 @@
 | -- | --  | -- | -- | -- |
 | SEND_EXT_CSD | adtc | [31:0] stuff bits | - | Device sends its EXT_CSD register as a block of data. |
 
+## CMD9
+
+| Abbr. | Type | Argument | Resp | Description |
+| -- | -- | -- | -- | -- |
+| SEND_CSD | ac | [31:16] RCA, [15:0] stuff bits | - | Addressed Device sends its Device-pecific data (CSD) on the CMD line. |
+
 ## CMD12
 
 | Abbr. | Type  | Argument | Resp | Description |
