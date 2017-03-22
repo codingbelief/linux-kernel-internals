@@ -104,9 +104,9 @@
 | -- | -- | -- | -- | -- |
 | BUSTEST_W | adtc | [31:0] stuff bits | R1 | A host sends the bus test data pattern to a Device |
 
-> NOTE 1 - CMD7 R1 while selecting from Stand-By State to Transfer State; R1b while selecting from Disconnected State to Programming State.  
-> NOTE 2 - CMD12 RCA in CMD12 is used only if HPI bit is set. The argument does not imply any RCA check on the device side.  
-> NOTE 3 - CMD12 R1 for read cases and R1b for write cases.
+> NOTE 1 - CMD7, R1 while selecting from Stand-By State to Transfer State; R1b while selecting from Disconnected State to Programming State.  
+> NOTE 2 - CMD12, RCA in CMD12 is used only if HPI bit is set. The argument does not imply any RCA check on the device side.  
+> NOTE 3 - CMD12, R1 for read cases and R1b for write cases.
 
 # Block-oriented read commands (class 2)
 
@@ -134,8 +134,8 @@
 | -- | --  | -- | -- | -- |
 | SEND_TUNING_BLOCK | adtc | [31:0] stuff bits | R1 | 128 clocks of tuning pattern (64 byte in 4bit mode or 128 byte in 8 bit mode) is sent for HS200 optimal sampling point detection. |
 
-> NOTE 1 Data address for media =<2 GB is a 32 bit byte address and data address for media > 2GB is a 32 bit sector (512 B) address.
-> NOTE 2 The transferred data must not cross a physical block boundary, unless READ_BLK_MISALIGN is set in the CSD register.
+> NOTE 1 - CMD17 & CMD18, Data address for media =<2 GB is a 32 bit byte address and data address for media > 2GB is a 32 bit sector (512 B) address.
+> NOTE 2 - CMD17, The transferred data must not cross a physical block boundary, unless READ_BLK_MISALIGN is set in the CSD register.
 
 # Block-oriented write commands (class 4)
 
@@ -183,8 +183,8 @@ the first read/write data address in the pack (address of first individual comma
 | -- | -- | -- | -- | -- |
 | SET_TIME | adtc | [31:0] stuff bits | R1 | Sets the real time clock according to the RTC information in the 512 B data block. |
 
-> NOTE 1 Data address for media =<2 GB is a 32 bit byte address and data address for media > 2GB is a 32 bit sector (512 B) address.
-> NOTE 2 The transferred data must not cross a physical block boundary, unless READ_BLK_MISALIGN is set in the CSD register.
+> NOTE 1 - CMD24 & CMD25, Data address for media =<2 GB is a 32 bit byte address and data address for media > 2GB is a 32 bit sector (512 B) address.
+> NOTE 2 - CMD24, The transferred data must not cross a physical block boundary, unless READ_BLK_MISALIGN is set in the CSD register.
 
 
 
