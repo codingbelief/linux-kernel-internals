@@ -76,13 +76,20 @@
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| STOP_TRANSMISSION | ac | [31:16] RCA, [15:1] stuff bits, [0] HPI | - | Forces the Device to stop transmission. If HPI flag is set the device shall interrupt its internal operations in a well-defined timing. |
+| STOP_TRANSMISSION | ac | [31:16] RCA, [15:1] stuff bits, [0] HPI | R1/R1b | Forces the Device to stop transmission. If HPI flag is set the device shall interrupt its internal operations in a well-defined timing. |
 
 ## CMD13
 
 | Abbr. | Type | Argument | Resp | Description |
 | -- | -- | -- | -- | -- |
-| SEND_STATUS | ac | [31:16] RCA, [15] SQS, [14:1] stuff bits, [0] HPI | R2 | In case SQS bit = 0: Addressed Device sends its status register. If HPI flag is set the device shall interrupt its internal operations in a well-defined timing. In case SQS bit = 1: indicate that this is a QSR query. In response device shall send the QSR (Queue Status Register). In this case HPI must be set to ‘0’ |
+| SEND_STATUS | ac | [31:16] RCA, [15] SQS, [14:1] stuff bits, [0] HPI | R1 | In case SQS bit = 0: Addressed Device sends its status register. If HPI flag is set the device shall interrupt its internal operations in a well-defined timing. In case SQS bit = 1: indicate that this is a QSR query. In response device shall send the QSR (Queue Status Register). In this case HPI must be set to ‘0’ |
+
+## CMD14
+
+| Abbr. | Type | Argument | Resp | Description |
+| -- | -- | -- | -- | -- |
+| BUSTEST_R | adtc | [31:0] stuff bits | R1 | Addressed Device sends its Device identification (CID) on CMD the line. |
+
 
 
 
