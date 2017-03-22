@@ -183,7 +183,7 @@ the first read/write data address in the pack (address of first individual comma
 | -- | -- | -- | -- | -- |
 | SET_TIME | adtc | [31:0] stuff bits | R1 | Sets the real time clock according to the RTC information in the 512 B data block. |
 
-> NOTE 1 - CMD24 & CMD25, Data address for media =<2 GB is a 32 bit byte address and data address for media > 2GB is a 32 bit sector (512 B) address.
+> NOTE 1 - CMD24 & CMD25, Data address for media =<2 GB is a 32 bit byte address and data address for media > 2GB is a 32 bit sector (512 B) address.  
 > NOTE 2 - CMD24, The transferred data must not cross a physical block boundary, unless READ_BLK_MISALIGN is set in the CSD register.
 
 # Block-oriented write protection commands (class 6)
