@@ -4,6 +4,8 @@
 | -- | --  | -- | -- | -- |
 | | | | | |
 
+# Basic commands (class 0 and class 1)
+
 ## CMD0
 
 | Abbr. | Type  | Argument | Resp | Description |
