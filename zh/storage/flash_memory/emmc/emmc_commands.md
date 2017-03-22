@@ -90,6 +90,22 @@
 | -- | -- | -- | -- | -- |
 | BUSTEST_R | adtc | [31:0] stuff bits | R1 | A host reads the reversed bus testing data pattern from a Device. |
 
+## CMD15
+
+| Abbr. | Type | Argument | Resp | Description |
+| -- | -- | -- | -- | -- |
+| GO_INACTIVE_STATE | ac | [31:16] RCA, [15:0] stuff bits | - | Sets the Device to inactive state |
+
+## CMD19
+
+| Abbr. | Type | Argument | Resp | Description |
+| -- | -- | -- | -- | -- |
+| BUSTEST_W | adtc | [31:0] stuff bits | R1 | A host sends the bus test data pattern to a Device |
+
+
+
+
+
 
 
 
