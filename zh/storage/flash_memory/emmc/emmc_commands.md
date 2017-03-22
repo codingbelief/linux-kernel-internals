@@ -28,7 +28,7 @@
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| SET_RELATIVE_ADDR | bcr | [31:16] RCA, [15:0] stuff bits | R1 | Assigns relative address to the Device |
+| SET_RELATIVE_ADDR | ac | [31:16] RCA, [15:0] stuff bits | R1 | Assigns relative address to the Device |
 
 ## CMD4
 
@@ -46,7 +46,7 @@
 
 | Abbr. | Type  | Argument | Resp | Description |
 | -- | --  | -- | -- | -- |
-| SWITCH | ac | [31:26] Set to 0, [25:24] Access, [23:16] Index, [15:8] Value, [7:3] Set to 0, [2:0] Cmd Set | r1b  | Switches the mode of operation of the selected Device or modifies the EXT_CSD registers. |
+| SWITCH | ac | [31:26] Set to 0, [25:24] Access, [23:16] Index, [15:8] Value, [7:3] Set to 0, [2:0] Cmd Set | R1b  | Switches the mode of operation of the selected Device or modifies the EXT_CSD registers. |
 
 ## CMD7
 
@@ -102,9 +102,9 @@
 | -- | -- | -- | -- | -- |
 | BUSTEST_W | adtc | [31:0] stuff bits | R1 | A host sends the bus test data pattern to a Device |
 
-> NOTE 1 R1 while selecting from Stand-By State to Transfer State; R1b while selecting from Disconnected State to Programming State.  
-> NOTE 2 RCA in CMD12 is used only if HPI bit is set. The argument does not imply any RCA check on the device side.  
-> NOTE 3 R1 for read cases and R1b for write cases.
+> NOTE 1 - CMD7 R1 while selecting from Stand-By State to Transfer State; R1b while selecting from Disconnected State to Programming State.  
+> NOTE 2 - CMD12 RCA in CMD12 is used only if HPI bit is set. The argument does not imply any RCA check on the device side.  
+> NOTE 3 - CMD12 R1 for read cases and R1b for write cases.
 
 # Block-oriented read commands (class 2)
 
