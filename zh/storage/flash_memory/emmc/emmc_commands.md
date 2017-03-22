@@ -66,6 +66,12 @@
 | -- | -- | -- | -- | -- |
 | SEND_CSD | ac | [31:16] RCA, [15:0] stuff bits | R2 | Addressed Device sends its Device-pecific data (CSD) on the CMD line. |
 
+## CMD10
+
+| Abbr. | Type | Argument | Resp | Description |
+| -- | -- | -- | -- | -- |
+| SEND_CID | ac | [31:16] RCA, [15:0] stuff bits | R2 | Addressed Device sends its Device identification (CID) on CMD the line. |
+
 ## CMD12
 
 | Abbr. | Type  | Argument | Resp | Description |
