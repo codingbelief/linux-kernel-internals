@@ -1,5 +1,5 @@
 {
-    "plugins": ["duoshuo","-disqus","-splitter","ga","-baidu","sitemap-codingbelief","outline","addcssjs"],
+    "plugins": ["-duoshuo","-disqus","-splitter","ga","-baidu","sitemap-codingbelief","outline","addcssjs"],
     "pluginsConfig": {
         "duoshuo": {
             "short_name": "codingbelief",
