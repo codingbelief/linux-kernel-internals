@@ -102,12 +102,9 @@
 | -- | -- | -- | -- | -- |
 | BUSTEST_W | adtc | [31:0] stuff bits | R1 | A host sends the bus test data pattern to a Device |
 
-
-
-
-
-
-
+> NOTE 1 R1 while selecting from Stand-By State to Transfer State; R1b while selecting from Disconnected State to Programming State.  
+> NOTE 2 RCA in CMD12 is used only if HPI bit is set. The argument does not imply any RCA check on the device side.  
+> NOTE 3 R1 for read cases and R1b for write cases.
 
 # Block-oriented read commands (class 2)
 
