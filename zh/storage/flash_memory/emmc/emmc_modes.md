@@ -205,7 +205,7 @@ eMMC Device 在开始进行写入操作时，会先将接收到的数据存储�
 
 ### Packed Commands - Packed Read and Packed Write
 
-eMMC 标准中，支持将对多个不连续地址的数据读取或者写入
+eMMC 标准中，支持将对多个地址不连续的数据读取或者写入
 
 
 ### Erase

@@ -27,16 +27,16 @@
     * [DRAM Timing](memory/dram/dram_timing.md)
     * [DRAM Devices Organization](memory/dram/dram_devices_organization.md)
   * [Cache](memory/cache/index.md)
-* [CPU](zh/cpu/index.md)
-  * [ISA](zh/cpu/isa.md)
-  * [Microarchitecture](zh/cpu/microarchitecture.md)
+* [CPU](cpu/index.md)
+  * [ISA](cpu/isa.md)
+  * [Microarchitecture](cpu/microarchitecture.md)
     * Pipeline
     * Cache
     * Branch prediction
     * Superscalar
-    * [Out-of-order execution](zh/cpu/microarchitecture/out-of-order-execution.md)
-    * [Multiprocessing and multithreading](zh/cpu/microarchitecture/multiprocessing-and-multithreading.md)
-    * [Register Renaming](zh/cpu/microarchitecture/register-renaming.md)
-    * [VLIW](zh/cpu/microarchitecture/vliw.md)
+    * [Out-of-order execution](cpu/microarchitecture/out-of-order-execution.md)
+    * [Multiprocessing and multithreading](cpu/microarchitecture/multiprocessing-and-multithreading.md)
+    * [Register Renaming](cpu/microarchitecture/register-renaming.md)
+    * [VLIW](cpu/microarchitecture/vliw.md)
   * 虚拟化
 
