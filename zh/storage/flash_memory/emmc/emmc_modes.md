@@ -209,7 +209,6 @@ eMMC Device 在开始进行写入操作时，会先将接收到的数据存储�
 
 在 eMMC 4.5 标准中，引入了 Packed Commands 机制，将多个地址不连续的数据读取请求封装到一个 Multiple Block Read 流程中，同时将多个地址不连续的数据写入请求封装的一个 Multiple Block Write 流程中，以此减少读写请求数量，提高数据读写的效率。
 
-#### Packed Read
 
 
 
