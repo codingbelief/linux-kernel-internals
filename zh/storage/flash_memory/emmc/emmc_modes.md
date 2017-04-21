@@ -203,7 +203,7 @@ eMMC Device 在开始进行写入操作时，会先将接收到的数据存储�
 
 如果 eMMC Device 在 Disconnect State 时，还没有完成写入操作，就收到参数等于自身 RCA 的 [CMD7](./emmc_commands.html#cmd7) 命令，那么 eMMC Devcie 会从新回到 Programming State。
 
-### Packed Commands - Packed Read and Packed Write
+### Packed Commands - Packed Write and Packed Read
 
 在实际应用场景中，通常会对 eMMC Device 有很多随机数据读取和写入操作，这些随机读写的目标地址往往都不是连续的，因而每一个随机读写都需要通过一个独立的读写流程来实现。
 
@@ -211,7 +211,12 @@ eMMC Device 在开始进行写入操作时，会先将接收到的数据存储�
 
 TODO：Add Packed Read and Packed Write pic
 
+#### Packed Write
 
+
+#### Packed Read
+
+#### Packed Command Header
 
 
 
