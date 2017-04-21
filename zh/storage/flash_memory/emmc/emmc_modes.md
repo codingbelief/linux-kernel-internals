@@ -213,6 +213,8 @@ TODO：Add Packed Read and Packed Write pic
 
 #### Packed Write
 
+发起 Packed Write 流程时，首先 Host 端会需要发送 packed flag 置 1 的 [CMD23](./emmc_commands.html#cmd23) SET_BLOCK_COUNT 命令。  
+然后 Host 再
 
 #### Packed Read
 
