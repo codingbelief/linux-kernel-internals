@@ -238,7 +238,7 @@ Packed Command Header 的格式如上图所示，其中 CMD23_ARG_x 指示了各
 > **NOTE:**  
 > Packed Command 的错误处理流程，请参考 eMMC Spec 文档中的描述，此处不再详细介绍。
 
-### Erase
+### Erase and Trim
 
 
 
