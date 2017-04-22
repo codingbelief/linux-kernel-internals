@@ -207,7 +207,7 @@ eMMC Device 在开始进行写入操作时，会先将接收到的数据存储�
 
 在实际应用场景中，通常会对 eMMC Device 有很多随机数据读取和写入操作，这些随机读写的目标地址往往都不是连续的，每一个随机读写都需要通过一个独立的读写流程来实现。
 
-在 eMMC 4.5 及以后的标准中，引入了 Packed Commands 机制，将多个地址不连续的数据读取请求封装到一个 Multiple Block Read 流程中，同时将多个地址不连续的数据写入请求封装的一个 Multiple Block Write 流程中，以此减少读写请求数量，提高数据读写的效率。
+在 eMMC 4.5 及以后的标准中，引入了 Packed Commands 机制，将多个地址不连续的数据写入请求封装到一个 Multiple Block Write 流程中，同时将多个地址不连续的数据读取请求封装的一个 Multiple Block Read 流程中，以此减少读写请求数量，提高数据读写的效率。
 
 TODO：Add Packed Read and Packed Write pic
 
