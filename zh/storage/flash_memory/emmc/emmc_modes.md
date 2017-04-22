@@ -231,6 +231,8 @@ eMMC Devcie 在接收到数据后，会根据 Packed Command Header 的信息，
 
 TODO：add packed command header pic
 
+Packed Command Header 的格式如上图所示，其中 CMD23_ARG_x 指示了各个请求数据读取或者写入的 Block 数，CMDxx_ARG_x （CMD18 或者 CMD25）则指示了各个请求数据读取或者写入的起始位置。
+
 当 DATA_SECTOR_SIZE[61] = 0x00 时，即 Data Sector Size 为 512 Bytes 时，Packed Command Header 占 1 个 Block 大小，当 DATA_SECTOR_SIZE[61] = 0x01 时，即 Data Sector Size 为 4 KBytes 时，Packed Command Header 占 8 个 Block 大小。
 
 ### Erase
