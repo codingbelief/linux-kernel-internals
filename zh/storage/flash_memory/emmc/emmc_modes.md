@@ -245,6 +245,8 @@ To avoid such issues the MMC HW and core driver provide a framework which can ch
 
 ## Interrupt Mode
 
+TODO
+
 ## 参考资料
 
 1. [Embedded Multi-Media Card (e•MMC) Electrical Standard (5.1)](http://www.jedec.org/sites/default/files/docs/JESD84-B51.pdf)  [PDF]  
