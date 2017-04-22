@@ -231,7 +231,7 @@ eMMC Devcie 在接收到数据后，会根据 Packed Command Header 的信息，
 
 TODO：add packed command header pic
 
-
+当 DATA_SECTOR_SIZE[61] = 0x00 时，即 Data Sector Size 为 512 Bytes 时，Packed Command Header 占 1 个 Block 大小，当 DATA_SECTOR_SIZE[61] = 0x01 时，即 Data Sector Size 为 4 KBytes 时，Packed Command Header 占 8 个 Block 大小。
 
 ### Erase
 
