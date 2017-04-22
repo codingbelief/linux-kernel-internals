@@ -220,7 +220,7 @@ eMMC Devcie 在接收到数据后，会根据 Packed Command Header 的信息，
 #### Packed Read
 
 发起 Packed Read 流程时，首先 Host 端会需要发送 packed flag 置 1 的 [CMD23](./emmc_commands.html#cmd23) SET_BLOCK_COUNT 命令。其中，CMD23 中的 Block Count 参数为 Packed Command Header 所占 Block 的数量。  
-然后 Host 再发送 [CMD25](./emmc_commands.html#cmd25) 命令给 eMMC Device，开始进行 1 个 Block 的 Packed Command Header 数据发送。Packed Command Header 包含了后续需要接收的  
+然后 Host 再发送 [CMD25](./emmc_commands.html#cmd25) 命令给 eMMC Device，开始进行 1 个（或者 8 个） Block 的 Packed Command Header 数据发送。Packed Command Header 包含了后续需要接收的。  
 发送完 Packed Command Header 后，Host 会再发送一个 packed flag 置 1 的 [CMD23](./emmc_commands.html#cmd23) SET_BLOCK_COUNT 命令。其中，CMD23 中的 Block Count 参数为待读取数据的 Block 的数量。  
 接着，Host 再发送 [CMD18](./emmc_commands.html#cmd18) 命令，开始进行多个 Block 的数据读取。eMMC Devcie 会解析接收到的 Packed Command Header，然后将指定的数据发送给 Host 端。
 
