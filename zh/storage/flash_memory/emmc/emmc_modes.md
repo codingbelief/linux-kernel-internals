@@ -214,7 +214,7 @@ TODO：Add Packed Read and Packed Write pic
 #### Packed Write
 
 发起 Packed Write 流程时，首先 Host 端会需要发送 packed flag 置 1 的 [CMD23](./emmc_commands.html#cmd23) SET_BLOCK_COUNT 命令。其中，CMD23 中的 Block Count 参数为 Packed Command Header 和实际写入的数据所占 Block 的总数。  
-然后 Host 再发送 [CMD25](./emmc_commands.html#cmd25) 命令给 eMMC Device，开始进行多个 Block 的数据写入。其中第一个 Block 数据为 Packed Command Header，它包含了各个写请求写入数据的起始地址和长度等信息。  
+然后 Host 再发送 [CMD25](./emmc_commands.html#cmd25) 命令给 eMMC Device，开始进行多个 Block 的数据写入。其中第 1 个（或者前 8 个） Block 数据为 Packed Command Header，它包含了各个写请求写入数据的起始地址和长度等信息。  
 eMMC Devcie 在接收到数据后，会根据 Packed Command Header 的信息，将数据写入到指定的位置。
 
 #### Packed Read
