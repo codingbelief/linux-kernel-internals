@@ -243,6 +243,10 @@ eMMC cards need to occasionally spend some time cleaning up garbage and perform 
 To avoid such issues the MMC HW and core driver provide a framework which can check for pending background operations and give the card some time to clear up the same.
 -->
 
+#### Erase TRIM Sanitize and Discard
+
+
+
 ## Interrupt Mode
 
 TODO
