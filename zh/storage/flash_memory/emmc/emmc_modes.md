@@ -236,6 +236,7 @@ Packed Command Header 的格式如上图所示，其中 CMD23_ARG_x 指示了各
 当 DATA_SECTOR_SIZE[61] = 0x00 时，即 Data Sector Size 为 512 Bytes 时，Packed Command Header 占 1 个 Block 大小，当 DATA_SECTOR_SIZE[61] = 0x01 时，即 Data Sector Size 为 4 KBytes 时，Packed Command Header 占 8 个 Block 大小。
 
 > **NOTE:**  
+
 > Packed Command 的错误处理流程，请参考 eMMC Spec 文档中的描述，此处不再详细介绍。
 
 <!--
@@ -245,9 +246,11 @@ To avoid such issues the MMC HW and core driver provide a framework which can ch
 
 #### 数据擦除
 
-
+eMMC 标准提供了几种主动擦除数据的方法，以满足不同的场景需求。
 
 ##### Erase
+
+
 
 ##### TRIM
 
