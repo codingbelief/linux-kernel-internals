@@ -258,12 +258,13 @@ eMMC 标准提供了几种主动擦除数据的方法，以满足不同的场景
 ##### Erase
 
 
-
 ##### TRIM
 
-##### Sanitize
 
 ##### Discard
+
+
+##### Sanitize
 
 
 ## Interrupt Mode
