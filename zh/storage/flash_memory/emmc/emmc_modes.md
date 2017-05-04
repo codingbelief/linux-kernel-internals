@@ -256,6 +256,8 @@ eMMC 标准提供了几种主动擦除数据的方法，以满足不同的场景
 |Sanitize| - | 将标记擦除的 Block 的数据在物理介质上清除 |
 
 ##### Erase
+Erase 操作以 Erase Group 为单位进行一个或者多个 Group 的数据擦除，一个 Erase Group 由一个或者多个 Write Block 组成。  
+
 
 
 ##### TRIM
