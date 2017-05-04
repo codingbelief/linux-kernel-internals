@@ -257,7 +257,7 @@ eMMC 标准提供了几种主动擦除数据的方法，以满足不同的场景
 
 ##### Erase
 Erase 操作以 Erase Group 为单位进行一个或者多个 Group 的数据擦除，一个 Erase Group 由一个或者多个 Write Block 组成。  
-
+eMMC Device 在执行 Erase 操作时，
 
 
 ##### TRIM
