@@ -248,6 +248,13 @@ To avoid such issues the MMC HW and core driver provide a framework which can ch
 
 eMMC 标准提供了几种主动擦除数据的方法，以满足不同的场景需求。
 
+| 擦除方式 | 擦除单位 | 描述 |
+|-|-|-|
+|Erase| Erase Group | |
+|TRIM| Write Block | |
+|Discard| Write Block | |
+|Sanitize| Write Block | |
+
 ##### Erase
 
 
