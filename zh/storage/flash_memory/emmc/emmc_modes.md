@@ -250,9 +250,9 @@ eMMC 标准提供了几种主动擦除数据的方法，以满足不同的场景
 
 | 擦除方式 | 擦除单位 | 描述 |
 |-|-|-|
-|Erase| Erase Group | |
-|TRIM| Write Block | |
-|Discard| Write Block | |
+|Erase| Erase Group | 按 Erase Group 擦除数据，完成后重新读取会返回全为 0 或者 1 的数据 |
+|TRIM| Write Block | 按 Write Block 擦除数据，完成后重新读取会返回全为 0 或者 1 的数据 |
+|Discard| Write Block | 按 Write Block 擦除数据，完成后重新读取可能会返回原来的数据 |
 |Sanitize| Write Block | |
 
 ##### Erase
