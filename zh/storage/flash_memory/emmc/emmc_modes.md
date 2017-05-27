@@ -257,7 +257,8 @@ eMMC 标准提供了几种主动擦除数据的方法，以满足不同的场景
 
 ##### Erase
 Erase 操作以 Erase Group 为单位进行一个或者多个 Group 的数据擦除，一个 Erase Group 由一个或者多个 Write Block 组成。  
-eMMC Device 在执行 Erase 操作时，
+eMMC Device 在执行 Erase 操作时，通常并不会进行实际物理数据的擦除，只是将待擦除的 Erase Group 中的 Block 从地址空间中 unmap，然后从后台的空闲 Block 中选择已经完成物理擦除的 Block，重新 map 到该地址空间中，然后告知 Host 端已完成 Erase 操作。实际物理擦除操作则在后台选择合适的时机进行。  
+这样的逻辑可以减少 Host 执行 Erase 操作的等待时间，提高 eMMC Devcie 的响应速度。
 
 
 ##### TRIM
